@@ -1,0 +1,12 @@
+<%! func (m *Map) RenderPolylines(w io.Writer, t *Track) error %>
+<svg width="<%= m.w %>" height="<%= m.h %>" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css" >
+        <![CDATA[
+            .segment { fill: none; stroke: blue; stroke-width: 3 }
+            .segment:hover { stroke: red }
+        ]]>
+    </style>
+    <% for i := range t.Segments { %>
+    <polyline class="segment" points="<%= m.PolylinePoints(t.Segment(i)) %>"/>
+	<% } %>
+</svg>
