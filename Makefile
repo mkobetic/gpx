@@ -10,4 +10,8 @@ build: *.go ego.go
 ego.go: *.ego
 	@ego -package=main *.ego
 
-PHONY: setup
+samples:
+	@rm samples/out/*
+	@./gpx -o samples/out samples/in/*
+
+.PHONY: setup samples

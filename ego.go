@@ -53,67 +53,59 @@ func (m *Map) RenderLines(w io.Writer, t *Track) error {
 //line map2.ego:4
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h)))
 //line map2.ego:4
-	_, _ = io.WriteString(w, "\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n    <style type=\"text/css\" >\n        <![CDATA[\n            .segment { fill: none; stroke-width: 4 }\n            .segment:hover { stroke-width: 8 }\n        ]]>\n    </style>\n    <g id=\"legend\">")
-//line map2.ego:11
+	_, _ = io.WriteString(w, "\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n    <style type=\"text/css\" >\n        <![CDATA[\n            .segment { fill: none; stroke-width: 4 }\n            .segment:hover { stroke-width: 8 }\n        ]]>\n    </style>\n    <g id=\"legend\">\n        ")
+//line map2.ego:12
 	for i := range palette {
-//line map2.ego:12
-		_, _ = io.WriteString(w, "\n        <rect x=\"")
-//line map2.ego:12
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i)))
-//line map2.ego:12
-		_, _ = io.WriteString(w, "\" y=\"0\" width=\"30\" height=\"20\" fill=\"")
-//line map2.ego:12
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("#%03x", palette[i]))))
-//line map2.ego:12
-		_, _ = io.WriteString(w, "\"/>\n        ")
 //line map2.ego:13
-		if i%5 == 0 {
-//line map2.ego:14
-			_, _ = io.WriteString(w, "\n        <text x=\"")
-//line map2.ego:14
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
-//line map2.ego:14
-			_, _ = io.WriteString(w, "\" y=\"16\" fill=\"white\">")
-//line map2.ego:14
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
-//line map2.ego:14
-			_, _ = io.WriteString(w, "kts</text>\n        ")
-//line map2.ego:15
-		}
-//line map2.ego:16
 		_, _ = io.WriteString(w, "\n        <rect x=\"")
-//line map2.ego:16
+//line map2.ego:13
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i)))
-//line map2.ego:16
-		_, _ = io.WriteString(w, "\" y=\"")
-//line map2.ego:16
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h-20)))
-//line map2.ego:16
-		_, _ = io.WriteString(w, "\" width=\"30\" height=\"20\" fill=\"")
-//line map2.ego:16
+//line map2.ego:13
+		_, _ = io.WriteString(w, "\" y=\"0\" width=\"30\" height=\"20\" fill=\"")
+//line map2.ego:13
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("#%03x", palette[i]))))
-//line map2.ego:16
+//line map2.ego:13
+		_, _ = io.WriteString(w, "\"/>\n        <rect x=\"")
+//line map2.ego:14
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i)))
+//line map2.ego:14
+		_, _ = io.WriteString(w, "\" y=\"")
+//line map2.ego:14
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h-20)))
+//line map2.ego:14
+		_, _ = io.WriteString(w, "\" width=\"30\" height=\"20\" fill=\"")
+//line map2.ego:14
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("#%03x", palette[i]))))
+//line map2.ego:14
 		_, _ = io.WriteString(w, "\"/>\n        ")
+//line map2.ego:15
+	}
+//line map2.ego:16
+	_, _ = io.WriteString(w, "\n        ")
+//line map2.ego:16
+	for i := 0; i < len(palette); i += 5 {
 //line map2.ego:17
-		if i%5 == 0 {
+		_, _ = io.WriteString(w, "\n        <text x=\"")
+//line map2.ego:17
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
+//line map2.ego:17
+		_, _ = io.WriteString(w, "\" y=\"16\" fill=\"white\">")
+//line map2.ego:17
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
+//line map2.ego:17
+		_, _ = io.WriteString(w, "kts</text>\n        <text x=\"")
 //line map2.ego:18
-			_, _ = io.WriteString(w, "\n        <text x=\"")
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
 //line map2.ego:18
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
+		_, _ = io.WriteString(w, "\" y=\"")
 //line map2.ego:18
-			_, _ = io.WriteString(w, "\" y=\"")
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h-4)))
 //line map2.ego:18
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h-4)))
+		_, _ = io.WriteString(w, "\" fill=\"white\">")
 //line map2.ego:18
-			_, _ = io.WriteString(w, "\" fill=\"white\">")
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
 //line map2.ego:18
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
-//line map2.ego:18
-			_, _ = io.WriteString(w, "kts</text>")
-//line map2.ego:18
-		}
-//line map2.ego:19
-		_, _ = io.WriteString(w, "\n        ")
+		_, _ = io.WriteString(w, "kts</text>\n        ")
 //line map2.ego:19
 	}
 //line map2.ego:20
