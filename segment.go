@@ -10,10 +10,13 @@ type Segment struct {
 	*gpx.GPXTrackSegment
 }
 
+// Point returns i-th point of the segment.
 func (s Segment) Point(i int) *gpx.GPXPoint {
 	return &s.Points[i]
 }
 
+
+// EachPair iterates over a segment with pairs of subsequent points.
 func (s Segment) EachPair(f func(prev, next *gpx.GPXPoint)) {
 	prev := s.Point(0)
 	for i := 1; i < len(s.Points); i++ {
@@ -32,7 +35,8 @@ func (s Segments) Less(i, j int) bool {
 	return s[i].TimeBounds().StartTime.Before(s[j].TimeBounds().StartTime)
 }
 
-// Dedupe removes subsequent segments with the same time bounds.
+// Dedupe removes subsequent segments with the same time bounds
+// and segments that have less than 20 points.
 func (s Segments) Dedupe() (t Segments) {
 	if len(s) == 0 {
 		return
@@ -51,7 +55,8 @@ func (s Segments) Dedupe() (t Segments) {
 	return
 }
 
-// Tracks creates tracks from subsequent segments with adjacent time bounds.
+// Tracks creates tracks from subsequent segments with time bounds that
+// are less than limit time apart.
 func (s Segments) Tracks(limit time.Duration) (tracks Tracks) {
 	if len(s) == 0 {
 		return

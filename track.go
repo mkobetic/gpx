@@ -20,32 +20,27 @@ type Track struct {
 	tz *time.Location
 }
 
+// Segment returns i-th segment of the track.
 func (t *Track) Segment(i int) Segment {
 	return Segment{&t.Segments[i]}
 }
 
 type Tracks []Track
 
+// WriteMapFile generates an SVG map of the track into the specified directory.
 func (t *Track) WriteMapFile(dir string) error {
-	fn, err := t.FileName()
-	if err != nil {
-		return err
-	}
-	f, err := os.Create(filepath.Join(dir, fn+".svg"))
+	f, err := os.Create(filepath.Join(dir, t.FileName()+".svg"))
 	if err != nil {
 		return err
 	}
 	defer f.Close()
 	m := NewMap(t.Bounds(), mapWidth)
-	return m.RenderLines(f, t)
+	return m.renderLines(f, t)
 }
 
+// WriteGpxFile generates track's GPX file into the specified directory.
 func (t *Track) WriteGpxFile(dir string) error {
-	fn, err := t.FileName()
-	if err != nil {
-		return err
-	}
-	f, err := os.Create(filepath.Join(dir, fn+".gpx"))
+	f, err := os.Create(filepath.Join(dir, t.FileName()+".gpx"))
 	if err != nil {
 		return err
 	}
@@ -60,6 +55,7 @@ func (t *Track) WriteGpxFile(dir string) error {
 	return err
 }
 
+// Timezone returns the timezone for track's location.
 func (t *Track) Timezone() *time.Location {
 	if t.tz != nil {
 		return t.tz
@@ -73,18 +69,19 @@ func (t *Track) Timezone() *time.Location {
 	return t.tz
 }
 
-func (t *Track) FileName() (string, error) {
+// FileName generates a file name based on track's time bounds and length.
+func (t *Track) FileName() string {
 	tb := t.TimeBounds()
 	start := tb.StartTime.In(t.Timezone()).Format(fnFormat)
 	d := tb.EndTime.Sub(tb.StartTime)
 	return fmt.Sprintf("%s-%dh%02d-%04.1fnm",
-			start,
-			int(d.Hours()),
-			int(d.Minutes())%60,
-			t.Length2D()/1852),
-		nil
+		start,
+		int(d.Hours()),
+		int(d.Minutes())%60,
+		t.Length2D()/1852)
 }
 
+// Extent returns box dimensions of the track in specified units.
 func (t *Track) Extent(unit float64) (width, height float64) {
 	b := t.Bounds()
 	coef := math.Cos((b.MaxLatitude + b.MinLatitude) * math.Pi / 360)
@@ -93,12 +90,13 @@ func (t *Track) Extent(unit float64) (width, height float64) {
 	return width, height
 }
 
+// String returns track description.
 func (t *Track) String() string {
 	tb := t.TimeBounds()
-	w, h := t.Extent(km)
-	return fmt.Sprintf("%s %.03fkm %.03fkmx%.03fkm (%s)",
+	w, h := t.Extent(nm)
+	return fmt.Sprintf("%s %05.2fnm %05.2fnm x %05.2fnm (%s)",
 		tb.StartTime.In(t.Timezone()).Format(strFormat),
-		t.Length2D()/1000,
+		t.Length2D()/1852,
 		w,
 		h,
 		tb.EndTime.Sub(tb.StartTime),

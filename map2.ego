@@ -1,4 +1,4 @@
-<%! func (m *Map) RenderLines(w io.Writer, t *Track) error %>
+<%! func (m *Map) renderLines(w io.Writer, t *Track) error %>
 <%% import "github.com/tkrajina/gpxgo/gpx" %%>
 <%% import "fmt" %%>
 <svg width="<%= m.w %>" height="<%= m.h %>" version="1.1" xmlns="http://www.w3.org/2000/svg">

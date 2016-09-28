@@ -1,3 +1,4 @@
+// Simple GPS track processor for sailing race tracks (.gpx)
 package main
 
 import (
@@ -13,7 +14,8 @@ func main() {
 	out := flag.String("o", ".", "directory for generated files")
 	flag.Parse()
 	if len(flag.Args()) == 0 {
-		fmt.Println("Usage: gpx [options] files")
+		fmt.Println("Transforms specified gpx files into a gpx and svg file for individual race tracks")
+		fmt.Println("Usage: gpx [-o <dir>] <files>")
 		flag.Usage()
 		return
 	}
