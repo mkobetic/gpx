@@ -2,7 +2,7 @@ Simple GPS track processor for sailing race tracks.
 
 * reads all gpx files specified on the command line
 * pulls out all segments
-* discards any duplicate or degenerate (very short) segments
+* discards any duplicate or superfluous (very short) segments
 * combines segments that are no more than 1h apart into a track
 * renders each track into an svg file
 * saves each track into a new gpx file
