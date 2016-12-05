@@ -7,6 +7,8 @@ Simple GPS track processor for sailing race tracks.
 * renders each track into an svg file
 * saves each track into a new gpx file
 
+![sample track](sample-track.png)
+
 `samples/out` directory contains files generated from the input files in `samples/in` directory.
 
 The output files can be regenerated as follows:
