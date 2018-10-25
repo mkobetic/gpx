@@ -5,6 +5,7 @@ import (
 	"math"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/bradfitz/latlong"
@@ -26,6 +27,14 @@ func (t *Track) Segment(i int) Segment {
 }
 
 type Tracks []Track
+
+func (ts Tracks) String() string {
+	var ss []string
+	for _, t := range ts {
+		ss = append(ss, t.String())
+	}
+	return strings.Join(ss, "\n")
+}
 
 // WriteMapFile generates an SVG map of the track into the specified directory.
 func (t *Track) WriteMapFile(dir string) error {

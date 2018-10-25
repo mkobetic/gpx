@@ -26,15 +26,11 @@ func main() {
 			fmt.Printf("Error opening %s: %s\n", fn, err)
 			return
 		}
-		for _, t := range g.Tracks {
-			for i := range t.Segments {
-				segments = append(segments, Segment{&t.Segments[i]})
-			}
-		}
+		segments = append(segments, GetSegments(g)...)
 	}
 	sort.Sort(segments)
 	sn := len(segments)
-	segments = segments.Dedupe()
+	segments = segments.Dedupe(20).Split(time.Hour).Dedupe(20)
 	fmt.Printf("Dropped %d duplicate and bogus segments\n", sn-len(segments))
 	for _, t := range segments.Tracks(time.Hour) {
 		fmt.Println(t.String())
