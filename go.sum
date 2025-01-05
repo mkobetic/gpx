@@ -1,5 +1,7 @@
 github.com/benbjohnson/ego v0.3.0 h1:nFecrEww4ijgW17qYfjGSmSbxFXUCiPkRjaQd9/8UpA=
 github.com/benbjohnson/ego v0.3.0/go.mod h1:6Qzj43pKX58WdlHDZKZS4Q/XXYwz6toIqXqNjzt4mNA=
+github.com/benbjohnson/ego v0.4.3 h1:9uO96riax3fhvRBpbUK5cZvZ14u9U4ZcGgrANwppFqs=
+github.com/benbjohnson/ego v0.4.3/go.mod h1:Sa5eTS6AJJy62BL2Y4ba70gt0ZayBXw2R5yZUD1ves8=
 github.com/bradfitz/latlong v0.0.0-20170410180902-f3db6d0dff40 h1:wsnz4B2CSHJ09pwtMReU/GRqWDsI7XSasq7Nphem3Xk=
 github.com/bradfitz/latlong v0.0.0-20170410180902-f3db6d0dff40/go.mod h1:ZcXX9BndVQx6Q/JM6B8x7dLE9sl20S+TQsv4KO7tEQk=
 github.com/tkrajina/gpxgo v0.0.0-20180728085300-1b1f71eb1b59 h1:4moV7UHHIF7+TKh6yiFU+7baOw6LQLl7t6ojC0eWKB4=
