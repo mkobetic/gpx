@@ -44,7 +44,8 @@ func (t *Track) WriteMapFile(dir string) error {
 	}
 	defer f.Close()
 	m := NewMap(t.Bounds(), mapWidth)
-	return m.renderLines(f, t)
+	m.renderLines(f, t)
+	return nil
 }
 
 // WriteGpxFile generates track's GPX file into the specified directory.

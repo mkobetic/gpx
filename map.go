@@ -41,7 +41,7 @@ func (m *Map) Point(p *gpx.GPXPoint) (x, y int) {
 }
 
 // units for Distance and Speed functions,
-// expressed as the length of one degree of latitude
+// expressed as the length of one degree of longitude at the equator
 const km = 2 * math.Pi * 6371 / 360
 const meter = 1000 * km
 const nm = 60

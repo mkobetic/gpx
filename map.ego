@@ -1,4 +1,8 @@
-<%! func (m *Map) renderPolylines(w io.Writer, t *Track) error %>
+<%
+package main
+
+func (m *Map) renderPolylines(w io.Writer, t *Track) {
+%>
 <svg width="<%= m.w %>" height="<%= m.h %>" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <style type="text/css" >
         <![CDATA[
@@ -10,3 +14,4 @@
     <polyline class="segment" points="<%= m.polylinePoints(t.Segment(i)) %>"/>
 	<% } %>
 </svg>
+<% } %>

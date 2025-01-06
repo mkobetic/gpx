@@ -1,6 +1,11 @@
-<%! func (m *Map) renderLines(w io.Writer, t *Track) error %>
-<%% import "github.com/tkrajina/gpxgo/gpx" %%>
-<%% import "fmt" %%>
+<%
+package main
+import "github.com/tkrajina/gpxgo/gpx"
+import "fmt"
+import "time"
+
+func (m *Map) renderLines(w io.Writer, t *Track) {
+%>
 <svg width="<%= m.w %>" height="<%= m.h %>" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <style type="text/css" >
         <![CDATA[
@@ -18,13 +23,17 @@
         <text x="<%= 30*i+5 %>" y="<%= m.h-4 %>" fill="white"><%= fmt.Sprint(i) %>kts</text>
         <% } %>
     </g>
+    <% totalDistance := float64(0) %>
     <% for i := range t.Segments { %>
     <g class="segment">
         <% t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) { %>
         <% x1, y1 := m.Point(prev); x2, y2 := m.Point(next); c := m.SpeedColor(prev, next) %>
-        <!-- <%= m.Distance(prev,next,nm) %> nm; <%= m.Speed(prev,next,nm) %> kts -->
-        <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>"/>
+        <% totalDistance += m.Distance(prev,next,nm) %>
+        <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
+        <title> <%= next.Timestamp.In(t.Timezone()).Format(time.TimeOnly) %>: <%= fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter)) %> @ <%= fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm)) %> [ <%= fmt.Sprintf("%0.2f nm", totalDistance) %> ]</title>
+        </line>
 	    <% }) %>
     </g>
 	<% } %>
 </svg>
+<% } %>
