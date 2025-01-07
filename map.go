@@ -65,6 +65,18 @@ func (m *Map) Speed(p1, p2 *gpx.GPXPoint, unit float64) float64 {
 	return m.Distance(p1, p2, unit) / t
 }
 
+// Heading computes the direction from p1 to p2 in degrees.
+func (m *Map) Heading(p1, p2 *gpx.GPXPoint) int {
+	lat := p2.Latitude - p1.Latitude
+	lon := (p2.Longitude - p1.Longitude) * m.coef
+	deg := int(math.Round(math.Atan2(lon, lat) / math.Pi * 180))
+	if deg < 0 {
+		return 360 + deg
+	} else {
+		return deg
+	}
+}
+
 var palette = func() (palette []int) {
 	for i := 0; i < 16; i += 2 {
 		palette = append(palette, i*16+15)
@@ -88,6 +100,14 @@ func (m *Map) SpeedColor(p1, p2 *gpx.GPXPoint) string {
 		s = len(palette) - 1
 	}
 	return fmt.Sprintf("#%03x", palette[s])
+}
+
+func direction(heading int) string {
+	idx := int(math.Floor((float64(heading) + 11.25) / 22.5))
+	if idx > 15 {
+		idx = 0
+	}
+	return []string{"N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"}[idx]
 }
 
 func (m *Map) polylinePoints(s Segment) string {

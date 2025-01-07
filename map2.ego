@@ -29,8 +29,9 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <% t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) { %>
         <% x1, y1 := m.Point(prev); x2, y2 := m.Point(next); c := m.SpeedColor(prev, next) %>
         <% totalDistance += m.Distance(prev,next,nm) %>
+        <% heading := m.Heading(prev, next); direction := direction(heading) %>
         <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
-        <title> <%= next.Timestamp.In(t.Timezone()).Format(time.TimeOnly) %>: <%= fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter)) %> @ <%= fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm)) %> [ <%= fmt.Sprintf("%0.2f nm", totalDistance) %> ]</title>
+        <title> <%= next.Timestamp.In(t.Timezone()).Format(time.TimeOnly) %>: <%= fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter)) %> @ <%= fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm)) %> &#x2191; <%= fmt.Sprintf("%d\u00b0 %s", heading, direction ) %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %></title>
         </line>
 	    <% }) %>
     </g>
