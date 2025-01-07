@@ -76,9 +76,14 @@ If the camera and gps device clocks are not in sync (presumably the devices can 
 Let's assume you have video.mp4 and subtitles.vtt that you successfully produced with this tool. Here's how you can add the subtitles
 
 ```
-ffmpeg -i video.mp4 -i subtitles.vtt -map 0 -map 0:v -map 0:a -map 1:s -c copy -c:s mov_text -metadata:s:s:0 language=eng -y video-with-subtitles.mp4
+ffmpeg -i video.mp4 -i subtitles.vtt -map 0:v -map 0:a -map 1:s -map_metadata 0 -c copy -c:s mov_text -metadata:s:s:0 language=eng -y video-with-subtitles.mp4
 ```
+
 This should produce a new video file with the same content as the original file with the subtitle stream added into it. It should be fast because the video content is just copied over as is without re-processing.
+
+Here's a screenshot of the subtitles shown in a video
+
+![Screenshot 2025-01-06 at 22 59 10](https://github.com/user-attachments/assets/da055ae4-da4f-4a53-9424-6002aa509368)
 
 
 Note that you may need to enable subtitles in your video player to have them show up.
