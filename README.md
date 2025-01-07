@@ -47,7 +47,9 @@ The subtitle file generation is gated by the `-vo` flag that requires a "video o
 
 ### figuring out video offset
 
-Assuming the clocks on the camera and on the gps device are in sync, you can use `ffmpeg` to lift the `creation_time` off the video as follows:
+#### when camera and gps watch time is the same
+
+If you can make sure that the clocks on the camera and on the gps device are in sync, you can use `ffmpeg` to lift the `creation_time` off the video as follows:
 
 ```
 ffprobe -show_entries format_tags=creation_time -of csv=print_section=0 <the-video-file>
@@ -55,7 +57,7 @@ ffprobe -show_entries format_tags=creation_time -of csv=print_section=0 <the-vid
 
 That should give you something like `2024-08-24T15:08:29.000000Z`. Note that if the timezone is set to Z it's quite likely local time, not UTC.
 
-Then check the timestamp in the beginning of your gpx file, it could looks something like this
+Then check the timestamp in the beginning of your gpx file, it could look something like this
 
 ```
   ...
@@ -69,7 +71,11 @@ Then check the timestamp in the beginning of your gpx file, it could looks somet
 
 This one likely is in UTC, so you'll need to convert to local time. Then simply subtract the video timestamp from the gpx timestamp to get the video offset.
 
-If the camera and gps device clocks are not in sync (presumably the devices can somehow show you what they think current time is), then you need to figure out how much they are off, and add that difference to the video offset as well.
+#### when camera and gps watch time is not the same
+
+Unless you prepared well and made sure the camera and gps device clocks are in sync, then they most likely are not. In that case you need to figure out how much they are off and add that difference to the video offset as well.
+
+You may be able to check the time on both after the fact and figure out the difference that way.
 
 Another option, if you think about this ahead of time is to just record your GPS watch on the video when you start recording, that way you'll have a fairly good idea of what the watch time was at a given point in the video, it should be easy to calculate the offset from that. You just have to make sure you have a reasonably clear and sharp picture of your watch. I find that I can bring my watch about 6 inches from my old GoPro session and hold it there for a second to let the camera focus.
 
@@ -80,6 +86,19 @@ Let's assume you have video.mp4 and subtitles.vtt that you successfully produced
 ```
 ffmpeg -i video.mp4 -i subtitles.vtt -map 0:v -map 0:a -map 1:s -map_metadata 0 -c copy -c:s mov_text -metadata:s:s:0 language=eng -y video-with-subtitles.mp4
 ```
+Here's what the bits of the command mean:
+
+-i video.mp4    = use this video file
+-i subtitles.vtt = use this subtitle file
+-map 0:v        = take the video stream from the video file
+-map 0:a        = take the audio stream from the video file
+-map 1:s        = take the subtitle stream from the subtitle file
+-map_metadata 0 = take the metadata from the video file
+-c copy         = don't process the video/audio just copy it over as is
+-c:s mov_text   = encode the subtitle stream in a way that works with mp4 container
+-metadata:s:s:0 language=eng = set the subtitles language to english (that's how it will show in subtitle options in the player)
+-y              = just (over)-write the final file don't ask for confirmation
+video-with-subtitles.mp4 = name of the video file with subtitles
 
 This should produce a new video file with the same content as the original file with the subtitle stream added into it. It should be fast because the video content is just copied over as is without re-processing.
 
