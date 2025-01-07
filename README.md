@@ -40,7 +40,7 @@ This tool can spit out a subtitles file for your video with following GPS stats:
 time: distance @ speed ↑ heading = total distance`
 ```
 
-It will looks something like this
+It will look something like this
 
 ```
 17:51:43: 26.8 m @ 5.8 kts ↑ 33° NNE = 0.07 nm
@@ -48,7 +48,7 @@ It will looks something like this
 
 The subtitle granularity matches the granularity of the gps track, i.e. new subtitle for each track point.
 
-The subtitle file generation is gated by the `-vo` flag that requires a "video offset" duration as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much are they off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0.
+The subtitle file generation is gated by the `-vo` flag that requires a "video offset" as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much are they off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0. The format of the offset argument is based on this function https://pkg.go.dev/time#ParseDuration, e.g. `-3.5m` or `10m44s`.
 
 ### figuring out video offset
 
@@ -111,9 +111,7 @@ Here's a screenshot of the subtitles shown in a video
 
 ![Screenshot 2025-01-06 at 22 59 10](https://github.com/user-attachments/assets/da055ae4-da4f-4a53-9424-6002aa509368)
 
-
 Note that you may need to enable subtitles in your video player to have them show up.
-
 
 ## References
 * https://gist.github.com/spirillen/af307651c4261383a6d651038a82565d
