@@ -12,10 +12,19 @@ import (
 
 func main() {
 	out := flag.String("o", ".", "directory for generated files")
+	var offset *time.Duration
+	flag.Func("vo", "video time offset for subtitles file, positive offset means video starts ahead of the track", func(ts string) error {
+		d, err := time.ParseDuration(ts)
+		if err != nil {
+			return err
+		}
+		offset = &d
+		return nil
+	})
 	flag.Parse()
 	if len(flag.Args()) == 0 {
-		fmt.Println("Transforms specified gpx files into a gpx and svg file for individual race tracks")
-		fmt.Println("Usage: gpx [-o <dir>] <files>")
+		fmt.Println("Transforms specified gpx files into a gpx, svg and video subtitles files for individual race tracks")
+		fmt.Println("Usage: gpx [-o <dir>] [-vo <duration>] <files>")
 		flag.Usage()
 		return
 	}
@@ -36,6 +45,11 @@ func main() {
 		fmt.Println(t.String())
 		if err := t.WriteMapFile(*out); err != nil {
 			fmt.Println(err)
+		}
+		if offset != nil {
+			if err := t.WriteSubtitleFile(*out, *offset); err != nil {
+				fmt.Println(err)
+			}
 		}
 		if err := t.WriteGpxFile(*out); err != nil {
 			fmt.Println(err)

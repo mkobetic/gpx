@@ -48,6 +48,18 @@ func (t *Track) WriteMapFile(dir string) error {
 	return nil
 }
 
+// WriteMapFile generates an video subtitles file with the stats.
+func (t *Track) WriteSubtitleFile(dir string, offset time.Duration) error {
+	f, err := os.Create(filepath.Join(dir, t.FileName()+".vtt"))
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	m := NewMap(t.Bounds(), mapWidth)
+	m.renderSubtitles(f, t, offset)
+	return nil
+}
+
 // WriteGpxFile generates track's GPX file into the specified directory.
 func (t *Track) WriteGpxFile(dir string) error {
 	f, err := os.Create(filepath.Join(dir, t.FileName()+".gpx"))

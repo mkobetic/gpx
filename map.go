@@ -3,6 +3,7 @@ package main
 import (
 	"bytes"
 	"fmt"
+	"io"
 	"math"
 	"time"
 
@@ -117,4 +118,50 @@ func (m *Map) polylinePoints(s Segment) string {
 		fmt.Fprintf(b, "%d,%d ", x, y)
 	}
 	return b.String()
+}
+
+// Renders a VTT subtitle file based on the track.
+// Positive @videoOffset means the video starts ahead of the track, the timestamps will be adjusted accordingly.
+// Negative @videoOffset means the video starts later and therefore the corresponding initial part of the track will be skipped.
+// See https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API/Web_Video_Text_Tracks_Format
+func (m *Map) renderSubtitles(w io.Writer, t *Track, videoOffset time.Duration) {
+	currentOffset := videoOffset
+	totalDistance := float64(0)
+	cueCounter := 0
+	for i := range t.Segments {
+		t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) {
+			duration := next.Timestamp.Sub(prev.Timestamp)
+			newOffset := currentOffset + duration
+			if newOffset < 0 {
+				currentOffset = newOffset
+				return
+			}
+			cueCounter++
+			totalDistance += m.Distance(prev, next, nm)
+			heading := m.Heading(prev, next)
+			direction := direction(heading)
+			fmt.Fprintf(w, "%d\n", cueCounter)
+			fmt.Fprintf(w, "%s --> %s\n", vttTimestamp(currentOffset), vttTimestamp(newOffset))
+			fmt.Fprintf(w, "%s: %0.1f m @ %0.1f kts \u2191 %d\u00b0 %s = %0.2f nm\n",
+				next.Timestamp.In(t.Timezone()).Format(time.TimeOnly),
+				m.Distance(prev, next, meter),
+				m.Speed(prev, next, nm),
+				heading,
+				direction,
+				totalDistance)
+			fmt.Fprintln(w)
+			currentOffset = newOffset
+		})
+	}
+}
+
+func vttTimestamp(ts time.Duration) string {
+	total := ts.Milliseconds()
+	ms := total % 1000
+	total /= 1000
+	s := total % 60
+	total /= 60
+	m := total % 60
+	total /= 60
+	return fmt.Sprintf("%02d:%02d:%02d.%03d", total, m, s, ms)
 }

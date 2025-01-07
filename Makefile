@@ -12,6 +12,6 @@ ego.go: *.ego
 
 samples: build
 	@rm -f samples/out/*
-	@./gpx -o samples/out samples/in/*
+	@./gpx -o samples/out -vo 0 samples/in/*
 
 .PHONY: setup samples
