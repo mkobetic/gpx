@@ -6,6 +6,7 @@ Simple GPS track processor for sailing race tracks.
 * combines segments that are no more than 1h apart into a track
 * renders each track into an svg file
 * saves each track into a new gpx file
+* optionally generates subtitles file with gps metrics that can be embedded in a video file (more below)
 
 ![sample track](sample-track.png)
 
@@ -13,7 +14,7 @@ Simple GPS track processor for sailing race tracks.
 
 The output files can be regenerated as follows:
 ```
-$ rm samples/out/*; make && ./gpx -o samples/out samples/in/*
+$ rm samples/out/*; make && ./gpx -o samples/out -vo 0s samples/in/*
 Dropped 32 duplicate and bogus segments
 16-05-25 17:56:07 16.09nm 01.32nm x 00.86nm (2h21m36s)
 16-06-01 18:57:23 06.76nm 01.08nm x 00.57nm (1h11m2s)
@@ -26,3 +27,65 @@ Dropped 32 duplicate and bogus segments
 16-08-20 17:34:32 10.07nm 01.70nm x 01.98nm (1h12m42s)
 16-08-24 17:50:55 14.82nm 01.31nm x 00.71nm (2h4m15s)
 ```
+
+## gps video subtitles
+
+It is nice to be able to overlay GPS information over the video that you may have recorded on your boat. There are many guides out there showing how to use video editors to render cute measurement gauges into your video recording. It can look pretty good but is very manual and time consuming.
+
+An alternative approach that isn't as artistic but is simple and fast, because you don't have to re-encode the whole video, is to use subtitles to show the GPS information. It's text only, no graphics but can convey most of the same information. Adding subtitles to a video is nearly instant compared to rerendering the full video.
+
+This tool can spit out a subtitles file for your video with following GPS stats. `time: distance @ speed ↑ heading = total distance`, e.g.
+
+```
+17:51:43: 26.8 m @ 5.8 kts ↑ 33° NNE = 0.07 nm
+```
+
+The subtitle granularity matches the granularity of the gps track, i.e. new subtitle for each track point.
+
+The subtitle file generation is gated by the `-vo` flag that requires a "video offset" duration as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much are they off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0.
+
+
+### figuring out video offset
+
+Assuming the clocks on the camera and on the gps device are in sync, you can use `ffmpeg` to lift the `creation_time` off the video as follows:
+
+```
+ffprobe -show_entries format_tags=creation_time -of csv=print_section=0 <the-video-file>
+```
+
+That should give you something like `2024-08-24T15:08:29.000000Z`. Note that if the timezone is set to Z it's quite likely local time, not UTC.
+
+Then check the timestamp in the beginning of your gpx file, it could looks something like this
+
+```
+  ...
+  <metadata>
+    <link href="connect.garmin.com">
+      <text>Garmin Connect</text>
+    </link>
+    <time>2024-08-24T19:01:05.000Z</time>
+  </metadata>
+``` 
+
+This one likely is in UTC, so you'll need to convert to local time. Then simply subtract the video timestamp from the gpx timestamp to get the video offset.
+
+If the camera and gps device clocks are not in sync (presumably the devices can somehow show you what they think current time is), then you need to figure out how much they are off, and add that difference to the video offset as well.
+
+## adding subtitles to a video file (using ffmpeg)
+
+Let's assume you have video.mp4 and subtitles.vtt that you successfully produced with this tool. Here's how you can add the subtitles
+
+```
+ffmpeg -i video.mp4 -i subtitles.vtt -map 0 -map 0:v -map 0:a -map 1:s -c copy -c:s mov_text -metadata:s:s:0 language=eng -y video-with-subtitles.mp4
+```
+This should produce a new video file with the same content as the original file with the subtitle stream added into it. It should be fast because the video content is just copied over as is without re-processing.
+
+
+Note that you may need to enable subtitles in your video player to have them show up.
+
+
+## References
+* https://gist.github.com/spirillen/af307651c4261383a6d651038a82565d
+* https://grep.be/blog/en/computer/play/Adding_subtitles_with_FFmpeg/
+* https://www.bannerbear.com/blog/how-to-add-subtitles-to-a-video-file-using-ffmpeg/
+* https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API/Web_Video_Text_Tracks_Format

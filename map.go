@@ -156,6 +156,9 @@ func (m *Map) renderSubtitles(w io.Writer, t *Track, videoOffset time.Duration) 
 }
 
 func vttTimestamp(ts time.Duration) string {
+	if ts < 0 {
+		return "00:00:00.000"
+	}
 	total := ts.Milliseconds()
 	ms := total % 1000
 	total /= 1000
