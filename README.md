@@ -37,7 +37,7 @@ An alternative approach that isn't as artistic but is simple and fast, because y
 This tool can spit out a subtitles file for your video with following GPS stats:
 
 ```
-time: distance @ speed ↑ heading = total distance`
+time: distance @ speed ↑ heading = total distance
 ```
 
 It will look something like this
@@ -48,7 +48,7 @@ It will look something like this
 
 The subtitle granularity matches the granularity of the gps track, i.e. new subtitle for each track point.
 
-The subtitle file generation is gated by the `-vo` flag that requires a "video offset" as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much are they off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0. The format of the offset argument is based on this function https://pkg.go.dev/time#ParseDuration, e.g. `-3.5m` or `10m44s`.
+The subtitle file generation is gated by the `-vo` flag that requires a "video offset" as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much they are off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0. The format of the offset argument is documented here https://pkg.go.dev/time#ParseDuration, e.g. `-3.5m` or `10m44s`.
 
 ### figuring out video offset
 
