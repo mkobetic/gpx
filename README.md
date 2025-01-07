@@ -34,7 +34,13 @@ It is nice to be able to overlay GPS information over the video that you may hav
 
 An alternative approach that isn't as artistic but is simple and fast, because you don't have to re-encode the whole video, is to use subtitles to show the GPS information. It's text only, no graphics but can convey most of the same information. Adding subtitles to a video is nearly instant compared to rerendering the full video.
 
-This tool can spit out a subtitles file for your video with following GPS stats. `time: distance @ speed ↑ heading = total distance`, e.g.
+This tool can spit out a subtitles file for your video with following GPS stats:
+
+```
+time: distance @ speed ↑ heading = total distance`
+```
+
+It will looks something like this
 
 ```
 17:51:43: 26.8 m @ 5.8 kts ↑ 33° NNE = 0.07 nm
@@ -43,7 +49,6 @@ This tool can spit out a subtitles file for your video with following GPS stats.
 The subtitle granularity matches the granularity of the gps track, i.e. new subtitle for each track point.
 
 The subtitle file generation is gated by the `-vo` flag that requires a "video offset" duration as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much are they off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0.
-
 
 ### figuring out video offset
 
