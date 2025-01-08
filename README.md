@@ -8,7 +8,12 @@ Simple GPS track processor for sailing race tracks.
 * saves each track into a new gpx file
 * optionally generates subtitles file with gps metrics that can be embedded in a video file (more below)
 
-![sample track](sample-track.png)
+![sample track](https://github.com/user-attachments/assets/c483f91f-aed3-4521-87c2-8c57c74b078d)
+
+Hovering over the track highlights the segment under the cursor and shows metrics at that point
+```
+time: distance @ speed ↑ heading = total distance
+```
 
 `samples/out` directory contains files generated from the input files in `samples/in` directory.
 
