@@ -97,7 +97,7 @@ Let's assume you have video.mp4 and subtitles.vtt that you successfully produced
 ffmpeg -i video.mp4 -i subtitles.vtt -map 0:v -map 0:a -map 1:s -map_metadata 0 -c copy -c:s mov_text -metadata:s:s:0 language=eng -y video-with-subtitles.mp4
 ```
 Here's what the bits of the command mean:
-
+```
 -i video.mp4    = use this video file
 -i subtitles.vtt = use this subtitle file
 -map 0:v        = take the video stream from the video file
@@ -109,7 +109,7 @@ Here's what the bits of the command mean:
 -metadata:s:s:0 language=eng = set the subtitles language to english (that's how it will show in subtitle options in the player)
 -y              = just (over)-write the final file don't ask for confirmation
 video-with-subtitles.mp4 = name of the video file with subtitles
-
+```
 This should produce a new video file with the same content as the original file with the subtitle stream added into it. It should be fast because the video content is just copied over as is without re-processing.
 
 Here's a screenshot of the subtitles shown in a video
