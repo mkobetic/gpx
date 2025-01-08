@@ -4,6 +4,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"path/filepath"
 	"sort"
 	"time"
 
@@ -35,7 +36,7 @@ func main() {
 			fmt.Printf("Error opening %s: %s\n", fn, err)
 			return
 		}
-		segments = append(segments, GetSegments(g)...)
+		segments = append(segments, GetSegments(g, filepath.Base(fn))...)
 	}
 	sort.Sort(segments)
 	sn := len(segments)

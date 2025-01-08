@@ -18,12 +18,13 @@ const mapWidth = 1000
 
 type Track struct {
 	*gpx.GPXTrack
-	tz *time.Location
+	tz       *time.Location
+	filename string // file from which the track was collected
 }
 
 // Segment returns i-th segment of the track.
 func (t *Track) Segment(i int) Segment {
-	return Segment{&t.Segments[i]}
+	return Segment{&t.Segments[i], t.filename}
 }
 
 type Tracks []Track
