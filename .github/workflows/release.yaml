@@ -17,9 +17,8 @@ jobs:
         uses: actions/create-release@v1
         id: create_release
         with:
-          draft: false
-          prerelease: false
           release_name: ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
       - name: Upload osx/arm64
