@@ -7,9 +7,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: build
+      - name: Install Go
+        uses: actions/setup-go@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build distribution tarballs
         run: make dist
-      - name: create release
+      - name: Create release
         uses: actions/create-release@v1
         id: create_release
         with:
@@ -18,7 +22,7 @@ jobs:
           release_name: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - name: upload osx/arm64
+      - name: Upload osx/arm64
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -27,7 +31,7 @@ jobs:
           asset_path: ./dist/gpx-osx-arm64.tgz
           asset_name: gpx-osx-arm64.tgz
           asset_content_type: application/gzip
-      - name: upload osx/amd64
+      - name: Upload osx/amd64
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -36,7 +40,7 @@ jobs:
           asset_path: ./dist/gpx-osx-amd64.tgz
           asset_name: gpx-osx-amd64.tgz
           asset_content_type: application/gzip
-      - name: upload linux/amd64
+      - name: Upload linux/amd64
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -45,7 +49,7 @@ jobs:
           asset_path: ./dist/gpx-linux-amd64.tgz
           asset_name: gpx-linux-amd64.tgz
           asset_content_type: application/gzip
-      - name: upload linux/arm64
+      - name: Upload linux/arm64
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -54,7 +58,7 @@ jobs:
           asset_path: ./dist/gpx-linux-arm64.tgz
           asset_name: gpx-linux-arm64.tgz
           asset_content_type: application/gzip
-      - name: upload windows/amd64
+      - name: Upload windows/amd64
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ github.token }}
