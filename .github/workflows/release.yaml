@@ -6,6 +6,8 @@ on:
 jobs:   
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Install Go
         uses: actions/setup-go@v2
@@ -14,56 +16,10 @@ jobs:
       - name: Build distribution tarballs
         run: make dist
       - name: Create release
-        uses: actions/create-release@v1
+        uses: ncipollo/release-action@v1
         id: create_release
         with:
-          release_name: ${{ github.ref_name }}
-          tag_name: ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-      - name: Upload osx/arm64
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/gpx-osx-arm64.tgz
-          asset_name: gpx-osx-arm64.tgz
-          asset_content_type: application/gzip
-      - name: Upload osx/amd64
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/gpx-osx-amd64.tgz
-          asset_name: gpx-osx-amd64.tgz
-          asset_content_type: application/gzip
-      - name: Upload linux/amd64
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/gpx-linux-amd64.tgz
-          asset_name: gpx-linux-amd64.tgz
-          asset_content_type: application/gzip
-      - name: Upload linux/arm64
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/gpx-linux-arm64.tgz
-          asset_name: gpx-linux-arm64.tgz
-          asset_content_type: application/gzip
-      - name: Upload windows/amd64
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./dist/gpx-windows-amd64.tgz
-          asset_name: gpx-windows-amd64.tgz
-          asset_content_type: application/gzip
+          artifacts: "dist/*.tgz"
+          omitBody: true
+
 
