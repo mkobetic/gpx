@@ -142,7 +142,7 @@ func Test_Split(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
-	ss := GetSegments(g)
+	ss := GetSegments(g, "")
 	if len(ss) != 1 {
 		t.Fail()
 	}
