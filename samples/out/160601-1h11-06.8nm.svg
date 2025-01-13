@@ -1,5 +1,6 @@
 
-<svg width="1000" height="1767" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="1000" height="1767" viewBox="0 0 1000 1767">
     <style type="text/css" >
         <![CDATA[
             .segment { fill: none; stroke-width: 4 }
@@ -98,2196 +99,1412 @@
         
     </g>
     
-    
     <g class="segment">
-        
-        
         
         
         <line class="step" x1="99" y1="220" x2="99" y2="218" stroke="#0af">
         <title> 18:57:24: 2.8 m @ 5.5 kts &#x2191; 350° N = 0.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="99" y1="218" x2="95" y2="204" stroke="#0af">
         <title> 18:57:31: 18.2 m @ 5.1 kts &#x2191; 345° NNW = 0.01 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="95" y1="204" x2="95" y2="190" stroke="#08f">
         <title> 18:57:38: 17.0 m @ 4.7 kts &#x2191; 0° N = 0.02 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="95" y1="190" x2="102" y2="182" stroke="#08f">
         <title> 18:57:44: 13.4 m @ 4.3 kts &#x2191; 40° NE = 0.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="102" y1="182" x2="108" y2="178" stroke="#04f">
         <title> 18:57:51: 8.9 m @ 2.5 kts &#x2191; 63° ENE = 0.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="108" y1="178" x2="115" y2="174" stroke="#02f">
         <title> 18:58:02: 10.2 m @ 1.8 kts &#x2191; 55° NE = 0.04 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="115" y1="174" x2="122" y2="170" stroke="#02f">
         <title> 18:58:12: 10.0 m @ 1.9 kts &#x2191; 60° ENE = 0.04 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="122" y1="170" x2="128" y2="166" stroke="#04f">
         <title> 18:58:18: 8.7 m @ 2.8 kts &#x2191; 58° ENE = 0.05 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="128" y1="166" x2="141" y2="160" stroke="#06f">
         <title> 18:58:27: 18.3 m @ 3.9 kts &#x2191; 66° ENE = 0.06 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="141" y1="160" x2="153" y2="157" stroke="#06f">
         <title> 18:58:35: 15.6 m @ 3.8 kts &#x2191; 74° ENE = 0.07 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="153" y1="157" x2="154" y2="159" stroke="#02f">
         <title> 18:58:40: 3.3 m @ 1.3 kts &#x2191; 150° SSE = 0.07 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="154" y1="159" x2="153" y2="169" stroke="#08f">
         <title> 18:58:46: 12.9 m @ 4.2 kts &#x2191; 189° S = 0.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="153" y1="169" x2="148" y2="183" stroke="#0ff">
         <title> 18:58:50: 18.1 m @ 8.8 kts &#x2191; 199° SSW = 0.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="148" y1="183" x2="143" y2="202" stroke="#0fb">
         <title> 18:58:55: 24.0 m @ 9.3 kts &#x2191; 195° SSW = 0.10 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="143" y1="202" x2="143" y2="223" stroke="#0ef">
         <title> 18:59:02: 26.6 m @ 7.4 kts &#x2191; 181° S = 0.11 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="143" y1="223" x2="140" y2="243" stroke="#0ff">
         <title> 18:59:08: 25.1 m @ 8.1 kts &#x2191; 189° S = 0.13 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="140" y1="243" x2="131" y2="274" stroke="#0fb">
         <title> 18:59:16: 40.0 m @ 9.7 kts &#x2191; 195° SSW = 0.15 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="131" y1="274" x2="129" y2="281" stroke="#0fb">
         <title> 18:59:18: 9.8 m @ 9.6 kts &#x2191; 194° SSW = 0.15 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="129" y1="281" x2="127" y2="297" stroke="#0cf">
         <title> 18:59:24: 20.3 m @ 6.6 kts &#x2191; 189° S = 0.16 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="127" y1="297" x2="119" y2="312" stroke="#0cf">
         <title> 18:59:30: 20.6 m @ 6.7 kts &#x2191; 209° SSW = 0.17 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="119" y1="312" x2="98" y2="322" stroke="#0fb">
         <title> 18:59:36: 28.7 m @ 9.3 kts &#x2191; 243° WSW = 0.19 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="98" y1="322" x2="92" y2="324" stroke="#0ff">
         <title> 18:59:38: 8.7 m @ 8.4 kts &#x2191; 259° W = 0.19 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="92" y1="324" x2="77" y2="321" stroke="#0cf">
         <title> 18:59:44: 18.7 m @ 6.1 kts &#x2191; 278° W = 0.21 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="77" y1="321" x2="74" y2="320" stroke="#08f">
         <title> 18:59:46: 4.3 m @ 4.2 kts &#x2191; 298° WNW = 0.21 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="74" y1="320" x2="70" y2="315" stroke="#06f">
         <title> 18:59:50: 7.5 m @ 3.6 kts &#x2191; 328° NNW = 0.21 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="70" y1="315" x2="73" y2="305" stroke="#08f">
         <title> 18:59:55: 12.7 m @ 4.9 kts &#x2191; 17° NNE = 0.22 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="73" y1="305" x2="75" y2="303" stroke="#0af">
         <title> 18:59:56: 3.1 m @ 6.0 kts &#x2191; 48° NE = 0.22 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="75" y1="303" x2="86" y2="297" stroke="#08f">
         <title> 19:00:03: 15.9 m @ 4.4 kts &#x2191; 57° ENE = 0.23 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="86" y1="297" x2="92" y2="293" stroke="#06f">
         <title> 19:00:08: 8.6 m @ 3.3 kts &#x2191; 64° ENE = 0.23 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="92" y1="293" x2="98" y2="291" stroke="#06f">
         <title> 19:00:13: 8.1 m @ 3.1 kts &#x2191; 65° ENE = 0.24 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="98" y1="291" x2="104" y2="288" stroke="#04f">
         <title> 19:00:19: 8.6 m @ 2.8 kts &#x2191; 64° ENE = 0.24 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="104" y1="288" x2="113" y2="284" stroke="#04f">
         <title> 19:00:30: 12.0 m @ 2.1 kts &#x2191; 68° ENE = 0.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="113" y1="284" x2="121" y2="280" stroke="#04f">
         <title> 19:00:40: 10.9 m @ 2.1 kts &#x2191; 62° ENE = 0.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="121" y1="280" x2="126" y2="273" stroke="#0af">
         <title> 19:00:44: 10.7 m @ 5.2 kts &#x2191; 34° NE = 0.26 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="126" y1="273" x2="128" y2="252" stroke="#0ff">
         <title> 19:00:50: 26.4 m @ 8.5 kts &#x2191; 6° N = 0.27 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="128" y1="252" x2="127" y2="236" stroke="#0fb">
         <title> 19:00:54: 19.5 m @ 9.5 kts &#x2191; 358° N = 0.29 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="127" y1="236" x2="134" y2="224" stroke="#0ff">
         <title> 19:00:58: 17.1 m @ 8.3 kts &#x2191; 29° NNE = 0.29 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="134" y1="224" x2="137" y2="223" stroke="#0ef">
         <title> 19:00:59: 3.9 m @ 7.5 kts &#x2191; 60° ENE = 0.30 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="137" y1="223" x2="158" y2="217" stroke="#0ef">
         <title> 19:01:06: 27.8 m @ 7.7 kts &#x2191; 76° ENE = 0.31 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="158" y1="217" x2="178" y2="215" stroke="#0cf">
         <title> 19:01:13: 24.3 m @ 6.8 kts &#x2191; 83° E = 0.32 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="178" y1="215" x2="196" y2="210" stroke="#0cf">
         <title> 19:01:20: 23.3 m @ 6.5 kts &#x2191; 76° ENE = 0.34 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="196" y1="210" x2="214" y2="207" stroke="#0cf">
         <title> 19:01:27: 22.9 m @ 6.4 kts &#x2191; 80° E = 0.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="214" y1="207" x2="229" y2="205" stroke="#0cf">
         <title> 19:01:33: 18.9 m @ 6.1 kts &#x2191; 81° E = 0.36 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="229" y1="205" x2="242" y2="203" stroke="#0cf">
         <title> 19:01:38: 16.1 m @ 6.3 kts &#x2191; 83° E = 0.37 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="242" y1="203" x2="267" y2="198" stroke="#0cf">
         <title> 19:01:48: 32.7 m @ 6.3 kts &#x2191; 79° E = 0.39 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="267" y1="198" x2="286" y2="197" stroke="#0ef">
         <title> 19:01:54: 23.2 m @ 7.5 kts &#x2191; 87° E = 0.40 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="286" y1="197" x2="304" y2="197" stroke="#0ef">
         <title> 19:02:00: 22.7 m @ 7.3 kts &#x2191; 88° E = 0.41 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="304" y1="197" x2="319" y2="196" stroke="#0ef">
         <title> 19:02:05: 19.3 m @ 7.5 kts &#x2191; 88° E = 0.42 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="319" y1="196" x2="342" y2="194" stroke="#0ef">
         <title> 19:02:12: 27.7 m @ 7.7 kts &#x2191; 85° E = 0.44 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="342" y1="194" x2="365" y2="191" stroke="#0ff">
         <title> 19:02:19: 29.1 m @ 8.1 kts &#x2191; 82° E = 0.45 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="365" y1="191" x2="383" y2="188" stroke="#0fb">
         <title> 19:02:24: 23.3 m @ 9.1 kts &#x2191; 81° E = 0.46 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="383" y1="188" x2="408" y2="182" stroke="#0ff">
         <title> 19:02:31: 31.6 m @ 8.8 kts &#x2191; 76° ENE = 0.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="408" y1="182" x2="428" y2="176" stroke="#0ef">
         <title> 19:02:38: 26.1 m @ 7.3 kts &#x2191; 75° ENE = 0.50 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="428" y1="176" x2="452" y2="171" stroke="#0cf">
         <title> 19:02:47: 30.4 m @ 6.6 kts &#x2191; 78° ENE = 0.51 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="452" y1="171" x2="470" y2="167" stroke="#0cf">
         <title> 19:02:54: 23.6 m @ 6.5 kts &#x2191; 78° ENE = 0.52 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="470" y1="167" x2="474" y2="168" stroke="#0af">
         <title> 19:02:56: 5.4 m @ 5.2 kts &#x2191; 97° E = 0.53 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="474" y1="168" x2="478" y2="176" stroke="#06f">
         <title> 19:03:03: 11.4 m @ 3.2 kts &#x2191; 155° SSE = 0.53 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="478" y1="176" x2="484" y2="187" stroke="#08f">
         <title> 19:03:10: 15.3 m @ 4.3 kts &#x2191; 154° SSE = 0.54 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="484" y1="187" x2="491" y2="200" stroke="#08f">
         <title> 19:03:18: 18.3 m @ 4.5 kts &#x2191; 149° SSE = 0.55 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="491" y1="200" x2="498" y2="215" stroke="#08f">
         <title> 19:03:27: 20.7 m @ 4.5 kts &#x2191; 154° SSE = 0.56 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="498" y1="215" x2="505" y2="229" stroke="#08f">
         <title> 19:03:35: 19.9 m @ 4.8 kts &#x2191; 157° SSE = 0.57 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="505" y1="229" x2="509" y2="245" stroke="#08f">
         <title> 19:03:43: 20.2 m @ 4.9 kts &#x2191; 164° SSE = 0.58 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="509" y1="245" x2="514" y2="262" stroke="#0af">
         <title> 19:03:51: 22.0 m @ 5.3 kts &#x2191; 164° SSE = 0.60 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="514" y1="262" x2="522" y2="283" stroke="#0af">
         <title> 19:04:01: 28.4 m @ 5.5 kts &#x2191; 160° SSE = 0.61 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="522" y1="283" x2="529" y2="300" stroke="#0af">
         <title> 19:04:09: 22.4 m @ 5.4 kts &#x2191; 157° SSE = 0.62 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="529" y1="300" x2="535" y2="312" stroke="#08f">
         <title> 19:04:16: 17.7 m @ 4.9 kts &#x2191; 153° SSE = 0.63 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="535" y1="312" x2="542" y2="327" stroke="#08f">
         <title> 19:04:24: 20.5 m @ 5.0 kts &#x2191; 155° SSE = 0.64 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="542" y1="327" x2="552" y2="347" stroke="#0af">
         <title> 19:04:35: 28.6 m @ 5.1 kts &#x2191; 153° SSE = 0.66 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="552" y1="347" x2="560" y2="366" stroke="#08f">
         <title> 19:04:45: 25.3 m @ 4.9 kts &#x2191; 158° SSE = 0.67 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="560" y1="366" x2="569" y2="387" stroke="#0af">
         <title> 19:04:55: 28.1 m @ 5.5 kts &#x2191; 158° SSE = 0.69 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="569" y1="387" x2="577" y2="412" stroke="#0af">
         <title> 19:05:06: 33.3 m @ 5.9 kts &#x2191; 161° SSE = 0.71 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="577" y1="412" x2="587" y2="436" stroke="#0af">
         <title> 19:05:17: 31.5 m @ 5.6 kts &#x2191; 158° SSE = 0.72 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="587" y1="436" x2="596" y2="459" stroke="#0cf">
         <title> 19:05:27: 31.5 m @ 6.1 kts &#x2191; 159° SSE = 0.74 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="596" y1="459" x2="604" y2="480" stroke="#0af">
         <title> 19:05:36: 27.8 m @ 6.0 kts &#x2191; 157° SSE = 0.76 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="604" y1="480" x2="613" y2="498" stroke="#0cf">
         <title> 19:05:44: 25.1 m @ 6.1 kts &#x2191; 154° SSE = 0.77 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="613" y1="498" x2="618" y2="515" stroke="#0cf">
         <title> 19:05:51: 22.0 m @ 6.1 kts &#x2191; 165° SSE = 0.78 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="618" y1="515" x2="615" y2="531" stroke="#0ef">
         <title> 19:05:56: 19.9 m @ 7.7 kts &#x2191; 189° S = 0.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="615" y1="531" x2="605" y2="559" stroke="#0ff">
         <title> 19:06:05: 37.8 m @ 8.1 kts &#x2191; 200° SSW = 0.81 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="605" y1="559" x2="603" y2="574" stroke="#0ef">
         <title> 19:06:10: 18.4 m @ 7.2 kts &#x2191; 185° S = 0.82 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="603" y1="574" x2="604" y2="591" stroke="#0cf">
         <title> 19:06:17: 21.9 m @ 6.1 kts &#x2191; 178° S = 0.83 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="604" y1="591" x2="606" y2="607" stroke="#0af">
         <title> 19:06:24: 20.5 m @ 5.7 kts &#x2191; 172° S = 0.85 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="606" y1="607" x2="611" y2="621" stroke="#0af">
         <title> 19:06:30: 18.3 m @ 5.9 kts &#x2191; 162° SSE = 0.86 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="611" y1="621" x2="617" y2="633" stroke="#0af">
         <title> 19:06:36: 16.7 m @ 5.4 kts &#x2191; 154° SSE = 0.86 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="617" y1="633" x2="624" y2="652" stroke="#0af">
         <title> 19:06:45: 25.1 m @ 5.4 kts &#x2191; 158° SSE = 0.88 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="624" y1="652" x2="629" y2="665" stroke="#0af">
         <title> 19:06:51: 17.6 m @ 5.7 kts &#x2191; 158° SSE = 0.89 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="629" y1="665" x2="639" y2="686" stroke="#0af">
         <title> 19:07:01: 28.8 m @ 5.6 kts &#x2191; 156° SSE = 0.90 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="639" y1="686" x2="653" y2="711" stroke="#08f">
         <title> 19:07:15: 36.0 m @ 5.0 kts &#x2191; 152° SSE = 0.92 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="653" y1="711" x2="654" y2="713" stroke="#0af">
         <title> 19:07:16: 2.7 m @ 5.2 kts &#x2191; 155° SSE = 0.92 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="654" y1="713" x2="660" y2="716" stroke="#04f">
         <title> 19:07:22: 8.3 m @ 2.7 kts &#x2191; 113° ESE = 0.93 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="660" y1="716" x2="664" y2="715" stroke="#06f">
         <title> 19:07:25: 5.0 m @ 3.2 kts &#x2191; 73° ENE = 0.93 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="664" y1="715" x2="679" y2="708" stroke="#08f">
         <title> 19:07:34: 21.4 m @ 4.6 kts &#x2191; 65° ENE = 0.94 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="679" y1="708" x2="694" y2="700" stroke="#0af">
         <title> 19:07:41: 20.9 m @ 5.8 kts &#x2191; 62° ENE = 0.95 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="694" y1="700" x2="712" y2="692" stroke="#0cf">
         <title> 19:07:49: 25.1 m @ 6.1 kts &#x2191; 67° ENE = 0.97 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="712" y1="692" x2="730" y2="683" stroke="#0af">
         <title> 19:07:57: 24.6 m @ 6.0 kts &#x2191; 63° ENE = 0.98 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="730" y1="683" x2="756" y2="671" stroke="#0cf">
         <title> 19:08:07: 35.2 m @ 6.8 kts &#x2191; 65° ENE = 1.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="756" y1="671" x2="781" y2="658" stroke="#0ef">
         <title> 19:08:16: 35.1 m @ 7.6 kts &#x2191; 63° ENE = 1.02 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="781" y1="658" x2="813" y2="641" stroke="#0ef">
         <title> 19:08:28: 46.2 m @ 7.5 kts &#x2191; 61° ENE = 1.04 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="813" y1="641" x2="841" y2="623" stroke="#0ef">
         <title> 19:08:39: 41.0 m @ 7.2 kts &#x2191; 58° ENE = 1.07 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="841" y1="623" x2="867" y2="605" stroke="#0ef">
         <title> 19:08:49: 39.5 m @ 7.7 kts &#x2191; 55° NE = 1.09 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="867" y1="605" x2="880" y2="593" stroke="#0ef">
         <title> 19:08:55: 22.1 m @ 7.1 kts &#x2191; 48° NE = 1.10 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="880" y1="593" x2="893" y2="572" stroke="#0ff">
         <title> 19:09:02: 30.8 m @ 8.5 kts &#x2191; 32° NNE = 1.11 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="893" y1="572" x2="892" y2="556" stroke="#0fb">
         <title> 19:09:06: 19.8 m @ 9.6 kts &#x2191; 358° N = 1.13 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="892" y1="556" x2="887" y2="543" stroke="#0cf">
         <title> 19:09:11: 17.4 m @ 6.8 kts &#x2191; 337° NNW = 1.14 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="887" y1="543" x2="885" y2="527" stroke="#0cf">
         <title> 19:09:17: 20.3 m @ 6.6 kts &#x2191; 354° N = 1.15 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="885" y1="527" x2="883" y2="506" stroke="#0ff">
         <title> 19:09:23: 27.3 m @ 8.8 kts &#x2191; 354° N = 1.16 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="883" y1="506" x2="880" y2="485" stroke="#0ff">
         <title> 19:09:29: 25.4 m @ 8.2 kts &#x2191; 353° N = 1.17 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="880" y1="485" x2="874" y2="475" stroke="#0af">
         <title> 19:09:34: 14.8 m @ 5.8 kts &#x2191; 329° NNW = 1.18 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="874" y1="475" x2="871" y2="474" stroke="#08f">
         <title> 19:09:36: 4.5 m @ 4.4 kts &#x2191; 290° WNW = 1.18 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="871" y1="474" x2="860" y2="474" stroke="#0af">
         <title> 19:09:41: 13.2 m @ 5.1 kts &#x2191; 269° W = 1.19 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="860" y1="474" x2="846" y2="475" stroke="#0af">
         <title> 19:09:47: 18.0 m @ 5.8 kts &#x2191; 266° W = 1.20 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="846" y1="475" x2="831" y2="477" stroke="#0cf">
         <title> 19:09:53: 19.0 m @ 6.1 kts &#x2191; 261° W = 1.21 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="831" y1="477" x2="813" y2="480" stroke="#0cf">
         <title> 19:10:00: 22.7 m @ 6.3 kts &#x2191; 263° W = 1.22 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="813" y1="480" x2="795" y2="484" stroke="#0af">
         <title> 19:10:08: 22.5 m @ 5.5 kts &#x2191; 257° WSW = 1.24 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="795" y1="484" x2="778" y2="489" stroke="#0cf">
         <title> 19:10:15: 21.7 m @ 6.0 kts &#x2191; 254° WSW = 1.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="778" y1="489" x2="758" y2="495" stroke="#0cf">
         <title> 19:10:23: 26.8 m @ 6.5 kts &#x2191; 254° WSW = 1.26 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="758" y1="495" x2="736" y2="504" stroke="#0ef">
         <title> 19:10:31: 29.4 m @ 7.1 kts &#x2191; 246° WSW = 1.28 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="736" y1="504" x2="722" y2="513" stroke="#0cf">
         <title> 19:10:37: 21.3 m @ 6.9 kts &#x2191; 239° WSW = 1.29 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="722" y1="513" x2="700" y2="523" stroke="#0ff">
         <title> 19:10:44: 29.1 m @ 8.1 kts &#x2191; 246° WSW = 1.31 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="700" y1="523" x2="679" y2="527" stroke="#0ef">
         <title> 19:10:51: 27.2 m @ 7.6 kts &#x2191; 257° WSW = 1.32 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="679" y1="527" x2="665" y2="531" stroke="#0cf">
         <title> 19:10:56: 18.0 m @ 7.0 kts &#x2191; 258° WSW = 1.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="665" y1="531" x2="646" y2="540" stroke="#0ef">
         <title> 19:11:03: 26.4 m @ 7.3 kts &#x2191; 244° WSW = 1.34 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="646" y1="540" x2="622" y2="547" stroke="#0ff">
         <title> 19:11:10: 31.0 m @ 8.6 kts &#x2191; 252° WSW = 1.36 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="622" y1="547" x2="603" y2="557" stroke="#0ff">
         <title> 19:11:16: 27.4 m @ 8.9 kts &#x2191; 243° WSW = 1.38 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="603" y1="557" x2="599" y2="559" stroke="#0fb">
         <title> 19:11:17: 4.8 m @ 9.4 kts &#x2191; 239° WSW = 1.38 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="599" y1="559" x2="571" y2="568" stroke="#0f7">
         <title> 19:11:24: 37.2 m @ 10.3 kts &#x2191; 253° WSW = 1.40 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="571" y1="568" x2="547" y2="576" stroke="#0f7">
         <title> 19:11:30: 31.0 m @ 10.0 kts &#x2191; 251° WSW = 1.42 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="547" y1="576" x2="528" y2="584" stroke="#0f7">
         <title> 19:11:35: 26.8 m @ 10.4 kts &#x2191; 247° WSW = 1.43 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="528" y1="584" x2="493" y2="600" stroke="#0f7">
         <title> 19:11:44: 47.1 m @ 10.2 kts &#x2191; 246° WSW = 1.46 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="493" y1="600" x2="477" y2="607" stroke="#0ff">
         <title> 19:11:49: 22.3 m @ 8.7 kts &#x2191; 244° WSW = 1.47 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="477" y1="607" x2="465" y2="614" stroke="#0ff">
         <title> 19:11:53: 17.4 m @ 8.4 kts &#x2191; 242° WSW = 1.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="465" y1="614" x2="449" y2="619" stroke="#0ff">
         <title> 19:11:58: 21.1 m @ 8.2 kts &#x2191; 254° WSW = 1.49 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="449" y1="619" x2="442" y2="614" stroke="#08f">
         <title> 19:12:02: 10.0 m @ 4.9 kts &#x2191; 304° NW = 1.49 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="442" y1="614" x2="438" y2="607" stroke="#08f">
         <title> 19:12:06: 9.9 m @ 4.8 kts &#x2191; 330° NNW = 1.50 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="438" y1="607" x2="435" y2="589" stroke="#0cf">
         <title> 19:12:13: 23.5 m @ 6.5 kts &#x2191; 351° N = 1.51 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="435" y1="589" x2="433" y2="563" stroke="#0ef">
         <title> 19:12:21: 32.1 m @ 7.8 kts &#x2191; 355° N = 1.53 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="433" y1="563" x2="427" y2="541" stroke="#0fb">
         <title> 19:12:27: 28.9 m @ 9.4 kts &#x2191; 346° NNW = 1.54 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="427" y1="541" x2="426" y2="537" stroke="#0fb">
         <title> 19:12:28: 5.0 m @ 9.7 kts &#x2191; 344° NNW = 1.55 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="426" y1="537" x2="418" y2="517" stroke="#0ff">
         <title> 19:12:34: 27.1 m @ 8.8 kts &#x2191; 338° NNW = 1.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="418" y1="517" x2="410" y2="481" stroke="#0ff">
         <title> 19:12:44: 45.4 m @ 8.8 kts &#x2191; 348° NNW = 1.59 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="410" y1="481" x2="402" y2="451" stroke="#0fb">
         <title> 19:12:52: 39.0 m @ 9.5 kts &#x2191; 345° NNW = 1.61 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="402" y1="451" x2="401" y2="447" stroke="#0fb">
         <title> 19:12:53: 5.0 m @ 9.6 kts &#x2191; 347° NNW = 1.61 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="401" y1="447" x2="398" y2="424" stroke="#0fb">
         <title> 19:12:59: 28.9 m @ 9.4 kts &#x2191; 353° N = 1.63 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="398" y1="424" x2="392" y2="398" stroke="#0fb">
         <title> 19:13:06: 33.7 m @ 9.3 kts &#x2191; 347° NNW = 1.64 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="392" y1="398" x2="385" y2="374" stroke="#0f7">
         <title> 19:13:12: 31.0 m @ 10.0 kts &#x2191; 344° NNW = 1.66 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="385" y1="374" x2="381" y2="350" stroke="#0f7">
         <title> 19:13:18: 31.0 m @ 10.0 kts &#x2191; 349° N = 1.68 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="381" y1="350" x2="379" y2="335" stroke="#0fb">
         <title> 19:13:22: 18.7 m @ 9.1 kts &#x2191; 354° N = 1.69 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="379" y1="335" x2="377" y2="304" stroke="#0ff">
         <title> 19:13:31: 38.7 m @ 8.3 kts &#x2191; 357° N = 1.71 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="377" y1="304" x2="373" y2="273" stroke="#0ef">
         <title> 19:13:41: 39.7 m @ 7.7 kts &#x2191; 353° N = 1.73 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="373" y1="273" x2="368" y2="241" stroke="#0ef">
         <title> 19:13:51: 40.1 m @ 7.8 kts &#x2191; 350° N = 1.75 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="368" y1="241" x2="365" y2="212" stroke="#0ef">
         <title> 19:14:00: 35.9 m @ 7.7 kts &#x2191; 354° N = 1.77 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="365" y1="212" x2="360" y2="188" stroke="#0ef">
         <title> 19:14:08: 30.7 m @ 7.4 kts &#x2191; 347° NNW = 1.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="360" y1="188" x2="354" y2="181" stroke="#08f">
         <title> 19:14:13: 11.3 m @ 4.4 kts &#x2191; 323° NW = 1.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="354" y1="181" x2="344" y2="179" stroke="#06f">
         <title> 19:14:20: 13.3 m @ 3.7 kts &#x2191; 282° WNW = 1.80 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="344" y1="179" x2="327" y2="185" stroke="#0af">
         <title> 19:14:28: 21.8 m @ 5.3 kts &#x2191; 251° WSW = 1.81 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="327" y1="185" x2="311" y2="192" stroke="#0ef">
         <title> 19:14:34: 22.6 m @ 7.3 kts &#x2191; 245° WSW = 1.82 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="311" y1="192" x2="288" y2="205" stroke="#0fb">
         <title> 19:14:41: 32.4 m @ 9.0 kts &#x2191; 241° WSW = 1.84 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="288" y1="205" x2="273" y2="213" stroke="#0f7">
         <title> 19:14:45: 20.9 m @ 10.1 kts &#x2191; 241° WSW = 1.85 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="273" y1="213" x2="265" y2="215" stroke="#0f3">
         <title> 19:14:47: 11.7 m @ 11.4 kts &#x2191; 253° WSW = 1.86 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="265" y1="215" x2="250" y2="221" stroke="#0fb">
         <title> 19:14:51: 19.3 m @ 9.4 kts &#x2191; 247° WSW = 1.87 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="250" y1="221" x2="238" y2="225" stroke="#0ef">
         <title> 19:14:55: 16.4 m @ 8.0 kts &#x2191; 254° WSW = 1.88 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="238" y1="225" x2="223" y2="234" stroke="#0cf">
         <title> 19:15:01: 21.3 m @ 6.9 kts &#x2191; 239° WSW = 1.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="223" y1="234" x2="219" y2="238" stroke="#0ef">
         <title> 19:15:03: 7.8 m @ 7.6 kts &#x2191; 221° SW = 1.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="219" y1="238" x2="221" y2="250" stroke="#0af">
         <title> 19:15:08: 14.9 m @ 5.8 kts &#x2191; 172° S = 1.90 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="221" y1="250" x2="227" y2="269" stroke="#0af">
         <title> 19:15:16: 24.4 m @ 5.9 kts &#x2191; 162° SSE = 1.92 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="227" y1="269" x2="234" y2="293" stroke="#0cf">
         <title> 19:15:25: 32.0 m @ 6.9 kts &#x2191; 163° SSE = 1.93 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="234" y1="293" x2="241" y2="316" stroke="#0cf">
         <title> 19:15:34: 29.8 m @ 6.4 kts &#x2191; 162° SSE = 1.95 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="241" y1="316" x2="247" y2="327" stroke="#0cf">
         <title> 19:15:39: 15.5 m @ 6.0 kts &#x2191; 154° SSE = 1.96 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="247" y1="327" x2="248" y2="330" stroke="#0cf">
         <title> 19:15:40: 3.2 m @ 6.2 kts &#x2191; 162° SSE = 1.96 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="248" y1="330" x2="253" y2="342" stroke="#0af">
         <title> 19:15:46: 17.5 m @ 5.7 kts &#x2191; 157° SSE = 1.97 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="253" y1="342" x2="258" y2="365" stroke="#0cf">
         <title> 19:15:54: 28.6 m @ 6.9 kts &#x2191; 167° SSE = 1.98 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="258" y1="365" x2="260" y2="382" stroke="#0cf">
         <title> 19:16:00: 21.1 m @ 6.8 kts &#x2191; 172° S = 1.99 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="260" y1="382" x2="258" y2="406" stroke="#0cf">
         <title> 19:16:10: 30.9 m @ 6.0 kts &#x2191; 186° S = 2.01 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="258" y1="406" x2="252" y2="426" stroke="#0cf">
         <title> 19:16:18: 26.5 m @ 6.4 kts &#x2191; 197° SSW = 2.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="252" y1="426" x2="247" y2="445" stroke="#0cf">
         <title> 19:16:25: 23.6 m @ 6.5 kts &#x2191; 195° SSW = 2.04 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="247" y1="445" x2="241" y2="461" stroke="#0cf">
         <title> 19:16:31: 21.1 m @ 6.8 kts &#x2191; 199° SSW = 2.05 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="241" y1="461" x2="236" y2="479" stroke="#0ef">
         <title> 19:16:37: 23.6 m @ 7.6 kts &#x2191; 196° SSW = 2.06 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="236" y1="479" x2="232" y2="494" stroke="#0ef">
         <title> 19:16:42: 19.8 m @ 7.7 kts &#x2191; 196° SSW = 2.07 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="232" y1="494" x2="229" y2="503" stroke="#0ef">
         <title> 19:16:45: 12.0 m @ 7.8 kts &#x2191; 196° SSW = 2.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="229" y1="503" x2="231" y2="520" stroke="#0cf">
         <title> 19:16:51: 21.0 m @ 6.8 kts &#x2191; 176° S = 2.09 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="231" y1="520" x2="231" y2="539" stroke="#0ef">
         <title> 19:16:57: 24.1 m @ 7.8 kts &#x2191; 179° S = 2.10 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="231" y1="539" x2="232" y2="560" stroke="#0ff">
         <title> 19:17:03: 25.3 m @ 8.2 kts &#x2191; 178° S = 2.12 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="232" y1="560" x2="234" y2="586" stroke="#0fb">
         <title> 19:17:10: 33.4 m @ 9.3 kts &#x2191; 175° S = 2.14 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="234" y1="586" x2="235" y2="602" stroke="#0fb">
         <title> 19:17:14: 19.7 m @ 9.6 kts &#x2191; 177° S = 2.15 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="235" y1="602" x2="239" y2="613" stroke="#0ef">
         <title> 19:17:18: 14.9 m @ 7.2 kts &#x2191; 162° SSE = 2.15 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="239" y1="613" x2="244" y2="614" stroke="#06f">
         <title> 19:17:22: 6.5 m @ 3.1 kts &#x2191; 100° E = 2.16 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="244" y1="614" x2="250" y2="612" stroke="#06f">
         <title> 19:17:26: 8.1 m @ 3.9 kts &#x2191; 75° ENE = 2.16 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="250" y1="612" x2="267" y2="608" stroke="#0cf">
         <title> 19:17:33: 22.4 m @ 6.2 kts &#x2191; 75° ENE = 2.17 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="267" y1="608" x2="287" y2="602" stroke="#0cf">
         <title> 19:17:41: 25.6 m @ 6.2 kts &#x2191; 74° ENE = 2.19 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="287" y1="602" x2="302" y2="596" stroke="#0cf">
         <title> 19:17:47: 19.3 m @ 6.3 kts &#x2191; 68° ENE = 2.20 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="302" y1="596" x2="323" y2="586" stroke="#0ef">
         <title> 19:17:55: 30.0 m @ 7.3 kts &#x2191; 64° ENE = 2.21 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="323" y1="586" x2="343" y2="580" stroke="#0cf">
         <title> 19:18:02: 25.1 m @ 7.0 kts &#x2191; 75° ENE = 2.23 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="343" y1="580" x2="368" y2="576" stroke="#0cf">
         <title> 19:18:11: 32.2 m @ 7.0 kts &#x2191; 81° E = 2.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="368" y1="576" x2="392" y2="569" stroke="#0cf">
         <title> 19:18:20: 31.4 m @ 6.8 kts &#x2191; 74° ENE = 2.26 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="392" y1="569" x2="410" y2="565" stroke="#0cf">
         <title> 19:18:27: 23.5 m @ 6.5 kts &#x2191; 76° ENE = 2.28 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="410" y1="565" x2="431" y2="562" stroke="#0cf">
         <title> 19:18:35: 26.3 m @ 6.4 kts &#x2191; 81° E = 2.29 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="431" y1="562" x2="452" y2="557" stroke="#0cf">
         <title> 19:18:43: 27.1 m @ 6.6 kts &#x2191; 78° ENE = 2.30 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="452" y1="557" x2="478" y2="554" stroke="#0cf">
         <title> 19:18:53: 31.6 m @ 6.1 kts &#x2191; 82° E = 2.32 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="478" y1="554" x2="496" y2="552" stroke="#0cf">
         <title> 19:19:00: 22.7 m @ 6.3 kts &#x2191; 85° E = 2.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="496" y1="552" x2="520" y2="552" stroke="#0af">
         <title> 19:19:10: 30.0 m @ 5.8 kts &#x2191; 89° E = 2.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="520" y1="552" x2="541" y2="547" stroke="#0af">
         <title> 19:19:19: 26.7 m @ 5.8 kts &#x2191; 78° ENE = 2.36 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="541" y1="547" x2="561" y2="541" stroke="#0cf">
         <title> 19:19:27: 26.4 m @ 6.4 kts &#x2191; 73° ENE = 2.38 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="561" y1="541" x2="584" y2="538" stroke="#0cf">
         <title> 19:19:36: 28.6 m @ 6.2 kts &#x2191; 83° E = 2.39 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="584" y1="538" x2="605" y2="538" stroke="#0af">
         <title> 19:19:45: 26.5 m @ 5.7 kts &#x2191; 88° E = 2.41 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="605" y1="538" x2="621" y2="537" stroke="#0af">
         <title> 19:19:52: 20.3 m @ 5.6 kts &#x2191; 86° E = 2.42 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="621" y1="537" x2="633" y2="533" stroke="#0af">
         <title> 19:19:58: 15.5 m @ 5.0 kts &#x2191; 73° ENE = 2.43 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="633" y1="533" x2="651" y2="528" stroke="#0af">
         <title> 19:20:07: 23.7 m @ 5.1 kts &#x2191; 75° ENE = 2.44 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="651" y1="528" x2="669" y2="528" stroke="#0af">
         <title> 19:20:15: 22.8 m @ 5.5 kts &#x2191; 89° E = 2.45 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="669" y1="528" x2="684" y2="527" stroke="#0af">
         <title> 19:20:21: 17.7 m @ 5.7 kts &#x2191; 88° E = 2.46 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="684" y1="527" x2="693" y2="530" stroke="#0af">
         <title> 19:20:25: 12.2 m @ 5.9 kts &#x2191; 107° ESE = 2.47 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="693" y1="530" x2="711" y2="532" stroke="#0af">
         <title> 19:20:33: 22.8 m @ 5.5 kts &#x2191; 96° E = 2.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="711" y1="532" x2="728" y2="532" stroke="#0af">
         <title> 19:20:40: 20.6 m @ 5.7 kts &#x2191; 89° E = 2.49 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="728" y1="532" x2="744" y2="533" stroke="#0af">
         <title> 19:20:47: 19.9 m @ 5.5 kts &#x2191; 96° E = 2.50 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="744" y1="533" x2="765" y2="535" stroke="#08f">
         <title> 19:20:58: 27.3 m @ 4.8 kts &#x2191; 96° E = 2.52 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="765" y1="535" x2="788" y2="535" stroke="#08f">
         <title> 19:21:09: 28.2 m @ 5.0 kts &#x2191; 89° E = 2.53 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="788" y1="535" x2="809" y2="532" stroke="#0af">
         <title> 19:21:19: 26.9 m @ 5.2 kts &#x2191; 83° E = 2.55 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="809" y1="532" x2="832" y2="529" stroke="#0af">
         <title> 19:21:30: 28.3 m @ 5.0 kts &#x2191; 83° E = 2.56 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="832" y1="529" x2="853" y2="528" stroke="#0af">
         <title> 19:21:40: 27.0 m @ 5.2 kts &#x2191; 86° E = 2.58 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="853" y1="528" x2="855" y2="529" stroke="#06f">
         <title> 19:21:41: 1.9 m @ 3.6 kts &#x2191; 124° SE = 2.58 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="855" y1="529" x2="855" y2="535" stroke="#04f">
         <title> 19:21:47: 7.8 m @ 2.5 kts &#x2191; 177° S = 2.58 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="855" y1="535" x2="855" y2="547" stroke="#08f">
         <title> 19:21:54: 14.7 m @ 4.1 kts &#x2191; 178° S = 2.59 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="855" y1="547" x2="858" y2="560" stroke="#08f">
         <title> 19:22:01: 17.5 m @ 4.9 kts &#x2191; 169° S = 2.60 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="858" y1="560" x2="860" y2="582" stroke="#0af">
         <title> 19:22:11: 26.8 m @ 5.2 kts &#x2191; 175° S = 2.61 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="860" y1="582" x2="861" y2="589" stroke="#08f">
         <title> 19:22:15: 9.3 m @ 4.5 kts &#x2191; 174° S = 2.62 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="861" y1="589" x2="866" y2="592" stroke="#04f">
         <title> 19:22:21: 7.5 m @ 2.4 kts &#x2191; 115° ESE = 2.62 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="866" y1="592" x2="872" y2="589" stroke="#08f">
         <title> 19:22:25: 8.3 m @ 4.1 kts &#x2191; 71° ENE = 2.63 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="872" y1="589" x2="889" y2="580" stroke="#0cf">
         <title> 19:22:32: 23.6 m @ 6.6 kts &#x2191; 60° ENE = 2.64 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="889" y1="580" x2="895" y2="574" stroke="#0cf">
         <title> 19:22:35: 10.8 m @ 7.0 kts &#x2191; 48° NE = 2.65 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="895" y1="574" x2="892" y2="566" stroke="#0af">
         <title> 19:22:39: 11.4 m @ 5.5 kts &#x2191; 338° NNW = 2.65 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="892" y1="566" x2="885" y2="562" stroke="#08f">
         <title> 19:22:43: 9.9 m @ 4.8 kts &#x2191; 298° WNW = 2.66 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="885" y1="562" x2="867" y2="562" stroke="#0af">
         <title> 19:22:51: 22.2 m @ 5.4 kts &#x2191; 271° W = 2.67 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="867" y1="562" x2="852" y2="564" stroke="#0af">
         <title> 19:22:58: 19.2 m @ 5.3 kts &#x2191; 263° W = 2.68 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="852" y1="564" x2="834" y2="566" stroke="#0cf">
         <title> 19:23:05: 22.3 m @ 6.2 kts &#x2191; 263° W = 2.69 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="834" y1="566" x2="815" y2="570" stroke="#0cf">
         <title> 19:23:12: 24.5 m @ 6.8 kts &#x2191; 259° W = 2.71 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="815" y1="570" x2="793" y2="574" stroke="#0ef">
         <title> 19:23:19: 27.1 m @ 7.5 kts &#x2191; 259° W = 2.72 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="793" y1="574" x2="774" y2="578" stroke="#0ff">
         <title> 19:23:25: 25.2 m @ 8.2 kts &#x2191; 258° WSW = 2.73 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="774" y1="578" x2="747" y2="584" stroke="#0ff">
         <title> 19:23:33: 34.5 m @ 8.4 kts &#x2191; 258° WSW = 2.75 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="747" y1="584" x2="729" y2="584" stroke="#0ff">
         <title> 19:23:38: 21.6 m @ 8.4 kts &#x2191; 268° W = 2.76 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="729" y1="584" x2="708" y2="583" stroke="#0ff">
         <title> 19:23:44: 27.1 m @ 8.8 kts &#x2191; 273° W = 2.78 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="708" y1="583" x2="688" y2="582" stroke="#0ef">
         <title> 19:23:50: 24.4 m @ 7.9 kts &#x2191; 273° W = 2.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="688" y1="582" x2="671" y2="585" stroke="#0cf">
         <title> 19:23:56: 21.4 m @ 6.9 kts &#x2191; 261° W = 2.80 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="671" y1="585" x2="646" y2="593" stroke="#0ef">
         <title> 19:24:05: 33.2 m @ 7.2 kts &#x2191; 252° WSW = 2.82 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="646" y1="593" x2="627" y2="601" stroke="#0ef">
         <title> 19:24:12: 25.8 m @ 7.2 kts &#x2191; 248° WSW = 2.84 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="627" y1="601" x2="612" y2="602" stroke="#0cf">
         <title> 19:24:18: 18.7 m @ 6.1 kts &#x2191; 265° W = 2.85 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="612" y1="602" x2="599" y2="604" stroke="#0af">
         <title> 19:24:24: 15.8 m @ 5.1 kts &#x2191; 264° W = 2.85 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="599" y1="604" x2="585" y2="608" stroke="#0af">
         <title> 19:24:31: 18.6 m @ 5.2 kts &#x2191; 255° WSW = 2.86 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="585" y1="608" x2="567" y2="615" stroke="#0af">
         <title> 19:24:39: 24.2 m @ 5.9 kts &#x2191; 248° WSW = 2.88 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="567" y1="615" x2="545" y2="622" stroke="#0ef">
         <title> 19:24:47: 28.9 m @ 7.0 kts &#x2191; 251° WSW = 2.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="545" y1="622" x2="542" y2="622" stroke="#0cf">
         <title> 19:24:48: 3.4 m @ 6.5 kts &#x2191; 270° W = 2.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="542" y1="622" x2="534" y2="618" stroke="#08f">
         <title> 19:24:53: 11.9 m @ 4.6 kts &#x2191; 295° WNW = 2.90 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="534" y1="618" x2="532" y2="617" stroke="#08f">
         <title> 19:24:54: 2.2 m @ 4.2 kts &#x2191; 320° NW = 2.90 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="532" y1="617" x2="528" y2="602" stroke="#0af">
         <title> 19:25:01: 19.3 m @ 5.4 kts &#x2191; 344° NNW = 2.91 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="528" y1="602" x2="527" y2="581" stroke="#0ff">
         <title> 19:25:07: 25.9 m @ 8.4 kts &#x2191; 356° N = 2.93 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="527" y1="581" x2="523" y2="562" stroke="#0fb">
         <title> 19:25:12: 24.7 m @ 9.6 kts &#x2191; 350° N = 2.94 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="523" y1="562" x2="520" y2="535" stroke="#0fb">
         <title> 19:25:19: 33.7 m @ 9.3 kts &#x2191; 352° N = 2.96 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="520" y1="535" x2="518" y2="505" stroke="#0fb">
         <title> 19:25:27: 37.4 m @ 9.1 kts &#x2191; 357° N = 2.98 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="518" y1="505" x2="517" y2="474" stroke="#0fb">
         <title> 19:25:35: 39.4 m @ 9.6 kts &#x2191; 358° N = 3.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="517" y1="474" x2="512" y2="442" stroke="#0ff">
         <title> 19:25:44: 40.4 m @ 8.7 kts &#x2191; 352° N = 3.02 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="512" y1="442" x2="508" y2="419" stroke="#0ff">
         <title> 19:25:51: 29.4 m @ 8.1 kts &#x2191; 349° N = 3.04 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="508" y1="419" x2="505" y2="390" stroke="#0ef">
         <title> 19:26:00: 36.6 m @ 7.9 kts &#x2191; 353° N = 3.06 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="505" y1="390" x2="506" y2="358" stroke="#0fb">
         <title> 19:26:08: 39.4 m @ 9.6 kts &#x2191; 3° N = 3.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="506" y1="358" x2="506" y2="350" stroke="#0fb">
         <title> 19:26:10: 10.2 m @ 9.9 kts &#x2191; 359° N = 3.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="506" y1="350" x2="498" y2="326" stroke="#0ff">
         <title> 19:26:17: 32.1 m @ 8.9 kts &#x2191; 342° NNW = 3.10 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="498" y1="326" x2="489" y2="309" stroke="#0cf">
         <title> 19:26:24: 23.6 m @ 6.6 kts &#x2191; 330° NNW = 3.11 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="489" y1="309" x2="482" y2="287" stroke="#0cf">
         <title> 19:26:33: 28.6 m @ 6.2 kts &#x2191; 343° NNW = 3.13 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="482" y1="287" x2="480" y2="271" stroke="#0cf">
         <title> 19:26:39: 20.9 m @ 6.8 kts &#x2191; 353° N = 3.14 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="480" y1="271" x2="480" y2="252" stroke="#0ef">
         <title> 19:26:45: 23.9 m @ 7.7 kts &#x2191; 0° N = 3.15 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="480" y1="252" x2="478" y2="222" stroke="#0ef">
         <title> 19:26:55: 36.7 m @ 7.1 kts &#x2191; 357° N = 3.17 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="478" y1="222" x2="475" y2="199" stroke="#0cf">
         <title> 19:27:04: 29.6 m @ 6.4 kts &#x2191; 353° N = 3.19 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="475" y1="199" x2="469" y2="184" stroke="#08f">
         <title> 19:27:12: 20.3 m @ 4.9 kts &#x2191; 338° NNW = 3.20 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="469" y1="184" x2="464" y2="167" stroke="#08f">
         <title> 19:27:22: 21.2 m @ 4.1 kts &#x2191; 344° NNW = 3.21 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="464" y1="167" x2="464" y2="150" stroke="#0af">
         <title> 19:27:30: 21.6 m @ 5.2 kts &#x2191; 358° N = 3.22 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="464" y1="150" x2="459" y2="132" stroke="#0af">
         <title> 19:27:39: 23.5 m @ 5.1 kts &#x2191; 344° NNW = 3.24 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="459" y1="132" x2="452" y2="130" stroke="#04f">
         <title> 19:27:45: 9.2 m @ 3.0 kts &#x2191; 285° WNW = 3.24 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="452" y1="130" x2="447" y2="130" stroke="#08f">
         <title> 19:27:48: 6.2 m @ 4.0 kts &#x2191; 266° W = 3.24 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="447" y1="130" x2="430" y2="135" stroke="#0af">
         <title> 19:27:56: 21.8 m @ 5.3 kts &#x2191; 254° WSW = 3.26 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="430" y1="135" x2="414" y2="141" stroke="#0af">
         <title> 19:28:03: 21.0 m @ 5.8 kts &#x2191; 249° WSW = 3.27 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="414" y1="141" x2="394" y2="151" stroke="#0cf">
         <title> 19:28:11: 27.8 m @ 6.7 kts &#x2191; 245° WSW = 3.28 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="394" y1="151" x2="374" y2="160" stroke="#0ef">
         <title> 19:28:18: 27.5 m @ 7.6 kts &#x2191; 244° WSW = 3.30 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="374" y1="160" x2="357" y2="168" stroke="#0ff">
         <title> 19:28:23: 23.2 m @ 9.0 kts &#x2191; 247° WSW = 3.31 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="357" y1="168" x2="350" y2="170" stroke="#0fb">
         <title> 19:28:25: 9.8 m @ 9.5 kts &#x2191; 255° WSW = 3.31 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="350" y1="170" x2="342" y2="172" stroke="#0fb">
         <title> 19:28:27: 9.6 m @ 9.4 kts &#x2191; 251° WSW = 3.32 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="342" y1="172" x2="329" y2="178" stroke="#0ff">
         <title> 19:28:31: 18.4 m @ 8.9 kts &#x2191; 245° WSW = 3.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="329" y1="178" x2="322" y2="182" stroke="#0fb">
         <title> 19:28:33: 9.4 m @ 9.1 kts &#x2191; 243° WSW = 3.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="322" y1="182" x2="294" y2="191" stroke="#0f7">
         <title> 19:28:40: 37.1 m @ 10.3 kts &#x2191; 252° WSW = 3.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="294" y1="191" x2="285" y2="193" stroke="#0f7">
         <title> 19:28:42: 10.9 m @ 10.5 kts &#x2191; 255° WSW = 3.36 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="285" y1="193" x2="254" y2="204" stroke="#0f7">
         <title> 19:28:50: 41.3 m @ 10.0 kts &#x2191; 250° WSW = 3.38 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="254" y1="204" x2="238" y2="212" stroke="#0f3">
         <title> 19:28:54: 22.8 m @ 11.0 kts &#x2191; 246° WSW = 3.40 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="238" y1="212" x2="216" y2="221" stroke="#0f3">
         <title> 19:28:59: 29.6 m @ 11.5 kts &#x2191; 247° WSW = 3.41 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="216" y1="221" x2="181" y2="236" stroke="#0f7">
         <title> 19:29:08: 47.7 m @ 10.3 kts &#x2191; 246° WSW = 3.44 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="181" y1="236" x2="177" y2="238" stroke="#0fb">
         <title> 19:29:09: 4.9 m @ 9.5 kts &#x2191; 250° WSW = 3.44 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="177" y1="238" x2="159" y2="238" stroke="#0ff">
         <title> 19:29:14: 22.4 m @ 8.7 kts &#x2191; 269° W = 3.45 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="159" y1="238" x2="143" y2="237" stroke="#0af">
         <title> 19:29:21: 19.8 m @ 5.5 kts &#x2191; 273° W = 3.46 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="143" y1="237" x2="141" y2="238" stroke="#0af">
         <title> 19:29:22: 2.7 m @ 5.3 kts &#x2191; 256° WSW = 3.46 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="141" y1="238" x2="132" y2="238" stroke="#06f">
         <title> 19:29:28: 11.2 m @ 3.6 kts &#x2191; 269° W = 3.47 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="132" y1="238" x2="122" y2="239" stroke="#06f">
         <title> 19:29:35: 12.7 m @ 3.5 kts &#x2191; 262° W = 3.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="122" y1="239" x2="113" y2="240" stroke="#06f">
         <title> 19:29:41: 11.9 m @ 3.9 kts &#x2191; 262° W = 3.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="113" y1="240" x2="102" y2="242" stroke="#06f">
         <title> 19:29:48: 14.0 m @ 3.9 kts &#x2191; 261° W = 3.49 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="102" y1="242" x2="86" y2="244" stroke="#08f">
         <title> 19:29:57: 19.7 m @ 4.3 kts &#x2191; 265° W = 3.50 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="86" y1="244" x2="68" y2="248" stroke="#08f">
         <title> 19:30:07: 22.8 m @ 4.4 kts &#x2191; 257° WSW = 3.51 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="68" y1="248" x2="58" y2="255" stroke="#06f">
         <title> 19:30:15: 15.8 m @ 3.8 kts &#x2191; 235° SW = 3.52 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="58" y1="255" x2="56" y2="264" stroke="#06f">
         <title> 19:30:22: 11.5 m @ 3.2 kts &#x2191; 192° SSW = 3.53 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="56" y1="264" x2="57" y2="272" stroke="#04f">
         <title> 19:30:29: 9.8 m @ 2.7 kts &#x2191; 175° S = 3.53 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="57" y1="272" x2="58" y2="279" stroke="#04f">
         <title> 19:30:37: 9.2 m @ 2.2 kts &#x2191; 169° S = 3.54 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="58" y1="279" x2="59" y2="284" stroke="#02f">
         <title> 19:30:45: 6.7 m @ 1.6 kts &#x2191; 173° S = 3.54 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="59" y1="284" x2="59" y2="293" stroke="#04f">
         <title> 19:30:54: 11.0 m @ 2.4 kts &#x2191; 175° S = 3.55 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="59" y1="293" x2="61" y2="303" stroke="#04f">
         <title> 19:31:04: 12.7 m @ 2.5 kts &#x2191; 174° S = 3.55 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="61" y1="303" x2="61" y2="304" stroke="#04f">
         <title> 19:31:05: 1.4 m @ 2.7 kts &#x2191; 169° S = 3.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="61" y1="304" x2="62" y2="307" stroke="#04f">
         <title> 19:31:09: 4.2 m @ 2.0 kts &#x2191; 160° SSE = 3.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="62" y1="307" x2="63" y2="312" stroke="#04f">
         <title> 19:31:15: 6.4 m @ 2.1 kts &#x2191; 168° SSE = 3.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="63" y1="312" x2="64" y2="317" stroke="#04f">
         <title> 19:31:21: 6.3 m @ 2.0 kts &#x2191; 173° S = 3.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="64" y1="317" x2="64" y2="321" stroke="#02f">
         <title> 19:31:27: 4.8 m @ 1.5 kts &#x2191; 174° S = 3.57 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="64" y1="321" x2="64" y2="324" stroke="#02f">
         <title> 19:31:33: 3.7 m @ 1.2 kts &#x2191; 189° S = 3.57 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="64" y1="324" x2="64" y2="324" stroke="#00f">
         <title> 19:31:34: 0.4 m @ 0.7 kts &#x2191; 156° SSE = 3.57 nm</title>
         </line>
@@ -2296,1810 +1513,1146 @@
 	
     <g class="segment">
         
-        
+        <line class="step" x1="64" y1="324" x2="192" y2="164" stroke="#02f">
+        <title> 19:37:55: 256.8 m @ 1.3 kts &#x2191; 39° NE = 3.71 nm</title>
+        </line>
         
         
         <line class="step" x1="192" y1="164" x2="203" y2="159" stroke="#04f">
-        <title> 19:38:06: 15.1 m @ 2.7 kts &#x2191; 70° ENE = 3.58 nm</title>
+        <title> 19:38:06: 15.1 m @ 2.7 kts &#x2191; 70° ENE = 3.72 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="203" y1="159" x2="218" y2="152" stroke="#04f">
-        <title> 19:38:22: 20.9 m @ 2.5 kts &#x2191; 63° ENE = 3.59 nm</title>
+        <title> 19:38:22: 20.9 m @ 2.5 kts &#x2191; 63° ENE = 3.73 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="218" y1="152" x2="232" y2="144" stroke="#04f">
-        <title> 19:38:35: 20.0 m @ 3.0 kts &#x2191; 61° ENE = 3.60 nm</title>
+        <title> 19:38:35: 20.0 m @ 3.0 kts &#x2191; 61° ENE = 3.74 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="232" y1="144" x2="246" y2="136" stroke="#06f">
-        <title> 19:38:47: 19.8 m @ 3.2 kts &#x2191; 60° ENE = 3.61 nm</title>
+        <title> 19:38:47: 19.8 m @ 3.2 kts &#x2191; 60° ENE = 3.75 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="246" y1="136" x2="256" y2="132" stroke="#06f">
-        <title> 19:38:55: 14.1 m @ 3.4 kts &#x2191; 67° ENE = 3.62 nm</title>
+        <title> 19:38:55: 14.1 m @ 3.4 kts &#x2191; 67° ENE = 3.76 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="256" y1="132" x2="268" y2="129" stroke="#06f">
-        <title> 19:39:04: 14.6 m @ 3.1 kts &#x2191; 75° ENE = 3.63 nm</title>
+        <title> 19:39:04: 14.6 m @ 3.1 kts &#x2191; 75° ENE = 3.76 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="268" y1="129" x2="282" y2="126" stroke="#06f">
-        <title> 19:39:14: 18.3 m @ 3.6 kts &#x2191; 79° E = 3.64 nm</title>
+        <title> 19:39:14: 18.3 m @ 3.6 kts &#x2191; 79° E = 3.77 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="282" y1="126" x2="297" y2="123" stroke="#04f">
-        <title> 19:39:27: 19.7 m @ 2.9 kts &#x2191; 78° ENE = 3.65 nm</title>
+        <title> 19:39:27: 19.7 m @ 2.9 kts &#x2191; 78° ENE = 3.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="297" y1="123" x2="317" y2="120" stroke="#06f">
-        <title> 19:39:42: 24.1 m @ 3.1 kts &#x2191; 80° E = 3.66 nm</title>
+        <title> 19:39:42: 24.1 m @ 3.1 kts &#x2191; 80° E = 3.80 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="317" y1="120" x2="328" y2="118" stroke="#04f">
-        <title> 19:39:52: 15.0 m @ 2.9 kts &#x2191; 81° E = 3.67 nm</title>
+        <title> 19:39:52: 15.0 m @ 2.9 kts &#x2191; 81° E = 3.81 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="328" y1="118" x2="345" y2="115" stroke="#04f">
-        <title> 19:40:06: 20.7 m @ 2.9 kts &#x2191; 82° E = 3.68 nm</title>
+        <title> 19:40:06: 20.7 m @ 2.9 kts &#x2191; 82° E = 3.82 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="345" y1="115" x2="358" y2="114" stroke="#04f">
-        <title> 19:40:18: 15.9 m @ 2.6 kts &#x2191; 84° E = 3.69 nm</title>
+        <title> 19:40:18: 15.9 m @ 2.6 kts &#x2191; 84° E = 3.83 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="358" y1="114" x2="371" y2="111" stroke="#04f">
-        <title> 19:40:34: 17.6 m @ 2.1 kts &#x2191; 79° E = 3.70 nm</title>
+        <title> 19:40:34: 17.6 m @ 2.1 kts &#x2191; 79° E = 3.84 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="371" y1="111" x2="385" y2="108" stroke="#04f">
-        <title> 19:40:49: 17.1 m @ 2.2 kts &#x2191; 75° ENE = 3.71 nm</title>
+        <title> 19:40:49: 17.1 m @ 2.2 kts &#x2191; 75° ENE = 3.84 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="385" y1="108" x2="389" y2="102" stroke="#06f">
-        <title> 19:40:55: 9.3 m @ 3.0 kts &#x2191; 32° NNE = 3.71 nm</title>
+        <title> 19:40:55: 9.3 m @ 3.0 kts &#x2191; 32° NNE = 3.85 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="389" y1="102" x2="387" y2="93" stroke="#06f">
-        <title> 19:41:00: 10.2 m @ 4.0 kts &#x2191; 352° N = 3.72 nm</title>
+        <title> 19:41:00: 10.2 m @ 4.0 kts &#x2191; 352° N = 3.86 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="387" y1="93" x2="382" y2="92" stroke="#04f">
-        <title> 19:41:06: 7.8 m @ 2.5 kts &#x2191; 288° WNW = 3.72 nm</title>
+        <title> 19:41:06: 7.8 m @ 2.5 kts &#x2191; 288° WNW = 3.86 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="382" y1="92" x2="366" y2="96" stroke="#06f">
-        <title> 19:41:18: 20.4 m @ 3.3 kts &#x2191; 255° WSW = 3.73 nm</title>
+        <title> 19:41:18: 20.4 m @ 3.3 kts &#x2191; 255° WSW = 3.87 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="366" y1="96" x2="350" y2="98" stroke="#06f">
-        <title> 19:41:28: 20.0 m @ 3.9 kts &#x2191; 261° W = 3.74 nm</title>
+        <title> 19:41:28: 20.0 m @ 3.9 kts &#x2191; 261° W = 3.88 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="350" y1="98" x2="330" y2="102" stroke="#08f">
-        <title> 19:41:39: 25.8 m @ 4.6 kts &#x2191; 260° W = 3.76 nm</title>
+        <title> 19:41:39: 25.8 m @ 4.6 kts &#x2191; 260° W = 3.90 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="330" y1="102" x2="319" y2="102" stroke="#08f">
-        <title> 19:41:44: 12.6 m @ 4.9 kts &#x2191; 267° W = 3.76 nm</title>
+        <title> 19:41:44: 12.6 m @ 4.9 kts &#x2191; 267° W = 3.90 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="319" y1="102" x2="299" y2="106" stroke="#08f">
-        <title> 19:41:54: 25.3 m @ 4.9 kts &#x2191; 261° W = 3.78 nm</title>
+        <title> 19:41:54: 25.3 m @ 4.9 kts &#x2191; 261° W = 3.92 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="299" y1="106" x2="277" y2="110" stroke="#0af">
-        <title> 19:42:05: 29.1 m @ 5.1 kts &#x2191; 260° W = 3.79 nm</title>
+        <title> 19:42:05: 29.1 m @ 5.1 kts &#x2191; 260° W = 3.93 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="277" y1="110" x2="259" y2="114" stroke="#0cf">
-        <title> 19:42:12: 22.4 m @ 6.2 kts &#x2191; 257° WSW = 3.80 nm</title>
+        <title> 19:42:12: 22.4 m @ 6.2 kts &#x2191; 257° WSW = 3.94 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="259" y1="114" x2="238" y2="123" stroke="#0ef">
-        <title> 19:42:20: 29.3 m @ 7.1 kts &#x2191; 246° WSW = 3.82 nm</title>
+        <title> 19:42:20: 29.3 m @ 7.1 kts &#x2191; 246° WSW = 3.96 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="238" y1="123" x2="226" y2="135" stroke="#0cf">
-        <title> 19:42:26: 20.1 m @ 6.5 kts &#x2191; 224° SW = 3.83 nm</title>
+        <title> 19:42:26: 20.1 m @ 6.5 kts &#x2191; 224° SW = 3.97 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="226" y1="135" x2="227" y2="145" stroke="#08f">
-        <title> 19:42:31: 12.5 m @ 4.9 kts &#x2191; 179° S = 3.84 nm</title>
+        <title> 19:42:31: 12.5 m @ 4.9 kts &#x2191; 179° S = 3.98 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="227" y1="145" x2="230" y2="156" stroke="#08f">
-        <title> 19:42:38: 14.8 m @ 4.1 kts &#x2191; 166° SSE = 3.85 nm</title>
+        <title> 19:42:38: 14.8 m @ 4.1 kts &#x2191; 166° SSE = 3.98 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="230" y1="156" x2="232" y2="172" stroke="#0af">
-        <title> 19:42:45: 20.6 m @ 5.7 kts &#x2191; 170° S = 3.86 nm</title>
+        <title> 19:42:45: 20.6 m @ 5.7 kts &#x2191; 170° S = 4.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="232" y1="172" x2="228" y2="181" stroke="#0af">
-        <title> 19:42:49: 12.0 m @ 5.8 kts &#x2191; 209° SSW = 3.86 nm</title>
+        <title> 19:42:49: 12.0 m @ 5.8 kts &#x2191; 209° SSW = 4.00 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="228" y1="181" x2="214" y2="189" stroke="#0ef">
-        <title> 19:42:54: 20.2 m @ 7.9 kts &#x2191; 239° WSW = 3.87 nm</title>
+        <title> 19:42:54: 20.2 m @ 7.9 kts &#x2191; 239° WSW = 4.01 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="214" y1="189" x2="193" y2="195" stroke="#0ff">
-        <title> 19:43:00: 26.9 m @ 8.7 kts &#x2191; 255° WSW = 3.89 nm</title>
+        <title> 19:43:00: 26.9 m @ 8.7 kts &#x2191; 255° WSW = 4.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="193" y1="195" x2="173" y2="193" stroke="#0ff">
-        <title> 19:43:06: 24.9 m @ 8.1 kts &#x2191; 276° W = 3.90 nm</title>
+        <title> 19:43:06: 24.9 m @ 8.1 kts &#x2191; 276° W = 4.04 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="173" y1="193" x2="161" y2="189" stroke="#08f">
-        <title> 19:43:12: 15.4 m @ 5.0 kts &#x2191; 288° WNW = 3.91 nm</title>
+        <title> 19:43:12: 15.4 m @ 5.0 kts &#x2191; 288° WNW = 4.05 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="161" y1="189" x2="145" y2="182" stroke="#08f">
-        <title> 19:43:22: 22.0 m @ 4.3 kts &#x2191; 292° WNW = 3.92 nm</title>
+        <title> 19:43:22: 22.0 m @ 4.3 kts &#x2191; 292° WNW = 4.06 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="145" y1="182" x2="128" y2="179" stroke="#08f">
-        <title> 19:43:32: 21.2 m @ 4.1 kts &#x2191; 283° WNW = 3.93 nm</title>
+        <title> 19:43:32: 21.2 m @ 4.1 kts &#x2191; 283° WNW = 4.07 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="128" y1="179" x2="125" y2="178" stroke="#08f">
-        <title> 19:43:34: 4.3 m @ 4.2 kts &#x2191; 287° WNW = 3.94 nm</title>
+        <title> 19:43:34: 4.3 m @ 4.2 kts &#x2191; 287° WNW = 4.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="125" y1="178" x2="123" y2="168" stroke="#06f">
-        <title> 19:43:41: 12.9 m @ 3.6 kts &#x2191; 349° N = 3.94 nm</title>
+        <title> 19:43:41: 12.9 m @ 3.6 kts &#x2191; 349° N = 4.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="123" y1="168" x2="130" y2="153" stroke="#0af">
-        <title> 19:43:48: 20.2 m @ 5.6 kts &#x2191; 25° NNE = 3.95 nm</title>
+        <title> 19:43:48: 20.2 m @ 5.6 kts &#x2191; 25° NNE = 4.09 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="130" y1="153" x2="144" y2="144" stroke="#0cf">
-        <title> 19:43:54: 20.7 m @ 6.7 kts &#x2191; 60° ENE = 3.97 nm</title>
+        <title> 19:43:54: 20.7 m @ 6.7 kts &#x2191; 60° ENE = 4.10 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="144" y1="144" x2="171" y2="134" stroke="#0ef">
-        <title> 19:44:03: 35.4 m @ 7.7 kts &#x2191; 69° ENE = 3.98 nm</title>
+        <title> 19:44:03: 35.4 m @ 7.7 kts &#x2191; 69° ENE = 4.12 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="171" y1="134" x2="188" y2="127" stroke="#0ef">
-        <title> 19:44:09: 23.6 m @ 7.6 kts &#x2191; 66° ENE = 4.00 nm</title>
+        <title> 19:44:09: 23.6 m @ 7.6 kts &#x2191; 66° ENE = 4.14 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="188" y1="127" x2="200" y2="113" stroke="#0ff">
-        <title> 19:44:14: 22.6 m @ 8.8 kts &#x2191; 39° NE = 4.01 nm</title>
+        <title> 19:44:14: 22.6 m @ 8.8 kts &#x2191; 39° NE = 4.15 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="200" y1="113" x2="211" y2="91" stroke="#0f7">
-        <title> 19:44:20: 31.0 m @ 10.0 kts &#x2191; 27° NNE = 4.03 nm</title>
+        <title> 19:44:20: 31.0 m @ 10.0 kts &#x2191; 27° NNE = 4.17 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="211" y1="91" x2="222" y2="81" stroke="#0fb">
-        <title> 19:44:24: 19.0 m @ 9.2 kts &#x2191; 50° NE = 4.04 nm</title>
+        <title> 19:44:24: 19.0 m @ 9.2 kts &#x2191; 50° NE = 4.18 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="222" y1="81" x2="230" y2="82" stroke="#08f">
-        <title> 19:44:28: 10.1 m @ 4.9 kts &#x2191; 98° E = 4.04 nm</title>
+        <title> 19:44:28: 10.1 m @ 4.9 kts &#x2191; 98° E = 4.18 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="230" y1="82" x2="231" y2="89" stroke="#04f">
-        <title> 19:44:34: 8.9 m @ 2.9 kts &#x2191; 177° S = 4.05 nm</title>
+        <title> 19:44:34: 8.9 m @ 2.9 kts &#x2191; 177° S = 4.19 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="231" y1="89" x2="223" y2="105" stroke="#0cf">
-        <title> 19:44:41: 21.9 m @ 6.1 kts &#x2191; 204° SSW = 4.06 nm</title>
+        <title> 19:44:41: 21.9 m @ 6.1 kts &#x2191; 204° SSW = 4.20 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="223" y1="105" x2="212" y2="125" stroke="#0cf">
-        <title> 19:44:50: 28.1 m @ 6.1 kts &#x2191; 210° SSW = 4.07 nm</title>
+        <title> 19:44:50: 28.1 m @ 6.1 kts &#x2191; 210° SSW = 4.21 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="212" y1="125" x2="205" y2="143" stroke="#0cf">
-        <title> 19:44:57: 24.1 m @ 6.7 kts &#x2191; 201° SSW = 4.09 nm</title>
+        <title> 19:44:57: 24.1 m @ 6.7 kts &#x2191; 201° SSW = 4.23 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="205" y1="143" x2="195" y2="156" stroke="#0cf">
-        <title> 19:45:03: 21.4 m @ 6.9 kts &#x2191; 219° SW = 4.10 nm</title>
+        <title> 19:45:03: 21.4 m @ 6.9 kts &#x2191; 219° SW = 4.24 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="195" y1="156" x2="190" y2="162" stroke="#0cf">
-        <title> 19:45:06: 9.9 m @ 6.4 kts &#x2191; 216° SW = 4.10 nm</title>
+        <title> 19:45:06: 9.9 m @ 6.4 kts &#x2191; 216° SW = 4.24 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="190" y1="162" x2="188" y2="166" stroke="#0af">
-        <title> 19:45:08: 5.7 m @ 5.5 kts &#x2191; 200° SSW = 4.11 nm</title>
+        <title> 19:45:08: 5.7 m @ 5.5 kts &#x2191; 200° SSW = 4.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="188" y1="166" x2="188" y2="178" stroke="#08f">
-        <title> 19:45:14: 14.5 m @ 4.7 kts &#x2191; 182° S = 4.11 nm</title>
+        <title> 19:45:14: 14.5 m @ 4.7 kts &#x2191; 182° S = 4.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="188" y1="178" x2="188" y2="194" stroke="#08f">
-        <title> 19:45:22: 20.4 m @ 5.0 kts &#x2191; 180° S = 4.13 nm</title>
+        <title> 19:45:22: 20.4 m @ 5.0 kts &#x2191; 180° S = 4.26 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="188" y1="194" x2="186" y2="215" stroke="#0af">
-        <title> 19:45:31: 25.8 m @ 5.6 kts &#x2191; 185° S = 4.14 nm</title>
+        <title> 19:45:31: 25.8 m @ 5.6 kts &#x2191; 185° S = 4.28 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="186" y1="215" x2="183" y2="235" stroke="#0cf">
-        <title> 19:45:39: 24.8 m @ 6.0 kts &#x2191; 189° S = 4.15 nm</title>
+        <title> 19:45:39: 24.8 m @ 6.0 kts &#x2191; 189° S = 4.29 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="183" y1="235" x2="178" y2="252" stroke="#0ef">
-        <title> 19:45:45: 22.5 m @ 7.3 kts &#x2191; 194° SSW = 4.17 nm</title>
+        <title> 19:45:45: 22.5 m @ 7.3 kts &#x2191; 194° SSW = 4.30 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="178" y1="252" x2="175" y2="269" stroke="#0ff">
-        <title> 19:45:50: 22.1 m @ 8.6 kts &#x2191; 191° S = 4.18 nm</title>
+        <title> 19:45:50: 22.1 m @ 8.6 kts &#x2191; 191° S = 4.32 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="175" y1="269" x2="178" y2="294" stroke="#0ff">
-        <title> 19:45:57: 30.4 m @ 8.4 kts &#x2191; 174° S = 4.19 nm</title>
+        <title> 19:45:57: 30.4 m @ 8.4 kts &#x2191; 174° S = 4.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="178" y1="294" x2="179" y2="317" stroke="#0ff">
-        <title> 19:46:04: 29.6 m @ 8.2 kts &#x2191; 176° S = 4.21 nm</title>
+        <title> 19:46:04: 29.6 m @ 8.2 kts &#x2191; 176° S = 4.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="179" y1="317" x2="183" y2="348" stroke="#0ff">
-        <title> 19:46:13: 38.5 m @ 8.3 kts &#x2191; 174° S = 4.23 nm</title>
+        <title> 19:46:13: 38.5 m @ 8.3 kts &#x2191; 174° S = 4.37 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="183" y1="348" x2="185" y2="369" stroke="#0ff">
-        <title> 19:46:19: 26.1 m @ 8.5 kts &#x2191; 173° S = 4.24 nm</title>
+        <title> 19:46:19: 26.1 m @ 8.5 kts &#x2191; 173° S = 4.38 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="185" y1="369" x2="190" y2="396" stroke="#0ef">
-        <title> 19:46:28: 35.1 m @ 7.6 kts &#x2191; 171° S = 4.26 nm</title>
+        <title> 19:46:28: 35.1 m @ 7.6 kts &#x2191; 171° S = 4.40 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="190" y1="396" x2="190" y2="413" stroke="#0cf">
-        <title> 19:46:34: 21.0 m @ 6.8 kts &#x2191; 180° S = 4.27 nm</title>
+        <title> 19:46:34: 21.0 m @ 6.8 kts &#x2191; 180° S = 4.41 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="190" y1="413" x2="189" y2="427" stroke="#0cf">
-        <title> 19:46:39: 17.3 m @ 6.7 kts &#x2191; 181° S = 4.28 nm</title>
+        <title> 19:46:39: 17.3 m @ 6.7 kts &#x2191; 181° S = 4.42 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="189" y1="427" x2="189" y2="448" stroke="#0cf">
-        <title> 19:46:47: 25.7 m @ 6.2 kts &#x2191; 180° S = 4.30 nm</title>
+        <title> 19:46:47: 25.7 m @ 6.2 kts &#x2191; 180° S = 4.44 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="189" y1="448" x2="189" y2="464" stroke="#0af">
-        <title> 19:46:54: 20.4 m @ 5.7 kts &#x2191; 181° S = 4.31 nm</title>
+        <title> 19:46:54: 20.4 m @ 5.7 kts &#x2191; 181° S = 4.45 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="189" y1="464" x2="188" y2="473" stroke="#0af">
-        <title> 19:46:58: 11.0 m @ 5.4 kts &#x2191; 184° S = 4.31 nm</title>
+        <title> 19:46:58: 11.0 m @ 5.4 kts &#x2191; 184° S = 4.45 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="188" y1="473" x2="186" y2="494" stroke="#0af">
-        <title> 19:47:07: 26.5 m @ 5.7 kts &#x2191; 187° S = 4.33 nm</title>
+        <title> 19:47:07: 26.5 m @ 5.7 kts &#x2191; 187° S = 4.47 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="186" y1="494" x2="185" y2="499" stroke="#0cf">
-        <title> 19:47:09: 6.8 m @ 6.6 kts &#x2191; 181° S = 4.33 nm</title>
+        <title> 19:47:09: 6.8 m @ 6.6 kts &#x2191; 181° S = 4.47 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="185" y1="499" x2="190" y2="505" stroke="#06f">
-        <title> 19:47:14: 9.0 m @ 3.5 kts &#x2191; 139° SE = 4.34 nm</title>
+        <title> 19:47:14: 9.0 m @ 3.5 kts &#x2191; 139° SE = 4.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="190" y1="505" x2="203" y2="505" stroke="#08f">
-        <title> 19:47:21: 16.2 m @ 4.5 kts &#x2191; 92° E = 4.35 nm</title>
+        <title> 19:47:21: 16.2 m @ 4.5 kts &#x2191; 92° E = 4.48 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="203" y1="505" x2="225" y2="509" stroke="#0cf">
-        <title> 19:47:30: 27.8 m @ 6.0 kts &#x2191; 100° E = 4.36 nm</title>
+        <title> 19:47:30: 27.8 m @ 6.0 kts &#x2191; 100° E = 4.50 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="225" y1="509" x2="239" y2="510" stroke="#0af">
-        <title> 19:47:36: 16.9 m @ 5.5 kts &#x2191; 92° E = 4.37 nm</title>
+        <title> 19:47:36: 16.9 m @ 5.5 kts &#x2191; 92° E = 4.51 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="239" y1="510" x2="249" y2="510" stroke="#08f">
-        <title> 19:47:41: 12.7 m @ 4.9 kts &#x2191; 94° E = 4.38 nm</title>
+        <title> 19:47:41: 12.7 m @ 4.9 kts &#x2191; 94° E = 4.52 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="249" y1="510" x2="260" y2="510" stroke="#0af">
-        <title> 19:47:46: 13.6 m @ 5.3 kts &#x2191; 86° E = 4.38 nm</title>
+        <title> 19:47:46: 13.6 m @ 5.3 kts &#x2191; 86° E = 4.52 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="260" y1="510" x2="280" y2="511" stroke="#0af">
-        <title> 19:47:55: 25.1 m @ 5.4 kts &#x2191; 93° E = 4.40 nm</title>
+        <title> 19:47:55: 25.1 m @ 5.4 kts &#x2191; 93° E = 4.54 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="280" y1="511" x2="300" y2="513" stroke="#0af">
-        <title> 19:48:04: 25.9 m @ 5.6 kts &#x2191; 97° E = 4.41 nm</title>
+        <title> 19:48:04: 25.9 m @ 5.6 kts &#x2191; 97° E = 4.55 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="300" y1="513" x2="319" y2="515" stroke="#0af">
-        <title> 19:48:13: 23.6 m @ 5.1 kts &#x2191; 95° E = 4.42 nm</title>
+        <title> 19:48:13: 23.6 m @ 5.1 kts &#x2191; 95° E = 4.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="319" y1="515" x2="336" y2="516" stroke="#0cf">
-        <title> 19:48:20: 21.6 m @ 6.0 kts &#x2191; 95° E = 4.44 nm</title>
+        <title> 19:48:20: 21.6 m @ 6.0 kts &#x2191; 95° E = 4.58 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="336" y1="516" x2="356" y2="517" stroke="#0cf">
-        <title> 19:48:27: 24.6 m @ 6.8 kts &#x2191; 92° E = 4.45 nm</title>
+        <title> 19:48:27: 24.6 m @ 6.8 kts &#x2191; 92° E = 4.59 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="356" y1="517" x2="379" y2="516" stroke="#0cf">
-        <title> 19:48:36: 29.2 m @ 6.3 kts &#x2191; 88° E = 4.47 nm</title>
+        <title> 19:48:36: 29.2 m @ 6.3 kts &#x2191; 88° E = 4.60 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="379" y1="516" x2="403" y2="515" stroke="#0af">
-        <title> 19:48:46: 29.2 m @ 5.7 kts &#x2191; 87° E = 4.48 nm</title>
+        <title> 19:48:46: 29.2 m @ 5.7 kts &#x2191; 87° E = 4.62 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="403" y1="515" x2="416" y2="514" stroke="#0af">
-        <title> 19:48:52: 17.2 m @ 5.6 kts &#x2191; 86° E = 4.49 nm</title>
+        <title> 19:48:52: 17.2 m @ 5.6 kts &#x2191; 86° E = 4.63 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="416" y1="514" x2="427" y2="514" stroke="#0cf">
-        <title> 19:48:56: 12.7 m @ 6.2 kts &#x2191; 92° E = 4.50 nm</title>
+        <title> 19:48:56: 12.7 m @ 6.2 kts &#x2191; 92° E = 4.64 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="427" y1="514" x2="447" y2="513" stroke="#0cf">
-        <title> 19:49:03: 24.9 m @ 6.9 kts &#x2191; 85° E = 4.51 nm</title>
+        <title> 19:49:03: 24.9 m @ 6.9 kts &#x2191; 85° E = 4.65 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="447" y1="513" x2="461" y2="511" stroke="#0ef">
-        <title> 19:49:08: 18.6 m @ 7.2 kts &#x2191; 83° E = 4.52 nm</title>
+        <title> 19:49:08: 18.6 m @ 7.2 kts &#x2191; 83° E = 4.66 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="461" y1="511" x2="475" y2="510" stroke="#0cf">
-        <title> 19:49:13: 17.6 m @ 6.8 kts &#x2191; 85° E = 4.53 nm</title>
+        <title> 19:49:13: 17.6 m @ 6.8 kts &#x2191; 85° E = 4.67 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="475" y1="510" x2="500" y2="508" stroke="#0cf">
-        <title> 19:49:22: 31.0 m @ 6.7 kts &#x2191; 86° E = 4.55 nm</title>
+        <title> 19:49:22: 31.0 m @ 6.7 kts &#x2191; 86° E = 4.69 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="500" y1="508" x2="526" y2="508" stroke="#0cf">
-        <title> 19:49:31: 31.7 m @ 6.8 kts &#x2191; 89° E = 4.56 nm</title>
+        <title> 19:49:31: 31.7 m @ 6.8 kts &#x2191; 89° E = 4.70 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="526" y1="508" x2="549" y2="505" stroke="#0ef">
-        <title> 19:49:39: 29.4 m @ 7.1 kts &#x2191; 85° E = 4.58 nm</title>
+        <title> 19:49:39: 29.4 m @ 7.1 kts &#x2191; 85° E = 4.72 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="549" y1="505" x2="572" y2="500" stroke="#0ef">
-        <title> 19:49:47: 29.0 m @ 7.0 kts &#x2191; 77° ENE = 4.60 nm</title>
+        <title> 19:49:47: 29.0 m @ 7.0 kts &#x2191; 77° ENE = 4.73 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="572" y1="500" x2="597" y2="493" stroke="#0ff">
-        <title> 19:49:55: 33.0 m @ 8.0 kts &#x2191; 74° ENE = 4.61 nm</title>
+        <title> 19:49:55: 33.0 m @ 8.0 kts &#x2191; 74° ENE = 4.75 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="597" y1="493" x2="628" y2="486" stroke="#0ef">
-        <title> 19:50:05: 39.4 m @ 7.6 kts &#x2191; 77° ENE = 4.63 nm</title>
+        <title> 19:50:05: 39.4 m @ 7.6 kts &#x2191; 77° ENE = 4.77 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="628" y1="486" x2="651" y2="482" stroke="#0ef">
-        <title> 19:50:12: 28.7 m @ 8.0 kts &#x2191; 81° E = 4.65 nm</title>
+        <title> 19:50:12: 28.7 m @ 8.0 kts &#x2191; 81° E = 4.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="651" y1="482" x2="674" y2="478" stroke="#0ef">
-        <title> 19:50:20: 30.4 m @ 7.4 kts &#x2191; 79° E = 4.67 nm</title>
+        <title> 19:50:20: 30.4 m @ 7.4 kts &#x2191; 79° E = 4.81 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="674" y1="478" x2="702" y2="472" stroke="#0ef">
-        <title> 19:50:29: 35.3 m @ 7.6 kts &#x2191; 79° E = 4.69 nm</title>
+        <title> 19:50:29: 35.3 m @ 7.6 kts &#x2191; 79° E = 4.82 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="702" y1="472" x2="719" y2="469" stroke="#0af">
-        <title> 19:50:36: 21.1 m @ 5.9 kts &#x2191; 78° ENE = 4.70 nm</title>
+        <title> 19:50:36: 21.1 m @ 5.9 kts &#x2191; 78° ENE = 4.84 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="719" y1="469" x2="731" y2="465" stroke="#0cf">
-        <title> 19:50:41: 16.6 m @ 6.4 kts &#x2191; 75° ENE = 4.71 nm</title>
+        <title> 19:50:41: 16.6 m @ 6.4 kts &#x2191; 75° ENE = 4.84 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="731" y1="465" x2="760" y2="458" stroke="#0ef">
-        <title> 19:50:51: 36.7 m @ 7.1 kts &#x2191; 75° ENE = 4.73 nm</title>
+        <title> 19:50:51: 36.7 m @ 7.1 kts &#x2191; 75° ENE = 4.86 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="760" y1="458" x2="782" y2="452" stroke="#0ef">
-        <title> 19:50:58: 28.7 m @ 8.0 kts &#x2191; 75° ENE = 4.74 nm</title>
+        <title> 19:50:58: 28.7 m @ 8.0 kts &#x2191; 75° ENE = 4.88 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="782" y1="452" x2="787" y2="452" stroke="#0cf">
-        <title> 19:51:00: 6.4 m @ 6.2 kts &#x2191; 98° E = 4.74 nm</title>
+        <title> 19:51:00: 6.4 m @ 6.2 kts &#x2191; 98° E = 4.88 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="787" y1="452" x2="792" y2="463" stroke="#06f">
-        <title> 19:51:08: 15.1 m @ 3.7 kts &#x2191; 157° SSE = 4.75 nm</title>
+        <title> 19:51:08: 15.1 m @ 3.7 kts &#x2191; 157° SSE = 4.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="792" y1="463" x2="796" y2="482" stroke="#0af">
-        <title> 19:51:16: 23.9 m @ 5.8 kts &#x2191; 167° SSE = 4.77 nm</title>
+        <title> 19:51:16: 23.9 m @ 5.8 kts &#x2191; 167° SSE = 4.90 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="796" y1="482" x2="803" y2="500" stroke="#0af">
-        <title> 19:51:25: 24.2 m @ 5.2 kts &#x2191; 159° SSE = 4.78 nm</title>
+        <title> 19:51:25: 24.2 m @ 5.2 kts &#x2191; 159° SSE = 4.92 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="803" y1="500" x2="805" y2="516" stroke="#0af">
-        <title> 19:51:32: 19.5 m @ 5.4 kts &#x2191; 171° S = 4.79 nm</title>
+        <title> 19:51:32: 19.5 m @ 5.4 kts &#x2191; 171° S = 4.93 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="805" y1="516" x2="810" y2="527" stroke="#0af">
-        <title> 19:51:37: 14.9 m @ 5.8 kts &#x2191; 159° SSE = 4.80 nm</title>
+        <title> 19:51:37: 14.9 m @ 5.8 kts &#x2191; 159° SSE = 4.94 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="810" y1="527" x2="816" y2="550" stroke="#0cf">
-        <title> 19:51:46: 30.4 m @ 6.6 kts &#x2191; 165° SSE = 4.81 nm</title>
+        <title> 19:51:46: 30.4 m @ 6.6 kts &#x2191; 165° SSE = 4.95 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="816" y1="550" x2="821" y2="577" stroke="#0ef">
-        <title> 19:51:55: 33.5 m @ 7.2 kts &#x2191; 170° S = 4.83 nm</title>
+        <title> 19:51:55: 33.5 m @ 7.2 kts &#x2191; 170° S = 4.97 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="821" y1="577" x2="824" y2="597" stroke="#0ef">
-        <title> 19:52:02: 25.4 m @ 7.0 kts &#x2191; 171° S = 4.85 nm</title>
+        <title> 19:52:02: 25.4 m @ 7.0 kts &#x2191; 171° S = 4.98 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="824" y1="597" x2="830" y2="612" stroke="#0ef">
-        <title> 19:52:07: 20.0 m @ 7.8 kts &#x2191; 160° SSE = 4.86 nm</title>
+        <title> 19:52:07: 20.0 m @ 7.8 kts &#x2191; 160° SSE = 4.99 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="830" y1="612" x2="832" y2="615" stroke="#08f">
-        <title> 19:52:09: 5.1 m @ 5.0 kts &#x2191; 138° SE = 4.86 nm</title>
+        <title> 19:52:09: 5.1 m @ 5.0 kts &#x2191; 138° SE = 5.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="832" y1="615" x2="841" y2="615" stroke="#06f">
-        <title> 19:52:15: 11.0 m @ 3.6 kts &#x2191; 90° E = 4.87 nm</title>
+        <title> 19:52:15: 11.0 m @ 3.6 kts &#x2191; 90° E = 5.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="841" y1="615" x2="853" y2="609" stroke="#0cf">
-        <title> 19:52:20: 17.1 m @ 6.6 kts &#x2191; 63° ENE = 4.87 nm</title>
+        <title> 19:52:20: 17.1 m @ 6.6 kts &#x2191; 63° ENE = 5.01 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="853" y1="609" x2="872" y2="595" stroke="#0fb">
-        <title> 19:52:26: 28.9 m @ 9.3 kts &#x2191; 55° NE = 4.89 nm</title>
+        <title> 19:52:26: 28.9 m @ 9.3 kts &#x2191; 55° NE = 5.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="872" y1="595" x2="878" y2="589" stroke="#0f7">
-        <title> 19:52:28: 10.7 m @ 10.4 kts &#x2191; 42° NE = 4.90 nm</title>
+        <title> 19:52:28: 10.7 m @ 10.4 kts &#x2191; 42° NE = 5.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="878" y1="589" x2="886" y2="580" stroke="#0fb">
-        <title> 19:52:31: 14.5 m @ 9.4 kts &#x2191; 42° NE = 4.90 nm</title>
+        <title> 19:52:31: 14.5 m @ 9.4 kts &#x2191; 42° NE = 5.04 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="886" y1="580" x2="890" y2="565" stroke="#0fb">
-        <title> 19:52:35: 19.5 m @ 9.5 kts &#x2191; 15° NNE = 4.91 nm</title>
+        <title> 19:52:35: 19.5 m @ 9.5 kts &#x2191; 15° NNE = 5.05 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="890" y1="565" x2="888" y2="554" stroke="#0fb">
-        <title> 19:52:38: 14.1 m @ 9.1 kts &#x2191; 351° N = 4.92 nm</title>
+        <title> 19:52:38: 14.1 m @ 9.1 kts &#x2191; 351° N = 5.06 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="888" y1="554" x2="887" y2="540" stroke="#0ff">
-        <title> 19:52:42: 17.7 m @ 8.6 kts &#x2191; 356° N = 4.93 nm</title>
+        <title> 19:52:42: 17.7 m @ 8.6 kts &#x2191; 356° N = 5.07 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="887" y1="540" x2="885" y2="509" stroke="#0fb">
-        <title> 19:52:50: 39.4 m @ 9.6 kts &#x2191; 357° N = 4.95 nm</title>
+        <title> 19:52:50: 39.4 m @ 9.6 kts &#x2191; 357° N = 5.09 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="885" y1="509" x2="885" y2="504" stroke="#0f3">
-        <title> 19:52:51: 5.8 m @ 11.3 kts &#x2191; 355° N = 4.96 nm</title>
+        <title> 19:52:51: 5.8 m @ 11.3 kts &#x2191; 355° N = 5.09 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="885" y1="504" x2="881" y2="484" stroke="#0f7">
-        <title> 19:52:56: 25.8 m @ 10.0 kts &#x2191; 348° NNW = 4.97 nm</title>
+        <title> 19:52:56: 25.8 m @ 10.0 kts &#x2191; 348° NNW = 5.11 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="881" y1="484" x2="877" y2="472" stroke="#0ef">
-        <title> 19:53:00: 15.3 m @ 7.4 kts &#x2191; 341° NNW = 4.98 nm</title>
+        <title> 19:53:00: 15.3 m @ 7.4 kts &#x2191; 341° NNW = 5.12 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="877" y1="472" x2="875" y2="453" stroke="#0cf">
-        <title> 19:53:07: 23.5 m @ 6.5 kts &#x2191; 354° N = 4.99 nm</title>
+        <title> 19:53:07: 23.5 m @ 6.5 kts &#x2191; 354° N = 5.13 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="875" y1="453" x2="875" y2="431" stroke="#0ef">
-        <title> 19:53:14: 28.5 m @ 7.9 kts &#x2191; 2° N = 5.01 nm</title>
+        <title> 19:53:14: 28.5 m @ 7.9 kts &#x2191; 2° N = 5.14 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="875" y1="431" x2="879" y2="405" stroke="#0fb">
-        <title> 19:53:21: 32.6 m @ 9.0 kts &#x2191; 8° N = 5.02 nm</title>
+        <title> 19:53:21: 32.6 m @ 9.0 kts &#x2191; 8° N = 5.16 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="879" y1="405" x2="880" y2="401" stroke="#0f7">
-        <title> 19:53:22: 5.2 m @ 10.0 kts &#x2191; 11° N = 5.03 nm</title>
+        <title> 19:53:22: 5.2 m @ 10.0 kts &#x2191; 11° N = 5.16 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="880" y1="401" x2="877" y2="375" stroke="#0f7">
-        <title> 19:53:28: 31.9 m @ 10.3 kts &#x2191; 354° N = 5.04 nm</title>
+        <title> 19:53:28: 31.9 m @ 10.3 kts &#x2191; 354° N = 5.18 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="877" y1="375" x2="869" y2="343" stroke="#0ff">
-        <title> 19:53:37: 41.1 m @ 8.9 kts &#x2191; 347° NNW = 5.07 nm</title>
+        <title> 19:53:37: 41.1 m @ 8.9 kts &#x2191; 347° NNW = 5.20 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="869" y1="343" x2="867" y2="317" stroke="#0ff">
-        <title> 19:53:45: 33.5 m @ 8.1 kts &#x2191; 355° N = 5.08 nm</title>
+        <title> 19:53:45: 33.5 m @ 8.1 kts &#x2191; 355° N = 5.22 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="867" y1="317" x2="866" y2="303" stroke="#0ff">
-        <title> 19:53:49: 17.3 m @ 8.4 kts &#x2191; 356° N = 5.09 nm</title>
+        <title> 19:53:49: 17.3 m @ 8.4 kts &#x2191; 356° N = 5.23 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="866" y1="303" x2="866" y2="277" stroke="#0ef">
-        <title> 19:53:57: 32.0 m @ 7.8 kts &#x2191; 1° N = 5.11 nm</title>
+        <title> 19:53:57: 32.0 m @ 7.8 kts &#x2191; 1° N = 5.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="866" y1="277" x2="869" y2="251" stroke="#0ef">
-        <title> 19:54:05: 32.4 m @ 7.9 kts &#x2191; 7° N = 5.13 nm</title>
+        <title> 19:54:05: 32.4 m @ 7.9 kts &#x2191; 7° N = 5.27 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="869" y1="251" x2="868" y2="226" stroke="#0ff">
-        <title> 19:54:12: 32.1 m @ 8.9 kts &#x2191; 358° N = 5.15 nm</title>
+        <title> 19:54:12: 32.1 m @ 8.9 kts &#x2191; 358° N = 5.28 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="868" y1="226" x2="868" y2="195" stroke="#0fb">
-        <title> 19:54:20: 38.1 m @ 9.2 kts &#x2191; 359° N = 5.17 nm</title>
+        <title> 19:54:20: 38.1 m @ 9.2 kts &#x2191; 359° N = 5.30 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="868" y1="195" x2="867" y2="167" stroke="#0fb">
-        <title> 19:54:27: 34.9 m @ 9.7 kts &#x2191; 358° N = 5.18 nm</title>
+        <title> 19:54:27: 34.9 m @ 9.7 kts &#x2191; 358° N = 5.32 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="867" y1="167" x2="863" y2="152" stroke="#0fb">
-        <title> 19:54:31: 19.3 m @ 9.4 kts &#x2191; 348° NNW = 5.19 nm</title>
+        <title> 19:54:31: 19.3 m @ 9.4 kts &#x2191; 348° NNW = 5.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="863" y1="152" x2="858" y2="136" stroke="#0ff">
-        <title> 19:54:36: 21.2 m @ 8.2 kts &#x2191; 341° NNW = 5.21 nm</title>
+        <title> 19:54:36: 21.2 m @ 8.2 kts &#x2191; 341° NNW = 5.34 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="858" y1="136" x2="856" y2="135" stroke="#0af">
-        <title> 19:54:37: 3.0 m @ 5.9 kts &#x2191; 300° WNW = 5.21 nm</title>
+        <title> 19:54:37: 3.0 m @ 5.9 kts &#x2191; 300° WNW = 5.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="856" y1="135" x2="844" y2="134" stroke="#08f">
-        <title> 19:54:43: 14.2 m @ 4.6 kts &#x2191; 276° W = 5.22 nm</title>
+        <title> 19:54:43: 14.2 m @ 4.6 kts &#x2191; 276° W = 5.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="844" y1="134" x2="830" y2="135" stroke="#08f">
-        <title> 19:54:50: 18.0 m @ 5.0 kts &#x2191; 265° W = 5.23 nm</title>
+        <title> 19:54:50: 18.0 m @ 5.0 kts &#x2191; 265° W = 5.36 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="830" y1="135" x2="813" y2="139" stroke="#0af">
-        <title> 19:54:58: 22.1 m @ 5.4 kts &#x2191; 256° WSW = 5.24 nm</title>
+        <title> 19:54:58: 22.1 m @ 5.4 kts &#x2191; 256° WSW = 5.38 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="813" y1="139" x2="801" y2="141" stroke="#0af">
-        <title> 19:55:03: 15.2 m @ 5.9 kts &#x2191; 263° W = 5.25 nm</title>
+        <title> 19:55:03: 15.2 m @ 5.9 kts &#x2191; 263° W = 5.38 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="801" y1="141" x2="780" y2="143" stroke="#0cf">
-        <title> 19:55:11: 26.4 m @ 6.4 kts &#x2191; 264° W = 5.26 nm</title>
+        <title> 19:55:11: 26.4 m @ 6.4 kts &#x2191; 264° W = 5.40 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="780" y1="143" x2="752" y2="148" stroke="#0ef">
-        <title> 19:55:20: 35.2 m @ 7.6 kts &#x2191; 260° W = 5.28 nm</title>
+        <title> 19:55:20: 35.2 m @ 7.6 kts &#x2191; 260° W = 5.42 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="752" y1="148" x2="733" y2="151" stroke="#0ef">
-        <title> 19:55:26: 24.3 m @ 7.9 kts &#x2191; 261° W = 5.29 nm</title>
+        <title> 19:55:26: 24.3 m @ 7.9 kts &#x2191; 261° W = 5.43 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="733" y1="151" x2="708" y2="156" stroke="#0ff">
-        <title> 19:55:33: 31.0 m @ 8.6 kts &#x2191; 259° W = 5.31 nm</title>
+        <title> 19:55:33: 31.0 m @ 8.6 kts &#x2191; 259° W = 5.45 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="708" y1="156" x2="682" y2="160" stroke="#0fb">
-        <title> 19:55:40: 33.3 m @ 9.2 kts &#x2191; 260° W = 5.33 nm</title>
+        <title> 19:55:40: 33.3 m @ 9.2 kts &#x2191; 260° W = 5.47 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="682" y1="160" x2="647" y2="165" stroke="#0fb">
-        <title> 19:55:49: 44.8 m @ 9.7 kts &#x2191; 262° W = 5.35 nm</title>
+        <title> 19:55:49: 44.8 m @ 9.7 kts &#x2191; 262° W = 5.49 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="647" y1="165" x2="628" y2="168" stroke="#0f3">
-        <title> 19:55:53: 23.5 m @ 11.4 kts &#x2191; 260° W = 5.36 nm</title>
+        <title> 19:55:53: 23.5 m @ 11.4 kts &#x2191; 260° W = 5.50 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="628" y1="168" x2="613" y2="171" stroke="#0f0">
-        <title> 19:55:56: 19.9 m @ 12.9 kts &#x2191; 260° W = 5.37 nm</title>
+        <title> 19:55:56: 19.9 m @ 12.9 kts &#x2191; 260° W = 5.51 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="613" y1="171" x2="602" y2="172" stroke="#0f0">
-        <title> 19:55:58: 13.2 m @ 12.8 kts &#x2191; 264° W = 5.38 nm</title>
+        <title> 19:55:58: 13.2 m @ 12.8 kts &#x2191; 264° W = 5.52 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="602" y1="172" x2="567" y2="179" stroke="#0f0">
-        <title> 19:56:05: 45.1 m @ 12.5 kts &#x2191; 260° W = 5.41 nm</title>
+        <title> 19:56:05: 45.1 m @ 12.5 kts &#x2191; 260° W = 5.54 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="567" y1="179" x2="547" y2="183" stroke="#0f3">
-        <title> 19:56:09: 24.7 m @ 12.0 kts &#x2191; 257° WSW = 5.42 nm</title>
+        <title> 19:56:09: 24.7 m @ 12.0 kts &#x2191; 257° WSW = 5.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="547" y1="183" x2="534" y2="185" stroke="#0f7">
-        <title> 19:56:12: 16.4 m @ 10.6 kts &#x2191; 261° W = 5.43 nm</title>
+        <title> 19:56:12: 16.4 m @ 10.6 kts &#x2191; 261° W = 5.57 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="534" y1="185" x2="526" y2="187" stroke="#0fb">
-        <title> 19:56:14: 10.1 m @ 9.8 kts &#x2191; 256° WSW = 5.43 nm</title>
+        <title> 19:56:14: 10.1 m @ 9.8 kts &#x2191; 256° WSW = 5.57 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="526" y1="187" x2="515" y2="189" stroke="#0fb">
-        <title> 19:56:17: 14.3 m @ 9.3 kts &#x2191; 260° W = 5.44 nm</title>
+        <title> 19:56:17: 14.3 m @ 9.3 kts &#x2191; 260° W = 5.58 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="515" y1="189" x2="497" y2="193" stroke="#0fb">
-        <title> 19:56:22: 23.5 m @ 9.1 kts &#x2191; 257° WSW = 5.45 nm</title>
+        <title> 19:56:22: 23.5 m @ 9.1 kts &#x2191; 257° WSW = 5.59 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="497" y1="193" x2="493" y2="193" stroke="#0ff">
-        <title> 19:56:23: 4.5 m @ 8.7 kts &#x2191; 264° W = 5.46 nm</title>
+        <title> 19:56:23: 4.5 m @ 8.7 kts &#x2191; 264° W = 5.59 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="493" y1="193" x2="463" y2="196" stroke="#0ff">
-        <title> 19:56:32: 37.3 m @ 8.1 kts &#x2191; 265° W = 5.48 nm</title>
+        <title> 19:56:32: 37.3 m @ 8.1 kts &#x2191; 265° W = 5.61 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="463" y1="196" x2="445" y2="198" stroke="#0ff">
-        <title> 19:56:37: 23.0 m @ 8.9 kts &#x2191; 265° W = 5.49 nm</title>
+        <title> 19:56:37: 23.0 m @ 8.9 kts &#x2191; 265° W = 5.63 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="445" y1="198" x2="434" y2="200" stroke="#0fb">
-        <title> 19:56:40: 14.6 m @ 9.5 kts &#x2191; 258° WSW = 5.50 nm</title>
+        <title> 19:56:40: 14.6 m @ 9.5 kts &#x2191; 258° WSW = 5.63 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="434" y1="200" x2="404" y2="205" stroke="#0f7">
-        <title> 19:56:47: 37.0 m @ 10.3 kts &#x2191; 261° W = 5.52 nm</title>
+        <title> 19:56:47: 37.0 m @ 10.3 kts &#x2191; 261° W = 5.65 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="404" y1="205" x2="368" y2="208" stroke="#0f3">
-        <title> 19:56:55: 45.8 m @ 11.1 kts &#x2191; 265° W = 5.54 nm</title>
+        <title> 19:56:55: 45.8 m @ 11.1 kts &#x2191; 265° W = 5.68 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="368" y1="208" x2="346" y2="210" stroke="#0f7">
-        <title> 19:57:00: 27.6 m @ 10.7 kts &#x2191; 266° W = 5.56 nm</title>
+        <title> 19:57:00: 27.6 m @ 10.7 kts &#x2191; 266° W = 5.69 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="346" y1="210" x2="315" y2="215" stroke="#0fb">
-        <title> 19:57:08: 39.3 m @ 9.5 kts &#x2191; 261° W = 5.58 nm</title>
+        <title> 19:57:08: 39.3 m @ 9.5 kts &#x2191; 261° W = 5.72 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="315" y1="215" x2="284" y2="220" stroke="#0fb">
-        <title> 19:57:16: 38.5 m @ 9.4 kts &#x2191; 260° W = 5.60 nm</title>
+        <title> 19:57:16: 38.5 m @ 9.4 kts &#x2191; 260° W = 5.74 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="284" y1="220" x2="259" y2="225" stroke="#0ef">
-        <title> 19:57:24: 31.9 m @ 7.7 kts &#x2191; 259° W = 5.62 nm</title>
+        <title> 19:57:24: 31.9 m @ 7.7 kts &#x2191; 259° W = 5.75 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="259" y1="225" x2="238" y2="229" stroke="#0cf">
-        <title> 19:57:32: 27.4 m @ 6.7 kts &#x2191; 259° W = 5.63 nm</title>
+        <title> 19:57:32: 27.4 m @ 6.7 kts &#x2191; 259° W = 5.77 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="238" y1="229" x2="221" y2="234" stroke="#0ef">
-        <title> 19:57:38: 21.9 m @ 7.1 kts &#x2191; 253° WSW = 5.64 nm</title>
+        <title> 19:57:38: 21.9 m @ 7.1 kts &#x2191; 253° WSW = 5.78 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="221" y1="234" x2="197" y2="242" stroke="#0ff">
-        <title> 19:57:45: 31.8 m @ 8.8 kts &#x2191; 251° WSW = 5.66 nm</title>
+        <title> 19:57:45: 31.8 m @ 8.8 kts &#x2191; 251° WSW = 5.80 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="197" y1="242" x2="175" y2="247" stroke="#0ef">
-        <title> 19:57:52: 28.1 m @ 7.8 kts &#x2191; 260° W = 5.67 nm</title>
+        <title> 19:57:52: 28.1 m @ 7.8 kts &#x2191; 260° W = 5.81 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="175" y1="247" x2="165" y2="247" stroke="#0cf">
-        <title> 19:57:56: 12.5 m @ 6.1 kts &#x2191; 265° W = 5.68 nm</title>
+        <title> 19:57:56: 12.5 m @ 6.1 kts &#x2191; 265° W = 5.82 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="165" y1="247" x2="159" y2="246" stroke="#0af">
-        <title> 19:57:59: 7.7 m @ 5.0 kts &#x2191; 280° W = 5.69 nm</title>
+        <title> 19:57:59: 7.7 m @ 5.0 kts &#x2191; 280° W = 5.82 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="159" y1="246" x2="153" y2="247" stroke="#08f">
-        <title> 19:58:02: 7.0 m @ 4.5 kts &#x2191; 262° W = 5.69 nm</title>
+        <title> 19:58:02: 7.0 m @ 4.5 kts &#x2191; 262° W = 5.83 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="153" y1="247" x2="142" y2="251" stroke="#08f">
-        <title> 19:58:08: 14.4 m @ 4.7 kts &#x2191; 252° WSW = 5.70 nm</title>
+        <title> 19:58:08: 14.4 m @ 4.7 kts &#x2191; 252° WSW = 5.84 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="142" y1="251" x2="140" y2="262" stroke="#0af">
-        <title> 19:58:13: 14.4 m @ 5.6 kts &#x2191; 188° S = 5.70 nm</title>
+        <title> 19:58:13: 14.4 m @ 5.6 kts &#x2191; 188° S = 5.84 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="140" y1="262" x2="144" y2="272" stroke="#0af">
-        <title> 19:58:18: 13.7 m @ 5.3 kts &#x2191; 158° SSE = 5.71 nm</title>
+        <title> 19:58:18: 13.7 m @ 5.3 kts &#x2191; 158° SSE = 5.85 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="144" y1="272" x2="148" y2="282" stroke="#0cf">
-        <title> 19:58:22: 12.8 m @ 6.2 kts &#x2191; 157° SSE = 5.72 nm</title>
+        <title> 19:58:22: 12.8 m @ 6.2 kts &#x2191; 157° SSE = 5.86 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="148" y1="282" x2="157" y2="301" stroke="#0cf">
-        <title> 19:58:30: 26.1 m @ 6.3 kts &#x2191; 155° SSE = 5.73 nm</title>
+        <title> 19:58:30: 26.1 m @ 6.3 kts &#x2191; 155° SSE = 5.87 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="157" y1="301" x2="165" y2="321" stroke="#0ef">
-        <title> 19:58:37: 26.7 m @ 7.4 kts &#x2191; 157° SSE = 5.75 nm</title>
+        <title> 19:58:37: 26.7 m @ 7.4 kts &#x2191; 157° SSE = 5.89 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="165" y1="321" x2="170" y2="331" stroke="#0cf">
-        <title> 19:58:41: 14.0 m @ 6.8 kts &#x2191; 157° SSE = 5.75 nm</title>
+        <title> 19:58:41: 14.0 m @ 6.8 kts &#x2191; 157° SSE = 5.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="170" y1="331" x2="177" y2="347" stroke="#0ef">
-        <title> 19:58:47: 22.4 m @ 7.2 kts &#x2191; 157° SSE = 5.77 nm</title>
+        <title> 19:58:47: 22.4 m @ 7.2 kts &#x2191; 157° SSE = 5.91 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="177" y1="347" x2="184" y2="362" stroke="#0cf">
-        <title> 19:58:53: 20.2 m @ 6.5 kts &#x2191; 152° SSE = 5.78 nm</title>
+        <title> 19:58:53: 20.2 m @ 6.5 kts &#x2191; 152° SSE = 5.92 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="184" y1="362" x2="191" y2="371" stroke="#0af">
-        <title> 19:58:58: 14.7 m @ 5.7 kts &#x2191; 144° SE = 5.79 nm</title>
+        <title> 19:58:58: 14.7 m @ 5.7 kts &#x2191; 144° SE = 5.92 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="191" y1="371" x2="202" y2="388" stroke="#0cf">
-        <title> 19:59:06: 24.9 m @ 6.0 kts &#x2191; 149° SSE = 5.80 nm</title>
+        <title> 19:59:06: 24.9 m @ 6.0 kts &#x2191; 149° SSE = 5.94 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="202" y1="388" x2="210" y2="400" stroke="#0af">
-        <title> 19:59:12: 17.7 m @ 5.7 kts &#x2191; 145° SE = 5.81 nm</title>
+        <title> 19:59:12: 17.7 m @ 5.7 kts &#x2191; 145° SE = 5.95 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="210" y1="400" x2="221" y2="416" stroke="#0cf">
-        <title> 19:59:20: 24.8 m @ 6.0 kts &#x2191; 147° SSE = 5.82 nm</title>
+        <title> 19:59:20: 24.8 m @ 6.0 kts &#x2191; 147° SSE = 5.96 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="221" y1="416" x2="234" y2="443" stroke="#0cf">
-        <title> 19:59:31: 37.3 m @ 6.6 kts &#x2191; 154° SSE = 5.84 nm</title>
+        <title> 19:59:31: 37.3 m @ 6.6 kts &#x2191; 154° SSE = 5.98 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="234" y1="443" x2="243" y2="466" stroke="#0cf">
-        <title> 19:59:40: 30.4 m @ 6.6 kts &#x2191; 159° SSE = 5.86 nm</title>
+        <title> 19:59:40: 30.4 m @ 6.6 kts &#x2191; 159° SSE = 6.00 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="243" y1="466" x2="251" y2="485" stroke="#0cf">
-        <title> 19:59:48: 26.1 m @ 6.3 kts &#x2191; 157° SSE = 5.87 nm</title>
+        <title> 19:59:48: 26.1 m @ 6.3 kts &#x2191; 157° SSE = 6.01 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="251" y1="485" x2="262" y2="512" stroke="#0af">
-        <title> 20:00:00: 36.8 m @ 6.0 kts &#x2191; 157° SSE = 5.89 nm</title>
+        <title> 20:00:00: 36.8 m @ 6.0 kts &#x2191; 157° SSE = 6.03 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="262" y1="512" x2="271" y2="532" stroke="#0cf">
-        <title> 20:00:08: 27.3 m @ 6.6 kts &#x2191; 156° SSE = 5.91 nm</title>
+        <title> 20:00:08: 27.3 m @ 6.6 kts &#x2191; 156° SSE = 6.05 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="271" y1="532" x2="282" y2="554" stroke="#0ef">
-        <title> 20:00:16: 30.2 m @ 7.3 kts &#x2191; 154° SSE = 5.92 nm</title>
+        <title> 20:00:16: 30.2 m @ 7.3 kts &#x2191; 154° SSE = 6.06 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="282" y1="554" x2="292" y2="572" stroke="#0ff">
-        <title> 20:00:22: 25.2 m @ 8.2 kts &#x2191; 151° SSE = 5.94 nm</title>
+        <title> 20:00:22: 25.2 m @ 8.2 kts &#x2191; 151° SSE = 6.08 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="292" y1="572" x2="300" y2="590" stroke="#0ff">
-        <title> 20:00:28: 24.9 m @ 8.1 kts &#x2191; 156° SSE = 5.95 nm</title>
+        <title> 20:00:28: 24.9 m @ 8.1 kts &#x2191; 156° SSE = 6.09 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="300" y1="590" x2="312" y2="622" stroke="#0ff">
-        <title> 20:00:38: 42.8 m @ 8.3 kts &#x2191; 159° SSE = 5.97 nm</title>
+        <title> 20:00:38: 42.8 m @ 8.3 kts &#x2191; 159° SSE = 6.11 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="312" y1="622" x2="317" y2="632" stroke="#0ef">
-        <title> 20:00:42: 14.6 m @ 7.1 kts &#x2191; 157° SSE = 5.98 nm</title>
+        <title> 20:00:42: 14.6 m @ 7.1 kts &#x2191; 157° SSE = 6.12 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="317" y1="632" x2="321" y2="646" stroke="#0af">
-        <title> 20:00:48: 18.3 m @ 5.9 kts &#x2191; 161° SSE = 5.99 nm</title>
+        <title> 20:00:48: 18.3 m @ 5.9 kts &#x2191; 161° SSE = 6.13 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="321" y1="646" x2="330" y2="670" stroke="#0cf">
-        <title> 20:00:57: 30.9 m @ 6.7 kts &#x2191; 160° SSE = 6.01 nm</title>
+        <title> 20:00:57: 30.9 m @ 6.7 kts &#x2191; 160° SSE = 6.15 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="330" y1="670" x2="340" y2="695" stroke="#0cf">
-        <title> 20:01:07: 34.1 m @ 6.6 kts &#x2191; 159° SSE = 6.03 nm</title>
+        <title> 20:01:07: 34.1 m @ 6.6 kts &#x2191; 159° SSE = 6.17 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="340" y1="695" x2="343" y2="708" stroke="#0cf">
-        <title> 20:01:12: 16.4 m @ 6.4 kts &#x2191; 164° SSE = 6.04 nm</title>
+        <title> 20:01:12: 16.4 m @ 6.4 kts &#x2191; 164° SSE = 6.17 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="343" y1="708" x2="348" y2="727" stroke="#0ef">
-        <title> 20:01:19: 25.3 m @ 7.0 kts &#x2191; 167° SSE = 6.05 nm</title>
+        <title> 20:01:19: 25.3 m @ 7.0 kts &#x2191; 167° SSE = 6.19 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="348" y1="727" x2="355" y2="756" stroke="#0ef">
-        <title> 20:01:29: 37.1 m @ 7.2 kts &#x2191; 165° SSE = 6.07 nm</title>
+        <title> 20:01:29: 37.1 m @ 7.2 kts &#x2191; 165° SSE = 6.21 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="355" y1="756" x2="361" y2="774" stroke="#0cf">
-        <title> 20:01:36: 22.9 m @ 6.3 kts &#x2191; 163° SSE = 6.08 nm</title>
+        <title> 20:01:36: 22.9 m @ 6.3 kts &#x2191; 163° SSE = 6.22 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="361" y1="774" x2="368" y2="794" stroke="#0af">
-        <title> 20:01:45: 27.3 m @ 5.9 kts &#x2191; 160° SSE = 6.10 nm</title>
+        <title> 20:01:45: 27.3 m @ 5.9 kts &#x2191; 160° SSE = 6.23 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="368" y1="794" x2="377" y2="814" stroke="#0af">
-        <title> 20:01:54: 27.1 m @ 5.8 kts &#x2191; 156° SSE = 6.11 nm</title>
+        <title> 20:01:54: 27.1 m @ 5.8 kts &#x2191; 156° SSE = 6.25 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="377" y1="814" x2="384" y2="826" stroke="#0cf">
-        <title> 20:01:59: 17.6 m @ 6.8 kts &#x2191; 149° SSE = 6.12 nm</title>
+        <title> 20:01:59: 17.6 m @ 6.8 kts &#x2191; 149° SSE = 6.26 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="384" y1="826" x2="395" y2="848" stroke="#0cf">
-        <title> 20:02:08: 30.4 m @ 6.6 kts &#x2191; 155° SSE = 6.14 nm</title>
+        <title> 20:02:08: 30.4 m @ 6.6 kts &#x2191; 155° SSE = 6.28 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="395" y1="848" x2="403" y2="875" stroke="#0cf">
-        <title> 20:02:19: 35.3 m @ 6.2 kts &#x2191; 163° SSE = 6.16 nm</title>
+        <title> 20:02:19: 35.3 m @ 6.2 kts &#x2191; 163° SSE = 6.29 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="403" y1="875" x2="410" y2="897" stroke="#0cf">
-        <title> 20:02:28: 28.4 m @ 6.1 kts &#x2191; 162° SSE = 6.17 nm</title>
+        <title> 20:02:28: 28.4 m @ 6.1 kts &#x2191; 162° SSE = 6.31 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="410" y1="897" x2="421" y2="925" stroke="#0cf">
-        <title> 20:02:40: 37.5 m @ 6.1 kts &#x2191; 159° SSE = 6.19 nm</title>
+        <title> 20:02:40: 37.5 m @ 6.1 kts &#x2191; 159° SSE = 6.33 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="421" y1="925" x2="430" y2="948" stroke="#0cf">
-        <title> 20:02:50: 31.2 m @ 6.1 kts &#x2191; 159° SSE = 6.21 nm</title>
+        <title> 20:02:50: 31.2 m @ 6.1 kts &#x2191; 159° SSE = 6.35 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="430" y1="948" x2="440" y2="973" stroke="#0af">
-        <title> 20:03:02: 33.3 m @ 5.4 kts &#x2191; 158° SSE = 6.23 nm</title>
+        <title> 20:03:02: 33.3 m @ 5.4 kts &#x2191; 158° SSE = 6.36 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="440" y1="973" x2="446" y2="993" stroke="#0af">
-        <title> 20:03:11: 26.9 m @ 5.8 kts &#x2191; 163° SSE = 6.24 nm</title>
+        <title> 20:03:11: 26.9 m @ 5.8 kts &#x2191; 163° SSE = 6.38 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="446" y1="993" x2="454" y2="1013" stroke="#0af">
-        <title> 20:03:20: 26.9 m @ 5.8 kts &#x2191; 158° SSE = 6.25 nm</title>
+        <title> 20:03:20: 26.9 m @ 5.8 kts &#x2191; 158° SSE = 6.39 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="454" y1="1013" x2="459" y2="1031" stroke="#08f">
-        <title> 20:03:29: 22.7 m @ 4.9 kts &#x2191; 166° SSE = 6.27 nm</title>
+        <title> 20:03:29: 22.7 m @ 4.9 kts &#x2191; 166° SSE = 6.41 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="459" y1="1031" x2="462" y2="1052" stroke="#0af">
-        <title> 20:03:38: 27.2 m @ 5.9 kts &#x2191; 171° S = 6.28 nm</title>
+        <title> 20:03:38: 27.2 m @ 5.9 kts &#x2191; 171° S = 6.42 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="462" y1="1052" x2="467" y2="1078" stroke="#0cf">
-        <title> 20:03:48: 32.6 m @ 6.3 kts &#x2191; 169° S = 6.30 nm</title>
+        <title> 20:03:48: 32.6 m @ 6.3 kts &#x2191; 169° S = 6.44 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="467" y1="1078" x2="470" y2="1098" stroke="#0cf">
-        <title> 20:03:56: 25.7 m @ 6.2 kts &#x2191; 173° S = 6.31 nm</title>
+        <title> 20:03:56: 25.7 m @ 6.2 kts &#x2191; 173° S = 6.45 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="470" y1="1098" x2="474" y2="1117" stroke="#0cf">
-        <title> 20:04:03: 23.7 m @ 6.6 kts &#x2191; 167° SSE = 6.33 nm</title>
+        <title> 20:04:03: 23.7 m @ 6.6 kts &#x2191; 167° SSE = 6.46 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="474" y1="1117" x2="483" y2="1149" stroke="#0cf">
-        <title> 20:04:15: 41.3 m @ 6.7 kts &#x2191; 165° SSE = 6.35 nm</title>
+        <title> 20:04:15: 41.3 m @ 6.7 kts &#x2191; 165° SSE = 6.49 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="483" y1="1149" x2="488" y2="1166" stroke="#0cf">
-        <title> 20:04:22: 22.7 m @ 6.3 kts &#x2191; 161° SSE = 6.36 nm</title>
+        <title> 20:04:22: 22.7 m @ 6.3 kts &#x2191; 161° SSE = 6.50 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="488" y1="1166" x2="494" y2="1186" stroke="#0af">
-        <title> 20:04:31: 25.8 m @ 5.6 kts &#x2191; 164° SSE = 6.37 nm</title>
+        <title> 20:04:31: 25.8 m @ 5.6 kts &#x2191; 164° SSE = 6.51 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="494" y1="1186" x2="498" y2="1205" stroke="#0cf">
-        <title> 20:04:38: 24.9 m @ 6.9 kts &#x2191; 168° SSE = 6.39 nm</title>
+        <title> 20:04:38: 24.9 m @ 6.9 kts &#x2191; 168° SSE = 6.53 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="498" y1="1205" x2="506" y2="1230" stroke="#0ef">
-        <title> 20:04:46: 32.2 m @ 7.8 kts &#x2191; 163° SSE = 6.41 nm</title>
+        <title> 20:04:46: 32.2 m @ 7.8 kts &#x2191; 163° SSE = 6.54 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="506" y1="1230" x2="512" y2="1248" stroke="#0ff">
-        <title> 20:04:51: 23.1 m @ 9.0 kts &#x2191; 161° SSE = 6.42 nm</title>
+        <title> 20:04:51: 23.1 m @ 9.0 kts &#x2191; 161° SSE = 6.56 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="512" y1="1248" x2="519" y2="1273" stroke="#0ef">
-        <title> 20:04:59: 32.5 m @ 7.9 kts &#x2191; 165° SSE = 6.44 nm</title>
+        <title> 20:04:59: 32.5 m @ 7.9 kts &#x2191; 165° SSE = 6.57 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="519" y1="1273" x2="525" y2="1296" stroke="#0cf">
-        <title> 20:05:08: 29.7 m @ 6.4 kts &#x2191; 165° SSE = 6.45 nm</title>
+        <title> 20:05:08: 29.7 m @ 6.4 kts &#x2191; 165° SSE = 6.59 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="525" y1="1296" x2="530" y2="1318" stroke="#0cf">
-        <title> 20:05:17: 28.5 m @ 6.2 kts &#x2191; 167° SSE = 6.47 nm</title>
+        <title> 20:05:17: 28.5 m @ 6.2 kts &#x2191; 167° SSE = 6.61 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="530" y1="1318" x2="534" y2="1344" stroke="#0af">
-        <title> 20:05:28: 33.1 m @ 5.9 kts &#x2191; 170° S = 6.48 nm</title>
+        <title> 20:05:28: 33.1 m @ 5.9 kts &#x2191; 170° S = 6.62 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="534" y1="1344" x2="541" y2="1376" stroke="#0ef">
-        <title> 20:05:39: 41.2 m @ 7.3 kts &#x2191; 168° SSE = 6.51 nm</title>
+        <title> 20:05:39: 41.2 m @ 7.3 kts &#x2191; 168° SSE = 6.65 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="541" y1="1376" x2="548" y2="1400" stroke="#0cf">
-        <title> 20:05:48: 30.3 m @ 6.5 kts &#x2191; 163° SSE = 6.52 nm</title>
+        <title> 20:05:48: 30.3 m @ 6.5 kts &#x2191; 163° SSE = 6.66 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="548" y1="1400" x2="556" y2="1419" stroke="#0cf">
-        <title> 20:05:56: 26.0 m @ 6.3 kts &#x2191; 159° SSE = 6.54 nm</title>
+        <title> 20:05:56: 26.0 m @ 6.3 kts &#x2191; 159° SSE = 6.68 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="556" y1="1419" x2="563" y2="1441" stroke="#0ef">
-        <title> 20:06:04: 29.8 m @ 7.2 kts &#x2191; 161° SSE = 6.55 nm</title>
+        <title> 20:06:04: 29.8 m @ 7.2 kts &#x2191; 161° SSE = 6.69 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="563" y1="1441" x2="573" y2="1474" stroke="#0ff">
-        <title> 20:06:14: 41.9 m @ 8.1 kts &#x2191; 164° SSE = 6.58 nm</title>
+        <title> 20:06:14: 41.9 m @ 8.1 kts &#x2191; 164° SSE = 6.71 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="573" y1="1474" x2="579" y2="1498" stroke="#0cf">
-        <title> 20:06:23: 31.8 m @ 6.9 kts &#x2191; 165° SSE = 6.59 nm</title>
+        <title> 20:06:23: 31.8 m @ 6.9 kts &#x2191; 165° SSE = 6.73 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="579" y1="1498" x2="583" y2="1516" stroke="#0af">
-        <title> 20:06:31: 22.5 m @ 5.5 kts &#x2191; 168° SSE = 6.61 nm</title>
+        <title> 20:06:31: 22.5 m @ 5.5 kts &#x2191; 168° SSE = 6.74 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="583" y1="1516" x2="588" y2="1541" stroke="#0cf">
-        <title> 20:06:40: 31.7 m @ 6.8 kts &#x2191; 169° S = 6.62 nm</title>
+        <title> 20:06:40: 31.7 m @ 6.8 kts &#x2191; 169° S = 6.76 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="588" y1="1541" x2="586" y2="1562" stroke="#0cf">
-        <title> 20:06:48: 26.1 m @ 6.3 kts &#x2191; 184° S = 6.64 nm</title>
+        <title> 20:06:48: 26.1 m @ 6.3 kts &#x2191; 184° S = 6.78 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="586" y1="1562" x2="580" y2="1582" stroke="#0ef">
-        <title> 20:06:55: 26.2 m @ 7.3 kts &#x2191; 198° SSW = 6.65 nm</title>
+        <title> 20:06:55: 26.2 m @ 7.3 kts &#x2191; 198° SSW = 6.79 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="580" y1="1582" x2="573" y2="1594" stroke="#0cf">
-        <title> 20:07:00: 17.9 m @ 7.0 kts &#x2191; 208° SSW = 6.66 nm</title>
+        <title> 20:07:00: 17.9 m @ 7.0 kts &#x2191; 208° SSW = 6.80 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="573" y1="1594" x2="575" y2="1611" stroke="#0af">
-        <title> 20:07:07: 20.9 m @ 5.8 kts &#x2191; 175° S = 6.67 nm</title>
+        <title> 20:07:07: 20.9 m @ 5.8 kts &#x2191; 175° S = 6.81 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="575" y1="1611" x2="580" y2="1614" stroke="#06f">
-        <title> 20:07:11: 7.8 m @ 3.8 kts &#x2191; 119° ESE = 6.68 nm</title>
+        <title> 20:07:11: 7.8 m @ 3.8 kts &#x2191; 119° ESE = 6.81 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="580" y1="1614" x2="583" y2="1621" stroke="#04f">
-        <title> 20:07:18: 9.8 m @ 2.7 kts &#x2191; 159° SSE = 6.68 nm</title>
+        <title> 20:07:18: 9.8 m @ 2.7 kts &#x2191; 159° SSE = 6.82 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="583" y1="1621" x2="580" y2="1635" stroke="#08f">
-        <title> 20:07:26: 17.8 m @ 4.3 kts &#x2191; 192° SSW = 6.69 nm</title>
+        <title> 20:07:26: 17.8 m @ 4.3 kts &#x2191; 192° SSW = 6.83 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="580" y1="1635" x2="570" y2="1655" stroke="#0af">
-        <title> 20:07:35: 27.6 m @ 5.9 kts &#x2191; 208° SSW = 6.71 nm</title>
+        <title> 20:07:35: 27.6 m @ 5.9 kts &#x2191; 208° SSW = 6.84 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="570" y1="1655" x2="557" y2="1668" stroke="#0af">
-        <title> 20:07:43: 22.5 m @ 5.5 kts &#x2191; 224° SW = 6.72 nm</title>
+        <title> 20:07:43: 22.5 m @ 5.5 kts &#x2191; 224° SW = 6.86 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="557" y1="1668" x2="548" y2="1669" stroke="#08f">
-        <title> 20:07:48: 11.5 m @ 4.5 kts &#x2191; 259° W = 6.72 nm</title>
+        <title> 20:07:48: 11.5 m @ 4.5 kts &#x2191; 259° W = 6.86 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="548" y1="1669" x2="542" y2="1670" stroke="#06f">
-        <title> 20:07:52: 8.1 m @ 3.9 kts &#x2191; 262° W = 6.73 nm</title>
+        <title> 20:07:52: 8.1 m @ 3.9 kts &#x2191; 262° W = 6.87 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="542" y1="1670" x2="530" y2="1672" stroke="#08f">
-        <title> 20:07:59: 14.5 m @ 4.0 kts &#x2191; 262° W = 6.74 nm</title>
+        <title> 20:07:59: 14.5 m @ 4.0 kts &#x2191; 262° W = 6.87 nm</title>
         </line>
 	    
-        
-        
+    </g>
+	
+    <g class="segment">
         
         <line class="step" x1="530" y1="1672" x2="517" y2="1672" stroke="#08f">
-        <title> 20:08:07: 17.3 m @ 4.2 kts &#x2191; 272° W = 6.75 nm</title>
+        <title> 20:08:07: 17.3 m @ 4.2 kts &#x2191; 272° W = 6.88 nm</title>
         </line>
-	    
-        
         
         
         <line class="step" x1="517" y1="1672" x2="509" y2="1678" stroke="#06f">
-        <title> 20:08:13: 11.9 m @ 3.8 kts &#x2191; 231° SW = 6.75 nm</title>
+        <title> 20:08:13: 11.9 m @ 3.8 kts &#x2191; 231° SW = 6.89 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="509" y1="1678" x2="510" y2="1685" stroke="#04f">
-        <title> 20:08:19: 8.9 m @ 2.9 kts &#x2191; 173° S = 6.76 nm</title>
+        <title> 20:08:19: 8.9 m @ 2.9 kts &#x2191; 173° S = 6.90 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="510" y1="1685" x2="510" y2="1685" stroke="#02f">
-        <title> 20:08:20: 1.0 m @ 2.0 kts &#x2191; 157° SSE = 6.76 nm</title>
+        <title> 20:08:20: 1.0 m @ 2.0 kts &#x2191; 157° SSE = 6.90 nm</title>
         </line>
 	    
-        
-        
-        
         <line class="step" x1="510" y1="1685" x2="511" y2="1687" stroke="#02f">
-        <title> 20:08:25: 2.6 m @ 1.0 kts &#x2191; 149° SSE = 6.76 nm</title>
+        <title> 20:08:25: 2.6 m @ 1.0 kts &#x2191; 149° SSE = 6.90 nm</title>
         </line>
 	    
     </g>

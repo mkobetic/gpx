@@ -7,54 +7,6 @@ import (
 	"github.com/tkrajina/gpxgo/gpx"
 )
 
-func Test_Direction(t *testing.T) {
-	for i, tt := range []struct {
-		heading   int
-		direction string
-	}{
-		{0, "N"},
-		{11, "N"},
-		{12, "NNE"},
-		{33, "NNE"},
-		{34, "NE"},
-		{56, "NE"},
-		{57, "ENE"},
-		{79, "E"},
-		{101, "E"},
-		{102, "ESE"},
-		{123, "ESE"},
-		{124, "SE"},
-		{146, "SE"},
-		{147, "SSE"},
-		{168, "SSE"},
-		{169, "S"},
-		{191, "S"},
-		{192, "SSW"},
-		{213, "SSW"},
-		{214, "SW"},
-		{236, "SW"},
-		{237, "WSW"},
-		{258, "WSW"},
-		{259, "W"},
-		{281, "W"},
-		{282, "WNW"},
-		{303, "WNW"},
-		{304, "NW"},
-		{326, "NW"},
-		{327, "NNW"},
-		{348, "NNW"},
-		{349, "N"},
-		{359, "N"},
-	} {
-		t.Run(fmt.Sprintf("%d: %d %s", i, tt.heading, tt.direction), func(t *testing.T) {
-			dir := direction(tt.heading)
-			if dir != tt.direction {
-				t.Errorf("exp: %s got: %s", tt.direction, dir)
-			}
-		})
-	}
-}
-
 func Test_Heading(t *testing.T) {
 	bounds := gpx.GpxBounds{MinLatitude: 44, MaxLatitude: 45, MinLongitude: -78, MaxLongitude: -77}
 	m := NewMap(bounds, 1000)

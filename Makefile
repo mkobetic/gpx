@@ -15,18 +15,20 @@ setup:
 	@go get
 	@go install github.com/benbjohnson/ego/cmd/ego
 
-build: *.go ego.go
+build: *.go *.ego
+	ego
 	$(BUILD) .
 
 install: *.go *.ego
+	ego
 	go install -ldflags '$(LDFLAGS)' .
 
-ego.go: *.ego
+ego: *.ego
 	@ego
 
 samples: build
 	@rm -f samples/out/*
-	@./gpx -o samples/out -vo 0 samples/in/*
+	@./gpx -o samples/out -wd NW -vo 0 samples/in/*
 
 dist:
 	GOOS=darwin GOARCH=arm64 $(BUILD) -o dist/ .

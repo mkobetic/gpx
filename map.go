@@ -103,18 +103,10 @@ func (m *Map) SpeedColor(p1, p2 *gpx.GPXPoint) string {
 	return fmt.Sprintf("#%03x", palette[s])
 }
 
-func direction(heading int) string {
-	idx := int(math.Floor((float64(heading) + 11.25) / 22.5))
-	if idx > 15 {
-		idx = 0
-	}
-	return []string{"N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"}[idx]
-}
-
 func (m *Map) polylinePoints(s *Segment) string {
 	b := bytes.NewBuffer(nil)
 	for i := range s.gpx.Points {
-		x, y := m.Point(s.Point(i))
+		x, y := m.Point(s.gpxPoint(i))
 		fmt.Fprintf(b, "%d,%d ", x, y)
 	}
 	return b.String()
@@ -135,31 +127,29 @@ func (m *Map) renderSubtitles(w io.Writer, t *Track, videoOffset time.Duration) 
 	currentOffset := videoOffset
 	totalDistance := float64(0)
 	cueCounter := 0
-	for i := range t.gpx.Segments {
-		t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) {
-			duration := next.Timestamp.Sub(prev.Timestamp)
-			newOffset := currentOffset + duration
-			if newOffset < 0 {
-				currentOffset = newOffset
-				return
-			}
-			cueCounter++
-			totalDistance += m.Distance(prev, next, nm)
-			heading := m.Heading(prev, next)
-			direction := direction(heading)
-			fmt.Fprintf(w, "%d\n", cueCounter)
-			fmt.Fprintf(w, "%s --> %s\n", vttTimestamp(currentOffset), vttTimestamp(newOffset))
-			fmt.Fprintf(w, "%s: %0.1f m @ %0.1f kts \u2191 %d\u00b0 %s = %0.2f nm\n",
-				next.Timestamp.In(t.Timezone()).Format(time.TimeOnly),
-				m.Distance(prev, next, meter),
-				m.Speed(prev, next, nm),
-				heading,
-				direction,
-				totalDistance)
-			fmt.Fprintln(w)
+	t.Segments.EachPair(func(prev, next *Point) {
+		duration := next.gpx.Timestamp.Sub(prev.gpx.Timestamp)
+		newOffset := currentOffset + duration
+		if newOffset < 0 {
 			currentOffset = newOffset
-		})
-	}
+			return
+		}
+		cueCounter++
+		totalDistance += next.Distance
+		heading := next.Heading
+		direction := Direction(heading)
+		fmt.Fprintf(w, "%d\n", cueCounter)
+		fmt.Fprintf(w, "%s --> %s\n", vttTimestamp(currentOffset), vttTimestamp(newOffset))
+		fmt.Fprintf(w, "%s: %0.1f m @ %0.1f kts \u2191 %d\u00b0 %s = %0.2f nm\n",
+			next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly),
+			next.Distance,
+			next.Speed,
+			heading,
+			direction.String(),
+			totalDistance/1852)
+		fmt.Fprintln(w)
+		currentOffset = newOffset
+	})
 }
 
 func vttTimestamp(ts time.Duration) string {

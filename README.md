@@ -8,7 +8,8 @@ Simple GPS track processor for sailing race tracks.
 * combines segments that are no more than 1h apart into a track
 * renders each track into an svg file
 * saves each track into a new gpx file
-* optionally generates subtitles file with gps metrics that can be embedded in a video file (more below)
+* (optional) analyses each track and splits it into straight moving, turning and static segments
+* (optional) generates subtitles file with gps metrics that can be embedded in a video file (more below)
 
 ![sample track](https://github.com/user-attachments/assets/c483f91f-aed3-4521-87c2-8c57c74b078d)
 
@@ -34,6 +35,13 @@ Dropped 32 duplicate and bogus segments
 16-08-20 17:34:32 10.07nm 01.70nm x 01.98nm (1h12m42s)
 16-08-24 17:50:55 14.82nm 01.31nm x 00.71nm (2h4m15s)
 ```
+
+## track analysis
+
+If the -wd (wind direction, e.g -wd NW) option is provided, the tracks will be analyzed and split into relatively "straight" moving, turning and static segments.
+The analysis is performed using parameters suitable for sail racing gps tracks. The wind direction value is currently ignored, the plan is to perform further segment classification based on it (upwind/downind, tack, gybe, bear away, round up, ...) will follow soon.
+
+Parameters for other activity types can be added (create an issue describing what you would like to see).
 
 ## gps video subtitles
 

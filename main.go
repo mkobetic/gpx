@@ -32,7 +32,18 @@ func main() {
 		videoOffset = &d
 		return nil
 	})
+	var windDirection *direction
+	flag.Func("wd", "wind direction to use for analyzing the track, e.g. NE, or SSW", func(wd string) error {
+		for d, s := range directionToString {
+			if s == wd {
+				windDirection = &d
+				return nil
+			}
+		}
+		return fmt.Errorf("invalid wind direction value %s", wd)
+	})
 	fVersion := flag.Bool("version", false, "print version information")
+	fVerbose := flag.Bool("v", false, "verbose, print more processing details")
 	flag.Parse()
 
 	if *fVersion {
@@ -57,14 +68,22 @@ func main() {
 			fmt.Printf("Error opening %s: %s\n", fn, err)
 			return
 		}
-		segments = append(segments, GetSegments(g, filepath.Base(fn))...)
+		segments = append(segments, gpxGetSegments(g, filepath.Base(fn))...)
 	}
 	sort.Sort(segments)
 	sn := len(segments)
-	segments = segments.Dedupe(20).Split(time.Hour).Dedupe(20)
+	segments = segments.gpxDedupe(20).gpxSplit(time.Hour).gpxDedupe(20)
 	fmt.Printf("Dropped %d duplicate and bogus segments\n", sn-len(segments))
-	for _, t := range segments.Tracks(time.Hour) {
+	for _, t := range segments.gpxTracks(time.Hour) {
+		if windDirection != nil {
+			t.gpxAnalyze(Sailing)
+		}
 		fmt.Println(t.String())
+		if *fVerbose {
+			for i, s := range t.Segments {
+				fmt.Printf("%d: %s\n", i, s.String())
+			}
+		}
 		if err := t.WriteMapFile(*out); err != nil {
 			fmt.Println(err)
 		}
