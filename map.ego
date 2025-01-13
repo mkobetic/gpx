@@ -10,7 +10,7 @@ func (m *Map) renderPolylines(w io.Writer, t *Track) {
             .segment:hover { stroke: red }
         ]]>
     </style>
-    <% for i := range t.Segments { %>
+    <% for i := range t.gpx.Segments { %>
     <polyline class="segment" points="<%= m.polylinePoints(t.Segment(i)) %>"/>
 	<% } %>
 </svg>

@@ -23,13 +23,13 @@ var (
 func main() {
 	// flags
 	out := flag.String("o", ".", "directory for generated files")
-	var offset *time.Duration
+	var videoOffset *time.Duration
 	flag.Func("vo", "video time offset for subtitles file, positive offset means video starts ahead of the track", func(ts string) error {
 		d, err := time.ParseDuration(ts)
 		if err != nil {
 			return err
 		}
-		offset = &d
+		videoOffset = &d
 		return nil
 	})
 	fVersion := flag.Bool("version", false, "print version information")
@@ -68,8 +68,8 @@ func main() {
 		if err := t.WriteMapFile(*out); err != nil {
 			fmt.Println(err)
 		}
-		if offset != nil {
-			if err := t.WriteSubtitleFile(*out, *offset); err != nil {
+		if videoOffset != nil {
+			if err := t.WriteSubtitleFile(*out, *videoOffset); err != nil {
 				fmt.Println(err)
 			}
 		}

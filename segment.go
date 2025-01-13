@@ -10,27 +10,27 @@ import (
 )
 
 type Segment struct {
-	*gpx.GPXTrackSegment
+	gpx      *gpx.GPXTrackSegment
 	filename string
 }
 
 // Point returns i-th point of the segment.
-func (s Segment) Point(i int) *gpx.GPXPoint {
-	return &s.Points[i]
+func (s *Segment) Point(i int) *gpx.GPXPoint {
+	return &s.gpx.Points[i]
 }
 
 // EachPair iterates over a segment with pairs of subsequent points.
-func (s Segment) EachPair(f func(prev, next *gpx.GPXPoint)) {
+func (s *Segment) EachPair(f func(prev, next *gpx.GPXPoint)) {
 	prev := s.Point(0)
-	for i := 1; i < len(s.Points); i++ {
+	for i := 1; i < len(s.gpx.Points); i++ {
 		next := s.Point(i)
 		f(prev, next)
 		prev = next
 	}
 }
 
-func (s Segment) Timezone() *time.Location {
-	b := s.Bounds()
+func (s *Segment) Timezone() *time.Location {
+	b := s.gpx.Bounds()
 	var err error
 	tz, err := time.LoadLocation(latlong.LookupZoneName(b.MinLatitude, b.MinLongitude))
 	if err != nil {
@@ -39,36 +39,37 @@ func (s Segment) Timezone() *time.Location {
 	return tz
 }
 
-func (s Segment) String() string {
-	tb := s.TimeBounds()
+func (s *Segment) String() string {
+	tb := s.gpx.TimeBounds()
 	return fmt.Sprintf("%s @ %s = %05.2fnm (%d)",
 		tb.EndTime.Sub(tb.StartTime),
 		tb.StartTime.In(s.Timezone()).Format(strFormat),
-		s.Length2D()/1852,
-		s.GetTrackPointsNo(),
+		s.gpx.Length2D()/1852,
+		s.gpx.GetTrackPointsNo(),
 	)
 }
 
-func (s Segment) Split(limit time.Duration) Segments {
+// Split segment where the time difference between points is more than @limit.
+func (s *Segment) Split(limit time.Duration) Segments {
 	limitSeconds := limit.Seconds()
-	prev := s.Point(len(s.Points) - 1)
-	for i := len(s.Points) - 2; i >= 0; i-- {
+	prev := s.Point(len(s.gpx.Points) - 1)
+	for i := len(s.gpx.Points) - 2; i >= 0; i-- {
 		next := s.Point(i)
 		if next.TimeDiff(prev) > limitSeconds {
-			s1, s2 := s.GPXTrackSegment.Split(i)
-			return append(Segment{s1, s.filename}.Split(limit), Segment{s2, s.filename})
+			s1, s2 := s.gpx.Split(i)
+			return append((&Segment{s1, s.filename}).Split(limit), &Segment{s2, s.filename})
 		}
 		prev = next
 	}
 	return Segments{s}
 }
 
-type Segments []Segment
+type Segments []*Segment
 
 func GetSegments(g *gpx.GPX, filename string) (s Segments) {
 	for _, t := range g.Tracks {
 		for i := range t.Segments {
-			s = append(s, Segment{&t.Segments[i], filename})
+			s = append(s, &Segment{&t.Segments[i], filename})
 		}
 	}
 	return s
@@ -86,7 +87,7 @@ func (ss Segments) String() string {
 func (s Segments) Len() int      { return len(s) }
 func (s Segments) Swap(i, j int) { s[i], s[j] = s[j], s[i] }
 func (s Segments) Less(i, j int) bool {
-	return s[i].TimeBounds().StartTime.Before(s[j].TimeBounds().StartTime)
+	return s[i].gpx.TimeBounds().StartTime.Before(s[j].gpx.TimeBounds().StartTime)
 }
 
 // Dedupe removes subsequent segments with the same time bounds
@@ -98,10 +99,10 @@ func (s Segments) Dedupe(min int) (t Segments) {
 	p := s[0]
 	t = append(t, p)
 	for _, s := range s[1:] {
-		if s.TimeBounds().Equals(p.TimeBounds()) {
+		if s.gpx.TimeBounds().Equals(p.gpx.TimeBounds()) {
 			continue
 		}
-		if s.GetTrackPointsNo() > min {
+		if s.gpx.GetTrackPointsNo() > min {
 			t = append(t, s)
 		}
 		p = s
@@ -124,13 +125,13 @@ func (ss Segments) Tracks(limit time.Duration) (tracks Tracks) {
 	}
 	p := ss[0]
 	t := new(gpx.GPXTrack)
-	t.AppendSegment(p.GPXTrackSegment)
+	t.AppendSegment(p.gpx)
 	for _, s := range ss[1:] {
-		if s.TimeBounds().StartTime.Sub(p.TimeBounds().EndTime) > limit {
+		if s.gpx.TimeBounds().StartTime.Sub(p.gpx.TimeBounds().EndTime) > limit {
 			tracks = append(tracks, Track{t, nil, s.filename})
 			t = new(gpx.GPXTrack)
 		}
-		t.AppendSegment(s.GPXTrackSegment)
+		t.AppendSegment(s.gpx)
 		p = s
 	}
 	tracks = append(tracks, Track{t, nil, p.filename})

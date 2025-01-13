@@ -111,9 +111,9 @@ func direction(heading int) string {
 	return []string{"N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"}[idx]
 }
 
-func (m *Map) polylinePoints(s Segment) string {
+func (m *Map) polylinePoints(s *Segment) string {
 	b := bytes.NewBuffer(nil)
-	for i := range s.Points {
+	for i := range s.gpx.Points {
 		x, y := m.Point(s.Point(i))
 		fmt.Fprintf(b, "%d,%d ", x, y)
 	}
@@ -135,7 +135,7 @@ func (m *Map) renderSubtitles(w io.Writer, t *Track, videoOffset time.Duration) 
 	currentOffset := videoOffset
 	totalDistance := float64(0)
 	cueCounter := 0
-	for i := range t.Segments {
+	for i := range t.gpx.Segments {
 		t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) {
 			duration := next.Timestamp.Sub(prev.Timestamp)
 			newOffset := currentOffset + duration

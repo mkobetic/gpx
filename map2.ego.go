@@ -86,7 +86,7 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
 //line map2.ego:27
 	_, _ = io.WriteString(w, "\n    ")
 //line map2.ego:27
-	for i := range t.Segments {
+	for i := range t.gpx.Segments {
 //line map2.ego:28
 		_, _ = io.WriteString(w, "\n    <g class=\"segment\">\n        ")
 //line map2.ego:29

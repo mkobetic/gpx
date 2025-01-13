@@ -23,7 +23,7 @@ func (m *Map) renderPolylines(w io.Writer, t *Track) {
 //line map.ego:6
 	_, _ = io.WriteString(w, "\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\">\n    <style type=\"text/css\" >\n        <![CDATA[\n            .segment { fill: none; stroke: blue; stroke-width: 3 }\n            .segment:hover { stroke: red }\n        ]]>\n    </style>\n    ")
 //line map.ego:13
-	for i := range t.Segments {
+	for i := range t.gpx.Segments {
 //line map.ego:14
 		_, _ = io.WriteString(w, "\n    <polyline class=\"segment\" points=\"")
 //line map.ego:14

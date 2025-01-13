@@ -24,7 +24,7 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <% } %>
     </g>
     <% totalDistance := float64(0) %>
-    <% for i := range t.Segments { %>
+    <% for i := range t.gpx.Segments { %>
     <g class="segment">
         <% t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) { %>
         <% x1, y1 := m.Point(prev); x2, y2 := m.Point(next); c := m.SpeedColor(prev, next) %>

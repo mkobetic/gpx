@@ -1,3 +1,5 @@
+![tests](https://github.com/mkobetic/coin/actions/workflows/test.yaml/badge.svg)
+
 Simple GPS track processor for sailing race tracks.
 
 * reads all gpx files specified on the command line
