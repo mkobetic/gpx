@@ -11,7 +11,7 @@ func (m *Map) renderPolylines(w io.Writer, t *Track) {
         ]]>
     </style>
     <% for i := range t.gpx.Segments { %>
-    <polyline class="segment" points="<%= m.polylinePoints(t.Segment(i)) %>"/>
+    <polyline class="segment" points="<%= m.polylinePoints(t.Segments[i]) %>"/>
 	<% } %>
 </svg>
 <% } %>

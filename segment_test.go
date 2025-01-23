@@ -7,6 +7,40 @@ import (
 	"github.com/tkrajina/gpxgo/gpx"
 )
 
+func Test_Split(t *testing.T) {
+	g, err := gpx.ParseBytes(prostart)
+	if err != nil {
+		t.Error(err)
+	}
+	ss := gpxGetSegments(g, "")
+	if len(ss) != 1 {
+		t.Fail()
+	}
+	ss = ss.gpxSplit(time.Hour)
+	if len(ss) != 2 {
+		t.Error(ss)
+	}
+	t.Log("\n", ss)
+	ts := ss.gpxTracks(time.Hour)
+	if len(ts) != 2 {
+		t.Error(ts)
+	}
+	t.Log("\n", ts)
+}
+
+func Test_Analysis(t *testing.T) {
+	g, err := gpx.ParseFile("samples/out/160604-1h23-04.9nm.gpx")
+	if err != nil {
+		t.Error(err)
+	}
+	ss := gpxGetSegments(g, "")
+	ts := ss.gpxTracks(time.Hour)
+	if len(ts) != 1 {
+		t.Errorf("found %d tracks", len(ts))
+	}
+	ts[0].gpxAnalyze(Sailing)
+}
+
 var prostart = []byte(`
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="https://github.com/tkrajina/gpxgo">
@@ -136,24 +170,3 @@ var prostart = []byte(`
 		</trkseg>
 	</trk>
 </gpx>`)
-
-func Test_Split(t *testing.T) {
-	g, err := gpx.ParseBytes(prostart)
-	if err != nil {
-		t.Error(err)
-	}
-	ss := GetSegments(g, "")
-	if len(ss) != 1 {
-		t.Fail()
-	}
-	ss = ss.Split(time.Hour)
-	if len(ss) != 2 {
-		t.Error(ss)
-	}
-	t.Log("\n", ss)
-	ts := ss.Tracks(time.Hour)
-	if len(ts) != 2 {
-		t.Error(ts)
-	}
-	t.Log("\n", ts)
-}

@@ -6,7 +6,8 @@ import "time"
 
 func (m *Map) renderLines(w io.Writer, t *Track) {
 %>
-<svg width="<%= m.w %>" height="<%= m.h %>" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="<%= m.w %>" height="<%= m.h %>" viewBox="0 0 <%= m.w %> <%= m.h %>">
     <style type="text/css" >
         <![CDATA[
             .segment { fill: none; stroke-width: 4 }
@@ -23,15 +24,43 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <text x="<%= 30*i+5 %>" y="<%= m.h-4 %>" fill="white"><%= fmt.Sprint(i) %>kts</text>
         <% } %>
     </g>
-    <% totalDistance := float64(0) %>
-    <% for i := range t.gpx.Segments { %>
+    <%  totalDistance := float64(0)
+        var lastPoint *gpx.GPXPoint
+        for _, segment := range t.Segments {
+    %>
     <g class="segment">
-        <% t.Segment(i).EachPair(func(prev, next *gpx.GPXPoint) { %>
-        <% x1, y1 := m.Point(prev); x2, y2 := m.Point(next); c := m.SpeedColor(prev, next) %>
-        <% totalDistance += m.Distance(prev,next,nm) %>
-        <% heading := m.Heading(prev, next); direction := direction(heading) %>
+        <% if lastPoint != nil {
+            prev, next := lastPoint, &segment.gpx.Points[0]
+            x1, y1 := m.Point(prev)
+            x2, y2 := m.Point(next)
+            c := m.SpeedColor(prev, next)
+            totalDistance += m.Distance(prev,next,nm)
+            heading := m.Heading(prev, next)
+            direction := Direction(heading).String()
+            timestamp := next.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
+            distance := fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter))
+            speed := fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm))
+            headingAndDirection := fmt.Sprintf("%d\u00b0 %s", heading, direction )
+        %>
         <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
-        <title> <%= next.Timestamp.In(t.Timezone()).Format(time.TimeOnly) %>: <%= fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter)) %> @ <%= fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm)) %> &#x2191; <%= fmt.Sprintf("%d\u00b0 %s", heading, direction ) %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %></title>
+        <title> <%= timestamp %>: <%= distance %> @ <%= speed %> &#x2191; <%= headingAndDirection %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %></title>
+        </line>
+        <% } %>
+        <% segment.gpxEachPair(func(prev, next *gpx.GPXPoint) {
+            lastPoint = next
+            x1, y1 := m.Point(prev)
+            x2, y2 := m.Point(next)
+            c := m.SpeedColor(prev, next)
+            totalDistance += m.Distance(prev,next,nm)
+            heading := m.Heading(prev, next)
+            direction := Direction(heading).String()
+            timestamp := next.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
+            distance := fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter))
+            speed := fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm))
+            headingAndDirection := fmt.Sprintf("%d\u00b0 %s", heading, direction )
+        %>
+        <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
+        <title> <%= timestamp %>: <%= distance %> @ <%= speed %> &#x2191; <%= headingAndDirection %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %></title>
         </line>
 	    <% }) %>
     </g>

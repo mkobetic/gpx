@@ -27,7 +27,7 @@ func (m *Map) renderPolylines(w io.Writer, t *Track) {
 //line map.ego:14
 		_, _ = io.WriteString(w, "\n    <polyline class=\"segment\" points=\"")
 //line map.ego:14
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.polylinePoints(t.Segment(i)))))
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.polylinePoints(t.Segments[i]))))
 //line map.ego:14
 		_, _ = io.WriteString(w, "\"/>\n\t")
 //line map.ego:15
