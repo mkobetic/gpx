@@ -20,6 +20,29 @@ var (
 	GoVersion string // Go version used to build
 )
 
+const usage = `Usage: gpx [flags] files...
+
+Simple GPS track processor for sailing race tracks:
+* reads all gpx files specified on the command line
+* pulls out all track segments
+* discards any duplicate or superfluous (very short) segments
+* combines segments that are no more than 1h apart into a track
+* renders each track into a map rendered as an svg file
+* saves each track into a new gpx file
+* (optional) analyses each track and splits it into straight moving, turning and static segments
+* (optional) generates subtitles file with gps metrics that can be embedded in a video file
+(see https://github.com/mkobetic/gpx/blob/master/README.md for more details)
+
+Flags:`
+
+func init() {
+	flag.Usage = func() {
+		w := flag.CommandLine.Output()
+		fmt.Fprintln(w, usage)
+		flag.PrintDefaults()
+	}
+}
+
 func main() {
 	// flags
 	out := flag.String("o", ".", "directory for generated files")

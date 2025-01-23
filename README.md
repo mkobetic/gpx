@@ -10,6 +10,7 @@ Simple GPS track processor for sailing race tracks.
 * saves each track into a new gpx file
 * (optional) analyses each track and splits it into straight moving, turning and static segments
 * (optional) generates subtitles file with gps metrics that can be embedded in a video file (more below)
+(see https://github.com/mkobetic/gpx/blob/master/README.md for more details)
 
 ![sample track](https://github.com/user-attachments/assets/c483f91f-aed3-4521-87c2-8c57c74b078d)
 
@@ -17,6 +18,43 @@ Hovering over the track highlights the segment under the cursor and shows metric
 ```
 time: distance @ speed ↑ heading = total distance
 ```
+
+## usage
+
+The repository is set up to automatically compile and release binaries for common desktop platforms (linux/mac/windows).
+Download .tgz archive suitable for your platform from the latest release here https://github.com/mkobetic/gpx/releases.
+The archive contains single file that is the compiled binary. It doesn't need anything, there's no installation process,
+just put it somewhere on your $PATH or into a directory where you intend to use it. If you don't want it anymore, just delete the file.
+
+To get the latest usage information, run the binary with the -h option, e.g.
+
+```sh
+> gpx -h
+Usage: gpx [flags] files...
+
+Simple GPS track processor for sailing race tracks:
+* reads all gpx files specified on the command line
+* pulls out all track segments
+* discards any duplicate or superfluous (very short) segments
+* combines segments that are no more than 1h apart into a track
+* renders each track into a map rendered as an svg file
+* saves each track into a new gpx file
+* (optional) analyses each track and splits it into straight moving, turning and static segments
+* (optional) generates subtitles file with gps metrics that can be embedded in a video file
+
+Flags:
+  -o string
+    	directory for generated files (default ".")
+  -v	verbose, print more processing details
+  -version
+    	print version information
+  -vo value
+    	video time offset for subtitles file, positive offset means video starts ahead of the track
+  -wd value
+    	wind direction to use for analyzing the track, e.g. NE, or SSW
+```
+
+## samples
 
 `samples/out` directory contains files generated from the input files in `samples/in` directory.
 
