@@ -65,6 +65,7 @@ func main() {
 		}
 		return fmt.Errorf("invalid wind direction value %s", wd)
 	})
+	fMinSegmentLength := flag.Int("ss", 20, "discard segments that are shorter than this number of points")
 	fVersion := flag.Bool("version", false, "print version information")
 	fVerbose := flag.Bool("v", false, "verbose, print more processing details")
 	flag.Parse()
@@ -84,22 +85,27 @@ func main() {
 		return
 	}
 
-	var segments Segments
+	// Collect all the original segments from the parsed files.
+	// Using Segment instead of gpx.GPXTrackSegment so that we can attach the filenames that they came from.
+	var protoSegments Segments
 	for _, fn := range flag.Args() {
 		g, err := gpx.ParseFile(fn)
 		if err != nil {
 			fmt.Printf("Error opening %s: %s\n", fn, err)
 			return
 		}
-		segments = append(segments, gpxGetSegments(g, filepath.Base(fn))...)
+		protoSegments = append(protoSegments, gpxGetSegments(g, filepath.Base(fn))...)
 	}
-	sort.Sort(segments)
-	sn := len(segments)
-	segments = segments.gpxDedupe(20).gpxSplit(time.Hour).gpxDedupe(20)
-	fmt.Printf("Dropped %d duplicate and bogus segments\n", sn-len(segments))
-	for _, t := range segments.gpxTracks(time.Hour) {
+	sort.Sort(protoSegments)
+	sn := len(protoSegments)
+	protoSegments = gpxDedupeSegments(protoSegments, *fMinSegmentLength)
+	protoSegments = gpxSplitSegments(protoSegments, time.Hour)
+	protoSegments = gpxDedupeSegments(protoSegments, *fMinSegmentLength)
+	fmt.Printf("Dropped %d duplicate and short segments\n", sn-len(protoSegments))
+	for _, t := range gpxBuildTracks(protoSegments, time.Hour) {
 		if windDirection != nil {
 			t.gpxAnalyze(Sailing)
+			t.posClassify(*windDirection)
 		}
 		fmt.Println(t.String())
 		if *fVerbose {

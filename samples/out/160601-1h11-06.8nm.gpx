@@ -83,8 +83,6 @@
 				<ele>58.77771</ele>
 				<time>2016-06-01T22:59:18Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.368487155" lon="-75.830789823">
 				<ele>58.297119</ele>
 				<time>2016-06-01T22:59:24Z</time>
@@ -177,8 +175,6 @@
 				<ele>62.622925</ele>
 				<time>2016-06-01T23:01:13Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.369465156" lon="-75.829689782">
 				<ele>62.142334</ele>
 				<time>2016-06-01T23:01:20Z</time>
@@ -433,8 +429,6 @@
 				<ele>62.142334</ele>
 				<time>2016-06-01T23:09:02Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.365578886" lon="-75.818562554">
 				<ele>62.142334</ele>
 				<time>2016-06-01T23:09:06Z</time>
@@ -675,8 +669,6 @@
 				<ele>60.219727</ele>
 				<time>2016-06-01T23:14:47Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.369340265" lon="-75.828818064">
 				<ele>59.739136</ele>
 				<time>2016-06-01T23:14:51Z</time>
@@ -943,8 +935,6 @@
 				<ele>59.258423</ele>
 				<time>2016-06-01T23:22:11Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.365210082" lon="-75.819064295">
 				<ele>59.258423</ele>
 				<time>2016-06-01T23:22:15Z</time>
@@ -1425,8 +1415,6 @@
 				<ele>59.739136</ele>
 				<time>2016-06-01T23:42:05Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.37055145" lon="-75.828677751">
 				<ele>59.739136</ele>
 				<time>2016-06-01T23:42:12Z</time>
@@ -1513,8 +1501,6 @@
 				<ele>60.700317</ele>
 				<time>2016-06-01T23:44:14Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.370809361" lon="-75.829449054">
 				<ele>60.700317</ele>
 				<time>2016-06-01T23:44:20Z</time>
@@ -1793,8 +1779,6 @@
 				<ele>61.18103</ele>
 				<time>2016-06-01T23:51:55Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.365125174" lon="-75.819647592">
 				<ele>61.18103</ele>
 				<time>2016-06-01T23:52:02Z</time>
@@ -2367,8 +2351,6 @@
 				<ele>62.142334</ele>
 				<time>2016-06-02T00:07:43Z</time>
 			</trkpt>
-		</trkseg>
-		<trkseg>
 			<trkpt lat="45.353074092" lon="-75.824056054">
 				<ele>62.142334</ele>
 				<time>2016-06-02T00:07:48Z</time>

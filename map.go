@@ -41,22 +41,16 @@ func (m *Map) Point(p *gpx.GPXPoint) (x, y int) {
 	return
 }
 
-// units for Distance and Speed functions,
-// expressed as the length of one degree of longitude at the equator
-const km = 2 * math.Pi * 6371 / 360
-const meter = 1000 * km
-const nm = 60
-
 // Distance computes the distance between two GPS points in specified units.
-func (m *Map) Distance(p1, p2 *gpx.GPXPoint, unit float64) float64 {
+func (m *Map) Distance(p1, p2 *gpx.GPXPoint, unit unit) float64 {
 	x := p2.Latitude - p1.Latitude
 	y := (p2.Longitude - p1.Longitude) * m.coef
-	return unit * math.Sqrt(x*x+y*y)
+	return float64(unit) * math.Sqrt(x*x+y*y)
 }
 
 // Speed computes the average speed between two GPS points in specified units of distance.
 // The time aspect is derived from the distance unit, i.e. meter => m/s, km => km/h, nm => kts.
-func (m *Map) Speed(p1, p2 *gpx.GPXPoint, unit float64) float64 {
+func (m *Map) Speed(p1, p2 *gpx.GPXPoint, unit unit) float64 {
 	t := float64(p2.Timestamp.Sub(p1.Timestamp))
 	if unit == meter {
 		t /= float64(time.Second)
@@ -95,8 +89,8 @@ var palette = func() (palette []int) {
 }()
 
 // SpeedColor return the RGB color code matching the speed between two GPS points.
-func (m *Map) SpeedColor(p1, p2 *gpx.GPXPoint) string {
-	s := int(m.Speed(p1, p2, nm))
+func (m *Map) SpeedColor(speed float64) string {
+	s := int(speed)
 	if s >= len(palette) {
 		s = len(palette) - 1
 	}
@@ -140,13 +134,15 @@ func (m *Map) renderSubtitles(w io.Writer, t *Track, videoOffset time.Duration) 
 		direction := Direction(heading)
 		fmt.Fprintf(w, "%d\n", cueCounter)
 		fmt.Fprintf(w, "%s --> %s\n", vttTimestamp(currentOffset), vttTimestamp(newOffset))
-		fmt.Fprintf(w, "%s: %0.1f m @ %0.1f kts \u2191 %d\u00b0 %s = %0.2f nm\n",
+		fmt.Fprintf(w, "%s: %0.1f m @ %0.1f %s \u2191 %d\u00b0 %s = %0.2f %s\n",
 			next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly),
 			next.Distance,
 			next.Speed,
+			t.params.speed(),
 			heading,
 			direction.String(),
-			totalDistance/1852)
+			t.params.asLongDistance(totalDistance),
+			t.params.longDistance())
 		fmt.Fprintln(w)
 		currentOffset = newOffset
 	})

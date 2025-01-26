@@ -18,7 +18,7 @@ func readTrackSample(t *testing.T, data string) *Track {
 		t.Error("failed to parse track sample")
 	}
 	ss := gpxGetSegments(g, "")
-	ts := ss.gpxTracks(time.Hour)
+	ts := gpxBuildTracks(ss, time.Hour)
 	if len(ts) != 1 {
 		t.Errorf("found %d tracks", len(ts))
 	}

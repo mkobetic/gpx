@@ -15,20 +15,27 @@ const (
 	Turning Mode = "turning"
 )
 
+// Point is a track point with computed motion parameters and analysis results.
+// Note that the starting point has zero Speed and Heading!
 type Point struct {
-	gpx      *gpx.GPXPoint
-	previous *Point  // previous point on the track
-	next     *Point  // next point on the track
-	Speed    float64 // speed from previous point
-	Heading  int     // heading from previous point
-	Distance float64 // distance from previous point
+	gpx *gpx.GPXPoint
 	// Analysis results
-	HeadingChange int // how much does the heading change in the lookAround range
+	params        *AnalysisParameters
+	previous      *Point  // previous point on the track
+	next          *Point  // next point on the track
+	Speed         float64 // speed from previous point
+	Heading       int     // heading from previous point
+	Distance      float64 // distance from previous point
+	HeadingChange int     // how much does the heading change in the lookAround range
 	Mode          Mode
 }
 
 func (p *Point) String() string {
-	return fmt.Sprintf("%0.1fm @ %0.1f kts \u2191 %d\u00b0 %s < %d (%s)", p.Distance, p.Speed, p.Heading, Direction(p.Heading).String(), p.HeadingChange, p.Mode)
+	return fmt.Sprintf("%0.1fm @ %0.1f %s \u2191 %d\u00b0 %s < %d (%s)", p.Distance, p.Speed, p.params.speedUnit.speed(), p.Heading, Direction(p.Heading).String(), p.HeadingChange, p.Mode)
+}
+
+func (p *Point) ShortString() string {
+	return fmt.Sprintf("%0.1fm @ %0.1f %s \u2191 %d\u00b0 %s", p.Distance, p.Speed, p.params.speedUnit.speed(), p.Heading, Direction(p.Heading).String())
 }
 
 func (p *Point) Analyze(params *AnalysisParameters) {
@@ -71,27 +78,45 @@ func (p *Point) headingChange(change int, distance float64, forward bool, moving
 
 type Points []*Point
 
-func (ps Points) pointOfSail(windDirection direction) pointOfSail {
-	if ps.averageSpeed() < 2 {
-		return irons
+func (ps Points) mode() Mode {
+	modes := make(map[Mode]int)
+	for _, p := range ps {
+		modes[p.Mode] += 1
 	}
-	return windDirection.pointOfSail(ps.averageHeading())
+	var maxn int
+	var maxm Mode
+	for m, n := range modes {
+		if n > maxn {
+			maxm = m
+		}
+	}
+	return maxm
 }
 
-func (ps Points) averageSpeed() float64 {
+func (ps Points) speed(mode Mode) SpeedRange {
 	var sum float64
-	for _, p := range ps {
+	var count int
+	start := 0
+	// Ignore stray points with different mode
+	// to avoid skewing the statistics.
+	for ; ps[start].Mode != mode; start++ {
+	}
+	min := ps[start].Speed
+	max := min
+	for _, p := range ps[start:] {
+		if p.Mode != mode {
+			continue
+		}
+		count++
 		sum += p.Speed
+		if p.Speed < min {
+			min = p.Speed
+		}
+		if max < p.Speed {
+			max = p.Speed
+		}
 	}
-	return sum / float64(len(ps))
-}
-
-func (ps Points) averageHeading() int {
-	var sum int
-	for _, p := range ps {
-		sum += p.Heading
-	}
-	return sum / len(ps)
+	return SpeedRange{Min: min, Avg: sum / float64(len(ps)), Max: max}
 }
 
 func (ps Points) distance() float64 {
@@ -114,17 +139,29 @@ func (ps Points) start() time.Time {
 	return ps[0].gpx.Timestamp
 }
 
-func (ps Points) headingVariation() int {
-	var max, min, current int
-	for _, p := range ps[1:] {
-		current += headingDiff(p.previous.Heading, p.Heading)
-		if current > max {
-			max = current
-		} else if current < min {
-			min = current
-		}
+func (ps Points) headingRange(mode Mode) *HeadingRange {
+	start := 0
+	// Ignore stray points with different mode
+	// to avoid skewing the statistics.
+	for ; ps[start].Mode != mode; start++ {
 	}
-	return max - min
+	prev := ps[start]
+	min := prev.Heading
+	max := min
+	start++
+	for _, p := range ps[start:] {
+		if p.Mode != mode {
+			continue
+		}
+		diff := headingDiff(prev.Heading, p.Heading)
+		if diff < 0 && headingDiff(p.Heading, min) > 0 {
+			min = p.Heading
+		} else if diff > 0 && headingDiff(p.Heading, max) < 0 {
+			max = p.Heading
+		}
+		prev = p
+	}
+	return NewHeadingRange(min, max)
 }
 
 // Split points into longest runs by mode.
@@ -162,6 +199,38 @@ func headingDiff(a, b int) int {
 		diff += 360
 	}
 	return diff
+}
+
+// Is heading h between heading min and max inclusive (clockwise)
+func headingBetween(h, min, max int) bool {
+	minDiff := headingDiff(h, min)
+	maxDiff := headingDiff(h, max)
+	if headingDist(min, max) < 180 {
+		return minDiff <= 0 && maxDiff >= 0
+	} else {
+		return !(minDiff > 0 && maxDiff < 0)
+	}
+}
+
+// The distance in degrees between min and max inclusive (0-359) (clockwise)
+func headingDist(min, max int) int {
+	diff := headingDiff(min, max)
+	if diff >= 0 {
+		return diff
+	}
+	return 360 + diff
+}
+
+// Add diff d (-179...180) to heading h
+func headingAdd(h, d int) int {
+	h2 := h + d
+	if h2 > 359 {
+		return h2 - 360
+	} else if h2 < 0 {
+		return 360 + h2
+	} else {
+		return h2
+	}
 }
 
 func abs(x int) int {
