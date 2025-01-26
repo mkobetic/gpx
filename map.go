@@ -95,8 +95,8 @@ var palette = func() (palette []int) {
 }()
 
 // SpeedColor return the RGB color code matching the speed between two GPS points.
-func (m *Map) SpeedColor(p1, p2 *gpx.GPXPoint) string {
-	s := int(m.Speed(p1, p2, nm))
+func (m *Map) SpeedColor(speed float64) string {
+	s := int(speed)
 	if s >= len(palette) {
 		s = len(palette) - 1
 	}

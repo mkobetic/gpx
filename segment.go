@@ -9,20 +9,35 @@ import (
 	"github.com/tkrajina/gpxgo/gpx"
 )
 
+type Speed struct {
+	Min float64
+	Avg float64
+	Max float64
+}
+
+type Heading struct {
+	Min       int
+	Mid       int
+	Max       int
+	Variation int
+}
+
 type Segment struct {
 	gpx      *gpx.GPXTrackSegment
 	filename string
 	Points   Points
+	previous *Segment
+	next     *Segment
 	// Analysis results
-	AvgHeading       int
-	HeadingVariation int
-	Distance         float64
-	AvgSpeed         float64
-	Duration         time.Duration
-	Start            time.Time
-	End              time.Time
-	Mode             Mode
-	// POS              pointOfSail
+	Heading  Heading
+	Distance float64
+	Speed    Speed
+	Duration time.Duration
+	Start    time.Time
+	End      time.Time
+	Mode     Mode
+	// Activity specific segment type
+	Type fmt.Stringer
 }
 
 func SegmentFromPoints(ps Points, mode Mode, filename string) *Segment {
@@ -30,18 +45,18 @@ func SegmentFromPoints(ps Points, mode Mode, filename string) *Segment {
 	for i, p := range ps {
 		gpxPoints[i] = *p.gpx
 	}
+
 	return &Segment{
-		gpx:              &gpx.GPXTrackSegment{Points: gpxPoints},
-		filename:         filename,
-		Points:           ps,
-		AvgHeading:       ps.averageHeading(),
-		HeadingVariation: ps.headingVariation(),
-		Distance:         ps.distance(),
-		AvgSpeed:         ps.averageSpeed(),
-		Start:            ps.start(),
-		End:              ps.end(),
-		Duration:         ps.duration(),
-		Mode:             mode,
+		gpx:      &gpx.GPXTrackSegment{Points: gpxPoints},
+		filename: filename,
+		Points:   ps,
+		Heading:  ps.heading(),
+		Distance: ps.distance(),
+		Speed:    ps.speed(),
+		Start:    ps.start(),
+		End:      ps.end(),
+		Duration: ps.duration(),
+		Mode:     mode,
 	}
 }
 
@@ -55,6 +70,15 @@ func (s *Segment) gpxEachPair(f func(prev, next *gpx.GPXPoint)) {
 	prev := s.gpxPoint(0)
 	for i := 1; i < len(s.gpx.Points); i++ {
 		next := s.gpxPoint(i)
+		f(prev, next)
+		prev = next
+	}
+}
+
+// EachPair iterates over a segment with pairs of subsequent points.
+func (s *Segment) EachPair(f func(prev, next *Point)) {
+	prev := s.Points[0]
+	for _, next := range s.Points[1:] {
 		f(prev, next)
 		prev = next
 	}
@@ -81,9 +105,19 @@ func (s *Segment) gpxString() string {
 }
 
 func (s *Segment) String() string {
-	return fmt.Sprintf("%.0fm/%.0fs @ %.1f kts \u2191 %d\u00b0 %s < %d\u00b0 %s (%d)",
-		s.Distance, s.Duration.Seconds(), s.AvgSpeed, s.AvgHeading, Direction(s.AvgHeading).String(), s.HeadingVariation, s.Mode, len(s.Points))
+	return fmt.Sprintf("%.0fm/%.0fs @ %.1f/%.1f/%.1f kts \u2191 %d\u00b0/%d\u00b0 < %d\u00b0 %s (%d)",
+		s.Distance, s.Duration.Seconds(),
+		s.Speed.Min, s.Speed.Avg, s.Speed.Max,
+		s.Heading.Min, s.Heading.Max, s.Heading.Variation,
+		s.Mode, len(s.Points))
+}
 
+func (s *Segment) ShortString() string {
+	return fmt.Sprintf("%.0fm/%.0fs @ %.1f/%.1f/%.1f kts \u2191 %d\u00b0/%d\u00b0 %s",
+		s.Distance, s.Duration.Seconds(),
+		s.Speed.Min, s.Speed.Avg, s.Speed.Max,
+		s.Heading.Min, s.Heading.Max,
+		s.Mode)
 }
 
 // gpxSplit segment where the time difference between points is more than @limit.
@@ -104,26 +138,46 @@ func (s *Segment) gpxSplit(limit time.Duration) Segments {
 // gpxAnalyze the segment and split it up into runs of points of the same Mode of movement (static, moving, turning).
 // The Map is the context to use for the analysis derived from the Track, it is the same for all segments of the track.
 func (s *Segment) gpxAnalyze(m *Map, params *AnalysisParameters) Segments {
-	previous := &Point{gpx: s.gpxPoint(0)}
-	points := Points{previous}
+	previousPt := &Point{gpx: s.gpxPoint(0)}
+	points := Points{previousPt}
 	s.gpxEachPair(func(prev, next *gpx.GPXPoint) {
 		nextPoint := &Point{
 			gpx:      next,
-			previous: previous,
+			previous: previousPt,
 			Heading:  m.Heading(prev, next),
 			Distance: m.Distance(prev, next, params.distanceUnit),
 			Speed:    m.Speed(prev, next, params.speedUnit),
 		}
-		previous.next = nextPoint
-		previous = nextPoint
+		previousPt.next = nextPoint
+		previousPt = nextPoint
 		points = append(points, nextPoint)
 	})
 	for _, p := range points {
 		p.Analyze(params)
 	}
 	segments := Segments{}
+	var previousSeg *Segment
+	var short Points // holds previous run that was too short
 	points.eachRun(func(run Points, mode Mode) {
-		segments = append(segments, SegmentFromPoints(run, mode, s.filename))
+		// join stashed previous short run
+		run = append(short, run...)
+		// if run was short then recompute mode
+		if len(run)/2 < len(short) {
+			mode = short.mode()
+		}
+		// if we are still short stash it and continue
+		if len(run) < 6 {
+			short = run
+			return
+		}
+		short = nil // clear the short stash
+		segment := SegmentFromPoints(run, mode, s.filename)
+		segments = append(segments, segment)
+		if previousSeg != nil {
+			previousSeg.next = segment
+			segment.previous = previousSeg
+		}
+		previousSeg = segment
 	})
 	return segments
 }

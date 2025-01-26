@@ -80,3 +80,26 @@ func Test_PointOfSail(t *testing.T) {
 		})
 	}
 }
+
+func Test_TurnType(t *testing.T) {
+	for i, tt := range []struct {
+		from, to pointOfSail
+		turn     turn
+	}{
+		{closePT, closeSB, tackPTSB},
+		{closeSB, closePT, tackSBPT},
+		{closeSB, broadSB, bearawaySB},
+		{closePT, broadPT, bearawayPT},
+		{broadPT, broadSB, gybePTSB},
+		{broadSB, broadPT, gybeSBPT},
+		{broadSB, closeSB, roundupSB},
+		{broadPT, closePT, roundupPT},
+	} {
+		t.Run(fmt.Sprintf("%d: %s-%s", i, tt.from, tt.to), func(t *testing.T) {
+			got := turnType(tt.from, tt.to)
+			if got != tt.turn {
+				t.Errorf("exp %s got %s", tt.turn, got)
+			}
+		})
+	}
+}

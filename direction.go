@@ -4,6 +4,9 @@ import "math"
 
 type direction int
 type pointOfSail int
+type turn int
+type tack int
+type windAttitude int
 
 const (
 	N   direction = 0
@@ -54,7 +57,7 @@ var directionToString = map[direction]string{
 }
 
 var posToString = map[pointOfSail]string{
-	irons:   "parked",
+	irons:   "irons",
 	closePT: "close reach port",
 	beamPT:  "beam reach port",
 	broadPT: "broad reach port",
@@ -62,6 +65,61 @@ var posToString = map[pointOfSail]string{
 	closeSB: "close reach starboard",
 	beamSB:  "beam reach starboard",
 	broadSB: "broad reach starboard",
+}
+
+const (
+	starboard tack         = -1
+	unknown   tack         = 0
+	port      tack         = 1
+	upwind    windAttitude = 1
+	beam      windAttitude = 0
+	downwind  windAttitude = -1
+
+	bearawayPT turn = 0b0001
+	bearawaySB turn = 0b1011
+	roundupPT  turn = 0b0100
+	roundupSB  turn = 0b1110
+
+	tackPTSB turn = 0b0010
+	tackSBPT turn = 0b1000
+	gybePTSB turn = 0b0111
+	gybeSBPT turn = 0b1101
+
+	drifting turn = 0b1111
+)
+
+var turnToString = map[turn]string{
+	bearawayPT: "bear away port",
+	bearawaySB: "bear away starboard",
+	roundupPT:  "round up port",
+	roundupSB:  "round up starboard",
+	tackPTSB:   "tack port to starboard",
+	tackSBPT:   "tack starboard to port",
+	gybePTSB:   "gybe port to starboard",
+	gybeSBPT:   "gybe starboard to port",
+	drifting:   "drifting",
+}
+
+var posToWindAttitude = map[pointOfSail]windAttitude{
+	irons:   upwind,
+	closePT: upwind,
+	beamPT:  beam,
+	broadPT: downwind,
+	run:     downwind,
+	broadSB: downwind,
+	beamSB:  beam,
+	closeSB: upwind,
+}
+
+var posToTack = map[pointOfSail]tack{
+	irons:   unknown,
+	closePT: port,
+	beamPT:  port,
+	broadPT: port,
+	run:     unknown,
+	broadSB: starboard,
+	beamSB:  starboard,
+	closeSB: starboard,
 }
 
 func Direction(heading int) direction {
@@ -91,4 +149,33 @@ func (windDirection direction) pointOfSail(heading int) pointOfSail {
 
 func (pos pointOfSail) String() string {
 	return posToString[pos]
+}
+
+func (pos pointOfSail) windAttitude() windAttitude {
+	return posToWindAttitude[pos]
+}
+
+func (pos pointOfSail) tack() tack {
+	return posToTack[pos]
+}
+
+func turnType(from, to pointOfSail) turn {
+	code := 0
+	if from.tack() == starboard {
+		code += 8
+	}
+	if from.windAttitude() == downwind {
+		code += 4
+	}
+	if to.tack() == starboard {
+		code += 2
+	}
+	if to.windAttitude() == downwind {
+		code += 1
+	}
+	return turn(code)
+}
+
+func (t turn) String() string {
+	return turnToString[t]
 }

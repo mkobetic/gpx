@@ -100,6 +100,7 @@ func main() {
 	for _, t := range segments.gpxTracks(time.Hour) {
 		if windDirection != nil {
 			t.gpxAnalyze(Sailing)
+			t.posClassify(*windDirection)
 		}
 		fmt.Println(t.String())
 		if *fVerbose {

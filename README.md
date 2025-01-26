@@ -28,7 +28,7 @@ just put it somewhere on your $PATH or into a directory where you intend to use 
 
 To get the latest usage information, run the binary with the -h option, e.g.
 
-```sh
+```
 > gpx -h
 Usage: gpx [flags] files...
 

@@ -31,6 +31,10 @@ func (p *Point) String() string {
 	return fmt.Sprintf("%0.1fm @ %0.1f kts \u2191 %d\u00b0 %s < %d (%s)", p.Distance, p.Speed, p.Heading, Direction(p.Heading).String(), p.HeadingChange, p.Mode)
 }
 
+func (p *Point) ShortString() string {
+	return fmt.Sprintf("%0.1fm @ %0.1f kts \u2191 %d\u00b0 %s", p.Distance, p.Speed, p.Heading, Direction(p.Heading).String())
+}
+
 func (p *Point) Analyze(params *AnalysisParameters) {
 	var speed float64
 	if p.previous == nil {
@@ -71,27 +75,35 @@ func (p *Point) headingChange(change int, distance float64, forward bool, moving
 
 type Points []*Point
 
-func (ps Points) pointOfSail(windDirection direction) pointOfSail {
-	if ps.averageSpeed() < 2 {
-		return irons
+func (ps Points) mode() Mode {
+	modes := make(map[Mode]int)
+	for _, p := range ps {
+		modes[p.Mode] += 1
 	}
-	return windDirection.pointOfSail(ps.averageHeading())
+	var maxn int
+	var maxm Mode
+	for m, n := range modes {
+		if n > maxn {
+			maxm = m
+		}
+	}
+	return maxm
 }
 
-func (ps Points) averageSpeed() float64 {
+func (ps Points) speed() Speed {
 	var sum float64
+	min := ps[0].Speed
+	max := min
 	for _, p := range ps {
 		sum += p.Speed
+		if p.Speed < min {
+			min = p.Speed
+		}
+		if max < p.Speed {
+			max = p.Speed
+		}
 	}
-	return sum / float64(len(ps))
-}
-
-func (ps Points) averageHeading() int {
-	var sum int
-	for _, p := range ps {
-		sum += p.Heading
-	}
-	return sum / len(ps)
+	return Speed{Min: min, Avg: sum / float64(len(ps)), Max: max}
 }
 
 func (ps Points) distance() float64 {
@@ -114,17 +126,32 @@ func (ps Points) start() time.Time {
 	return ps[0].gpx.Timestamp
 }
 
-func (ps Points) headingVariation() int {
-	var max, min, current int
+func (ps Points) heading() Heading {
+	var maxDiff, minDiff, currentDiff int
+	min := ps[0].Heading
+	max := min
 	for _, p := range ps[1:] {
-		current += headingDiff(p.previous.Heading, p.Heading)
-		if current > max {
-			max = current
-		} else if current < min {
-			min = current
+		diff := headingDiff(p.previous.Heading, p.Heading)
+		if diff < 0 && headingDiff(p.Heading, min) > 0 {
+			min = p.Heading
+		} else if diff > 0 && headingDiff(p.Heading, max) < 0 {
+			max = p.Heading
+		}
+		currentDiff += diff
+		if currentDiff > maxDiff {
+			maxDiff = currentDiff
+		} else if currentDiff < minDiff {
+			minDiff = currentDiff
 		}
 	}
-	return max - min
+	diff := maxDiff - minDiff
+	mid := (min + diff/2) % 360
+	return Heading{
+		Min:       min,
+		Mid:       mid,
+		Max:       max,
+		Variation: diff,
+	}
 }
 
 // Split points into longest runs by mode.

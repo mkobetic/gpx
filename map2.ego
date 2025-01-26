@@ -1,6 +1,5 @@
 <%
 package main
-import "github.com/tkrajina/gpxgo/gpx"
 import "fmt"
 import "time"
 
@@ -25,42 +24,36 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <% } %>
     </g>
     <%  totalDistance := float64(0)
-        var lastPoint *gpx.GPXPoint
+        var lastPoint *Point
         for _, segment := range t.Segments {
     %>
     <g class="segment">
         <% if lastPoint != nil {
-            prev, next := lastPoint, &segment.gpx.Points[0]
-            x1, y1 := m.Point(prev)
-            x2, y2 := m.Point(next)
-            c := m.SpeedColor(prev, next)
-            totalDistance += m.Distance(prev,next,nm)
-            heading := m.Heading(prev, next)
-            direction := Direction(heading).String()
-            timestamp := next.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
-            distance := fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter))
-            speed := fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm))
-            headingAndDirection := fmt.Sprintf("%d\u00b0 %s", heading, direction )
+            prev, next := lastPoint, segment.Points[0]
+            x1, y1 := m.Point(prev.gpx)
+            x2, y2 := m.Point(next.gpx)
+            c := m.SpeedColor(next.Speed)
+            totalDistance += next.Distance
+            timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
         %>
         <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
-        <title> <%= timestamp %>: <%= distance %> @ <%= speed %> &#x2191; <%= headingAndDirection %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %></title>
+        <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %>
+<%= segment.String() %>
+<%= segment.Type.String() %></title>
         </line>
         <% } %>
-        <% segment.gpxEachPair(func(prev, next *gpx.GPXPoint) {
+        <% segment.EachPair(func(prev, next *Point) {
             lastPoint = next
-            x1, y1 := m.Point(prev)
-            x2, y2 := m.Point(next)
-            c := m.SpeedColor(prev, next)
-            totalDistance += m.Distance(prev,next,nm)
-            heading := m.Heading(prev, next)
-            direction := Direction(heading).String()
-            timestamp := next.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
-            distance := fmt.Sprintf("%0.1f m", m.Distance(prev,next,meter))
-            speed := fmt.Sprintf("%0.1f kts", m.Speed(prev,next,nm))
-            headingAndDirection := fmt.Sprintf("%d\u00b0 %s", heading, direction )
+            x1, y1 := m.Point(prev.gpx)
+            x2, y2 := m.Point(next.gpx)
+            c := m.SpeedColor(next.Speed)
+            totalDistance += next.Distance
+            timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
         %>
         <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
-        <title> <%= timestamp %>: <%= distance %> @ <%= speed %> &#x2191; <%= headingAndDirection %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %></title>
+        <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance/1852) %>
+<%= segment.ShortString() %>
+<%= segment.Type.String() %></title>
         </line>
 	    <% }) %>
     </g>

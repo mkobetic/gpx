@@ -137,6 +137,20 @@ func (t *Track) gpxAnalyze(params *AnalysisParameters) {
 	t.Distance = distance
 }
 
+func (t *Track) posClassify(windDirection direction) {
+	for _, s := range t.Segments {
+		if s.Mode == Moving {
+			s.Type = windDirection.pointOfSail(s.Heading.Mid)
+		} else if s.Mode == Turning {
+			from := windDirection.pointOfSail(s.Points[0].Heading)
+			to := windDirection.pointOfSail(s.Points[len(s.Points)-1].Heading)
+			s.Type = turnType(from, to)
+		} else {
+			s.Type = drifting
+		}
+	}
+}
+
 type Tracks []Track
 
 func (ts Tracks) String() string {
