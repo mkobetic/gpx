@@ -17,9 +17,9 @@ Simple GPS track processor for sailing race tracks.
 ![sample track](https://github.com/user-attachments/assets/ccb506b0-98f8-4f7e-a34c-16ca3a3345fb)
 
 Hovering over the track highlights the segment under the cursor and shows metrics at that point.
-First line shows stats for the point under cursor
-Second line shows stats for the segment under cursor
-Third line shows the segment type determined by the analysis
+1. First line shows stats for the point under cursor
+2. Second line shows stats for the segment under cursor
+3. Third line shows the segment type determined by the analysis
 
 ```
 time: distance @ speed ↑ heading = total distance
