@@ -14,7 +14,7 @@ Simple GPS track processor for sailing race tracks.
 * (optional) generates subtitles file with gps metrics that can be embedded in a video file (more below)
 (see https://github.com/mkobetic/gpx/blob/master/README.md for more details)
 
-![sample track](https://github.com/user-attachments/assets/c483f91f-aed3-4521-87c2-8c57c74b078d)
+![sample track](https://github.com/user-attachments/assets/ccb506b0-98f8-4f7e-a34c-16ca3a3345fb)
 
 Hovering over the track highlights the segment under the cursor and shows metrics at that point
 ```
