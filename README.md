@@ -1,4 +1,6 @@
 ![tests](https://github.com/mkobetic/gpx/actions/workflows/test.yaml/badge.svg)
+![downloads](https://img.shields.io/github/downloads/mkobetic/gpx/total.svg)
+
 
 Simple GPS track processor for sailing race tracks.
 
@@ -28,7 +30,7 @@ just put it somewhere on your $PATH or into a directory where you intend to use 
 
 To get the latest usage information, run the binary with the -h option, e.g.
 
-```sh
+```
 > gpx -h
 Usage: gpx [flags] files...
 

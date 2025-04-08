@@ -16,12 +16,12 @@ func Test_Split(t *testing.T) {
 	if len(ss) != 1 {
 		t.Fail()
 	}
-	ss = ss.gpxSplit(time.Hour)
+	ss = gpxSplitSegments(ss, time.Hour)
 	if len(ss) != 2 {
 		t.Error(ss)
 	}
 	t.Log("\n", ss)
-	ts := ss.gpxTracks(time.Hour)
+	ts := gpxBuildTracks(ss, time.Hour)
 	if len(ts) != 2 {
 		t.Error(ts)
 	}
@@ -34,7 +34,7 @@ func Test_Analysis(t *testing.T) {
 		t.Error(err)
 	}
 	ss := gpxGetSegments(g, "")
-	ts := ss.gpxTracks(time.Hour)
+	ts := gpxBuildTracks(ss, time.Hour)
 	if len(ts) != 1 {
 		t.Errorf("found %d tracks", len(ts))
 	}

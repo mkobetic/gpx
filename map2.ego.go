@@ -9,218 +9,207 @@ import "fmt"
 import "html"
 import "io"
 import "context"
-import "github.com/tkrajina/gpxgo/gpx"
 
 import "time"
 
 func (m *Map) renderLines(w io.Writer, t *Track) {
 
-//line map2.ego:9
+//line map2.ego:8
 	_, _ = io.WriteString(w, "\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"")
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.w)))
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, "\" height=\"")
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h)))
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, "\" viewBox=\"0 0 ")
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.w)))
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, " ")
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h)))
-//line map2.ego:10
+//line map2.ego:9
 	_, _ = io.WriteString(w, "\">\n    <style type=\"text/css\" >\n        <![CDATA[\n            .segment { fill: none; stroke-width: 4 }\n            .segment:hover { stroke-width: 8 }\n        ]]>\n    </style>\n    <g id=\"legend\">\n        ")
-//line map2.ego:18
+//line map2.ego:17
 	for i := range palette {
-//line map2.ego:19
+//line map2.ego:18
 		_, _ = io.WriteString(w, "\n        <rect x=\"")
-//line map2.ego:19
+//line map2.ego:18
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i)))
-//line map2.ego:19
+//line map2.ego:18
 		_, _ = io.WriteString(w, "\" y=\"0\" width=\"30\" height=\"20\" fill=\"")
-//line map2.ego:19
+//line map2.ego:18
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("#%03x", palette[i]))))
-//line map2.ego:19
+//line map2.ego:18
 		_, _ = io.WriteString(w, "\"/>\n        <rect x=\"")
-//line map2.ego:20
+//line map2.ego:19
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i)))
-//line map2.ego:20
+//line map2.ego:19
 		_, _ = io.WriteString(w, "\" y=\"")
-//line map2.ego:20
+//line map2.ego:19
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h-20)))
-//line map2.ego:20
+//line map2.ego:19
 		_, _ = io.WriteString(w, "\" width=\"30\" height=\"20\" fill=\"")
-//line map2.ego:20
+//line map2.ego:19
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("#%03x", palette[i]))))
-//line map2.ego:20
+//line map2.ego:19
 		_, _ = io.WriteString(w, "\"/>\n        ")
+//line map2.ego:20
+	}
 //line map2.ego:21
-	}
-//line map2.ego:22
 	_, _ = io.WriteString(w, "\n        ")
-//line map2.ego:22
+//line map2.ego:21
 	for i := 0; i < len(palette); i += 5 {
-//line map2.ego:23
+//line map2.ego:22
 		_, _ = io.WriteString(w, "\n        <text x=\"")
-//line map2.ego:23
+//line map2.ego:22
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
-//line map2.ego:23
+//line map2.ego:22
 		_, _ = io.WriteString(w, "\" y=\"16\" fill=\"white\">")
-//line map2.ego:23
+//line map2.ego:22
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
-//line map2.ego:23
+//line map2.ego:22
 		_, _ = io.WriteString(w, "kts</text>\n        <text x=\"")
-//line map2.ego:24
+//line map2.ego:23
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
-//line map2.ego:24
+//line map2.ego:23
 		_, _ = io.WriteString(w, "\" y=\"")
-//line map2.ego:24
+//line map2.ego:23
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h-4)))
-//line map2.ego:24
+//line map2.ego:23
 		_, _ = io.WriteString(w, "\" fill=\"white\">")
-//line map2.ego:24
+//line map2.ego:23
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
-//line map2.ego:24
+//line map2.ego:23
 		_, _ = io.WriteString(w, "kts</text>\n        ")
-//line map2.ego:25
+//line map2.ego:24
 	}
-//line map2.ego:26
+//line map2.ego:25
 	_, _ = io.WriteString(w, "\n    </g>\n    ")
-//line map2.ego:27
+//line map2.ego:26
 	totalDistance := float64(0)
-	var lastPoint *gpx.GPXPoint
+	var lastPoint *Point
 	for _, segment := range t.Segments {
 
-//line map2.ego:31
+//line map2.ego:30
 		_, _ = io.WriteString(w, "\n    <g class=\"segment\">\n        ")
-//line map2.ego:32
+//line map2.ego:31
 		if lastPoint != nil {
-			prev, next := lastPoint, &segment.gpx.Points[0]
-			x1, y1 := m.Point(prev)
-			x2, y2 := m.Point(next)
-			c := m.SpeedColor(prev, next)
-			totalDistance += m.Distance(prev, next, nm)
-			heading := m.Heading(prev, next)
-			direction := Direction(heading).String()
-			timestamp := next.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
-			distance := fmt.Sprintf("%0.1f m", m.Distance(prev, next, meter))
-			speed := fmt.Sprintf("%0.1f kts", m.Speed(prev, next, nm))
-			headingAndDirection := fmt.Sprintf("%d\u00b0 %s", heading, direction)
+			prev, next := lastPoint, segment.Points[0]
+			x1, y1 := m.Point(prev.gpx)
+			x2, y2 := m.Point(next.gpx)
+			c := m.SpeedColor(next.Speed)
+			totalDistance += next.Distance
+			timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
 
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, "\n        <line class=\"step\" x1=\"")
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x1)))
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, "\" y1=\"")
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y1)))
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, "\" x2=\"")
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x2)))
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, "\" y2=\"")
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y2)))
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, "\" stroke=\"")
-//line map2.ego:45
+//line map2.ego:39
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(c)))
-//line map2.ego:45
-			_, _ = io.WriteString(w, "\">\n        <title> ")
-//line map2.ego:46
+//line map2.ego:39
+			_, _ = io.WriteString(w, "\">\n        <title>")
+//line map2.ego:40
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(timestamp)))
-//line map2.ego:46
+//line map2.ego:40
 			_, _ = io.WriteString(w, ": ")
-//line map2.ego:46
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(distance)))
-//line map2.ego:46
-			_, _ = io.WriteString(w, " @ ")
-//line map2.ego:46
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(speed)))
-//line map2.ego:46
-			_, _ = io.WriteString(w, " &#x2191; ")
-//line map2.ego:46
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(headingAndDirection)))
-//line map2.ego:46
+//line map2.ego:40
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(next.ShortString())))
+//line map2.ego:40
 			_, _ = io.WriteString(w, " = ")
-//line map2.ego:46
+//line map2.ego:40
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance))))
-//line map2.ego:46
+//line map2.ego:41
+			_, _ = io.WriteString(w, "\n")
+//line map2.ego:41
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.String())))
+//line map2.ego:42
+			_, _ = io.WriteString(w, "\n")
+//line map2.ego:42
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Type.String())))
+//line map2.ego:42
 			_, _ = io.WriteString(w, "</title>\n        </line>\n        ")
-//line map2.ego:48
+//line map2.ego:44
 		}
-//line map2.ego:49
+//line map2.ego:45
 		_, _ = io.WriteString(w, "\n        ")
-//line map2.ego:49
-		segment.gpxEachPair(func(prev, next *gpx.GPXPoint) {
+//line map2.ego:45
+		segment.EachPair(func(prev, next *Point) {
 			lastPoint = next
-			x1, y1 := m.Point(prev)
-			x2, y2 := m.Point(next)
-			c := m.SpeedColor(prev, next)
-			totalDistance += m.Distance(prev, next, nm)
-			heading := m.Heading(prev, next)
-			direction := Direction(heading).String()
-			timestamp := next.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
-			distance := fmt.Sprintf("%0.1f m", m.Distance(prev, next, meter))
-			speed := fmt.Sprintf("%0.1f kts", m.Speed(prev, next, nm))
-			headingAndDirection := fmt.Sprintf("%d\u00b0 %s", heading, direction)
+			x1, y1 := m.Point(prev.gpx)
+			x2, y2 := m.Point(next.gpx)
+			c := m.SpeedColor(next.Speed)
+			totalDistance += next.Distance
+			timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
 
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, "\n        <line class=\"step\" x1=\"")
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x1)))
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, "\" y1=\"")
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y1)))
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, "\" x2=\"")
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x2)))
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, "\" y2=\"")
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y2)))
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, "\" stroke=\"")
-//line map2.ego:62
+//line map2.ego:53
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(c)))
-//line map2.ego:62
-			_, _ = io.WriteString(w, "\">\n        <title> ")
-//line map2.ego:63
+//line map2.ego:53
+			_, _ = io.WriteString(w, "\">\n        <title>")
+//line map2.ego:54
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(timestamp)))
-//line map2.ego:63
+//line map2.ego:54
 			_, _ = io.WriteString(w, ": ")
-//line map2.ego:63
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(distance)))
-//line map2.ego:63
-			_, _ = io.WriteString(w, " @ ")
-//line map2.ego:63
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(speed)))
-//line map2.ego:63
-			_, _ = io.WriteString(w, " &#x2191; ")
-//line map2.ego:63
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(headingAndDirection)))
-//line map2.ego:63
+//line map2.ego:54
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(next.ShortString())))
+//line map2.ego:54
 			_, _ = io.WriteString(w, " = ")
-//line map2.ego:63
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance))))
-//line map2.ego:63
+//line map2.ego:54
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance/1852))))
+//line map2.ego:55
+			_, _ = io.WriteString(w, "\n")
+//line map2.ego:55
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
+//line map2.ego:56
+			_, _ = io.WriteString(w, "\n")
+//line map2.ego:56
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Type.String())))
+//line map2.ego:56
 			_, _ = io.WriteString(w, "</title>\n        </line>\n\t    ")
-//line map2.ego:65
+//line map2.ego:58
 		})
-//line map2.ego:66
+//line map2.ego:59
 		_, _ = io.WriteString(w, "\n    </g>\n\t")
-//line map2.ego:67
+//line map2.ego:60
 	}
-//line map2.ego:68
+//line map2.ego:61
 	_, _ = io.WriteString(w, "\n</svg>\n")
-//line map2.ego:69
+//line map2.ego:62
 }
 
 var _ fmt.Stringer

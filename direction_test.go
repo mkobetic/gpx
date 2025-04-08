@@ -17,6 +17,7 @@ func Test_Direction(t *testing.T) {
 		{34, NE},
 		{56, NE},
 		{57, ENE},
+		{78, ENE},
 		{79, E},
 		{101, E},
 		{102, ESE},
@@ -74,8 +75,48 @@ func Test_PointOfSail(t *testing.T) {
 	} {
 		t.Run(fmt.Sprintf("%d: %s %d", i, tt.wind.String(), tt.heading), func(t *testing.T) {
 			pos := tt.wind.pointOfSail(tt.heading)
-			if pos != tt.pos {
+			if pos.pointOfSail != tt.pos {
 				t.Errorf("exp %s got %s", tt.pos.String(), pos.String())
+			}
+		})
+	}
+}
+
+func Test_TurnType(t *testing.T) {
+	for i, tt := range []struct {
+		from, to pointOfSail
+		turn     turn
+	}{
+		{closePT, closeSB, tackPTSB},
+		{closeSB, closePT, tackSBPT},
+		{closeSB, broadSB, bearawaySB},
+		{closePT, broadPT, bearawayPT},
+		{broadPT, broadSB, gybePTSB},
+		{broadSB, broadPT, gybeSBPT},
+		{broadSB, closeSB, roundupSB},
+		{broadPT, closePT, roundupPT},
+	} {
+		t.Run(fmt.Sprintf("%d: %s-%s", i, tt.from, tt.to), func(t *testing.T) {
+			got := turnType(tt.from, tt.to)
+			if got != tt.turn {
+				t.Errorf("exp %s got %s", tt.turn, got)
+			}
+		})
+	}
+}
+
+func Test_WindDirectionTurnType(t *testing.T) {
+	for i, tt := range []struct {
+		wind     direction
+		from, to int
+		turn     string
+	}{
+		{N, 310, 40, "tack starboard to port N"},
+	} {
+		t.Run(fmt.Sprintf("%d: %d->%d@%s", i, tt.from, tt.to, tt.wind), func(t *testing.T) {
+			got := tt.wind.turnType(tt.wind.pointOfSail(tt.from), tt.wind.pointOfSail(tt.to))
+			if got.String() != tt.turn {
+				t.Errorf("exp %s got %s", tt.turn, got)
 			}
 		})
 	}
