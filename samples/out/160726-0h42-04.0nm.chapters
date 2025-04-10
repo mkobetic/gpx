@@ -1,0 +1,72 @@
+;FFMETADATA1
+title=160726-0h42-04.0nm
+created=2025-04-10T18:24:47-04:00
+source=160824.gpx
+video_offset=0s
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=710000
+title=18:48:29 beam reach port WNW (1954m/710s @ 3.1/5.2/7.7 kts ↑ 329°/40° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=710000
+END=760000
+title=19:00:31 tack port to starboard WNW (140m/50s @ 2.4/4.1/5.5 kts ↑ 241°/350° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=760000
+END=1071000
+title=19:01:32 close reach starboard WNW (915m/311s @ 4.4/5.5/6.7 kts ↑ 233°/257° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1071000
+END=1105000
+title=19:06:52 tack starboard to port WNW (112m/34s @ 1.9/4.5/6.9 kts ↑ 250°/0° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1105000
+END=1377000
+title=19:07:34 close reach port WNW (880m/272s @ 5.1/6.1/7.2 kts ↑ 338°/12° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1377000
+END=1441000
+title=19:12:16 unknown WNW (216m/64s @ 2.3/5.4/7.0 kts ↑ 144°/350° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1441000
+END=1698000
+title=19:13:29 broad reach starboard WNW (983m/257s @ 3.7/7.2/9.8 kts ↑ 133°/173° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1698000
+END=1730000
+title=19:17:56 gybe starboard to port WNW (125m/32s @ 4.2/5.6/6.7 kts ↑ 64°/169° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1730000
+END=1809000
+title=19:18:35 broad reach port WNW (274m/79s @ 5.5/6.2/7.0 kts ↑ 65°/83° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1809000
+END=2221000
+title=19:20:02 broad reach starboard WNW (1281m/412s @ 2.5/5.4/7.7 kts ↑ 108°/172° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2221000
+END=2475000
+title=19:27:06 round up starboard WNW (611m/254s @ 4.1/0.1/4.1 kts ↑ 169°/169° turning)
+

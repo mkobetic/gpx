@@ -128,6 +128,13 @@ func (s *Segment) ShortString() string {
 		s.Mode)
 }
 
+func (s *Segment) TypeString() string {
+	if s.Type == nil {
+		return ""
+	}
+	return s.Type.String()
+}
+
 type Segments []*Segment
 
 func (ss Segments) gpxString() string {

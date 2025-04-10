@@ -1,0 +1,180 @@
+;FFMETADATA1
+title=160817-0h59-04.4nm
+created=2025-04-10T18:24:47-04:00
+source=160824.gpx
+video_offset=0s
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=56000
+title=18:20:50 gybe port to starboard S (60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=56000
+END=81000
+title=18:21:49 bear away starboard S (75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=81000
+END=198000
+title=18:22:18 downwind run S (254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=198000
+END=268000
+title=18:24:21 broad reach port S (201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=268000
+END=292000
+title=18:25:38 gybe port to starboard S (101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=292000
+END=538000
+title=18:26:14 broad reach starboard S (1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=538000
+END=565000
+title=18:30:27 gybe starboard to port S (107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=565000
+END=852000
+title=18:30:59 broad reach port S (1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=852000
+END=878000
+title=18:35:57 gybe port to starboard S (101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=878000
+END=969000
+title=18:36:28 downwind run S (223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=969000
+END=1021000
+title=18:38:06 broad reach starboard S (66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1021000
+END=1060000
+title=18:39:06 beam reach starboard S (65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1060000
+END=1354000
+title=18:45:54 close reach starboard S (673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1354000
+END=1397000
+title=18:51:01 tack starboard to port S (139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1397000
+END=1577000
+title=18:51:55 close reach port S (570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1577000
+END=1737000
+title=18:55:04 beam reach starboard S (430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1737000
+END=1785000
+title=18:57:53 tack starboard to port S (134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1785000
+END=2126000
+title=18:58:49 close reach port S (943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2126000
+END=2177000
+title=19:04:42 tack port to starboard S (146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2177000
+END=2289000
+title=19:05:43 close reach starboard S (313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2289000
+END=2327000
+title=19:07:49 tack starboard to port S (123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2327000
+END=2436000
+title=19:08:35 close reach port S (318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2436000
+END=2492000
+title=19:10:38 tack port to starboard S (136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2492000
+END=2545000
+title=19:11:45 close reach starboard S (172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2545000
+END=2588000
+title=19:12:52 tack starboard to port S (120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2588000
+END=2656000
+title=19:13:52 beam reach port S (134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2656000
+END=2682000
+title=19:15:36 close reach starboard S (46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2682000
+END=2850000
+title=19:16:10 unknown S (243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2850000
+END=2908000
+title=19:19:11 close reach starboard S (99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving)
+

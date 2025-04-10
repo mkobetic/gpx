@@ -143,7 +143,7 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
 //line map2.ego:42
 			_, _ = io.WriteString(w, "\n")
 //line map2.ego:42
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Type.String())))
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
 //line map2.ego:42
 			_, _ = io.WriteString(w, "</title>\n        </line>\n        ")
 //line map2.ego:44
@@ -198,7 +198,7 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
 //line map2.ego:56
 			_, _ = io.WriteString(w, "\n")
 //line map2.ego:56
-			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Type.String())))
+			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
 //line map2.ego:56
 			_, _ = io.WriteString(w, "</title>\n        </line>\n\t    ")
 //line map2.ego:58
