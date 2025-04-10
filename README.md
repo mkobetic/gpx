@@ -127,13 +127,18 @@ The subtitle granularity matches the granularity of the gps track, i.e. new subt
 
 The subtitle file generation is gated by the `-vo` flag that requires a "video offset" as its argument. This is because the start of the gps track more than likely doesn't align with the start of the video. The offset specifies how much they are off. Positive offset means the video starts before the gps track, negative offset means the video starts after the gps track. If miraculously they align perfectly set offset to 0. The format of the offset argument is documented here https://pkg.go.dev/time#ParseDuration, e.g. `-3.5m` or `10m44s`.
 
-Note that you may need to enable subtitles in your video player to have them show up.
+Note that you may need to enable subtitles in your video player to have them show up. Here's a screenshot of the subtitles shown in a video
+
+![Screenshot 2025-01-06 at 22 59 10](https://github.com/user-attachments/assets/da055ae4-da4f-4a53-9424-6002aa509368)
 
 
 ## segment video chapters
 
 The `-vo` option also triggers generation of a video metadata file that defines a chapter for each segment of the track. Chapters can be used to navigate to the corresponding section of the video in players that support this facility. Same as with subtitles the precision of the chapter definitions depends on correctly determined video offset.
 
+Here's a screenshot of MacOS video player with the chapter list open
+
+![Screenshot 2025-04-10 at 12 50 52](https://github.com/user-attachments/assets/f812a961-dfa6-4eab-89c7-957834a1e22a)
 
 ### figuring out video offset
 
@@ -193,10 +198,6 @@ Here's what the bits of the command mean:
 video-with-subtitles.mp4 = name of the video file with subtitles
 ```
 This should produce a new video file with the same content as the original file with the subtitle stream and chapter metadata added into it. It should be fast because the video content is just copied over as is without re-processing.
-
-Here's a screenshot of the subtitles shown in a video
-
-![Screenshot 2025-01-06 at 22 59 10](https://github.com/user-attachments/assets/da055ae4-da4f-4a53-9424-6002aa509368)
 
 
 ## References
