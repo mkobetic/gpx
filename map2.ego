@@ -39,7 +39,7 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
         <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %>
 <%= segment.String() %>
-<%= segment.Type.String() %></title>
+<%= segment.TypeString() %></title>
         </line>
         <% } %>
         <% segment.EachPair(func(prev, next *Point) {
@@ -53,7 +53,7 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
         <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance/1852) %>
 <%= segment.ShortString() %>
-<%= segment.Type.String() %></title>
+<%= segment.TypeString() %></title>
         </line>
 	    <% }) %>
     </g>

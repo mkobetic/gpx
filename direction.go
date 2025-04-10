@@ -1,6 +1,16 @@
 package main
 
-import "math"
+import (
+	"math"
+	"sort"
+)
+
+func init() {
+	for _, wd := range directionToString {
+		WindDirections = append(WindDirections, wd)
+	}
+	sort.Strings(WindDirections)
+}
 
 type direction int
 type pointOfSail int
@@ -9,6 +19,7 @@ type tack int
 type windAttitude int
 
 const (
+	UNK direction = -1 // UNKNOWN
 	N   direction = 0
 	NNE direction = 23
 	NE  direction = 45
@@ -54,7 +65,10 @@ var directionToString = map[direction]string{
 	WNW: "WNW",
 	NW:  "NW",
 	NNW: "NNW",
+	UNK: "UNK",
 }
+
+var WindDirections []string
 
 var posToString = map[pointOfSail]string{
 	irons:   "irons",
@@ -140,7 +154,7 @@ func (d direction) String() string {
 	return directionToString[d]
 }
 
-func (windDirection direction) pointOfSail(heading int) SegmentType {
+func (windDirection direction) pointOfSail(heading int) *SegmentType {
 	// adjust heading for wind direction
 	adjusted := heading - int(windDirection)
 	if adjusted < 0 {
@@ -151,11 +165,11 @@ func (windDirection direction) pointOfSail(heading int) SegmentType {
 		idx = 0
 	}
 	pos := []pointOfSail{irons, closePT, beamPT, broadPT, run, broadSB, beamSB, closeSB}[idx]
-	return SegmentType{windDirection: windDirection, pointOfSail: pos}
+	return &SegmentType{windDirection: windDirection, pointOfSail: pos}
 }
 
-func (windDirection direction) turnType(from, to SegmentType) SegmentType {
-	return SegmentType{windDirection: windDirection, turn: turnType(from.pointOfSail, to.pointOfSail)}
+func (windDirection direction) turnType(from, to *SegmentType) *SegmentType {
+	return &SegmentType{windDirection: windDirection, turn: turnType(from.pointOfSail, to.pointOfSail)}
 }
 
 func (pos pointOfSail) String() string {
@@ -235,7 +249,7 @@ type SegmentType struct {
 	windDirection direction
 }
 
-func (st SegmentType) String() string {
+func (st *SegmentType) String() string {
 	if st.turn == 0 {
 		return st.pointOfSail.String() + " " + st.windDirection.String()
 	} else {

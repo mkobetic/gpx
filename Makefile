@@ -28,7 +28,7 @@ ego: *.ego
 
 samples: build
 	@rm -f samples/out/*
-	@./gpx -o samples/out -wd NW -vo 0 samples/in/*
+	@./gpx -o samples/out -wd UNK -vo 0 samples/in/*
 
 dist:
 	GOOS=darwin GOARCH=arm64 $(BUILD) -o dist/ .

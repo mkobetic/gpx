@@ -55,15 +55,6 @@ type AnalysisParameters struct {
 	turningChange    int     // what's the minimum heading change to consider the point to be part of a turn (in degrees)
 }
 
-var Sailing = &AnalysisParameters{
-	distanceUnit:     meter,
-	longDistanceUnit: nm,
-	speedUnit:        nm,
-	lookAround:       50, // m
-	movingSpeed:      1,  // kts
-	turningChange:    60, // degrees
-}
-
 func (params *AnalysisParameters) asLongDistance(dist float64) float64 {
 	return params.longDistanceUnit.convertDistance(dist, params.distanceUnit)
 }
@@ -78,4 +69,27 @@ func (params *AnalysisParameters) longDistance() string {
 
 func (params *AnalysisParameters) speed() string {
 	return params.speedUnit.speed()
+}
+
+type Activity *AnalysisParameters
+
+var Sailing Activity = &AnalysisParameters{
+	distanceUnit:     meter,
+	longDistanceUnit: nm,
+	speedUnit:        nm,
+	lookAround:       50, // m
+	movingSpeed:      1,  // kts
+	turningChange:    60, // degrees
+}
+
+var Activities = map[string]Activity{
+	"sail": Sailing,
+}
+
+var KnownActivities []string
+
+func init() {
+	for a := range Activities {
+		KnownActivities = append(KnownActivities, a)
+	}
 }

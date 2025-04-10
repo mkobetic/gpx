@@ -1,0 +1,600 @@
+;FFMETADATA1
+title=160605-3h01-23.1nm
+created=2025-04-10T18:24:47-04:00
+source=160824.gpx
+video_offset=0s
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=27000
+title=09:56:20 broad reach starboard ENE (188m/27s @ 11.2/14.3/19.0 kts ↑ 296°/318° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=27000
+END=40000
+title=09:56:55 gybe starboard to port ENE (118m/13s @ 9.0/11.0/12.8 kts ↑ 234°/315° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=40000
+END=245000
+title=09:57:10 downwind run ENE (1011m/205s @ 6.8/9.6/11.5 kts ↑ 219°/250° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=245000
+END=263000
+title=10:00:38 gybe port to starboard ENE (95m/18s @ 5.9/9.4/11.3 kts ↑ 223°/298° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=263000
+END=342000
+title=10:01:01 broad reach starboard ENE (403m/79s @ 7.7/9.4/11.5 kts ↑ 279°/295° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=342000
+END=367000
+title=10:02:27 round up starboard ENE (124m/25s @ 6.9/7.6/8.5 kts ↑ 281°/1° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=367000
+END=669000
+title=10:02:57 beam reach starboard ENE (488m/302s @ 1.2/3.3/11.5 kts ↑ 342°/19° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=669000
+END=716000
+title=10:09:55 close reach starboard ENE (58m/47s @ 1.9/2.6/3.7 kts ↑ 32°/41° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=716000
+END=787000
+title=10:10:52 bear away starboard ENE (222m/71s @ 1.5/6.2/12.8 kts ↑ 242°/257° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=787000
+END=815000
+title=10:12:07 downwind run ENE (111m/28s @ 5.9/6.8/7.7 kts ↑ 240°/250° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=815000
+END=832000
+title=10:12:41 irons ENE (98m/17s @ 6.5/8.8/10.6 kts ↑ 169°/247° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=832000
+END=1181000
+title=10:13:06 beam reach port ENE (772m/349s @ 1.3/4.6/12.3 kts ↑ 145°/207° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1181000
+END=1237000
+title=10:19:02 gybe port to starboard ENE (186m/56s @ 1.7/5.7/12.3 kts ↑ 311°/194° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1237000
+END=1820000
+title=10:20:04 round up starboard ENE (778m/583s @ 11.4/0.1/11.4 kts ↑ 328°/328° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1820000
+END=1837000
+title=10:29:54 beam reach port ENE (85m/17s @ 7.8/1.6/7.8 kts ↑ 140°/140° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=1837000
+END=2092000
+title=10:30:12 beam reach port ENE (350m/255s @ 1.2/2.6/12.9 kts ↑ 136°/214° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2092000
+END=2340000
+title=10:34:33 round up port ENE (510m/248s @ 3.7/0.1/3.7 kts ↑ 159°/159° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2340000
+END=2365000
+title=10:39:00 gybe port to starboard ENE (111m/25s @ 2.4/8.1/13.1 kts ↑ 322°/137° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2365000
+END=2514000
+title=10:39:31 beam reach starboard ENE (344m/149s @ 2.0/4.8/13.8 kts ↑ 306°/34° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2514000
+END=2534000
+title=10:42:04 beam reach starboard ENE (109m/20s @ 6.0/6.6/10.7 kts ↑ 302°/352° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2534000
+END=2585000
+title=10:42:30 close reach starboard ENE (190m/51s @ 7.8/0.7/7.8 kts ↑ 20°/20° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2585000
+END=2665000
+title=10:43:27 beam reach port ENE (463m/80s @ 8.9/10.5/11.9 kts ↑ 133°/147° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2665000
+END=2691000
+title=10:44:52 tack port to starboard ENE (121m/26s @ 2.5/7.1/10.8 kts ↑ 18°/154° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2691000
+END=2826000
+title=10:45:20 close reach starboard ENE (774m/135s @ 8.5/11.0/13.8 kts ↑ 16°/32° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2826000
+END=2851000
+title=10:47:43 tack starboard to port ENE (117m/25s @ 2.3/6.3/9.0 kts ↑ 33°/137° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=2851000
+END=3007000
+title=10:48:11 beam reach port ENE (936m/156s @ 6.0/10.9/13.2 kts ↑ 134°/146° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3007000
+END=3105000
+title=10:50:54 close reach starboard ENE (431m/98s @ 7.7/8.8/10.9 kts ↑ 30°/46° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3105000
+END=3292000
+title=10:52:38 broad reach starboard ENE (1139m/187s @ 7.9/10.1/14.7 kts ↑ 282°/305° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3292000
+END=3431000
+title=10:55:50 gybe starboard to port ENE (801m/139s @ 9.6/0.7/10.9 kts ↑ 227°/295° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3431000
+END=3447000
+title=10:58:14 irons ENE (129m/16s @ 11.2/12.0/12.5 kts ↑ 141°/204° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3447000
+END=3535000
+title=10:58:31 close reach port ENE (473m/88s @ 7.7/10.4/11.8 kts ↑ 118°/143° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3535000
+END=3558000
+title=11:00:04 tack port to starboard ENE (127m/23s @ 3.2/8.3/10.9 kts ↑ 12°/131° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3558000
+END=3663000
+title=11:00:33 close reach starboard ENE (673m/105s @ 9.5/11.7/13.2 kts ↑ 10°/29° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3663000
+END=3691000
+title=11:02:26 tack starboard to port ENE (144m/28s @ 2.5/7.7/11.6 kts ↑ 14°/127° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3691000
+END=3811000
+title=11:03:01 close reach port ENE (752m/120s @ 10.6/11.5/12.7 kts ↑ 109°/127° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3811000
+END=3841000
+title=11:05:07 tack port to starboard ENE (144m/30s @ 2.4/7.9/11.9 kts ↑ 12°/120° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3841000
+END=3875000
+title=11:05:44 bear away starboard ENE (230m/34s @ 9.3/7.4/15.7 kts ↑ 299°/11° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=3875000
+END=4041000
+title=11:06:24 broad reach starboard ENE (986m/166s @ 8.1/11.0/14.2 kts ↑ 279°/312° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4041000
+END=4060000
+title=11:09:16 gybe starboard to port ENE (108m/19s @ 5.3/8.1/10.9 kts ↑ 218°/299° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4060000
+END=4183000
+title=11:09:41 broad reach port ENE (768m/123s @ 8.6/11.4/15.2 kts ↑ 208°/235° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4183000
+END=4224000
+title=11:11:48 broad reach starboard ENE (187m/41s @ 7.5/5.4/10.1 kts ↑ 286°/298° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4224000
+END=4259000
+title=11:12:35 round up starboard ENE (108m/35s @ 2.0/5.7/8.1 kts ↑ 281°/12° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4259000
+END=4577000
+title=11:13:21 close reach starboard ENE (443m/318s @ 1.6/2.7/7.0 kts ↑ 343°/47° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4577000
+END=4659000
+title=11:18:46 beam reach port ENE (345m/82s @ 1.6/7.9/15.6 kts ↑ 138°/218° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=4659000
+END=5087000
+title=11:20:12 beam reach port ENE (560m/428s @ 1.5/2.3/8.9 kts ↑ 133°/188° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5087000
+END=5120000
+title=11:27:23 tack port to starboard ENE (112m/33s @ 1.4/6.3/13.4 kts ↑ 324°/128° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5120000
+END=5142000
+title=11:28:03 round up starboard ENE (152m/22s @ 5.5/5.9/13.1 kts ↑ 312°/17° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5142000
+END=5447000
+title=11:28:31 close reach starboard ENE (1295m/305s @ 3.2/8.4/12.5 kts ↑ 15°/39° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5447000
+END=5481000
+title=11:33:43 tack starboard to port ENE (142m/34s @ 1.4/6.5/10.5 kts ↑ 33°/140° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5481000
+END=5696000
+title=11:34:22 close reach port ENE (1305m/215s @ 1.3/11.4/13.6 kts ↑ 107°/147° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5696000
+END=5712000
+title=11:38:02 close reach starboard ENE (99m/16s @ 10.2/2.0/10.2 kts ↑ 3°/3° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5712000
+END=5917000
+title=11:38:24 broad reach starboard ENE (1222m/205s @ 9.0/11.3/14.7 kts ↑ 270°/294° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5917000
+END=5929000
+title=11:41:54 gybe starboard to port ENE (87m/12s @ 8.4/9.9/11.0 kts ↑ 221°/278° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=5929000
+END=6088000
+title=11:42:11 beam reach port ENE (960m/159s @ 9.0/11.5/16.2 kts ↑ 134°/217° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6088000
+END=6112000
+title=11:44:53 tack port to starboard ENE (104m/24s @ 1.5/7.4/11.3 kts ↑ 10°/147° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6112000
+END=6317000
+title=11:45:18 close reach starboard ENE (1050m/205s @ 6.1/10.0/12.0 kts ↑ 9°/40° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6317000
+END=6350000
+title=11:48:48 tack starboard to port ENE (125m/33s @ 2.1/6.0/8.7 kts ↑ 38°/140° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6350000
+END=6442000
+title=11:49:24 beam reach port ENE (558m/92s @ 4.9/11.1/13.9 kts ↑ 131°/144° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6442000
+END=6468000
+title=11:51:01 unknown ENE (139m/26s @ 2.7/9.3/14.2 kts ↑ 303°/133° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6468000
+END=6761000
+title=11:51:30 downwind run ENE (1919m/293s @ 8.1/12.7/17.7 kts ↑ 214°/313° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6761000
+END=6784000
+title=11:56:29 irons ENE (116m/23s @ 3.8/7.9/11.3 kts ↑ 144°/234° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6784000
+END=6812000
+title=11:56:58 close reach port ENE (77m/28s @ 1.3/4.6/7.0 kts ↑ 118°/152° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=6812000
+END=7068000
+title=11:57:36 close reach starboard ENE (466m/256s @ 1.7/4.4/12.6 kts ↑ 345°/34° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7068000
+END=7094000
+title=12:01:58 unknown ENE (144m/26s @ 5.7/8.8/10.5 kts ↑ 218°/2° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7094000
+END=7126000
+title=12:02:26 irons ENE (166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7126000
+END=7195000
+title=12:03:04 beam reach port ENE (223m/69s @ 4.3/5.7/7.3 kts ↑ 124°/163° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7195000
+END=7242000
+title=12:04:20 unknown ENE (130m/47s @ 1.4/4.8/8.3 kts ↑ 298°/150° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7242000
+END=7287000
+title=12:05:11 beam reach starboard ENE (63m/45s @ 5.8/0.7/5.8 kts ↑ 341°/341° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7287000
+END=7436000
+title=12:06:02 close reach starboard ENE (785m/149s @ 6.5/9.9/11.8 kts ↑ 21°/42° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7436000
+END=7461000
+title=12:08:38 tack starboard to port ENE (135m/25s @ 2.6/7.8/11.3 kts ↑ 26°/158° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7461000
+END=7664000
+title=12:09:08 beam reach port ENE (1205m/203s @ 9.5/11.3/15.0 kts ↑ 121°/154° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7664000
+END=7693000
+title=12:12:34 tack port to starboard ENE (118m/29s @ 1.9/6.9/9.4 kts ↑ 19°/129° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7693000
+END=7714000
+title=12:13:10 close reach starboard ENE (165m/21s @ 10.4/1.5/10.4 kts ↑ 27°/27° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7714000
+END=7817000
+title=12:13:38 broad reach starboard ENE (648m/103s @ 6.9/11.3/14.3 kts ↑ 284°/314° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7817000
+END=7841000
+title=12:15:28 gybe starboard to port ENE (126m/24s @ 4.8/8.0/10.9 kts ↑ 220°/324° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7841000
+END=7939000
+title=12:15:55 broad reach port ENE (580m/98s @ 8.5/11.0/13.3 kts ↑ 208°/238° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7939000
+END=7965000
+title=12:17:40 gybe port to starboard ENE (154m/26s @ 7.0/9.1/11.7 kts ↑ 217°/311° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7965000
+END=7987000
+title=12:18:11 broad reach starboard ENE (142m/22s @ 8.9/10.1/11.7 kts ↑ 299°/319° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=7987000
+END=8011000
+title=12:18:41 round up starboard ENE (112m/24s @ 5.1/6.8/10.2 kts ↑ 301°/25° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8011000
+END=8076000
+title=12:19:13 close reach starboard ENE (346m/65s @ 5.8/9.1/10.6 kts ↑ 17°/44° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8076000
+END=8121000
+title=12:20:27 tack starboard to port ENE (120m/45s @ 2.1/4.1/5.4 kts ↑ 16°/163° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8121000
+END=8345000
+title=12:21:20 beam reach port ENE (960m/224s @ 5.1/8.1/10.4 kts ↑ 126°/152° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8345000
+END=8373000
+title=12:25:11 tack port to starboard ENE (128m/28s @ 1.4/6.4/9.9 kts ↑ 18°/145° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8373000
+END=8445000
+title=12:25:47 close reach starboard ENE (437m/72s @ 9.8/10.6/11.9 kts ↑ 12°/35° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8445000
+END=8477000
+title=12:27:01 tack starboard to port ENE (115m/32s @ 1.9/6.7/11.8 kts ↑ 39°/158° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8477000
+END=8550000
+title=12:27:40 gybe port to starboard ENE (329m/73s @ 3.0/6.5/13.5 kts ↑ 306°/149° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8550000
+END=8657000
+title=12:28:54 broad reach starboard ENE (679m/107s @ 8.6/11.8/14.6 kts ↑ 289°/319° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8657000
+END=8675000
+title=12:30:46 gybe starboard to port ENE (127m/18s @ 7.5/10.4/14.0 kts ↑ 236°/308° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8675000
+END=8779000
+title=12:31:07 downwind run ENE (801m/104s @ 11.0/14.4/16.9 kts ↑ 226°/243° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8779000
+END=8812000
+title=12:32:57 gybe port to starboard ENE (198m/33s @ 6.3/1.8/13.4 kts ↑ 244°/290° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8812000
+END=8852000
+title=12:33:39 round up starboard ENE (145m/40s @ 3.3/5.8/8.5 kts ↑ 290°/37° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=8852000
+END=9104000
+title=12:34:26 close reach starboard ENE (1121m/252s @ 2.0/8.1/10.7 kts ↑ 26°/50° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=9104000
+END=9569000
+title=12:38:45 close reach port ENE (2365m/465s @ 6.5/9.8/12.1 kts ↑ 124°/143° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=9569000
+END=9601000
+title=12:46:36 tack port to starboard ENE (151m/32s @ 2.2/7.5/10.6 kts ↑ 27°/138° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=9601000
+END=9657000
+title=12:47:16 close reach starboard ENE (325m/56s @ 8.9/9.9/10.8 kts ↑ 29°/34° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=9657000
+END=9686000
+title=12:48:20 tack starboard to port ENE (139m/29s @ 2.7/6.9/11.2 kts ↑ 28°/141° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=9686000
+END=10104000
+title=12:48:50 beam reach port ENE (2008m/418s @ 3.0/9.5/14.5 kts ↑ 128°/195° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=10104000
+END=10142000
+title=12:55:58 irons ENE (73m/38s @ 2.2/3.1/4.4 kts ↑ 178°/259° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=10142000
+END=10184000
+title=12:56:42 round up port ENE (90m/42s @ 1.4/2.3/4.1 kts ↑ 131°/278° turning)
+

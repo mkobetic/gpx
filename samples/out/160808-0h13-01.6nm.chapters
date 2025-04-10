@@ -1,0 +1,60 @@
+;FFMETADATA1
+title=160808-0h13-01.6nm
+created=2025-04-10T18:24:47-04:00
+source=160824.gpx
+video_offset=0s
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=0
+END=369000
+title=18:29:00 beam reach port W (963m/369s @ 2.6/5.2/8.6 kts ↑ 334°/19° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=369000
+END=391000
+title=18:35:15 irons W (127m/22s @ 7.3/8.9/11.3 kts ↑ 358°/77° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=391000
+END=424000
+title=18:35:40 downwind run W (151m/33s @ 6.5/8.2/9.2 kts ↑ 68°/87° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=424000
+END=452000
+title=18:36:20 irons W (117m/28s @ 5.1/6.9/9.8 kts ↑ 348°/88° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=452000
+END=484000
+title=18:36:57 beam reach port W (101m/32s @ 3.7/4.8/5.6 kts ↑ 345°/356° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=484000
+END=526000
+title=18:37:35 tack port to starboard W (134m/42s @ 1.6/5.3/8.3 kts ↑ 215°/354° turning)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=526000
+END=639000
+title=18:38:20 beam reach starboard W (660m/113s @ 9.6/11.1/13.3 kts ↑ 157°/194° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=639000
+END=747000
+title=18:40:17 close reach starboard W (612m/108s @ 7.6/9.4/12.8 kts ↑ 183°/226° moving)
+
+[CHAPTER]
+TIMEBASE=1/1000
+START=747000
+END=779000
+title=18:42:13 tack starboard to port W (115m/32s @ 5.2/4.3/9.3 kts ↑ 193°/250° turning)
+
