@@ -28,6 +28,8 @@ length/duration @ min/avg/max speed ↑ min/max heading static|moving|turning
 segment analysis given the determined wind direction
 ```
 
+The map can be zoomed with mouse wheel scroll or touchpad pinch. The map can be panned with mouse or touchpad drag.
+
 ## usage
 
 The repository is set up to automatically compile and release binaries for common desktop platforms (linux/mac/windows).

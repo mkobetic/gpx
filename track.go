@@ -38,7 +38,7 @@ func (t *Track) WriteMapFile(dir string) error {
 		return err
 	}
 	defer f.Close()
-	m := NewMap(t.gpx.Bounds(), mapWidth)
+	m := NewMap(t.gpx.Bounds(), t.params.distanceUnit)
 	m.renderLines(f, t)
 	return nil
 }
@@ -139,7 +139,7 @@ func (t *Track) String() string {
 func (t *Track) gpxAnalyze(params *AnalysisParameters) {
 	t.params = params
 	var segments Segments
-	tMap := NewMap(t.gpx.Bounds(), 1000)
+	tMap := NewMap(t.gpx.Bounds(), t.params.distanceUnit)
 	for i := range t.gpx.Segments {
 		segment := &t.gpx.Segments[i]
 		segments = append(segments, gpxAnalyzeSegment(segment, t.filename, tMap, params)...)
