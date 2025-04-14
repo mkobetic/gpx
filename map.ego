@@ -1,17 +1,141 @@
 <%
 package main
+import "fmt"
+import "time"
 
-func (m *Map) renderPolylines(w io.Writer, t *Track) {
+func (m *Map) renderLines(w io.Writer, t *Track) {
 %>
-<svg width="<%= m.w %>" height="<%= m.h %>" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="100%" height="100%">
     <style type="text/css" >
         <![CDATA[
-            .segment { fill: none; stroke: blue; stroke-width: 3 }
-            .segment:hover { stroke: red }
+            .segment { fill: none; stroke-width: 4 }
+            .segment:hover { stroke-width: 8 }
         ]]>
     </style>
-    <% for i := range t.gpx.Segments { %>
-    <polyline class="segment" points="<%= m.polylinePoints(t.Segments[i]) %>"/>
+    <g id="legend">
+        <% for i := range palette { %>
+        <rect x="<%= 30*i %>" y="0" width="30" height="20" fill="<%= fmt.Sprintf("#%03x",palette[i]) %>"/>
+        <% } %>
+        <% for i := 0; i < len(palette); i += 5 {
+            color := "black" 
+            if i == 0 { color = "white" }
+        %>
+        <text x="<%= 30*i+5 %>" y="16" fill="<%= color %>"><%= fmt.Sprint(i) %>kts</text>
+        <% } %>
+    </g>
+    <svg id="map" x="0" y="21" width="100%" viewBox="0 0 <%= m.w %> <%= m.h %>">
+        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured
+            by the #map element whenever the mouse pointer is anywhere in the viewport -->
+        <rect id="background" width="<%= m.w %>" height="<%= m.h %>" fill="transparent"/>
+    <%  totalDistance := float64(0)
+        var lastPoint *Point
+        for _, segment := range t.Segments {
+    %>
+        <g class="segment">
+            <% if lastPoint != nil {
+                prev, next := lastPoint, segment.Points[0]
+                x1, y1 := m.Point(prev.gpx)
+                x2, y2 := m.Point(next.gpx)
+                c := m.SpeedColor(next.Speed)
+                totalDistance += next.Distance
+                timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
+            %>
+            <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
+            <title><%= timestamp %> <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance) %>
+<%= segment.String() %>
+<%= segment.TypeString() %></title>
+            </line>
+            <% } %>
+            <% segment.EachPair(func(prev, next *Point) {
+                lastPoint = next
+                x1, y1 := m.Point(prev.gpx)
+                x2, y2 := m.Point(next.gpx)
+                c := m.SpeedColor(next.Speed)
+                totalDistance += next.Distance
+                timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
+            %>
+            <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
+            <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance/1852) %>
+    <%= segment.ShortString() %>
+    <%= segment.TypeString() %></title>
+            </line>
+            <% }) %>
+        </g>
 	<% } %>
+    </svg>
+    <script>
+        const map = document.getElementById('map');
+        const [_minX, _minY, maxX, maxY] = map.getAttribute('viewBox').split(' ').map(Number);
+        const zoomSensitivity = 0.001; // Adjust for zoom speed
+        const dragMultiplier = 2.5; // Adjust for drag speed
+        let startX, startY, initialDragViewBox;
+
+        function clamp(x, max) {
+            if (0 > x) return 0;
+            if (x > max) return max;
+            return x
+        }
+
+        const dragStart = (event) => {
+            map.style.cursor = 'grabbing';
+            startX = event.clientX;
+            startY = event.clientY;
+            initialDragViewBox = map.getAttribute('viewBox').split(' ').map(Number);
+            map.addEventListener('mousemove', dragMove);
+
+        };
+
+        const dragMove = (event) => {
+            const deltaX = event.clientX - startX;
+            const deltaY = event.clientY - startY;
+
+            // Adjust the viewBox based on the mouse movement
+            const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);
+            const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);
+
+            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
+        };
+
+        const dragStop = () => {
+            map.removeEventListener('mousemove', dragMove);
+            map.style.cursor = 'auto';
+        }
+
+        const wheelZoom = (event) => {
+            event.preventDefault(); // Prevent default scrolling
+
+            const delta = -event.deltaY * zoomSensitivity; // Normalize scroll direction and sensitivity
+
+            let [minX, minY, width, height] = map.getAttribute('viewBox').split(' ').map(Number);
+
+            // Calculate the point to zoom around (mouse position relative to SVG)
+            const rect = map.getBoundingClientRect();
+            const mouseX = event.clientX - rect.left;
+            const mouseY = event.clientY - rect.top;
+
+            // Calculate the focal point in the SVG's user coordinates
+            const focusX = minX + width * (mouseX / rect.width);
+            const focusY = minY + height * (mouseY / rect.height);
+
+            // Adjust width and height based on zoom delta
+            const newWidth = clamp(width * (1 + delta), maxX);
+            const newHeight = clamp(height * (1 + delta), maxY);
+
+            // Ensure width and height don't become zero or negative
+            if (0 > newWidth || 0 > newHeight) return;
+
+            // Adjust minX and minY to zoom around the focal point
+            const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);
+            const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);
+
+            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
+        };
+
+        map.addEventListener('mousedown', dragStart);
+        map.addEventListener('mouseup', dragStop);
+        map.addEventListener('mouseleave', dragStop);
+        map.addEventListener('wheel', wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+    </script>
 </svg>
 <% } %>
