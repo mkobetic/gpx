@@ -174,7 +174,7 @@ Unless you prepared well and made sure the camera and gps device clocks are in s
 
 You may be able to check the time on both after the fact and figure out the difference that way.
 
-Another option, if you think about this ahead of time is to just record your GPS watch on the video when you start recording, that way you'll have a fairly good idea of what the watch time was at a given point in the video, it should be easy to calculate the offset from that. You just have to make sure you have a reasonably clear and sharp picture of your watch. I find that I can bring my watch about 6 inches from my old GoPro session and hold it there for a second to let the camera focus.
+Another option, if you think about this ahead of time is to just record your GPS watch on the video when you start recording, that way you'll have a fairly good idea of what the watch time was at a given point in the video, it should be easy to calculate the offset from that. You just have to make sure you have a reasonably clear and sharp picture of your watch. I find that I can bring my watch about 6 inches from my old GoPro session and hold it there for a second.
 
 
 ## adding subtitles and chapters to a video file (using ffmpeg)
