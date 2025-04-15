@@ -186,18 +186,19 @@ ffmpeg -i video.mp4 -i subtitles.vtt -i video.chapters -map 0:v -map 0:a -map 1:
 ```
 Here's what the bits of the command mean:
 ```
--i video.mp4    = use this video file (input number 0)
--i subtitles.vtt = use this subtitle file (input number 1)
--i subtitles.vtt = use this subtitle file (input number 2)
+-i video.mp4       = use this video file (input number 0)
+-i subtitles.vtt   = use this subtitle file (input number 1)
+-i video.chapters  = use this chapter metadata file (input number 2)
 -map 0:v        = take the video stream from the video file (input 0)
 -map 0:a        = take the audio stream from the video file (input 0)
 -map 1:s        = take the subtitle stream from the subtitle file (input 1)
 -map_metadata 2 = take the metadata from the chapter file (input 2)
 -c copy         = don't process the video/audio just copy it over as is
 -c:s mov_text   = encode the subtitle stream in a way that works with mp4 container
--metadata:s:s:0 language=eng = set the subtitles language to english (that's how it will show in subtitle options in the player)
+-metadata:s:s:0 language=eng
+                = set the subtitles language to english (that's how it will show in subtitle options in the player)
 -y              = just (over)-write the final file don't ask for confirmation
-video-with-subtitles.mp4 = name of the video file with subtitles
+video-with-subtitles.mp4 = name of the video file with subtitles and chapters
 ```
 This should produce a new video file with the same content as the original file with the subtitle stream and chapter metadata added into it. It should be fast because the video content is just copied over as is without re-processing.
 
