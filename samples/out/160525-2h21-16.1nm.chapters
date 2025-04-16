@@ -1,6 +1,6 @@
 ;FFMETADATA1
 title=160525-2h21-16.1nm
-created=2025-04-14T14:24:49-04:00
+created=2025-04-16T14:15:34-04:00
 source=160605.gpx
 video_offset=0s
 
@@ -98,7 +98,7 @@ title=18:15:43  (222m/57s @ 1.9/4.8/10.8 kts ↑ 132°/32° turning)
 TIMEBASE=1/1000
 START=1150000
 END=1174000
-title=18:16:41  (29m/24s @ 1.3/0.6/2.1 kts ↑ 239°/241° turning)
+title=18:16:41  (29m/24s @ 2.1/2.2/5.0 kts ↑ 145°/241° moving)
 
 [CHAPTER]
 TIMEBASE=1/1000
@@ -260,7 +260,7 @@ title=18:50:07  (166m/52s @ 5.1/5.5/6.1 kts ↑ 205°/215° moving)
 TIMEBASE=1/1000
 START=2960000
 END=2990000
-title=18:51:10  (134m/30s @ 5.9/2.7/7.4 kts ↑ 273°/276° moving)
+title=18:51:10  (134m/30s @ 5.7/3.7/6.5 kts ↑ 204°/261° turning)
 
 [CHAPTER]
 TIMEBASE=1/1000
@@ -584,7 +584,7 @@ title=19:45:52  (104m/55s @ 4.1/0.3/4.1 kts ↑ 198°/198° moving)
 TIMEBASE=1/1000
 START=5759000
 END=5786000
-title=19:46:53  (67m/27s @ 5.1/2.1/5.3 kts ↑ 322°/325° turning)
+title=19:46:53  (67m/27s @ 1.7/1.5/4.1 kts ↑ 290°/319° moving)
 
 [CHAPTER]
 TIMEBASE=1/1000

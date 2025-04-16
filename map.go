@@ -8,7 +8,9 @@ import (
 	"github.com/tkrajina/gpxgo/gpx"
 )
 
-const border = 20 // points of SVG coordinates
+const border = 20       // map padding area width in points of SVG coordinates
+const tlUnitHeight = 20 // timeline height of a vertical unit (e.g. a knot) in points of SVG coordinates
+const tlHeight = 25 * tlUnitHeight
 
 // Map is used to translate track coordinates into SVG coordinate system for rendering.
 type Map struct {
