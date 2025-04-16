@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "embed"
 	"fmt"
 	"math"
 	"time"
@@ -8,7 +9,12 @@ import (
 	"github.com/tkrajina/gpxgo/gpx"
 )
 
-const border = 20 // points of SVG coordinates
+const border = 20      // map padding area width in points of SVG coordinates
+const tlUnitHeight = 3 // timeline height of a vertical unit (e.g. a knot) in points of SVG coordinates
+const tlHeight = 25 * tlUnitHeight
+
+//go:embed map.js
+var script string
 
 // Map is used to translate track coordinates into SVG coordinate system for rendering.
 type Map struct {

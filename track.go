@@ -16,7 +16,6 @@ import (
 
 const fnFormat = "060102"
 const strFormat = "06-01-02 15:04:05"
-const mapWidth = 1000
 
 type Track struct {
 	gpx      *gpx.GPXTrack
@@ -39,7 +38,7 @@ func (t *Track) WriteMapFile(dir string) error {
 	}
 	defer f.Close()
 	m := NewMap(t.gpx.Bounds(), t.params.distanceUnit)
-	m.renderLines(f, t)
+	m.render(f, t)
 	return nil
 }
 

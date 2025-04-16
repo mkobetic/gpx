@@ -1,10 +1,14 @@
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-    width="100%" height="100%">
+    width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
             .segment { fill: none; stroke-width: 4 }
             .segment:hover { stroke-width: 8 }
+            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }
+            .timeline-segment-rect { fill: transparent }
+            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
         ]]>
     </style>
     <g id="legend">
@@ -852,89 +856,142 @@ tack starboard to port W</title>
         </g>
 	
     </svg>
+    <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 825 75">
+        
+            <polygon class="timeline-segment" points="0,75 0,51 7,51 15,51 23,54 30,60 39,60 48,60 58,60 68,60 77,60 86,60 96,60 105,63 114,66 123,66 132,69 138,69 150,66 159,69 169,69 176,69 182,63 192,60 200,60 206,57 212,57 219,57 227,57 232,57 237,57 245,57 256,57 266,57 275,60 281,66 290,63 300,63 309,60 318,66 326,66 333,63 342,60 343,60 350,63 356,63 362,66 369,63 369,75"/>
+            <rect class="timeline-segment-rect" x="0" y="0" width="369" height="75"/>
+        
+            <polygon class="timeline-segment" points="369,75 369,54 372,54 377,54 380,48 382,42 391,45 391,75"/>
+            <rect class="timeline-segment-rect" x="369" y="0" width="22" height="75"/>
+        
+            <polygon class="timeline-segment" points="391,75 391,48 397,51 404,57 408,54 414,48 424,51 424,75"/>
+            <rect class="timeline-segment-rect" x="391" y="0" width="33" height="75"/>
+        
+            <polygon class="timeline-segment" points="424,75 424,60 431,54 433,48 439,54 444,60 452,60 452,75"/>
+            <rect class="timeline-segment-rect" x="424" y="0" width="28" height="75"/>
+        
+            <polygon class="timeline-segment" points="452,75 452,60 459,63 466,63 472,60 477,63 484,66 484,75"/>
+            <rect class="timeline-segment-rect" x="452" y="0" width="32" height="75"/>
+        
+            <polygon class="timeline-segment" points="484,75 484,57 493,54 496,66 503,72 508,66 515,63 521,60 526,51 526,75"/>
+            <rect class="timeline-segment-rect" x="484" y="0" width="42" height="75"/>
+        
+            <polygon class="timeline-segment" points="526,75 526,48 533,45 535,45 542,45 550,45 557,48 566,45 573,45 577,42 585,42 592,42 600,48 604,48 609,42 618,39 626,36 627,36 632,39 639,42 639,75"/>
+            <rect class="timeline-segment-rect" x="526" y="0" width="113" height="75"/>
+        
+            <polygon class="timeline-segment" points="639,75 639,48 641,51 651,51 658,54 663,51 670,45 677,45 684,45 692,42 698,42 705,42 712,39 718,45 725,42 732,39 739,39 747,45 747,75"/>
+            <rect class="timeline-segment-rect" x="639" y="0" width="108" height="75"/>
+        
+            <polygon class="timeline-segment" points="747,75 747,48 750,51 754,57 763,60 768,60 773,66 775,72 779,75 779,75"/>
+            <rect class="timeline-segment-rect" x="747" y="0" width="32" height="75"/>
+        
+    </svg>
     <script>
-        // Tunable parameters
-        const zoomSensitivityMouse = 0.001; // Adjust for zoom speed
-        const zoomSensitivityTouchpad = 0.01; // Adjust for zoom speed
-        const dragMultiplier = 2.5; // Adjust for drag speed
 
-        const map = document.getElementById('map');
-        const [_minX, _minY, maxX, maxY] = map.getAttribute('viewBox').split(' ').map(Number);
-        let startX, startY, initialDragViewBox;
+// Tunable parameters
+const zoomSensitivityMouse = 0.001; // Adjust for zoom speed
+const zoomSensitivityTouchpad = 0.01; // Adjust for zoom speed
+const dragMultiplier = 2.5; // Adjust for drag speed
 
-        function clamp(x, max) {
-            if (0 > x) return 0;
-            if (x > max) return max;
-            return x
-        }
+const root = document.querySelector(&#39;svg#root&#39;);
+const map = document.querySelector(&#39;svg#map&#39;);
+const legend = document.querySelector(&#39;g#legend&#39;);
+const timeline = document.querySelector(&#39;svg#timeline&#39;);
 
-        function dragStart(event) {
-            map.style.cursor = 'grabbing';
-            startX = event.clientX;
-            startY = event.clientY;
-            initialDragViewBox = map.getAttribute('viewBox').split(' ').map(Number);
-            map.addEventListener('mousemove', dragMove);
+function updatePositions() {
+    const {width: rootWidth, height: rootHeight} = root.getBoundingClientRect(); 
+    const legendHeight = legend.getBoundingClientRect().height; 
+    let mapHeight = map.getBoundingClientRect().height; 
+    let timelineHeight = timeline.getBoundingClientRect().height;
+    console.log(rootHeight, legendHeight, mapHeight, timelineHeight)
+    mapHeight = rootHeight - legendHeight - timelineHeight
+    map.setAttribute(&#39;height&#39;, mapHeight)
+    timeline.setAttribute(&#39;y&#39;, rootHeight - timelineHeight-20)
+    timeline.setAttribute(&#39;width&#39;, rootWidth - 40)
+};
 
-        };
+updatePositions();
 
-        function dragMove(event) {
-            const deltaX = event.clientX - startX;
-            const deltaY = event.clientY - startY;
+window.addEventListener(&#34;resize&#34;, updatePositions)
 
-            // Adjust the viewBox based on the mouse movement
-            const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);
-            const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);
+// map zooming/panning
+const [_minX, _minY, maxX, maxY] = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
+let startX, startY, initialDragViewBox;
 
-            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
-        };
+function clamp(x, max) {
+    if (0 &gt; x) return 0;
+    if (x &gt; max) return max;
+    return x
+}
 
-        function dragStop() {
-            map.removeEventListener('mousemove', dragMove);
-            map.style.cursor = 'auto';
-        };
+function dragStart(event) {
+    map.style.cursor = &#39;grabbing&#39;;
+    startX = event.clientX;
+    startY = event.clientY;
+    initialDragViewBox = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
+    map.addEventListener(&#39;mousemove&#39;, dragMove);
 
-        function zoomSensitivity(event) {
-            // Check if deltaX or deltaY are very small and non-zero, which is typical for touchpads
-            if (1 > Math.abs(event.deltaY) || 1 > Math.abs(event.deltaX)) {
-                return zoomSensitivityTouchpad;
-            } else {
-                return zoomSensitivityMouse;
-            }
-        }
+};
 
-        function wheelZoom(event) {
-            event.preventDefault(); // Prevent default scrolling
+function dragMove(event) {
+    const deltaX = event.clientX - startX;
+    const deltaY = event.clientY - startY;
 
-            const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
+    // Adjust the viewBox based on the mouse movement
+    const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);
+    const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);
 
-            let [minX, minY, width, height] = map.getAttribute('viewBox').split(' ').map(Number);
+    map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
+};
 
-            // Calculate the point to zoom around (mouse position relative to SVG)
-            const rect = map.getBoundingClientRect();
-            const mouseX = event.clientX - rect.left;
-            const mouseY = event.clientY - rect.top;
+function dragStop() {
+    map.removeEventListener(&#39;mousemove&#39;, dragMove);
+    map.style.cursor = &#39;auto&#39;;
+};
 
-            // Calculate the focal point in the SVG's user coordinates
-            const focusX = minX + width * (mouseX / rect.width);
-            const focusY = minY + height * (mouseY / rect.height);
+function zoomSensitivity(event) {
+    // Check if deltaX or deltaY are very small and non-zero, which is typical for touchpads
+    if (1 &gt; Math.abs(event.deltaY) || 1 &gt; Math.abs(event.deltaX)) {
+        return zoomSensitivityTouchpad;
+    } else {
+        return zoomSensitivityMouse;
+    }
+}
 
-            // Adjust width and height based on zoom delta
-            const newWidth = clamp(width * (1 + delta), maxX);
-            const newHeight = clamp(height * (1 + delta), maxY);
+function wheelZoom(event) {
+    event.preventDefault(); // Prevent default scrolling
 
-            // Ensure width and height don't become zero or negative
-            if (0 == newWidth || 0 == newHeight) return;
+    const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
 
-            // Adjust minX and minY to zoom around the focal point
-            const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);
-            const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);
+    let [minX, minY, width, height] = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
 
-            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
-        };
+    // Calculate the point to zoom around (mouse position relative to SVG)
+    const rect = map.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
 
-        map.addEventListener('mousedown', dragStart);
-        map.addEventListener('mouseup', dragStop);
-        map.addEventListener('mouseleave', dragStop);
-        map.addEventListener('wheel', wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+    // Calculate the focal point in the SVG&#39;s user coordinates
+    const focusX = minX + width * (mouseX / rect.width);
+    const focusY = minY + height * (mouseY / rect.height);
+
+    // Adjust width and height based on zoom delta
+    const newWidth = clamp(width * (1 + delta), maxX);
+    const newHeight = clamp(height * (1 + delta), maxY);
+
+    // Ensure width and height don&#39;t become zero or negative
+    if (0 == newWidth || 0 == newHeight) return;
+
+    // Adjust minX and minY to zoom around the focal point
+    const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);
+    const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);
+
+    map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
+};
+
+map.addEventListener(&#39;mousedown&#39;, dragStart);
+map.addEventListener(&#39;mouseup&#39;, dragStop);
+map.addEventListener(&#39;mouseleave&#39;, dragStop);
+map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+
     </script>
 </svg>

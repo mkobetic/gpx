@@ -1,10 +1,14 @@
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-    width="100%" height="100%">
+    width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
             .segment { fill: none; stroke-width: 4 }
             .segment:hover { stroke-width: 8 }
+            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }
+            .timeline-segment-rect { fill: transparent }
+            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
         ]]>
     </style>
     <g id="legend">
@@ -3732,89 +3736,250 @@
         </g>
 	
     </svg>
+    <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 4262 75">
+        
+            <polygon class="timeline-segment" points="0,75 0,60 1,60 8,60 15,63 21,63 28,69 39,72 49,72 55,69 64,66 72,66 77,72 83,63 87,51 92,48 92,75"/>
+            <rect class="timeline-segment-rect" x="0" y="0" width="92" height="75"/>
+        
+            <polygon class="timeline-segment" points="92,75 92,54 98,51 106,48 108,48 114,57 120,57 126,48 128,51 134,57 136,63 140,66 145,63 146,60 153,63 158,66 163,66 163,75"/>
+            <rect class="timeline-segment-rect" x="92" y="0" width="71" height="75"/>
+        
+            <polygon class="timeline-segment" points="163,75 163,69 174,69 184,69 188,60 194,51 198,48 202,51 202,75"/>
+            <rect class="timeline-segment-rect" x="163" y="0" width="39" height="75"/>
+        
+            <polygon class="timeline-segment" points="202,75 202,54 209,54 216,57 223,57 230,57 236,57 241,57 251,57 257,54 263,54 268,54 275,54 282,51 287,48 294,51 301,54 301,75"/>
+            <rect class="timeline-segment-rect" x="202" y="0" width="99" height="75"/>
+        
+            <polygon class="timeline-segment" points="301,75 301,57 308,57 310,60 317,66 324,63 332,63 341,63 341,75"/>
+            <rect class="timeline-segment-rect" x="301" y="0" width="40" height="75"/>
+        
+            <polygon class="timeline-segment" points="341,75 341,63 349,63 357,60 367,60 375,60 382,63 390,63 401,60 411,63 421,60 432,60 443,60 453,57 462,60 470,57 477,57 482,54 491,51 496,54 503,57 510,60 516,60 522,60 531,60 537,60 537,75"/>
+            <rect class="timeline-segment-rect" x="341" y="0" width="196" height="75"/>
+        
+            <polygon class="timeline-segment" points="537,75 537,60 551,63 552,60 558,69 561,66 570,63 577,60 577,75"/>
+            <rect class="timeline-segment-rect" x="537" y="0" width="40" height="75"/>
+        
+            <polygon class="timeline-segment" points="577,75 577,57 585,60 595,57 604,54 616,54 627,54 637,54 637,75"/>
+            <rect class="timeline-segment-rect" x="577" y="0" width="60" height="75"/>
+        
+            <polygon class="timeline-segment" points="637,75 637,54 644,51 648,48 653,57 659,57 659,75"/>
+            <rect class="timeline-segment-rect" x="637" y="0" width="22" height="75"/>
+        
+            <polygon class="timeline-segment" points="659,75 659,51 665,51 670,60 672,63 677,60 683,60 689,57 689,75"/>
+            <rect class="timeline-segment-rect" x="659" y="0" width="30" height="75"/>
+        
+            <polygon class="timeline-segment" points="689,75 689,57 697,60 704,57 712,57 720,54 726,57 733,51 740,54 745,57 752,54 759,51 765,51 766,48 773,45 779,45 784,45 793,45 793,75"/>
+            <rect class="timeline-segment-rect" x="689" y="0" width="104" height="75"/>
+        
+            <polygon class="timeline-segment" points="793,75 793,51 797,51 802,51 806,63 810,63 817,57 825,54 825,75"/>
+            <rect class="timeline-segment-rect" x="793" y="0" width="32" height="75"/>
+        
+            <polygon class="timeline-segment" points="825,75 825,48 826,48 832,51 842,51 850,48 851,48 857,48 864,48 870,45 876,45 880,48 889,51 899,54 909,54 909,75"/>
+            <rect class="timeline-segment-rect" x="825" y="0" width="84" height="75"/>
+        
+            <polygon class="timeline-segment" points="909,75 909,54 917,54 922,63 929,66 937,60 943,54 943,75"/>
+            <rect class="timeline-segment-rect" x="909" y="0" width="34" height="75"/>
+        
+            <polygon class="timeline-segment" points="943,75 943,48 947,45 949,42 953,48 957,54 963,57 965,54 970,60 978,60 987,57 987,75"/>
+            <rect class="timeline-segment-rect" x="943" y="0" width="44" height="75"/>
+        
+            <polygon class="timeline-segment" points="987,75 987,57 992,57 993,57 999,60 1007,57 1013,57 1023,57 1031,57 1038,57 1044,57 1050,54 1055,54 1058,54 1064,57 1070,54 1076,51 1076,75"/>
+            <rect class="timeline-segment-rect" x="987" y="0" width="89" height="75"/>
+        
+            <polygon class="timeline-segment" points="1076,75 1076,48 1080,48 1084,54 1088,66 1092,66 1099,57 1107,57 1107,75"/>
+            <rect class="timeline-segment-rect" x="1076" y="0" width="31" height="75"/>
+        
+            <polygon class="timeline-segment" points="1107,75 1107,57 1115,54 1122,57 1131,57 1140,57 1147,57 1155,57 1163,57 1173,57 1180,57 1190,60 1199,60 1207,57 1216,57 1225,60 1232,60 1238,60 1247,60 1255,60 1261,60 1265,60 1273,60 1280,60 1287,60 1298,63 1309,63 1319,60 1319,75"/>
+            <rect class="timeline-segment-rect" x="1107" y="0" width="212" height="75"/>
+        
+            <polygon class="timeline-segment" points="1319,75 1319,60 1329,60 1330,66 1336,69 1343,63 1343,75"/>
+            <rect class="timeline-segment-rect" x="1319" y="0" width="24" height="75"/>
+        
+            <polygon class="timeline-segment" points="1343,75 1343,63 1353,60 1357,63 1363,69 1367,63 1374,57 1377,57 1381,60 1385,63 1393,60 1400,60 1400,75"/>
+            <rect class="timeline-segment-rect" x="1343" y="0" width="57" height="75"/>
+        
+            <polygon class="timeline-segment" points="1400,75 1400,57 1407,57 1414,54 1420,51 1428,51 1433,51 1439,51 1445,54 1451,57 1460,54 1467,54 1473,57 1479,60 1486,60 1486,75"/>
+            <rect class="timeline-segment-rect" x="1400" y="0" width="86" height="75"/>
+        
+            <polygon class="timeline-segment" points="1486,75 1486,60 1494,54 1495,57 1500,63 1501,63 1508,60 1514,51 1519,48 1519,75"/>
+            <rect class="timeline-segment-rect" x="1486" y="0" width="33" height="75"/>
+        
+            <polygon class="timeline-segment" points="1519,75 1519,48 1527,48 1535,48 1544,51 1551,51 1560,54 1568,48 1570,48 1577,51 1584,57 1593,57 1599,57 1605,54 1615,54 1624,57 1632,63 1632,75"/>
+            <rect class="timeline-segment-rect" x="1519" y="0" width="113" height="75"/>
+        
+            <polygon class="timeline-segment" points="1632,75 1632,63 1640,60 1649,60 1655,69 1658,63 1666,60 1673,60 1673,75"/>
+            <rect class="timeline-segment-rect" x="1632" y="0" width="41" height="75"/>
+        
+            <polygon class="timeline-segment" points="1673,75 1673,57 1680,54 1685,51 1687,48 1689,48 1693,51 1695,48 1702,45 1704,45 1712,45 1716,42 1721,42 1730,45 1731,48 1736,51 1743,60 1744,60 1750,66 1757,66 1763,66 1770,66 1770,75"/>
+            <rect class="timeline-segment-rect" x="1673" y="0" width="97" height="75"/>
+        
+            <polygon class="timeline-segment" points="1770,75 1770,63 1780,63 1788,66 1795,66 1802,69 1810,69 1818,72 1818,75"/>
+            <rect class="timeline-segment-rect" x="1770" y="0" width="48" height="75"/>
+        
+            <polygon class="timeline-segment" points="1818,75 1818,69 1828,69 1829,69 1833,69 1839,69 1845,69 1851,72 1857,72 1858,75 1858,75"/>
+            <rect class="timeline-segment-rect" x="1818" y="0" width="40" height="75"/>
+        
+            <polygon class="timeline-segment" points="1858,75 1858,69 1869,69 1885,69 1898,69 1910,66 1918,66 1927,66 1937,66 1950,69 1965,66 1975,69 1989,69 1989,75"/>
+            <rect class="timeline-segment-rect" x="1858" y="0" width="131" height="75"/>
+        
+            <polygon class="timeline-segment" points="1989,75 1989,69 2005,69 2020,69 2026,66 2031,66 2037,69 2049,66 2059,66 2070,63 2070,75"/>
+            <rect class="timeline-segment-rect" x="1989" y="0" width="81" height="75"/>
+        
+            <polygon class="timeline-segment" points="2070,75 2070,63 2080,63 2091,60 2098,57 2106,54 2106,75"/>
+            <rect class="timeline-segment-rect" x="2070" y="0" width="36" height="75"/>
+        
+            <polygon class="timeline-segment" points="2106,75 2106,57 2111,63 2118,63 2125,60 2129,60 2129,75"/>
+            <rect class="timeline-segment-rect" x="2106" y="0" width="23" height="75"/>
+        
+            <polygon class="timeline-segment" points="2129,75 2129,54 2135,51 2141,51 2147,63 2157,63 2167,63 2169,63 2176,66 2183,60 2189,57 2189,75"/>
+            <rect class="timeline-segment-rect" x="2129" y="0" width="60" height="75"/>
+        
+            <polygon class="timeline-segment" points="2189,75 2189,54 2195,54 2200,51 2206,45 2210,48 2214,63 2220,69 2227,57 2236,57 2236,75"/>
+            <rect class="timeline-segment-rect" x="2189" y="0" width="47" height="75"/>
+        
+            <polygon class="timeline-segment" points="2236,75 2236,57 2242,57 2245,57 2247,60 2253,63 2261,63 2270,60 2278,57 2284,54 2289,51 2296,51 2303,51 2312,51 2318,51 2327,54 2333,57 2338,57 2346,57 2353,60 2353,75"/>
+            <rect class="timeline-segment-rect" x="2236" y="0" width="117" height="75"/>
+        
+            <polygon class="timeline-segment" points="2353,75 2353,60 2362,60 2364,57 2369,66 2376,63 2385,57 2385,75"/>
+            <rect class="timeline-segment-rect" x="2353" y="0" width="32" height="75"/>
+        
+            <polygon class="timeline-segment" points="2385,75 2385,60 2390,63 2395,60 2404,60 2413,60 2422,60 2429,57 2436,57 2445,57 2455,60 2461,60 2465,57 2472,57 2477,54 2482,57 2491,57 2500,57 2508,54 2516,54 2524,51 2534,54 2541,54 2549,54 2558,54 2565,60 2570,57 2570,75"/>
+            <rect class="timeline-segment-rect" x="2385" y="0" width="185" height="75"/>
+        
+            <polygon class="timeline-segment" points="2570,75 2570,54 2577,54 2579,57 2587,66 2595,60 2604,60 2604,75"/>
+            <rect class="timeline-segment-rect" x="2570" y="0" width="34" height="75"/>
+        
+            <polygon class="timeline-segment" points="2604,75 2604,60 2609,60 2618,57 2627,54 2634,54 2639,54 2641,63 2647,66 2652,57 2658,48 2660,45 2663,48 2663,75"/>
+            <rect class="timeline-segment-rect" x="2604" y="0" width="59" height="75"/>
+        
+            <polygon class="timeline-segment" points="2663,75 2663,48 2666,48 2670,51 2678,48 2679,42 2684,45 2688,54 2695,57 2702,54 2709,48 2710,45 2716,45 2725,51 2733,51 2737,51 2745,54 2753,54 2760,51 2768,48 2768,75"/>
+            <rect class="timeline-segment-rect" x="2663" y="0" width="105" height="75"/>
+        
+            <polygon class="timeline-segment" points="2768,75 2768,48 2772,48 2777,51 2778,60 2784,63 2791,63 2799,60 2799,75"/>
+            <rect class="timeline-segment-rect" x="2768" y="0" width="31" height="75"/>
+        
+            <polygon class="timeline-segment" points="2799,75 2799,60 2807,57 2816,54 2822,54 2829,51 2836,48 2845,48 2849,42 2852,39 2854,39 2861,39 2865,42 2868,45 2870,48 2873,48 2878,48 2879,51 2888,51 2893,51 2896,48 2903,45 2911,42 2916,45 2924,48 2932,48 2940,54 2948,57 2954,54 2961,51 2961,75"/>
+            <rect class="timeline-segment-rect" x="2799" y="0" width="162" height="75"/>
+        
+            <polygon class="timeline-segment" points="2961,75 2961,54 2965,57 2968,60 2971,63 2977,63 2982,60 2987,60 2991,57 2999,57 2999,75"/>
+            <rect class="timeline-segment-rect" x="2961" y="0" width="38" height="75"/>
+        
+            <polygon class="timeline-segment" points="2999,75 2999,54 3003,57 3009,54 3015,57 3020,60 3028,57 3034,60 3042,57 3053,57 3062,57 3070,57 3082,60 3090,57 3098,54 3104,51 3110,51 3120,51 3124,54 3130,60 3139,57 3149,57 3154,57 3161,54 3171,54 3178,57 3187,60 3196,60 3201,57 3210,57 3221,57 3230,57 3242,57 3252,57 3264,60 3273,60 3282,60 3291,63 3300,60 3310,57 3318,57 3325,57 3337,57 3344,57 3353,60 3360,57 3368,54 3373,51 3381,54 3390,57 3399,57 3410,60 3421,54 3430,57 3438,57 3446,54 3456,51 3465,57 3473,60 3482,57 3490,57 3497,54 3502,57 3509,60 3513,66 3520,69 3528,63 3528,75"/>
+            <rect class="timeline-segment-rect" x="2999" y="0" width="529" height="75"/>
+        
+            <polygon class="timeline-segment" points="3528,75 3528,60 3536,60 3541,63 3545,66 3552,63 3552,75"/>
+            <rect class="timeline-segment-rect" x="3528" y="0" width="24" height="75"/>
+        
+            <polygon class="timeline-segment" points="3552,75 3552,63 3558,66 3564,69 3565,72 3570,72 3570,75"/>
+            <rect class="timeline-segment-rect" x="3552" y="0" width="18" height="75"/>
+        
+    </svg>
     <script>
-        // Tunable parameters
-        const zoomSensitivityMouse = 0.001; // Adjust for zoom speed
-        const zoomSensitivityTouchpad = 0.01; // Adjust for zoom speed
-        const dragMultiplier = 2.5; // Adjust for drag speed
 
-        const map = document.getElementById('map');
-        const [_minX, _minY, maxX, maxY] = map.getAttribute('viewBox').split(' ').map(Number);
-        let startX, startY, initialDragViewBox;
+// Tunable parameters
+const zoomSensitivityMouse = 0.001; // Adjust for zoom speed
+const zoomSensitivityTouchpad = 0.01; // Adjust for zoom speed
+const dragMultiplier = 2.5; // Adjust for drag speed
 
-        function clamp(x, max) {
-            if (0 > x) return 0;
-            if (x > max) return max;
-            return x
-        }
+const root = document.querySelector(&#39;svg#root&#39;);
+const map = document.querySelector(&#39;svg#map&#39;);
+const legend = document.querySelector(&#39;g#legend&#39;);
+const timeline = document.querySelector(&#39;svg#timeline&#39;);
 
-        function dragStart(event) {
-            map.style.cursor = 'grabbing';
-            startX = event.clientX;
-            startY = event.clientY;
-            initialDragViewBox = map.getAttribute('viewBox').split(' ').map(Number);
-            map.addEventListener('mousemove', dragMove);
+function updatePositions() {
+    const {width: rootWidth, height: rootHeight} = root.getBoundingClientRect(); 
+    const legendHeight = legend.getBoundingClientRect().height; 
+    let mapHeight = map.getBoundingClientRect().height; 
+    let timelineHeight = timeline.getBoundingClientRect().height;
+    console.log(rootHeight, legendHeight, mapHeight, timelineHeight)
+    mapHeight = rootHeight - legendHeight - timelineHeight
+    map.setAttribute(&#39;height&#39;, mapHeight)
+    timeline.setAttribute(&#39;y&#39;, rootHeight - timelineHeight-20)
+    timeline.setAttribute(&#39;width&#39;, rootWidth - 40)
+};
 
-        };
+updatePositions();
 
-        function dragMove(event) {
-            const deltaX = event.clientX - startX;
-            const deltaY = event.clientY - startY;
+window.addEventListener(&#34;resize&#34;, updatePositions)
 
-            // Adjust the viewBox based on the mouse movement
-            const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);
-            const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);
+// map zooming/panning
+const [_minX, _minY, maxX, maxY] = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
+let startX, startY, initialDragViewBox;
 
-            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
-        };
+function clamp(x, max) {
+    if (0 &gt; x) return 0;
+    if (x &gt; max) return max;
+    return x
+}
 
-        function dragStop() {
-            map.removeEventListener('mousemove', dragMove);
-            map.style.cursor = 'auto';
-        };
+function dragStart(event) {
+    map.style.cursor = &#39;grabbing&#39;;
+    startX = event.clientX;
+    startY = event.clientY;
+    initialDragViewBox = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
+    map.addEventListener(&#39;mousemove&#39;, dragMove);
 
-        function zoomSensitivity(event) {
-            // Check if deltaX or deltaY are very small and non-zero, which is typical for touchpads
-            if (1 > Math.abs(event.deltaY) || 1 > Math.abs(event.deltaX)) {
-                return zoomSensitivityTouchpad;
-            } else {
-                return zoomSensitivityMouse;
-            }
-        }
+};
 
-        function wheelZoom(event) {
-            event.preventDefault(); // Prevent default scrolling
+function dragMove(event) {
+    const deltaX = event.clientX - startX;
+    const deltaY = event.clientY - startY;
 
-            const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
+    // Adjust the viewBox based on the mouse movement
+    const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);
+    const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);
 
-            let [minX, minY, width, height] = map.getAttribute('viewBox').split(' ').map(Number);
+    map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
+};
 
-            // Calculate the point to zoom around (mouse position relative to SVG)
-            const rect = map.getBoundingClientRect();
-            const mouseX = event.clientX - rect.left;
-            const mouseY = event.clientY - rect.top;
+function dragStop() {
+    map.removeEventListener(&#39;mousemove&#39;, dragMove);
+    map.style.cursor = &#39;auto&#39;;
+};
 
-            // Calculate the focal point in the SVG's user coordinates
-            const focusX = minX + width * (mouseX / rect.width);
-            const focusY = minY + height * (mouseY / rect.height);
+function zoomSensitivity(event) {
+    // Check if deltaX or deltaY are very small and non-zero, which is typical for touchpads
+    if (1 &gt; Math.abs(event.deltaY) || 1 &gt; Math.abs(event.deltaX)) {
+        return zoomSensitivityTouchpad;
+    } else {
+        return zoomSensitivityMouse;
+    }
+}
 
-            // Adjust width and height based on zoom delta
-            const newWidth = clamp(width * (1 + delta), maxX);
-            const newHeight = clamp(height * (1 + delta), maxY);
+function wheelZoom(event) {
+    event.preventDefault(); // Prevent default scrolling
 
-            // Ensure width and height don't become zero or negative
-            if (0 == newWidth || 0 == newHeight) return;
+    const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
 
-            // Adjust minX and minY to zoom around the focal point
-            const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);
-            const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);
+    let [minX, minY, width, height] = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
 
-            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
-        };
+    // Calculate the point to zoom around (mouse position relative to SVG)
+    const rect = map.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left;
+    const mouseY = event.clientY - rect.top;
 
-        map.addEventListener('mousedown', dragStart);
-        map.addEventListener('mouseup', dragStop);
-        map.addEventListener('mouseleave', dragStop);
-        map.addEventListener('wheel', wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+    // Calculate the focal point in the SVG&#39;s user coordinates
+    const focusX = minX + width * (mouseX / rect.width);
+    const focusY = minY + height * (mouseY / rect.height);
+
+    // Adjust width and height based on zoom delta
+    const newWidth = clamp(width * (1 + delta), maxX);
+    const newHeight = clamp(height * (1 + delta), maxY);
+
+    // Ensure width and height don&#39;t become zero or negative
+    if (0 == newWidth || 0 == newHeight) return;
+
+    // Adjust minX and minY to zoom around the focal point
+    const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);
+    const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);
+
+    map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
+};
+
+map.addEventListener(&#39;mousedown&#39;, dragStart);
+map.addEventListener(&#39;mouseup&#39;, dragStop);
+map.addEventListener(&#39;mouseleave&#39;, dragStop);
+map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+
     </script>
 </svg>
