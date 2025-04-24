@@ -11,11 +11,16 @@ import "io"
 import "context"
 
 import "time"
+import "strconv"
 
-func (m *Map) renderLines(w io.Writer, t *Track) {
+func (m *Map) render(w io.Writer, t *Track) {
 
-//line map.ego:8
-	_, _ = io.WriteString(w, "\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"100%\" height=\"100%\">\n    <style type=\"text/css\" >\n        <![CDATA[\n            .segment { fill: none; stroke-width: 4 }\n            .segment:hover { stroke-width: 8 }\n        ]]>\n    </style>\n    <g id=\"legend\">\n        ")
+//line map.ego:9
+	_, _ = io.WriteString(w, "\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"100%\" height=\"100%\" id=\"root\">\n    <style type=\"text/css\" >\n        <![CDATA[\n")
+//line map.ego:13
+	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(css)))
+//line map.ego:14
+	_, _ = io.WriteString(w, "\n        ]]>\n    </style>\n    <g id=\"legend\">\n        ")
 //line map.ego:17
 	for i := range palette {
 //line map.ego:18
@@ -76,10 +81,14 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
 //line map.ego:31
 	totalDistance := float64(0)
 	var lastPoint *Point
-	for _, segment := range t.Segments {
+	for i, segment := range t.Segments {
 
 //line map.ego:35
-		_, _ = io.WriteString(w, "\n        <g class=\"segment\">\n            ")
+		_, _ = io.WriteString(w, "\n        <g class=\"segment\" id=\"s")
+//line map.ego:35
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:35
+		_, _ = io.WriteString(w, "\">\n            ")
 //line map.ego:36
 		if lastPoint != nil {
 			prev, next := lastPoint, segment.Points[0]
@@ -177,11 +186,11 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
 //line map.ego:59
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance/1852))))
 //line map.ego:60
-			_, _ = io.WriteString(w, "\n    ")
+			_, _ = io.WriteString(w, "\n")
 //line map.ego:60
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
 //line map.ego:61
-			_, _ = io.WriteString(w, "\n    ")
+			_, _ = io.WriteString(w, "\n")
 //line map.ego:61
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
 //line map.ego:61
@@ -193,8 +202,83 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
 //line map.ego:65
 	}
 //line map.ego:66
-	_, _ = io.WriteString(w, "\n    </svg>\n    <script>\n        // Tunable parameters\n        const zoomSensitivityMouse = 0.001; // Adjust for zoom speed\n        const zoomSensitivityTouchpad = 0.01; // Adjust for zoom speed\n        const dragMultiplier = 2.5; // Adjust for drag speed\n\n        const map = document.getElementById('map');\n        const [_minX, _minY, maxX, maxY] = map.getAttribute('viewBox').split(' ').map(Number);\n        let startX, startY, initialDragViewBox;\n\n        function clamp(x, max) {\n            if (0 > x) return 0;\n            if (x > max) return max;\n            return x\n        }\n\n        function dragStart(event) {\n            map.style.cursor = 'grabbing';\n            startX = event.clientX;\n            startY = event.clientY;\n            initialDragViewBox = map.getAttribute('viewBox').split(' ').map(Number);\n            map.addEventListener('mousemove', dragMove);\n\n        };\n\n        function dragMove(event) {\n            const deltaX = event.clientX - startX;\n            const deltaY = event.clientY - startY;\n\n            // Adjust the viewBox based on the mouse movement\n            const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);\n            const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);\n\n            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);\n        };\n\n        function dragStop() {\n            map.removeEventListener('mousemove', dragMove);\n            map.style.cursor = 'auto';\n        };\n\n        function zoomSensitivity(event) {\n            // Check if deltaX or deltaY are very small and non-zero, which is typical for touchpads\n            if (1 > Math.abs(event.deltaY) || 1 > Math.abs(event.deltaX)) {\n                return zoomSensitivityTouchpad;\n            } else {\n                return zoomSensitivityMouse;\n            }\n        }\n\n        function wheelZoom(event) {\n            event.preventDefault(); // Prevent default scrolling\n\n            const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity\n\n            let [minX, minY, width, height] = map.getAttribute('viewBox').split(' ').map(Number);\n\n            // Calculate the point to zoom around (mouse position relative to SVG)\n            const rect = map.getBoundingClientRect();\n            const mouseX = event.clientX - rect.left;\n            const mouseY = event.clientY - rect.top;\n\n            // Calculate the focal point in the SVG's user coordinates\n            const focusX = minX + width * (mouseX / rect.width);\n            const focusY = minY + height * (mouseY / rect.height);\n\n            // Adjust width and height based on zoom delta\n            const newWidth = clamp(width * (1 + delta), maxX);\n            const newHeight = clamp(height * (1 + delta), maxY);\n\n            // Ensure width and height don't become zero or negative\n            if (0 == newWidth || 0 == newHeight) return;\n\n            // Adjust minX and minY to zoom around the focal point\n            const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);\n            const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);\n\n            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);\n        };\n\n        map.addEventListener('mousedown', dragStart);\n        map.addEventListener('mouseup', dragStop);\n        map.addEventListener('mouseleave', dragStop);\n        map.addEventListener('wheel', wheelZoom , { passive: false }); // passive: false is needed to preventDefault\n    </script>\n</svg>\n")
-//line map.ego:153
+	_, _ = io.WriteString(w, "\n    </svg>\n    <svg id=\"timeline\" x=\"20\" y=\"100\" width=\"95%\" height=\"50\" preserveAspectRatio=\"none\" viewBox=\"0 0 ")
+//line map.ego:67
+	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(t.Duration.Seconds())))
+//line map.ego:67
+	_, _ = io.WriteString(w, " ")
+//line map.ego:67
+	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(tlHeight)))
+//line map.ego:67
+	_, _ = io.WriteString(w, "\">\n        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured\n            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->\n        <rect id=\"background\" width=\"100%\" height=\"100%\" fill=\"transparent\"/>\n        ")
+//line map.ego:71
+
+	offset := 0
+	for i, segment := range t.Segments {
+		width := int(segment.Duration.Seconds())
+		timestamp := segment.Start.In(t.Timezone()).Format(time.TimeOnly)
+		wa := segment.windAttitude()
+		class := "timeline-segment"
+		if wa == upwind {
+			class = "timeline-segment-upwind"
+		} else if wa == downwind {
+			class = "timeline-segment-downwind"
+		}
+
+//line map.ego:81
+		_, _ = io.WriteString(w, "\n            <polygon class=\"")
+//line map.ego:81
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(class)))
+//line map.ego:81
+		_, _ = io.WriteString(w, "\" id=\"s")
+//line map.ego:81
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:81
+		_, _ = io.WriteString(w, "\" points=\"")
+//line map.ego:81
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Timeline(offset))))
+//line map.ego:81
+		_, _ = io.WriteString(w, "\"/>\n            <rect class=\"timeline-segment-rect\" id=\"s")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\" x=\"")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(offset)))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\" y=\"0\" width=\"")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(width)))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\" height=\"")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(tlHeight)))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\">\n            <title>")
+//line map.ego:83
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(timestamp)))
+//line map.ego:83
+		_, _ = io.WriteString(w, "  ")
+//line map.ego:83
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
+//line map.ego:84
+		_, _ = io.WriteString(w, "\n")
+//line map.ego:84
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
+//line map.ego:84
+		_, _ = io.WriteString(w, "</title>\n            </rect>\n        ")
+//line map.ego:86
+
+		offset += int(segment.Duration.Seconds())
+	}
+
+//line map.ego:90
+	_, _ = io.WriteString(w, "\n    </svg>\n    <script>\n")
+//line map.ego:92
+	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(script)))
+//line map.ego:93
+	_, _ = io.WriteString(w, "\n    </script>\n</svg>\n")
+//line map.ego:95
 }
 
 var _ fmt.Stringer

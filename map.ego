@@ -2,15 +2,15 @@
 package main
 import "fmt"
 import "time"
+import "strconv"
 
-func (m *Map) renderLines(w io.Writer, t *Track) {
+func (m *Map) render(w io.Writer, t *Track) {
 %>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-    width="100%" height="100%">
+    width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
-            .segment { fill: none; stroke-width: 4 }
-            .segment:hover { stroke-width: 8 }
+<%= css %>
         ]]>
     </style>
     <g id="legend">
@@ -30,9 +30,9 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
         <rect id="background" width="<%= m.w %>" height="<%= m.h %>" fill="transparent"/>
     <%  totalDistance := float64(0)
         var lastPoint *Point
-        for _, segment := range t.Segments {
+        for i, segment := range t.Segments {
     %>
-        <g class="segment">
+        <g class="segment" id="s<%= strconv.Itoa(i) %>">
             <% if lastPoint != nil {
                 prev, next := lastPoint, segment.Points[0]
                 x1, y1 := m.Point(prev.gpx)
@@ -57,97 +57,39 @@ func (m *Map) renderLines(w io.Writer, t *Track) {
             %>
             <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
             <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance/1852) %>
-    <%= segment.ShortString() %>
-    <%= segment.TypeString() %></title>
+<%= segment.ShortString() %>
+<%= segment.TypeString() %></title>
             </line>
             <% }) %>
         </g>
 	<% } %>
     </svg>
+    <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 <%= t.Duration.Seconds() %> <%= tlHeight %>">
+        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured
+            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->
+        <rect id="background" width="100%" height="100%" fill="transparent"/>
+        <% 
+        offset := 0
+        for i, segment := range t.Segments {
+            width := int(segment.Duration.Seconds())
+            timestamp := segment.Start.In(t.Timezone()).Format(time.TimeOnly)
+            wa := segment.windAttitude()
+            class := "timeline-segment"
+            if wa == upwind { class = "timeline-segment-upwind"
+            } else if wa == downwind { class = "timeline-segment-downwind" }
+        %>
+            <polygon class="<%= class %>" id="s<%= strconv.Itoa(i) %>" points="<%= segment.Timeline(offset)%>"/>
+            <rect class="timeline-segment-rect" id="s<%= strconv.Itoa(i) %>" x="<%= offset %>" y="0" width="<%= width %>" height="<%= tlHeight %>">
+            <title><%= timestamp %>  <%= segment.TypeString() %>
+<%= segment.ShortString() %></title>
+            </rect>
+        <%
+            offset += int(segment.Duration.Seconds())
+        }
+        %>
+    </svg>
     <script>
-        // Tunable parameters
-        const zoomSensitivityMouse = 0.001; // Adjust for zoom speed
-        const zoomSensitivityTouchpad = 0.01; // Adjust for zoom speed
-        const dragMultiplier = 2.5; // Adjust for drag speed
-
-        const map = document.getElementById('map');
-        const [_minX, _minY, maxX, maxY] = map.getAttribute('viewBox').split(' ').map(Number);
-        let startX, startY, initialDragViewBox;
-
-        function clamp(x, max) {
-            if (0 > x) return 0;
-            if (x > max) return max;
-            return x
-        }
-
-        function dragStart(event) {
-            map.style.cursor = 'grabbing';
-            startX = event.clientX;
-            startY = event.clientY;
-            initialDragViewBox = map.getAttribute('viewBox').split(' ').map(Number);
-            map.addEventListener('mousemove', dragMove);
-
-        };
-
-        function dragMove(event) {
-            const deltaX = event.clientX - startX;
-            const deltaY = event.clientY - startY;
-
-            // Adjust the viewBox based on the mouse movement
-            const newMinX = clamp(initialDragViewBox[0] - deltaX*dragMultiplier, maxX);
-            const newMinY = clamp(initialDragViewBox[1] - deltaY*dragMultiplier, maxY);
-
-            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
-        };
-
-        function dragStop() {
-            map.removeEventListener('mousemove', dragMove);
-            map.style.cursor = 'auto';
-        };
-
-        function zoomSensitivity(event) {
-            // Check if deltaX or deltaY are very small and non-zero, which is typical for touchpads
-            if (1 > Math.abs(event.deltaY) || 1 > Math.abs(event.deltaX)) {
-                return zoomSensitivityTouchpad;
-            } else {
-                return zoomSensitivityMouse;
-            }
-        }
-
-        function wheelZoom(event) {
-            event.preventDefault(); // Prevent default scrolling
-
-            const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
-
-            let [minX, minY, width, height] = map.getAttribute('viewBox').split(' ').map(Number);
-
-            // Calculate the point to zoom around (mouse position relative to SVG)
-            const rect = map.getBoundingClientRect();
-            const mouseX = event.clientX - rect.left;
-            const mouseY = event.clientY - rect.top;
-
-            // Calculate the focal point in the SVG's user coordinates
-            const focusX = minX + width * (mouseX / rect.width);
-            const focusY = minY + height * (mouseY / rect.height);
-
-            // Adjust width and height based on zoom delta
-            const newWidth = clamp(width * (1 + delta), maxX);
-            const newHeight = clamp(height * (1 + delta), maxY);
-
-            // Ensure width and height don't become zero or negative
-            if (0 == newWidth || 0 == newHeight) return;
-
-            // Adjust minX and minY to zoom around the focal point
-            const newMinX = clamp(focusX - (mouseX / rect.width) * newWidth, maxX);
-            const newMinY = clamp(focusY - (mouseY / rect.height) * newHeight, maxY);
-
-            map.setAttribute('viewBox', `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
-        };
-
-        map.addEventListener('mousedown', dragStart);
-        map.addEventListener('mouseup', dragStop);
-        map.addEventListener('mouseleave', dragStop);
-        map.addEventListener('wheel', wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+<%= script %>
     </script>
 </svg>
 <% } %>

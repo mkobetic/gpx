@@ -135,6 +135,25 @@ func (s *Segment) TypeString() string {
 	return s.Type.String()
 }
 
+func (s *Segment) windAttitude() windAttitude {
+	if st, ok := s.Type.(*SegmentType); ok {
+		return st.windAttitude()
+	}
+	return beam
+}
+
+func (s *Segment) Timeline(offset int) string {
+	points := []string{fmt.Sprintf("%d,%d", offset, tlHeight)}
+	for _, p := range s.Points {
+		x := int(p.gpx.Timestamp.Sub(s.Start).Seconds())
+		y := tlHeight - int(p.Speed)*(tlUnitHeight)
+		points = append(points, fmt.Sprintf("%d,%d", offset+x, y))
+	}
+	x := int(s.Duration.Seconds())
+	points = append(points, fmt.Sprintf("%d,%d", offset+x, tlHeight))
+	return strings.Join(points, " ")
+}
+
 type Segments []*Segment
 
 func (ss Segments) gpxString() string {
