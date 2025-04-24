@@ -235,6 +235,16 @@ func turnType(from, to pointOfSail) turn {
 	return 15
 }
 
+func (t turn) windAttitude() windAttitude {
+	if t&5 == 0 {
+		return downwind
+	} else if t&5 == 5 {
+		return upwind
+	} else {
+		return beam
+	}
+}
+
 func (t turn) String() string {
 	if t, found := turnToString[t]; !found {
 		return "unknown"
@@ -254,5 +264,13 @@ func (st *SegmentType) String() string {
 		return st.pointOfSail.String() + " " + st.windDirection.String()
 	} else {
 		return st.turn.String() + " " + st.windDirection.String()
+	}
+}
+
+func (st *SegmentType) windAttitude() windAttitude {
+	if st.turn == 0 {
+		return st.pointOfSail.windAttitude()
+	} else {
+		return st.turn.windAttitude()
 	}
 }

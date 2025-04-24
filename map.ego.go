@@ -186,11 +186,11 @@ func (m *Map) render(w io.Writer, t *Track) {
 //line map.ego:59
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance/1852))))
 //line map.ego:60
-			_, _ = io.WriteString(w, "\n    ")
+			_, _ = io.WriteString(w, "\n")
 //line map.ego:60
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
 //line map.ego:61
-			_, _ = io.WriteString(w, "\n    ")
+			_, _ = io.WriteString(w, "\n")
 //line map.ego:61
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
 //line map.ego:61
@@ -216,53 +216,69 @@ func (m *Map) render(w io.Writer, t *Track) {
 	offset := 0
 	for i, segment := range t.Segments {
 		width := int(segment.Duration.Seconds())
+		timestamp := segment.Start.In(t.Timezone()).Format(time.TimeOnly)
+		wa := segment.windAttitude()
+		class := "timeline-segment"
+		if wa == upwind {
+			class = "timeline-segment-upwind"
+		} else if wa == downwind {
+			class = "timeline-segment-downwind"
+		}
 
-//line map.ego:76
-		_, _ = io.WriteString(w, "\n            <polygon class=\"timeline-segment\" id=\"s")
-//line map.ego:76
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
-//line map.ego:76
-		_, _ = io.WriteString(w, "\" points=\"")
-//line map.ego:76
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Timeline(offset))))
-//line map.ego:76
-		_, _ = io.WriteString(w, "\"/>\n            <rect class=\"timeline-segment-rect\" id=\"s")
-//line map.ego:77
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
-//line map.ego:77
-		_, _ = io.WriteString(w, "\" x=\"")
-//line map.ego:77
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(offset)))
-//line map.ego:77
-		_, _ = io.WriteString(w, "\" y=\"0\" width=\"")
-//line map.ego:77
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(width)))
-//line map.ego:77
-		_, _ = io.WriteString(w, "\" height=\"")
-//line map.ego:77
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(tlHeight)))
-//line map.ego:77
-		_, _ = io.WriteString(w, "\">\n            <title>")
-//line map.ego:78
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
-//line map.ego:79
-		_, _ = io.WriteString(w, "\n    ")
-//line map.ego:79
-		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
-//line map.ego:79
-		_, _ = io.WriteString(w, "</title>\n            </rect>\n        ")
 //line map.ego:81
+		_, _ = io.WriteString(w, "\n            <polygon class=\"")
+//line map.ego:81
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(class)))
+//line map.ego:81
+		_, _ = io.WriteString(w, "\" id=\"s")
+//line map.ego:81
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:81
+		_, _ = io.WriteString(w, "\" points=\"")
+//line map.ego:81
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Timeline(offset))))
+//line map.ego:81
+		_, _ = io.WriteString(w, "\"/>\n            <rect class=\"timeline-segment-rect\" id=\"s")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\" x=\"")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(offset)))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\" y=\"0\" width=\"")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(width)))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\" height=\"")
+//line map.ego:82
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(tlHeight)))
+//line map.ego:82
+		_, _ = io.WriteString(w, "\">\n            <title>")
+//line map.ego:83
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(timestamp)))
+//line map.ego:83
+		_, _ = io.WriteString(w, "  ")
+//line map.ego:83
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
+//line map.ego:84
+		_, _ = io.WriteString(w, "\n")
+//line map.ego:84
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
+//line map.ego:84
+		_, _ = io.WriteString(w, "</title>\n            </rect>\n        ")
+//line map.ego:86
 
 		offset += int(segment.Duration.Seconds())
 	}
 
-//line map.ego:85
-	_, _ = io.WriteString(w, "\n    </svg>\n    <script>\n")
-//line map.ego:87
-	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(script)))
-//line map.ego:88
-	_, _ = io.WriteString(w, "\n    </script>\n</svg>\n")
 //line map.ego:90
+	_, _ = io.WriteString(w, "\n    </svg>\n    <script>\n")
+//line map.ego:92
+	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(script)))
+//line map.ego:93
+	_, _ = io.WriteString(w, "\n    </script>\n</svg>\n")
+//line map.ego:95
 }
 
 var _ fmt.Stringer

@@ -6,7 +6,9 @@
 .segment { fill: none; stroke-width: 4 }
 .segment:hover { stroke-width: 8 }
 .segment-hovered { stroke-width: 8 }
-.timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+.timeline-segment { fill: green; fill-opacity: 50%; stroke: green }
+.timeline-segment-upwind { fill: red; fill-opacity: 50%; stroke: red }
+.timeline-segment-downwind { fill: blue; fill-opacity: 50%; stroke: blue }
 .timeline-segment-rect { fill: transparent }
 .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
 .timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
@@ -84,50 +86,50 @@
             
             <line class="step" x1="96" y1="1819" x2="95" y2="1815" stroke="#04f">
             <title>18:20:55: 6.3m @ 2.4 kts ↑ 348° NNW = 0.00 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="95" y1="1815" x2="95" y2="1812" stroke="#02f">
             <title>18:21:00: 3.3m @ 1.3 kts ↑ 9° N = 0.01 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="95" y1="1812" x2="98" y2="1810" stroke="#02f">
             <title>18:21:08: 5.2m @ 1.3 kts ↑ 48° NE = 0.01 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="98" y1="1810" x2="101" y2="1809" stroke="#02f">
             <title>18:21:15: 4.5m @ 1.3 kts ↑ 75° ENE = 0.01 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="101" y1="1809" x2="104" y2="1808" stroke="#02f">
             <title>18:21:21: 3.4m @ 1.1 kts ↑ 84° E = 0.01 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="104" y1="1808" x2="110" y2="1806" stroke="#02f">
             <title>18:21:34: 9.7m @ 1.4 kts ↑ 72° ENE = 0.02 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="110" y1="1806" x2="115" y2="1805" stroke="#04f">
             <title>18:21:39: 6.7m @ 2.6 kts ↑ 73° ENE = 0.02 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="115" y1="1805" x2="131" y2="1803" stroke="#0af">
             <title>18:21:46: 21.4m @ 5.9 kts ↑ 83° E = 0.03 nm
-    60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
+gybe port to starboard S</title>
             </line>
             
         </g>
@@ -143,26 +145,26 @@ bear away starboard S</title>
             
             <line class="step" x1="137" y1="1802" x2="148" y2="1798" stroke="#0af">
             <title>18:21:54: 14.7m @ 5.7 kts ↑ 73° ENE = 0.05 nm
-    75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
-    bear away starboard S</title>
+75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
+bear away starboard S</title>
             </line>
             
             <line class="step" x1="148" y1="1798" x2="159" y2="1789" stroke="#0af">
             <title>18:22:01: 20.4m @ 5.7 kts ↑ 50° NE = 0.06 nm
-    75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
-    bear away starboard S</title>
+75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
+bear away starboard S</title>
             </line>
             
             <line class="step" x1="159" y1="1789" x2="174" y2="1777" stroke="#08f">
             <title>18:22:11: 24.8m @ 4.8 kts ↑ 51° NE = 0.07 nm
-    75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
-    bear away starboard S</title>
+75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
+bear away starboard S</title>
             </line>
             
             <line class="step" x1="174" y1="1777" x2="176" y2="1772" stroke="#08f">
             <title>18:22:14: 6.3m @ 4.1 kts ↑ 28° NNE = 0.07 nm
-    75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
-    bear away starboard S</title>
+75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
+bear away starboard S</title>
             </line>
             
         </g>
@@ -178,80 +180,80 @@ downwind run S</title>
             
             <line class="step" x1="174" y1="1769" x2="168" y2="1761" stroke="#06f">
             <title>18:22:25: 13.4m @ 3.7 kts ↑ 324° NW = 0.08 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="168" y1="1761" x2="164" y2="1752" stroke="#06f">
             <title>18:22:32: 12.9m @ 3.6 kts ↑ 332° NNW = 0.09 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="164" y1="1752" x2="156" y2="1740" stroke="#04f">
             <title>18:22:45: 19.2m @ 2.9 kts ↑ 328° NNW = 0.10 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="156" y1="1740" x2="156" y2="1737" stroke="#02f">
             <title>18:22:50: 4.6m @ 1.8 kts ↑ 1° N = 0.10 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="156" y1="1737" x2="163" y2="1723" stroke="#06f">
             <title>18:23:00: 20.5m @ 4.0 kts ↑ 27° NNE = 0.11 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="163" y1="1723" x2="171" y2="1702" stroke="#08f">
             <title>18:23:12: 29.1m @ 4.7 kts ↑ 21° NNE = 0.13 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="171" y1="1702" x2="178" y2="1682" stroke="#08f">
             <title>18:23:26: 29.1m @ 4.0 kts ↑ 20° NNE = 0.15 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="178" y1="1682" x2="183" y2="1669" stroke="#08f">
             <title>18:23:34: 17.2m @ 4.2 kts ↑ 21° NNE = 0.15 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="183" y1="1669" x2="190" y2="1656" stroke="#08f">
             <title>18:23:42: 19.6m @ 4.8 kts ↑ 29° NNE = 0.17 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="190" y1="1656" x2="198" y2="1639" stroke="#08f">
             <title>18:23:52: 25.4m @ 4.9 kts ↑ 25° NNE = 0.18 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="198" y1="1639" x2="208" y2="1620" stroke="#08f">
             <title>18:24:04: 28.2m @ 4.6 kts ↑ 29° NNE = 0.19 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="208" y1="1620" x2="217" y2="1607" stroke="#0af">
             <title>18:24:12: 21.6m @ 5.2 kts ↑ 36° NE = 0.21 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="217" y1="1607" x2="219" y2="1602" stroke="#0af">
             <title>18:24:15: 7.8m @ 5.1 kts ↑ 25° NNE = 0.21 nm
-    254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
+downwind run S</title>
             </line>
             
         </g>
@@ -267,50 +269,50 @@ broad reach port S</title>
             
             <line class="step" x1="216" y1="1592" x2="208" y2="1574" stroke="#08f">
             <title>18:24:32: 25.6m @ 4.5 kts ↑ 337° NNW = 0.23 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="208" y1="1574" x2="199" y2="1558" stroke="#08f">
             <title>18:24:42: 24.6m @ 4.8 kts ↑ 329° NNW = 0.24 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="199" y1="1558" x2="187" y2="1541" stroke="#08f">
             <title>18:24:54: 27.9m @ 4.5 kts ↑ 323° NW = 0.26 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="187" y1="1541" x2="171" y2="1526" stroke="#0af">
             <title>18:25:05: 29.7m @ 5.2 kts ↑ 313° NW = 0.28 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="171" y1="1526" x2="160" y2="1514" stroke="#0af">
             <title>18:25:13: 21.4m @ 5.2 kts ↑ 316° NW = 0.29 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="160" y1="1514" x2="149" y2="1503" stroke="#0af">
             <title>18:25:20: 21.2m @ 5.9 kts ↑ 315° NW = 0.30 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="149" y1="1503" x2="138" y2="1492" stroke="#0cf">
             <title>18:25:26: 20.4m @ 6.6 kts ↑ 314° NW = 0.31 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="138" y1="1492" x2="129" y2="1483" stroke="#0cf">
             <title>18:25:31: 16.6m @ 6.4 kts ↑ 314° NW = 0.32 nm
-    201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
+broad reach port S</title>
             </line>
             
         </g>
@@ -326,26 +328,26 @@ gybe port to starboard S</title>
             
             <line class="step" x1="113" y1="1466" x2="107" y2="1456" stroke="#0fb">
             <title>18:25:41: 14.6m @ 9.4 kts ↑ 326° NW = 0.34 nm
-    101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
-    gybe port to starboard S</title>
+101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="107" y1="1456" x2="108" y2="1445" stroke="#0af">
             <title>18:25:46: 15.3m @ 5.9 kts ↑ 5° N = 0.35 nm
-    101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
-    gybe port to starboard S</title>
+101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="108" y1="1445" x2="113" y2="1431" stroke="#08f">
             <title>18:25:54: 19.7m @ 4.8 kts ↑ 21° NNE = 0.36 nm
-    101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
-    gybe port to starboard S</title>
+101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="113" y1="1431" x2="120" y2="1418" stroke="#08f">
             <title>18:26:02: 19.9m @ 4.8 kts ↑ 27° NNE = 0.37 nm
-    101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
-    gybe port to starboard S</title>
+101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
+gybe port to starboard S</title>
             </line>
             
         </g>
@@ -361,164 +363,164 @@ broad reach starboard S</title>
             
             <line class="step" x1="136" y1="1396" x2="153" y2="1375" stroke="#0af">
             <title>18:26:27: 36.8m @ 5.5 kts ↑ 40° NE = 0.41 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="153" y1="1375" x2="166" y2="1358" stroke="#0af">
             <title>18:26:37: 27.9m @ 5.4 kts ↑ 37° NE = 0.43 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="166" y1="1358" x2="176" y2="1341" stroke="#0af">
             <title>18:26:47: 27.0m @ 5.2 kts ↑ 33° NNE = 0.44 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="176" y1="1341" x2="193" y2="1324" stroke="#0cf">
             <title>18:26:57: 31.3m @ 6.1 kts ↑ 45° NE = 0.46 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="193" y1="1324" x2="207" y2="1309" stroke="#0ef">
             <title>18:27:04: 28.1m @ 7.8 kts ↑ 43° NE = 0.47 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="207" y1="1309" x2="222" y2="1290" stroke="#0ff">
             <title>18:27:11: 32.1m @ 8.9 kts ↑ 38° NE = 0.49 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="222" y1="1290" x2="242" y2="1268" stroke="#0ef">
             <title>18:27:21: 39.8m @ 7.7 kts ↑ 44° NE = 0.51 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="242" y1="1268" x2="258" y2="1252" stroke="#0ef">
             <title>18:27:29: 29.7m @ 7.2 kts ↑ 46° NE = 0.53 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="258" y1="1252" x2="271" y2="1236" stroke="#0cf">
             <title>18:27:37: 27.2m @ 6.6 kts ↑ 39° NE = 0.54 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="271" y1="1236" x2="286" y2="1217" stroke="#0cf">
             <title>18:27:47: 33.5m @ 6.5 kts ↑ 39° NE = 0.56 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="286" y1="1217" x2="300" y2="1200" stroke="#0cf">
             <title>18:27:56: 28.9m @ 6.2 kts ↑ 41° NE = 0.58 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="300" y1="1200" x2="317" y2="1185" stroke="#0ef">
             <title>18:28:04: 30.6m @ 7.4 kts ↑ 49° NE = 0.59 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="317" y1="1185" x2="346" y2="1158" stroke="#0ef">
             <title>18:28:17: 52.7m @ 7.9 kts ↑ 48° NE = 0.62 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="346" y1="1158" x2="371" y2="1137" stroke="#0ff">
             <title>18:28:27: 44.1m @ 8.6 kts ↑ 50° NE = 0.65 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="371" y1="1137" x2="393" y2="1108" stroke="#0fb">
             <title>18:28:37: 48.6m @ 9.4 kts ↑ 38° NE = 0.67 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="393" y1="1108" x2="408" y2="1088" stroke="#0ff">
             <title>18:28:45: 33.1m @ 8.0 kts ↑ 39° NE = 0.69 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="408" y1="1088" x2="425" y2="1076" stroke="#0ef">
             <title>18:28:52: 26.8m @ 7.4 kts ↑ 54° NE = 0.70 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="425" y1="1076" x2="442" y2="1060" stroke="#0ef">
             <title>18:29:00: 31.7m @ 7.7 kts ↑ 49° NE = 0.72 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="442" y1="1060" x2="457" y2="1048" stroke="#0ff">
             <title>18:29:06: 26.6m @ 8.6 kts ↑ 51° NE = 0.74 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="457" y1="1048" x2="475" y2="1028" stroke="#0ff">
             <title>18:29:14: 35.7m @ 8.6 kts ↑ 42° NE = 0.76 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="475" y1="1028" x2="501" y2="997" stroke="#0ff">
             <title>18:29:26: 53.7m @ 8.7 kts ↑ 40° NE = 0.78 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="501" y1="997" x2="512" y2="984" stroke="#0cf">
             <title>18:29:33: 22.3m @ 6.2 kts ↑ 41° NE = 0.80 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="512" y1="984" x2="532" y2="970" stroke="#0ef">
             <title>18:29:42: 33.9m @ 7.3 kts ↑ 56° NE = 0.81 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="532" y1="970" x2="560" y2="949" stroke="#0fb">
             <title>18:29:51: 46.2m @ 10.0 kts ↑ 55° NE = 0.84 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="560" y1="949" x2="587" y2="930" stroke="#0fb">
             <title>18:30:00: 44.6m @ 9.6 kts ↑ 54° NE = 0.86 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="587" y1="930" x2="621" y2="902" stroke="#0fb">
             <title>18:30:12: 58.5m @ 9.5 kts ↑ 50° NE = 0.89 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="621" y1="902" x2="645" y2="886" stroke="#0fb">
             <title>18:30:20: 38.6m @ 9.4 kts ↑ 57° ENE = 0.92 nm
-    1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
+broad reach starboard S</title>
             </line>
             
         </g>
@@ -534,26 +536,26 @@ gybe starboard to port S</title>
             
             <line class="step" x1="665" y1="870" x2="674" y2="857" stroke="#0ef">
             <title>18:30:33: 21.9m @ 7.1 kts ↑ 35° NE = 0.95 nm
-    107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
-    gybe starboard to port S</title>
+107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
+gybe starboard to port S</title>
             </line>
             
             <line class="step" x1="674" y1="857" x2="673" y2="848" stroke="#08f">
             <title>18:30:38: 11.3m @ 4.4 kts ↑ 353° N = 0.95 nm
-    107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
-    gybe starboard to port S</title>
+107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
+gybe starboard to port S</title>
             </line>
             
             <line class="step" x1="673" y1="848" x2="666" y2="838" stroke="#08f">
             <title>18:30:46: 17.0m @ 4.1 kts ↑ 325° NW = 0.96 nm
-    107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
-    gybe starboard to port S</title>
+107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
+gybe starboard to port S</title>
             </line>
             
             <line class="step" x1="666" y1="838" x2="654" y2="826" stroke="#0af">
             <title>18:30:54: 22.5m @ 5.5 kts ↑ 314° NW = 0.97 nm
-    107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
-    gybe starboard to port S</title>
+107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
+gybe starboard to port S</title>
             </line>
             
         </g>
@@ -569,212 +571,212 @@ broad reach port S</title>
             
             <line class="step" x1="648" y1="817" x2="643" y2="808" stroke="#0af">
             <title>18:31:04: 13.8m @ 5.4 kts ↑ 327° NNW = 0.99 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="643" y1="808" x2="633" y2="797" stroke="#0af">
             <title>18:31:11: 19.9m @ 5.5 kts ↑ 321° NW = 1.00 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="633" y1="797" x2="617" y2="779" stroke="#0cf">
             <title>18:31:21: 31.7m @ 6.1 kts ↑ 316° NW = 1.02 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="617" y1="779" x2="608" y2="770" stroke="#0af">
             <title>18:31:27: 17.3m @ 5.6 kts ↑ 317° NW = 1.03 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="608" y1="770" x2="591" y2="753" stroke="#0ef">
             <title>18:31:35: 31.5m @ 7.6 kts ↑ 314° NW = 1.04 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="591" y1="753" x2="574" y2="733" stroke="#0ff">
             <title>18:31:43: 35.4m @ 8.6 kts ↑ 318° NW = 1.06 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="574" y1="733" x2="550" y2="707" stroke="#0ff">
             <title>18:31:54: 46.8m @ 8.3 kts ↑ 317° NW = 1.09 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="550" y1="707" x2="535" y2="689" stroke="#0ef">
             <title>18:32:02: 31.2m @ 7.6 kts ↑ 321° NW = 1.10 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="535" y1="689" x2="524" y2="675" stroke="#0af">
             <title>18:32:10: 24.0m @ 5.8 kts ↑ 320° NW = 1.12 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="524" y1="675" x2="514" y2="662" stroke="#0af">
             <title>18:32:18: 21.6m @ 5.2 kts ↑ 322° NW = 1.13 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="514" y1="662" x2="506" y2="651" stroke="#0af">
             <title>18:32:25: 18.6m @ 5.2 kts ↑ 321° NW = 1.14 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="506" y1="651" x2="487" y2="635" stroke="#0af">
             <title>18:32:36: 32.5m @ 5.7 kts ↑ 311° NW = 1.16 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="487" y1="635" x2="472" y2="621" stroke="#0cf">
             <title>18:32:44: 27.8m @ 6.8 kts ↑ 311° NW = 1.17 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="472" y1="621" x2="453" y2="603" stroke="#0ef">
             <title>18:32:53: 35.4m @ 7.6 kts ↑ 314° NW = 1.19 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="453" y1="603" x2="432" y2="583" stroke="#0cf">
             <title>18:33:04: 39.1m @ 6.9 kts ↑ 312° NW = 1.21 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="432" y1="583" x2="421" y2="575" stroke="#0ff">
             <title>18:33:08: 17.4m @ 8.4 kts ↑ 305° NW = 1.22 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="421" y1="575" x2="396" y2="560" stroke="#0ff">
             <title>18:33:17: 38.9m @ 8.4 kts ↑ 301° WNW = 1.24 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="396" y1="560" x2="370" y2="536" stroke="#0ef">
             <title>18:33:29: 47.8m @ 7.7 kts ↑ 312° NW = 1.27 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="370" y1="536" x2="350" y2="519" stroke="#0cf">
             <title>18:33:39: 35.7m @ 6.9 kts ↑ 311° NW = 1.29 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="350" y1="519" x2="330" y2="503" stroke="#0ef">
             <title>18:33:48: 33.9m @ 7.3 kts ↑ 308° NW = 1.31 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="330" y1="503" x2="303" y2="483" stroke="#0ff">
             <title>18:33:58: 45.4m @ 8.8 kts ↑ 305° NW = 1.33 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="303" y1="483" x2="283" y2="469" stroke="#0ef">
             <title>18:34:06: 32.0m @ 7.8 kts ↑ 305° NW = 1.35 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="283" y1="469" x2="264" y2="453" stroke="#0fb">
             <title>18:34:13: 33.5m @ 9.3 kts ↑ 309° NW = 1.37 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="264" y1="453" x2="244" y2="433" stroke="#0fb">
             <title>18:34:21: 38.0m @ 9.2 kts ↑ 313° NW = 1.39 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="244" y1="433" x2="230" y2="417" stroke="#0ef">
             <title>18:34:28: 28.1m @ 7.8 kts ↑ 320° NW = 1.40 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="230" y1="417" x2="219" y2="407" stroke="#0cf">
             <title>18:34:34: 19.3m @ 6.2 kts ↑ 310° NW = 1.41 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="219" y1="407" x2="202" y2="398" stroke="#0ff">
             <title>18:34:40: 26.5m @ 8.6 kts ↑ 299° WNW = 1.43 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="202" y1="398" x2="179" y2="382" stroke="#0f7">
             <title>18:34:47: 37.7m @ 10.4 kts ↑ 303° WNW = 1.45 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="179" y1="382" x2="155" y2="365" stroke="#0f7">
             <title>18:34:54: 39.1m @ 10.8 kts ↑ 305° NW = 1.47 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="155" y1="365" x2="137" y2="351" stroke="#0ff">
             <title>18:35:01: 30.9m @ 8.6 kts ↑ 308° NW = 1.48 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="137" y1="351" x2="111" y2="335" stroke="#0ef">
             <title>18:35:11: 40.5m @ 7.9 kts ↑ 301° WNW = 1.51 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="111" y1="335" x2="96" y2="324" stroke="#0ff">
             <title>18:35:17: 25.8m @ 8.3 kts ↑ 307° NW = 1.52 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="96" y1="324" x2="78" y2="305" stroke="#0ef">
             <title>18:35:26: 34.8m @ 7.5 kts ↑ 315° NW = 1.54 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="78" y1="305" x2="60" y2="288" stroke="#0cf">
             <title>18:35:36: 33.3m @ 6.5 kts ↑ 313° NW = 1.56 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
             <line class="step" x1="60" y1="288" x2="42" y2="271" stroke="#0cf">
             <title>18:35:46: 32.6m @ 6.3 kts ↑ 312° NW = 1.57 nm
-    1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
+broad reach port S</title>
             </line>
             
         </g>
@@ -790,26 +792,26 @@ gybe port to starboard S</title>
             
             <line class="step" x1="23" y1="253" x2="21" y2="250" stroke="#0af">
             <title>18:35:59: 5.2m @ 5.1 kts ↑ 320° NW = 1.60 nm
-    101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
-    gybe port to starboard S</title>
+101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="21" y1="250" x2="20" y2="238" stroke="#08f">
             <title>18:36:06: 15.3m @ 4.2 kts ↑ 355° N = 1.60 nm
-    101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
-    gybe port to starboard S</title>
+101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="20" y1="238" x2="26" y2="226" stroke="#08f">
             <title>18:36:13: 18.0m @ 5.0 kts ↑ 30° NNE = 1.61 nm
-    101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
-    gybe port to starboard S</title>
+101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
+gybe port to starboard S</title>
             </line>
             
             <line class="step" x1="26" y1="226" x2="36" y2="208" stroke="#0af">
             <title>18:36:23: 27.6m @ 5.4 kts ↑ 29° NNE = 1.63 nm
-    101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
-    gybe port to starboard S</title>
+101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
+gybe port to starboard S</title>
             </line>
             
         </g>
@@ -825,80 +827,80 @@ downwind run S</title>
             
             <line class="step" x1="40" y1="199" x2="43" y2="192" stroke="#08f">
             <title>18:36:33: 11.4m @ 4.4 kts ↑ 26° NNE = 1.64 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="43" y1="192" x2="48" y2="178" stroke="#08f">
             <title>18:36:42: 19.3m @ 4.2 kts ↑ 20° NNE = 1.65 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="48" y1="178" x2="53" y2="166" stroke="#08f">
             <title>18:36:50: 17.2m @ 4.2 kts ↑ 22° NNE = 1.66 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="53" y1="166" x2="58" y2="155" stroke="#08f">
             <title>18:36:57: 15.1m @ 4.2 kts ↑ 24° NNE = 1.67 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="58" y1="155" x2="62" y2="143" stroke="#08f">
             <title>18:37:04: 16.8m @ 4.7 kts ↑ 21° NNE = 1.68 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="62" y1="143" x2="65" y2="134" stroke="#08f">
             <title>18:37:10: 12.8m @ 4.1 kts ↑ 18° NNE = 1.69 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="65" y1="134" x2="70" y2="121" stroke="#0af">
             <title>18:37:17: 18.3m @ 5.1 kts ↑ 22° NNE = 1.70 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="70" y1="121" x2="75" y2="110" stroke="#08f">
             <title>18:37:24: 16.6m @ 4.6 kts ↑ 21° NNE = 1.70 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="75" y1="110" x2="79" y2="99" stroke="#0af">
             <title>18:37:30: 15.6m @ 5.0 kts ↑ 22° NNE = 1.71 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="79" y1="99" x2="82" y2="89" stroke="#0af">
             <title>18:37:35: 13.0m @ 5.0 kts ↑ 17° NNE = 1.72 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="82" y1="89" x2="86" y2="77" stroke="#08f">
             <title>18:37:42: 16.8m @ 4.7 kts ↑ 18° NNE = 1.73 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="86" y1="77" x2="90" y2="66" stroke="#08f">
             <title>18:37:49: 16.0m @ 4.4 kts ↑ 23° NNE = 1.74 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
             <line class="step" x1="90" y1="66" x2="98" y2="51" stroke="#08f">
             <title>18:37:59: 21.7m @ 4.2 kts ↑ 27° NNE = 1.75 nm
-    223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
+downwind run S</title>
             </line>
             
         </g>
@@ -914,56 +916,56 @@ broad reach starboard S</title>
             
             <line class="step" x1="103" y1="44" x2="104" y2="43" stroke="#04f">
             <title>18:38:08: 2.2m @ 2.1 kts ↑ 54° NE = 1.76 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="104" y1="43" x2="108" y2="40" stroke="#04f">
             <title>18:38:14: 6.4m @ 2.1 kts ↑ 56° NE = 1.76 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="108" y1="40" x2="119" y2="35" stroke="#04f">
             <title>18:38:30: 16.5m @ 2.0 kts ↑ 66° ENE = 1.77 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="119" y1="35" x2="124" y2="33" stroke="#04f">
             <title>18:38:36: 6.5m @ 2.1 kts ↑ 62° ENE = 1.77 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="124" y1="33" x2="127" y2="31" stroke="#02f">
             <title>18:38:41: 5.1m @ 2.0 kts ↑ 56° NE = 1.78 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="127" y1="31" x2="132" y2="29" stroke="#04f">
             <title>18:38:48: 7.4m @ 2.0 kts ↑ 72° ENE = 1.78 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="132" y1="29" x2="135" y2="29" stroke="#02f">
             <title>18:38:53: 3.7m @ 1.4 kts ↑ 90° E = 1.78 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="135" y1="29" x2="136" y2="29" stroke="#04f">
             <title>18:38:54: 1.3m @ 2.5 kts ↑ 95° E = 1.78 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
             <line class="step" x1="136" y1="29" x2="139" y2="30" stroke="#04f">
             <title>18:38:58: 4.8m @ 2.3 kts ↑ 100° E = 1.79 nm
-    66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
+broad reach starboard S</title>
             </line>
             
         </g>
@@ -979,38 +981,38 @@ beam reach starboard S</title>
             
             <line class="step" x1="143" y1="29" x2="147" y2="28" stroke="#02f">
             <title>18:39:12: 5.6m @ 1.8 kts ↑ 79° E = 1.79 nm
-    65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="147" y1="28" x2="153" y2="28" stroke="#04f">
             <title>18:39:20: 8.3m @ 2.0 kts ↑ 92° E = 1.80 nm
-    65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="153" y1="28" x2="162" y2="31" stroke="#06f">
             <title>18:39:27: 12.3m @ 3.4 kts ↑ 105° ESE = 1.80 nm
-    65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="162" y1="31" x2="175" y2="35" stroke="#08f">
             <title>18:39:35: 18.3m @ 4.4 kts ↑ 106° ESE = 1.81 nm
-    65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="175" y1="35" x2="184" y2="37" stroke="#08f">
             <title>18:39:41: 12.7m @ 4.1 kts ↑ 103° ESE = 1.82 nm
-    65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="184" y1="37" x2="186" y2="37" stroke="#02f">
             <title>18:39:45: 2.5m @ 1.2 kts ↑ 87° E = 1.82 nm
-    65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
+beam reach starboard S</title>
             </line>
             
         </g>
@@ -1026,158 +1028,158 @@ close reach starboard S</title>
             
             <line class="step" x1="358" y1="20" x2="364" y2="25" stroke="#06f">
             <title>18:46:01: 11.2m @ 3.1 kts ↑ 128° SE = 1.83 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="364" y1="25" x2="367" y2="28" stroke="#04f">
             <title>18:46:06: 5.3m @ 2.0 kts ↑ 138° SE = 1.83 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="367" y1="28" x2="374" y2="33" stroke="#04f">
             <title>18:46:16: 11.7m @ 2.3 kts ↑ 126° SE = 1.84 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="374" y1="33" x2="382" y2="40" stroke="#04f">
             <title>18:46:28: 14.8m @ 2.4 kts ↑ 132° SE = 1.84 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="382" y1="40" x2="390" y2="49" stroke="#06f">
             <title>18:46:36: 15.3m @ 3.7 kts ↑ 135° SE = 1.85 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="390" y1="49" x2="404" y2="66" stroke="#06f">
             <title>18:46:51: 29.8m @ 3.9 kts ↑ 141° SE = 1.87 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="404" y1="66" x2="414" y2="80" stroke="#06f">
             <title>18:47:03: 22.5m @ 3.6 kts ↑ 144° SE = 1.88 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="414" y1="80" x2="425" y2="90" stroke="#08f">
             <title>18:47:12: 20.4m @ 4.4 kts ↑ 131° SE = 1.89 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="425" y1="90" x2="440" y2="104" stroke="#08f">
             <title>18:47:23: 28.0m @ 4.9 kts ↑ 133° SE = 1.91 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="440" y1="104" x2="450" y2="121" stroke="#08f">
             <title>18:47:35: 25.2m @ 4.1 kts ↑ 149° SSE = 1.92 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="450" y1="121" x2="457" y2="131" stroke="#06f">
             <title>18:47:45: 16.4m @ 3.2 kts ↑ 142° SE = 1.93 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="457" y1="131" x2="467" y2="140" stroke="#08f">
             <title>18:47:53: 18.0m @ 4.4 kts ↑ 132° SE = 1.94 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="467" y1="140" x2="482" y2="153" stroke="#0af">
             <title>18:48:03: 26.3m @ 5.1 kts ↑ 130° SE = 1.95 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="482" y1="153" x2="498" y2="165" stroke="#08f">
             <title>18:48:14: 26.9m @ 4.8 kts ↑ 127° SE = 1.97 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="498" y1="165" x2="515" y2="176" stroke="#08f">
             <title>18:48:26: 27.4m @ 4.4 kts ↑ 122° ESE = 1.98 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="515" y1="176" x2="538" y2="187" stroke="#0af">
             <title>18:48:39: 33.9m @ 5.1 kts ↑ 115° ESE = 2.00 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="538" y1="187" x2="565" y2="198" stroke="#08f">
             <title>18:48:55: 40.2m @ 4.9 kts ↑ 112° ESE = 2.02 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="565" y1="198" x2="584" y2="206" stroke="#08f">
             <title>18:49:07: 27.4m @ 4.4 kts ↑ 111° ESE = 2.04 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="584" y1="206" x2="607" y2="217" stroke="#08f">
             <title>18:49:21: 34.7m @ 4.8 kts ↑ 116° ESE = 2.06 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="607" y1="217" x2="629" y2="225" stroke="#0af">
             <title>18:49:33: 31.5m @ 5.1 kts ↑ 110° ESE = 2.07 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="629" y1="225" x2="654" y2="237" stroke="#0af">
             <title>18:49:46: 36.2m @ 5.4 kts ↑ 115° ESE = 2.09 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="654" y1="237" x2="674" y2="247" stroke="#08f">
             <title>18:49:58: 30.5m @ 4.9 kts ↑ 116° ESE = 2.11 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="674" y1="247" x2="696" y2="261" stroke="#0af">
             <title>18:50:11: 34.7m @ 5.2 kts ↑ 121° ESE = 2.13 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="696" y1="261" x2="719" y2="273" stroke="#0af">
             <title>18:50:24: 34.8m @ 5.2 kts ↑ 116° ESE = 2.15 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="719" y1="273" x2="746" y2="285" stroke="#0af">
             <title>18:50:38: 40.3m @ 5.6 kts ↑ 115° ESE = 2.17 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="746" y1="285" x2="764" y2="298" stroke="#0af">
             <title>18:50:48: 29.1m @ 5.6 kts ↑ 124° SE = 2.18 nm
-    673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
+close reach starboard S</title>
             </line>
             
         </g>
@@ -1193,44 +1195,44 @@ tack starboard to port S</title>
             
             <line class="step" x1="784" y1="313" x2="800" y2="323" stroke="#0af">
             <title>18:51:10: 24.2m @ 5.2 kts ↑ 120° ESE = 2.22 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="800" y1="323" x2="811" y2="328" stroke="#08f">
             <title>18:51:17: 15.8m @ 4.4 kts ↑ 116° ESE = 2.22 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="811" y1="328" x2="807" y2="331" stroke="#02f">
             <title>18:51:24: 6.1m @ 1.7 kts ↑ 224° SW = 2.23 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="807" y1="331" x2="802" y2="335" stroke="#08f">
             <title>18:51:28: 8.3m @ 4.0 kts ↑ 238° WSW = 2.23 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="802" y1="335" x2="793" y2="338" stroke="#0af">
             <title>18:51:33: 13.4m @ 5.2 kts ↑ 247° WSW = 2.24 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="793" y1="338" x2="789" y2="340" stroke="#0af">
             <title>18:51:35: 6.2m @ 6.0 kts ↑ 246° WSW = 2.24 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="789" y1="340" x2="768" y2="349" stroke="#0cf">
             <title>18:51:44: 29.9m @ 6.4 kts ↑ 248° WSW = 2.26 nm
-    139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
+tack starboard to port S</title>
             </line>
             
         </g>
@@ -1246,134 +1248,134 @@ close reach port S</title>
             
             <line class="step" x1="744" y1="359" x2="718" y2="368" stroke="#0af">
             <title>18:52:08: 37.8m @ 5.6 kts ↑ 251° WSW = 2.30 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="718" y1="368" x2="690" y2="379" stroke="#0af">
             <title>18:52:22: 40.2m @ 5.6 kts ↑ 250° WSW = 2.32 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="690" y1="379" x2="688" y2="380" stroke="#08f">
             <title>18:52:23: 2.5m @ 4.9 kts ↑ 244° WSW = 2.32 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="688" y1="380" x2="677" y2="383" stroke="#0af">
             <title>18:52:29: 15.8m @ 5.1 kts ↑ 254° WSW = 2.33 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="677" y1="383" x2="655" y2="390" stroke="#0cf">
             <title>18:52:39: 31.5m @ 6.1 kts ↑ 254° WSW = 2.35 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="655" y1="390" x2="630" y2="398" stroke="#0af">
             <title>18:52:51: 34.8m @ 5.6 kts ↑ 251° WSW = 2.37 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="630" y1="398" x2="610" y2="401" stroke="#0af">
             <title>18:53:00: 27.8m @ 6.0 kts ↑ 262° W = 2.38 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="610" y1="401" x2="598" y2="403" stroke="#0cf">
             <title>18:53:05: 16.0m @ 6.2 kts ↑ 259° W = 2.39 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="598" y1="403" x2="581" y2="407" stroke="#0af">
             <title>18:53:13: 23.3m @ 5.7 kts ↑ 259° W = 2.40 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="581" y1="407" x2="565" y2="411" stroke="#0cf">
             <title>18:53:20: 22.5m @ 6.2 kts ↑ 254° WSW = 2.41 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="565" y1="411" x2="549" y2="417" stroke="#0ef">
             <title>18:53:26: 22.8m @ 7.4 kts ↑ 252° WSW = 2.43 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="549" y1="417" x2="522" y2="424" stroke="#0ef">
             <title>18:53:36: 38.4m @ 7.5 kts ↑ 256° WSW = 2.45 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="522" y1="424" x2="491" y2="431" stroke="#0cf">
             <title>18:53:48: 42.8m @ 6.9 kts ↑ 257° WSW = 2.47 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="491" y1="431" x2="467" y2="437" stroke="#0af">
             <title>18:53:59: 33.1m @ 5.8 kts ↑ 256° WSW = 2.49 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="467" y1="437" x2="444" y2="443" stroke="#0af">
             <title>18:54:10: 32.1m @ 5.7 kts ↑ 256° WSW = 2.51 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="444" y1="443" x2="424" y2="447" stroke="#0af">
             <title>18:54:20: 28.1m @ 5.5 kts ↑ 259° W = 2.52 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="424" y1="447" x2="403" y2="453" stroke="#0af">
             <title>18:54:30: 29.0m @ 5.6 kts ↑ 254° WSW = 2.54 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="403" y1="453" x2="381" y2="460" stroke="#0af">
             <title>18:54:40: 30.4m @ 5.9 kts ↑ 253° WSW = 2.55 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="381" y1="460" x2="368" y2="462" stroke="#0af">
             <title>18:54:46: 18.2m @ 5.9 kts ↑ 260° W = 2.56 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="368" y1="462" x2="365" y2="463" stroke="#06f">
             <title>18:54:48: 3.7m @ 3.6 kts ↑ 261° W = 2.56 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="365" y1="463" x2="364" y2="465" stroke="#02f">
             <title>18:54:52: 3.0m @ 1.4 kts ↑ 216° SW = 2.57 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="364" y1="465" x2="365" y2="465" stroke="#00f">
             <title>18:54:55: 1.3m @ 0.8 kts ↑ 120° ESE = 2.57 nm
-    570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
+close reach port S</title>
             </line>
             
         </g>
@@ -1389,104 +1391,104 @@ beam reach starboard S</title>
             
             <line class="step" x1="371" y1="464" x2="381" y2="463" stroke="#0af">
             <title>18:55:09: 13.4m @ 5.2 kts ↑ 82° E = 2.57 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="381" y1="463" x2="384" y2="463" stroke="#08f">
             <title>18:55:11: 4.3m @ 4.2 kts ↑ 96° E = 2.58 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="384" y1="463" x2="400" y2="468" stroke="#08f">
             <title>18:55:20: 22.0m @ 4.7 kts ↑ 109° ESE = 2.59 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="400" y1="468" x2="410" y2="475" stroke="#08f">
             <title>18:55:27: 16.6m @ 4.6 kts ↑ 120° ESE = 2.60 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="410" y1="475" x2="421" y2="480" stroke="#08f">
             <title>18:55:35: 16.9m @ 4.1 kts ↑ 117° ESE = 2.61 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="421" y1="480" x2="435" y2="487" stroke="#08f">
             <title>18:55:45: 21.2m @ 4.1 kts ↑ 116° ESE = 2.62 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="435" y1="487" x2="449" y2="490" stroke="#0af">
             <title>18:55:52: 18.1m @ 5.0 kts ↑ 101° E = 2.63 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="449" y1="490" x2="469" y2="495" stroke="#0af">
             <title>18:56:03: 28.8m @ 5.1 kts ↑ 103° ESE = 2.64 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="469" y1="495" x2="492" y2="501" stroke="#0af">
             <title>18:56:14: 31.2m @ 5.5 kts ↑ 106° ESE = 2.66 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="492" y1="501" x2="508" y2="508" stroke="#0af">
             <title>18:56:22: 23.7m @ 5.7 kts ↑ 110° ESE = 2.67 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="508" y1="508" x2="532" y2="519" stroke="#0af">
             <title>18:56:34: 36.0m @ 5.8 kts ↑ 115° ESE = 2.69 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="532" y1="519" x2="553" y2="530" stroke="#0af">
             <title>18:56:45: 31.8m @ 5.6 kts ↑ 116° ESE = 2.71 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="553" y1="530" x2="575" y2="539" stroke="#0af">
             <title>18:56:57: 32.3m @ 5.2 kts ↑ 113° ESE = 2.73 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="575" y1="539" x2="603" y2="553" stroke="#0af">
             <title>18:57:11: 40.8m @ 5.7 kts ↑ 115° ESE = 2.75 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="603" y1="553" x2="624" y2="563" stroke="#0af">
             <title>18:57:22: 32.4m @ 5.7 kts ↑ 114° ESE = 2.77 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="624" y1="563" x2="647" y2="572" stroke="#0af">
             <title>18:57:34: 32.2m @ 5.2 kts ↑ 112° ESE = 2.78 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
             <line class="step" x1="647" y1="572" x2="667" y2="578" stroke="#0af">
             <title>18:57:44: 28.2m @ 5.5 kts ↑ 107° ESE = 2.80 nm
-    430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
+beam reach starboard S</title>
             </line>
             
         </g>
@@ -1502,56 +1504,56 @@ tack starboard to port S</title>
             
             <line class="step" x1="685" y1="586" x2="706" y2="595" stroke="#0af">
             <title>18:58:03: 30.1m @ 5.8 kts ↑ 113° ESE = 2.83 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="706" y1="595" x2="714" y2="599" stroke="#08f">
             <title>18:58:08: 12.4m @ 4.8 kts ↑ 111° ESE = 2.84 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="714" y1="599" x2="716" y2="604" stroke="#04f">
             <title>18:58:14: 7.3m @ 2.4 kts ↑ 160° SSE = 2.84 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="716" y1="604" x2="712" y2="606" stroke="#04f">
             <title>18:58:20: 6.4m @ 2.1 kts ↑ 242° WSW = 2.84 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="712" y1="606" x2="708" y2="608" stroke="#04f">
             <title>18:58:24: 5.5m @ 2.7 kts ↑ 240° WSW = 2.85 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="708" y1="608" x2="703" y2="611" stroke="#06f">
             <title>18:58:28: 7.5m @ 3.6 kts ↑ 245° WSW = 2.85 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="703" y1="611" x2="699" y2="612" stroke="#0af">
             <title>18:58:30: 5.2m @ 5.1 kts ↑ 254° WSW = 2.85 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="699" y1="612" x2="688" y2="614" stroke="#0af">
             <title>18:58:35: 15.3m @ 5.9 kts ↑ 258° WSW = 2.86 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="688" y1="614" x2="677" y2="621" stroke="#0af">
             <title>18:58:41: 17.2m @ 5.6 kts ↑ 240° WSW = 2.87 nm
-    134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
+tack starboard to port S</title>
             </line>
             
         </g>
@@ -1567,218 +1569,218 @@ close reach port S</title>
             
             <line class="step" x1="664" y1="632" x2="656" y2="639" stroke="#08f">
             <title>18:58:55: 14.1m @ 4.6 kts ↑ 224° SW = 2.89 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="656" y1="639" x2="642" y2="650" stroke="#0af">
             <title>18:59:03: 24.0m @ 5.8 kts ↑ 235° SW = 2.90 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="642" y1="650" x2="617" y2="669" stroke="#0cf">
             <title>18:59:16: 41.5m @ 6.2 kts ↑ 232° SW = 2.93 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="617" y1="669" x2="602" y2="679" stroke="#0af">
             <title>18:59:24: 24.1m @ 5.8 kts ↑ 238° WSW = 2.94 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="602" y1="679" x2="578" y2="688" stroke="#0af">
             <title>18:59:36: 34.7m @ 5.6 kts ↑ 250° WSW = 2.96 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="578" y1="688" x2="548" y2="697" stroke="#0af">
             <title>18:59:52: 42.6m @ 5.2 kts ↑ 253° WSW = 2.98 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="548" y1="697" x2="526" y2="703" stroke="#08f">
             <title>19:00:04: 30.4m @ 4.9 kts ↑ 254° WSW = 3.00 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="526" y1="703" x2="512" y2="717" stroke="#08f">
             <title>19:00:15: 26.7m @ 4.7 kts ↑ 227° SW = 3.01 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="512" y1="717" x2="495" y2="728" stroke="#08f">
             <title>19:00:27: 27.8m @ 4.5 kts ↑ 238° WSW = 3.03 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="495" y1="728" x2="475" y2="741" stroke="#0af">
             <title>19:00:38: 31.6m @ 5.6 kts ↑ 236° SW = 3.04 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="475" y1="741" x2="460" y2="752" stroke="#0af">
             <title>19:00:46: 24.2m @ 5.9 kts ↑ 236° SW = 3.06 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="460" y1="752" x2="434" y2="768" stroke="#0cf">
             <title>19:00:59: 41.6m @ 6.2 kts ↑ 238° WSW = 3.08 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="434" y1="768" x2="413" y2="785" stroke="#0af">
             <title>19:01:11: 35.8m @ 5.8 kts ↑ 232° SW = 3.10 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="413" y1="785" x2="395" y2="798" stroke="#0af">
             <title>19:01:22: 29.3m @ 5.2 kts ↑ 235° SW = 3.12 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="395" y1="798" x2="366" y2="810" stroke="#0af">
             <title>19:01:36: 42.9m @ 5.9 kts ↑ 248° WSW = 3.14 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="366" y1="810" x2="336" y2="825" stroke="#0af">
             <title>19:01:51: 44.8m @ 5.8 kts ↑ 243° WSW = 3.16 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="336" y1="825" x2="313" y2="835" stroke="#0af">
             <title>19:02:02: 33.6m @ 5.9 kts ↑ 247° WSW = 3.18 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="313" y1="835" x2="299" y2="841" stroke="#0af">
             <title>19:02:10: 20.7m @ 5.0 kts ↑ 246° WSW = 3.19 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="299" y1="841" x2="288" y2="847" stroke="#0af">
             <title>19:02:16: 17.2m @ 5.6 kts ↑ 243° WSW = 3.20 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="288" y1="847" x2="277" y2="854" stroke="#0af">
             <title>19:02:22: 17.9m @ 5.8 kts ↑ 240° WSW = 3.21 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="277" y1="854" x2="267" y2="861" stroke="#0cf">
             <title>19:02:27: 16.2m @ 6.3 kts ↑ 235° SW = 3.22 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="267" y1="861" x2="258" y2="868" stroke="#0af">
             <title>19:02:32: 14.7m @ 5.7 kts ↑ 232° SW = 3.23 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="258" y1="868" x2="239" y2="883" stroke="#0af">
             <title>19:02:44: 33.1m @ 5.4 kts ↑ 234° SW = 3.25 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="239" y1="883" x2="222" y2="896" stroke="#0cf">
             <title>19:02:53: 28.4m @ 6.1 kts ↑ 233° SW = 3.26 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="222" y1="896" x2="214" y2="902" stroke="#0af">
             <title>19:02:58: 13.4m @ 5.2 kts ↑ 230° SW = 3.27 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="214" y1="902" x2="199" y2="918" stroke="#08f">
             <title>19:03:10: 29.1m @ 4.7 kts ↑ 225° SW = 3.28 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="199" y1="918" x2="188" y2="927" stroke="#08f">
             <title>19:03:18: 19.1m @ 4.6 kts ↑ 231° SW = 3.29 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="188" y1="927" x2="186" y2="928" stroke="#0af">
             <title>19:03:19: 2.7m @ 5.2 kts ↑ 235° SW = 3.30 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="186" y1="928" x2="178" y2="933" stroke="#08f">
             <title>19:03:24: 12.4m @ 4.8 kts ↑ 239° WSW = 3.30 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="178" y1="933" x2="172" y2="939" stroke="#08f">
             <title>19:03:29: 11.8m @ 4.6 kts ↑ 226° SW = 3.31 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="172" y1="939" x2="157" y2="953" stroke="#08f">
             <title>19:03:40: 26.9m @ 4.7 kts ↑ 228° SW = 3.32 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="157" y1="953" x2="138" y2="967" stroke="#08f">
             <title>19:03:54: 32.6m @ 4.5 kts ↑ 235° SW = 3.34 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="138" y1="967" x2="125" y2="976" stroke="#06f">
             <title>19:04:05: 21.5m @ 3.8 kts ↑ 234° SW = 3.35 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="125" y1="976" x2="117" y2="985" stroke="#06f">
             <title>19:04:14: 15.1m @ 3.2 kts ↑ 223° SW = 3.36 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="117" y1="985" x2="108" y2="993" stroke="#08f">
             <title>19:04:21: 15.8m @ 4.4 kts ↑ 228° SW = 3.37 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="108" y1="993" x2="96" y2="1002" stroke="#08f">
             <title>19:04:30: 21.2m @ 4.6 kts ↑ 232° SW = 3.38 nm
-    943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
+close reach port S</title>
             </line>
             
         </g>
@@ -1794,38 +1796,38 @@ tack port to starboard S</title>
             
             <line class="step" x1="77" y1="1018" x2="62" y2="1030" stroke="#0af">
             <title>19:04:51: 24.8m @ 5.3 kts ↑ 233° SW = 3.41 nm
-    146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="62" y1="1030" x2="57" y2="1035" stroke="#08f">
             <title>19:04:56: 10.4m @ 4.0 kts ↑ 226° SW = 3.42 nm
-    146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="57" y1="1035" x2="61" y2="1039" stroke="#04f">
             <title>19:05:03: 7.8m @ 2.2 kts ↑ 130° SE = 3.42 nm
-    146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="61" y1="1039" x2="70" y2="1042" stroke="#06f">
             <title>19:05:10: 12.3m @ 3.4 kts ↑ 109° ESE = 3.43 nm
-    146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="70" y1="1042" x2="85" y2="1051" stroke="#08f">
             <title>19:05:20: 24.2m @ 4.7 kts ↑ 119° ESE = 3.44 nm
-    146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="85" y1="1051" x2="107" y2="1063" stroke="#0af">
             <title>19:05:33: 33.6m @ 5.0 kts ↑ 117° ESE = 3.46 nm
-    146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
+tack port to starboard S</title>
             </line>
             
         </g>
@@ -1841,56 +1843,56 @@ close reach starboard S</title>
             
             <line class="step" x1="123" y1="1072" x2="138" y2="1080" stroke="#0af">
             <title>19:05:52: 23.2m @ 5.0 kts ↑ 118° ESE = 3.49 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="138" y1="1080" x2="161" y2="1093" stroke="#08f">
             <title>19:06:06: 34.3m @ 4.8 kts ↑ 119° ESE = 3.50 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="161" y1="1093" x2="180" y2="1104" stroke="#08f">
             <title>19:06:19: 29.9m @ 4.5 kts ↑ 118° ESE = 3.52 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="180" y1="1104" x2="205" y2="1116" stroke="#0af">
             <title>19:06:33: 37.8m @ 5.2 kts ↑ 115° ESE = 3.54 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="205" y1="1116" x2="223" y2="1126" stroke="#08f">
             <title>19:06:44: 27.5m @ 4.8 kts ↑ 120° ESE = 3.56 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="223" y1="1126" x2="245" y2="1140" stroke="#08f">
             <title>19:06:59: 35.3m @ 4.6 kts ↑ 120° ESE = 3.57 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="245" y1="1140" x2="266" y2="1150" stroke="#0af">
             <title>19:07:10: 31.3m @ 5.5 kts ↑ 116° ESE = 3.59 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="266" y1="1150" x2="288" y2="1164" stroke="#0af">
             <title>19:07:22: 34.4m @ 5.6 kts ↑ 121° ESE = 3.61 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="288" y1="1164" x2="310" y2="1177" stroke="#0af">
             <title>19:07:35: 34.7m @ 5.2 kts ↑ 120° ESE = 3.63 nm
-    313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
+close reach starboard S</title>
             </line>
             
         </g>
@@ -1906,44 +1908,44 @@ tack starboard to port S</title>
             
             <line class="step" x1="339" y1="1191" x2="351" y2="1201" stroke="#0af">
             <title>19:07:56: 20.9m @ 5.8 kts ↑ 129° SE = 3.66 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="351" y1="1201" x2="352" y2="1203" stroke="#04f">
             <title>19:07:58: 2.7m @ 2.6 kts ↑ 148° SSE = 3.66 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="352" y1="1203" x2="347" y2="1209" stroke="#06f">
             <title>19:08:04: 10.2m @ 3.3 kts ↑ 217° SW = 3.67 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="347" y1="1209" x2="346" y2="1210" stroke="#08f">
             <title>19:08:05: 2.1m @ 4.1 kts ↑ 223° SW = 3.67 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="346" y1="1210" x2="341" y2="1218" stroke="#08f">
             <title>19:08:11: 13.2m @ 4.3 kts ↑ 215° SW = 3.68 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="341" y1="1218" x2="334" y2="1227" stroke="#06f">
             <title>19:08:19: 15.2m @ 3.7 kts ↑ 217° SW = 3.69 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="334" y1="1227" x2="325" y2="1235" stroke="#06f">
             <title>19:08:27: 15.8m @ 3.8 kts ↑ 228° SW = 3.70 nm
-    123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
+tack starboard to port S</title>
             </line>
             
         </g>
@@ -1959,62 +1961,62 @@ close reach port S</title>
             
             <line class="step" x1="314" y1="1244" x2="292" y2="1261" stroke="#0af">
             <title>19:08:48: 36.9m @ 5.5 kts ↑ 234° SW = 3.73 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="292" y1="1261" x2="272" y2="1274" stroke="#0af">
             <title>19:08:59: 32.3m @ 5.7 kts ↑ 236° SW = 3.74 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="272" y1="1274" x2="257" y2="1292" stroke="#0af">
             <title>19:09:10: 30.4m @ 5.4 kts ↑ 222° SW = 3.76 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="257" y1="1292" x2="237" y2="1308" stroke="#08f">
             <title>19:09:24: 35.7m @ 4.9 kts ↑ 232° SW = 3.78 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="237" y1="1308" x2="217" y2="1320" stroke="#08f">
             <title>19:09:36: 30.8m @ 5.0 kts ↑ 241° WSW = 3.80 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="217" y1="1320" x2="201" y2="1327" stroke="#0af">
             <title>19:09:44: 23.1m @ 5.6 kts ↑ 245° WSW = 3.81 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="201" y1="1327" x2="178" y2="1335" stroke="#0af">
             <title>19:09:55: 33.4m @ 5.9 kts ↑ 252° WSW = 3.83 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="178" y1="1335" x2="157" y2="1345" stroke="#0cf">
             <title>19:10:05: 31.2m @ 6.1 kts ↑ 243° WSW = 3.84 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="157" y1="1345" x2="145" y2="1357" stroke="#08f">
             <title>19:10:14: 22.8m @ 4.9 kts ↑ 226° SW = 3.86 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
             <line class="step" x1="145" y1="1357" x2="132" y2="1368" stroke="#08f">
             <title>19:10:24: 22.4m @ 4.3 kts ↑ 233° SW = 3.87 nm
-    318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
+close reach port S</title>
             </line>
             
         </g>
@@ -2030,44 +2032,44 @@ tack port to starboard S</title>
             
             <line class="step" x1="111" y1="1379" x2="89" y2="1386" stroke="#0af">
             <title>19:10:50: 32.1m @ 5.2 kts ↑ 251° WSW = 3.90 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="89" y1="1386" x2="88" y2="1387" stroke="#06f">
             <title>19:10:51: 1.8m @ 3.4 kts ↑ 247° WSW = 3.90 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="88" y1="1387" x2="87" y2="1391" stroke="#02f">
             <title>19:10:56: 5.0m @ 2.0 kts ↑ 187° S = 3.90 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="87" y1="1391" x2="91" y2="1392" stroke="#04f">
             <title>19:11:01: 5.8m @ 2.2 kts ↑ 113° ESE = 3.91 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="91" y1="1392" x2="99" y2="1400" stroke="#04f">
             <title>19:11:11: 15.0m @ 2.9 kts ↑ 132° SE = 3.92 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="99" y1="1400" x2="114" y2="1412" stroke="#06f">
             <title>19:11:24: 25.9m @ 3.9 kts ↑ 130° SE = 3.93 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
             <line class="step" x1="114" y1="1412" x2="126" y2="1421" stroke="#06f">
             <title>19:11:34: 19.9m @ 3.9 kts ↑ 125° SE = 3.94 nm
-    136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
+tack port to starboard S</title>
             </line>
             
         </g>
@@ -2083,26 +2085,26 @@ close reach starboard S</title>
             
             <line class="step" x1="143" y1="1434" x2="170" y2="1453" stroke="#0af">
             <title>19:12:01: 44.6m @ 5.4 kts ↑ 124° SE = 3.98 nm
-    172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
-    close reach starboard S</title>
+172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="170" y1="1453" x2="192" y2="1467" stroke="#0af">
             <title>19:12:14: 34.9m @ 5.2 kts ↑ 122° ESE = 4.00 nm
-    172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
-    close reach starboard S</title>
+172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="192" y1="1467" x2="213" y2="1479" stroke="#08f">
             <title>19:12:27: 32.2m @ 4.8 kts ↑ 121° ESE = 4.02 nm
-    172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
-    close reach starboard S</title>
+172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="213" y1="1479" x2="234" y2="1488" stroke="#0af">
             <title>19:12:38: 31.7m @ 5.6 kts ↑ 112° ESE = 4.03 nm
-    172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
-    close reach starboard S</title>
+172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
+close reach starboard S</title>
             </line>
             
         </g>
@@ -2118,50 +2120,50 @@ tack starboard to port S</title>
             
             <line class="step" x1="264" y1="1494" x2="272" y2="1498" stroke="#08f">
             <title>19:12:57: 11.7m @ 4.5 kts ↑ 116° ESE = 4.06 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="272" y1="1498" x2="272" y2="1503" stroke="#04f">
             <title>19:13:02: 5.8m @ 2.3 kts ↑ 172° S = 4.07 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="272" y1="1503" x2="267" y2="1504" stroke="#04f">
             <title>19:13:07: 7.2m @ 2.8 kts ↑ 250° WSW = 4.07 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="267" y1="1504" x2="264" y2="1506" stroke="#08f">
             <title>19:13:09: 4.2m @ 4.1 kts ↑ 250° WSW = 4.07 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="264" y1="1506" x2="257" y2="1511" stroke="#08f">
             <title>19:13:15: 12.6m @ 4.1 kts ↑ 236° SW = 4.08 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="257" y1="1511" x2="247" y2="1518" stroke="#06f">
             <title>19:13:23: 15.6m @ 3.8 kts ↑ 234° SW = 4.09 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="247" y1="1518" x2="242" y2="1522" stroke="#06f">
             <title>19:13:28: 9.4m @ 3.7 kts ↑ 233° SW = 4.09 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
             <line class="step" x1="242" y1="1522" x2="234" y2="1528" stroke="#06f">
             <title>19:13:35: 13.1m @ 3.6 kts ↑ 234° SW = 4.10 nm
-    120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
+tack starboard to port S</title>
             </line>
             
         </g>
@@ -2177,80 +2179,80 @@ beam reach port S</title>
             
             <line class="step" x1="216" y1="1538" x2="214" y2="1539" stroke="#06f">
             <title>19:13:54: 3.1m @ 3.0 kts ↑ 243° WSW = 4.12 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="214" y1="1539" x2="207" y2="1543" stroke="#06f">
             <title>19:14:00: 10.1m @ 3.3 kts ↑ 239° WSW = 4.12 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="207" y1="1543" x2="203" y2="1545" stroke="#06f">
             <title>19:14:04: 6.3m @ 3.1 kts ↑ 241° WSW = 4.12 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="203" y1="1545" x2="194" y2="1552" stroke="#06f">
             <title>19:14:14: 15.9m @ 3.1 kts ↑ 236° SW = 4.13 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="194" y1="1552" x2="187" y2="1556" stroke="#06f">
             <title>19:14:20: 10.6m @ 3.4 kts ↑ 239° WSW = 4.14 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="187" y1="1556" x2="178" y2="1559" stroke="#06f">
             <title>19:14:27: 12.0m @ 3.3 kts ↑ 253° WSW = 4.14 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="178" y1="1559" x2="173" y2="1559" stroke="#06f">
             <title>19:14:31: 7.6m @ 3.7 kts ↑ 261° W = 4.15 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="173" y1="1559" x2="164" y2="1561" stroke="#06f">
             <title>19:14:37: 12.3m @ 4.0 kts ↑ 262° W = 4.16 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="164" y1="1561" x2="162" y2="1561" stroke="#06f">
             <title>19:14:38: 1.8m @ 3.5 kts ↑ 272° W = 4.16 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="162" y1="1561" x2="157" y2="1562" stroke="#06f">
             <title>19:14:42: 7.9m @ 3.8 kts ↑ 258° WSW = 4.16 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="157" y1="1562" x2="148" y2="1565" stroke="#06f">
             <title>19:14:49: 12.8m @ 3.5 kts ↑ 253° WSW = 4.17 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="148" y1="1565" x2="145" y2="1566" stroke="#02f">
             <title>19:14:54: 3.3m @ 1.3 kts ↑ 250° WSW = 4.17 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
             <line class="step" x1="145" y1="1566" x2="145" y2="1567" stroke="#00f">
             <title>19:15:00: 2.2m @ 0.7 kts ↑ 183° S = 4.17 nm
-    134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
+beam reach port S</title>
             </line>
             
         </g>
@@ -2266,26 +2268,26 @@ close reach starboard S</title>
             
             <line class="step" x1="165" y1="1576" x2="169" y2="1578" stroke="#08f">
             <title>19:15:39: 6.3m @ 4.1 kts ↑ 120° ESE = 4.17 nm
-    46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
-    close reach starboard S</title>
+46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="169" y1="1578" x2="180" y2="1585" stroke="#06f">
             <title>19:15:49: 17.0m @ 3.3 kts ↑ 123° ESE = 4.18 nm
-    46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
-    close reach starboard S</title>
+46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="180" y1="1585" x2="181" y2="1587" stroke="#06f">
             <title>19:15:51: 3.3m @ 3.2 kts ↑ 132° SE = 4.19 nm
-    46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
-    close reach starboard S</title>
+46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="181" y1="1587" x2="193" y2="1596" stroke="#06f">
             <title>19:16:02: 19.6m @ 3.5 kts ↑ 127° SE = 4.20 nm
-    46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
-    close reach starboard S</title>
+46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
+close reach starboard S</title>
             </line>
             
         </g>
@@ -2301,110 +2303,110 @@ unknown S</title>
             
             <line class="step" x1="200" y1="1602" x2="213" y2="1612" stroke="#06f">
             <title>19:16:22: 21.5m @ 3.5 kts ↑ 125° SE = 4.21 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="213" y1="1612" x2="224" y2="1620" stroke="#06f">
             <title>19:16:32: 18.4m @ 3.6 kts ↑ 126° SE = 4.22 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="224" y1="1620" x2="226" y2="1622" stroke="#02f">
             <title>19:16:36: 3.4m @ 1.7 kts ↑ 150° SSE = 4.23 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="226" y1="1622" x2="223" y2="1623" stroke="#02f">
             <title>19:16:41: 4.1m @ 1.6 kts ↑ 239° WSW = 4.23 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="223" y1="1623" x2="217" y2="1626" stroke="#04f">
             <title>19:16:48: 8.3m @ 2.3 kts ↑ 243° WSW = 4.23 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="217" y1="1626" x2="206" y2="1633" stroke="#04f">
             <title>19:17:01: 17.5m @ 2.6 kts ↑ 239° WSW = 4.24 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="206" y1="1633" x2="197" y2="1638" stroke="#04f">
             <title>19:17:13: 14.4m @ 2.3 kts ↑ 244° WSW = 4.25 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="197" y1="1638" x2="184" y2="1646" stroke="#04f">
             <title>19:17:30: 20.4m @ 2.3 kts ↑ 239° WSW = 4.26 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="184" y1="1646" x2="177" y2="1653" stroke="#04f">
             <title>19:17:41: 12.8m @ 2.3 kts ↑ 224° SW = 4.27 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="177" y1="1653" x2="169" y2="1661" stroke="#04f">
             <title>19:17:54: 15.5m @ 2.3 kts ↑ 225° SW = 4.28 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="169" y1="1661" x2="159" y2="1672" stroke="#04f">
             <title>19:18:07: 19.9m @ 3.0 kts ↑ 225° SW = 4.29 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="159" y1="1672" x2="157" y2="1674" stroke="#04f">
             <title>19:18:10: 4.1m @ 2.7 kts ↑ 219° SW = 4.29 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="157" y1="1674" x2="156" y2="1676" stroke="#02f">
             <title>19:18:15: 3.0m @ 1.2 kts ↑ 211° SSW = 4.29 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="156" y1="1676" x2="158" y2="1678" stroke="#02f">
             <title>19:18:21: 3.9m @ 1.3 kts ↑ 114° ESE = 4.29 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="158" y1="1678" x2="165" y2="1680" stroke="#04f">
             <title>19:18:29: 9.9m @ 2.4 kts ↑ 109° ESE = 4.30 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="165" y1="1680" x2="174" y2="1686" stroke="#06f">
             <title>19:18:38: 14.6m @ 3.1 kts ↑ 126° SE = 4.31 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="174" y1="1686" x2="187" y2="1696" stroke="#06f">
             <title>19:18:49: 20.9m @ 3.7 kts ↑ 127° SE = 4.32 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
             <line class="step" x1="187" y1="1696" x2="197" y2="1704" stroke="#06f">
             <title>19:18:58: 17.7m @ 3.8 kts ↑ 130° SE = 4.33 nm
-    243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
+unknown S</title>
             </line>
             
         </g>
@@ -2420,38 +2422,38 @@ close reach starboard S</title>
             
             <line class="step" x1="208" y1="1715" x2="223" y2="1727" stroke="#06f">
             <title>19:19:27: 25.2m @ 3.1 kts ↑ 128° SE = 4.35 nm
-    99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="223" y1="1727" x2="234" y2="1739" stroke="#06f">
             <title>19:19:39: 21.5m @ 3.5 kts ↑ 136° SE = 4.36 nm
-    99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="234" y1="1739" x2="241" y2="1749" stroke="#06f">
             <title>19:19:49: 15.6m @ 3.0 kts ↑ 145° SE = 4.37 nm
-    99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="241" y1="1749" x2="246" y2="1756" stroke="#02f">
             <title>19:20:02: 12.1m @ 1.8 kts ↑ 141° SE = 4.38 nm
-    99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="246" y1="1756" x2="248" y2="1757" stroke="#00f">
             <title>19:20:08: 3.1m @ 1.0 kts ↑ 131° SE = 4.38 nm
-    99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
+close reach starboard S</title>
             </line>
             
             <line class="step" x1="248" y1="1757" x2="248" y2="1757" stroke="#00f">
             <title>19:20:09: 0.2m @ 0.4 kts ↑ 224° SW = 4.38 nm
-    99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
+close reach starboard S</title>
             </line>
             
         </g>
@@ -2462,178 +2464,178 @@ close reach starboard S</title>
             by the #timeline element whenever the mouse pointer is anywhere in the viewport -->
         <rect id="background" width="100%" height="100%" fill="transparent"/>
         
-            <polygon class="timeline-segment" id="s0" points="0,75 0,69 5,69 10,72 18,72 25,72 31,72 44,72 49,69 56,60 56,75"/>
+            <polygon class="timeline-segment-downwind" id="s0" points="0,75 0,69 5,69 10,72 18,72 25,72 31,72 44,72 49,69 56,60 56,75"/>
             <rect class="timeline-segment-rect" id="s0" x="0" y="0" width="56" height="75">
-            <title>60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning
-    gybe port to starboard S</title>
+            <title>18:20:50  gybe port to starboard S
+60m/56s @ 1.1/2.2/5.9 kts ↑ 348°/84° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s1" points="56,75 56,60 61,60 68,60 78,63 81,63 81,75"/>
             <rect class="timeline-segment-rect" id="s1" x="56" y="0" width="25" height="75">
-            <title>75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning
-    bear away starboard S</title>
+            <title>18:21:49  bear away starboard S
+75m/25s @ 4.1/2.9/5.7 kts ↑ 28°/51° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s2" points="81,75 81,69 88,66 95,66 108,69 113,72 123,66 135,63 149,63 157,63 165,63 175,63 187,63 195,60 198,60 198,75"/>
+            <polygon class="timeline-segment-downwind" id="s2" points="81,75 81,69 88,66 95,66 108,69 113,72 123,66 135,63 149,63 157,63 165,63 175,63 187,63 195,60 198,60 198,75"/>
             <rect class="timeline-segment-rect" id="s2" x="81" y="0" width="117" height="75">
-            <title>254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving
-    downwind run S</title>
+            <title>18:22:18  downwind run S
+254m/117s @ 1.8/4.0/5.2 kts ↑ 324°/36° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s3" points="198,75 198,63 209,63 219,63 231,63 242,60 250,60 257,60 263,57 268,57 268,75"/>
+            <polygon class="timeline-segment-downwind" id="s3" points="198,75 198,63 209,63 219,63 231,63 242,60 250,60 257,60 263,57 268,57 268,75"/>
             <rect class="timeline-segment-rect" id="s3" x="198" y="0" width="70" height="75">
-            <title>201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving
-    broad reach port S</title>
+            <title>18:24:21  broad reach port S
+201m/70s @ 4.5/3.8/6.6 kts ↑ 313°/323° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s4" points="268,75 268,51 271,48 276,60 284,63 292,63 292,75"/>
+            <polygon class="timeline-segment-downwind" id="s4" points="268,75 268,51 271,48 276,60 284,63 292,63 292,75"/>
             <rect class="timeline-segment-rect" id="s4" x="268" y="0" width="24" height="75">
-            <title>101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning
-    gybe port to starboard S</title>
+            <title>18:25:38  gybe port to starboard S
+101m/24s @ 4.8/6.8/9.4 kts ↑ 318°/27° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s5" points="292,75 292,60 305,60 315,60 325,60 335,57 342,54 349,51 359,54 367,54 375,57 385,57 394,57 402,54 415,54 425,51 435,48 443,51 450,54 458,54 464,51 472,51 484,51 491,57 500,54 509,48 518,48 530,48 538,48 538,75"/>
+            <polygon class="timeline-segment-downwind" id="s5" points="292,75 292,60 305,60 315,60 325,60 335,57 342,54 349,51 359,54 367,54 375,57 385,57 394,57 402,54 415,54 425,51 435,48 443,51 450,54 458,54 464,51 472,51 484,51 491,57 500,54 509,48 518,48 530,48 538,48 538,75"/>
             <rect class="timeline-segment-rect" id="s5" x="292" y="0" width="246" height="75">
-            <title>1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving
-    broad reach starboard S</title>
+            <title>18:26:14  broad reach starboard S
+1005m/246s @ 5.2/7.6/10.0 kts ↑ 33°/57° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s6" points="538,75 538,48 544,54 549,63 557,63 565,60 565,75"/>
+            <polygon class="timeline-segment-downwind" id="s6" points="538,75 538,48 544,54 549,63 557,63 565,60 565,75"/>
             <rect class="timeline-segment-rect" id="s6" x="538" y="0" width="27" height="75">
-            <title>107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning
-    gybe starboard to port S</title>
+            <title>18:30:27  gybe starboard to port S
+107m/27s @ 4.1/6.1/9.5 kts ↑ 314°/53° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s7" points="565,75 565,60 570,60 577,60 587,57 593,60 601,54 609,51 620,51 628,54 636,60 644,60 651,60 662,60 670,57 679,54 690,57 694,51 703,51 715,54 725,57 734,54 744,51 752,54 759,48 767,48 774,54 780,57 786,51 793,45 800,45 807,51 817,54 823,51 832,54 842,57 852,57 852,75"/>
+            <polygon class="timeline-segment-downwind" id="s7" points="565,75 565,60 570,60 577,60 587,57 593,60 601,54 609,51 620,51 628,54 636,60 644,60 651,60 662,60 670,57 679,54 690,57 694,51 703,51 715,54 725,57 734,54 744,51 752,54 759,48 767,48 774,54 780,57 786,51 793,45 800,45 807,51 817,54 823,51 832,54 842,57 852,57 852,75"/>
             <rect class="timeline-segment-rect" id="s7" x="565" y="0" width="287" height="75">
-            <title>1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving
-    broad reach port S</title>
+            <title>18:30:59  broad reach port S
+1112m/287s @ 5.2/7.4/10.8 kts ↑ 299°/327° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s8" points="852,75 852,57 854,60 861,63 868,63 878,60 878,75"/>
+            <polygon class="timeline-segment-downwind" id="s8" points="852,75 852,57 854,60 861,63 868,63 878,60 878,75"/>
             <rect class="timeline-segment-rect" id="s8" x="852" y="0" width="26" height="75">
-            <title>101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning
-    gybe port to starboard S</title>
+            <title>18:35:57  gybe port to starboard S
+101m/26s @ 4.2/5.2/6.2 kts ↑ 314°/30° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s9" points="878,75 878,63 883,63 892,63 900,63 907,63 914,63 920,63 927,60 934,63 940,60 945,60 952,63 959,63 969,63 969,75"/>
+            <polygon class="timeline-segment-downwind" id="s9" points="878,75 878,63 883,63 892,63 900,63 907,63 914,63 920,63 927,60 934,63 940,60 945,60 952,63 959,63 969,63 969,75"/>
             <rect class="timeline-segment-rect" id="s9" x="878" y="0" width="91" height="75">
-            <title>223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving
-    downwind run S</title>
+            <title>18:36:28  downwind run S
+223m/91s @ 4.1/4.6/5.1 kts ↑ 17°/27° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s10" points="969,75 969,66 971,69 977,69 993,69 999,69 1004,72 1011,69 1016,72 1017,69 1021,69 1021,75"/>
+            <polygon class="timeline-segment-downwind" id="s10" points="969,75 969,66 971,69 977,69 993,69 999,69 1004,72 1011,69 1016,72 1017,69 1021,69 1021,75"/>
             <rect class="timeline-segment-rect" id="s10" x="969" y="0" width="52" height="75">
-            <title>66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving
-    broad reach starboard S</title>
+            <title>18:38:06  broad reach starboard S
+66m/52s @ 2.1/0.2/2.1 kts ↑ 56°/56° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s11" points="1021,75 1021,72 1027,72 1035,69 1042,66 1050,63 1056,63 1060,72 1060,75"/>
             <rect class="timeline-segment-rect" id="s11" x="1021" y="0" width="39" height="75">
-            <title>65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving
-    beam reach starboard S</title>
+            <title>18:39:06  beam reach starboard S
+65m/39s @ 1.2/2.6/4.4 kts ↑ 79°/106° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s12" points="1060,75 1060,66 1067,66 1072,69 1082,69 1094,69 1102,66 1117,66 1129,66 1138,63 1149,63 1161,63 1171,66 1179,63 1189,60 1200,63 1212,63 1225,60 1241,63 1253,63 1267,63 1279,60 1292,60 1304,63 1317,60 1330,60 1344,60 1354,60 1354,75"/>
+            <polygon class="timeline-segment-upwind" id="s12" points="1060,75 1060,66 1067,66 1072,69 1082,69 1094,69 1102,66 1117,66 1129,66 1138,63 1149,63 1161,63 1171,66 1179,63 1189,60 1200,63 1212,63 1225,60 1241,63 1253,63 1267,63 1279,60 1292,60 1304,63 1317,60 1330,60 1344,60 1354,60 1354,75"/>
             <rect class="timeline-segment-rect" id="s12" x="1060" y="0" width="294" height="75">
-            <title>673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving
-    close reach starboard S</title>
+            <title>18:45:54  close reach starboard S
+673m/294s @ 2.0/4.3/5.6 kts ↑ 110°/149° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s13" points="1354,75 1354,60 1363,60 1370,63 1377,72 1381,63 1386,60 1388,60 1397,57 1397,75"/>
+            <polygon class="timeline-segment-upwind" id="s13" points="1354,75 1354,60 1363,60 1370,63 1377,72 1381,63 1386,60 1388,60 1397,57 1397,75"/>
             <rect class="timeline-segment-rect" id="s13" x="1354" y="0" width="43" height="75">
-            <title>139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning
-    tack starboard to port S</title>
+            <title>18:51:01  tack starboard to port S
+139m/43s @ 1.7/4.8/6.4 kts ↑ 116°/248° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s14" points="1397,75 1397,57 1410,60 1424,60 1425,63 1431,60 1441,57 1453,60 1462,60 1467,57 1475,60 1482,57 1488,54 1498,54 1510,57 1521,60 1532,60 1542,60 1552,60 1562,60 1568,60 1570,66 1574,72 1577,75 1577,75"/>
+            <polygon class="timeline-segment-upwind" id="s14" points="1397,75 1397,57 1410,60 1424,60 1425,63 1431,60 1441,57 1453,60 1462,60 1467,57 1475,60 1482,57 1488,54 1498,54 1510,57 1521,60 1532,60 1542,60 1552,60 1562,60 1568,60 1570,66 1574,72 1577,75 1577,75"/>
             <rect class="timeline-segment-rect" id="s14" x="1397" y="0" width="180" height="75">
-            <title>570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving
-    close reach port S</title>
+            <title>18:51:55  close reach port S
+570m/180s @ 1.4/5.4/7.5 kts ↑ 216°/262° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s15" points="1577,75 1577,60 1582,60 1584,63 1593,63 1600,63 1608,63 1618,63 1625,60 1636,60 1647,60 1655,60 1667,60 1678,60 1690,60 1704,60 1715,60 1727,60 1737,60 1737,75"/>
             <rect class="timeline-segment-rect" id="s15" x="1577" y="0" width="160" height="75">
-            <title>430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving
-    beam reach starboard S</title>
+            <title>18:55:04  beam reach starboard S
+430m/160s @ 4.1/5.1/5.8 kts ↑ 82°/120° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s16" points="1737,75 1737,60 1747,60 1752,63 1758,69 1764,69 1768,69 1772,66 1774,60 1779,60 1785,60 1785,75"/>
+            <polygon class="timeline-segment-upwind" id="s16" points="1737,75 1737,60 1747,60 1752,63 1758,69 1764,69 1768,69 1772,66 1774,60 1779,60 1785,60 1785,75"/>
             <rect class="timeline-segment-rect" id="s16" x="1737" y="0" width="48" height="75">
-            <title>134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning
-    tack starboard to port S</title>
+            <title>18:57:53  tack starboard to port S
+134m/48s @ 2.1/4.4/5.9 kts ↑ 111°/258° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s17" points="1785,75 1785,60 1791,63 1799,60 1812,57 1820,60 1832,60 1848,60 1860,63 1871,63 1883,63 1894,60 1902,60 1915,57 1927,60 1938,60 1952,60 1967,60 1978,60 1986,60 1992,60 1998,60 2003,57 2008,60 2020,60 2029,57 2034,60 2046,63 2054,63 2055,60 2060,63 2065,63 2076,63 2090,63 2101,66 2110,66 2117,63 2126,63 2126,75"/>
+            <polygon class="timeline-segment-upwind" id="s17" points="1785,75 1785,60 1791,63 1799,60 1812,57 1820,60 1832,60 1848,60 1860,63 1871,63 1883,63 1894,60 1902,60 1915,57 1927,60 1938,60 1952,60 1967,60 1978,60 1986,60 1992,60 1998,60 2003,57 2008,60 2020,60 2029,57 2034,60 2046,63 2054,63 2055,60 2060,63 2065,63 2076,63 2090,63 2101,66 2110,66 2117,63 2126,63 2126,75"/>
             <rect class="timeline-segment-rect" id="s17" x="1785" y="0" width="341" height="75">
-            <title>943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving
-    close reach port S</title>
+            <title>18:58:49  close reach port S
+943m/341s @ 3.2/5.2/6.3 kts ↑ 223°/254° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s18" points="2126,75 2126,60 2135,60 2140,63 2147,69 2154,66 2164,63 2177,60 2177,75"/>
+            <polygon class="timeline-segment-upwind" id="s18" points="2126,75 2126,60 2135,60 2140,63 2147,69 2154,66 2164,63 2177,60 2177,75"/>
             <rect class="timeline-segment-rect" id="s18" x="2126" y="0" width="51" height="75">
-            <title>146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning
-    tack port to starboard S</title>
+            <title>19:04:42  tack port to starboard S
+146m/51s @ 2.2/4.3/5.4 kts ↑ 109°/233° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s19" points="2177,75 2177,63 2186,60 2200,63 2213,63 2227,60 2238,63 2253,63 2264,60 2276,60 2289,60 2289,75"/>
+            <polygon class="timeline-segment-upwind" id="s19" points="2177,75 2177,63 2186,60 2200,63 2213,63 2227,60 2238,63 2253,63 2264,60 2276,60 2289,60 2289,75"/>
             <rect class="timeline-segment-rect" id="s19" x="2177" y="0" width="112" height="75">
-            <title>313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving
-    close reach starboard S</title>
+            <title>19:05:43  close reach starboard S
+313m/112s @ 4.5/5.0/5.6 kts ↑ 115°/121° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s20" points="2289,75 2289,60 2296,60 2298,69 2304,66 2305,63 2311,63 2319,66 2327,66 2327,75"/>
+            <polygon class="timeline-segment-upwind" id="s20" points="2289,75 2289,60 2296,60 2298,69 2304,66 2305,63 2311,63 2319,66 2327,66 2327,75"/>
             <rect class="timeline-segment-rect" id="s20" x="2289" y="0" width="38" height="75">
-            <title>123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning
-    tack starboard to port S</title>
+            <title>19:07:49  tack starboard to port S
+123m/38s @ 2.6/4.2/5.9 kts ↑ 115°/228° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s21" points="2327,75 2327,63 2340,60 2351,60 2362,60 2376,63 2388,63 2396,60 2407,60 2417,57 2426,63 2436,63 2436,75"/>
+            <polygon class="timeline-segment-upwind" id="s21" points="2327,75 2327,63 2340,60 2351,60 2362,60 2376,63 2388,63 2396,60 2407,60 2417,57 2426,63 2436,63 2436,75"/>
             <rect class="timeline-segment-rect" id="s21" x="2327" y="0" width="109" height="75">
-            <title>318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving
-    close reach port S</title>
+            <title>19:08:35  close reach port S
+318m/109s @ 4.3/5.3/6.1 kts ↑ 222°/252° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s22" points="2436,75 2436,63 2448,60 2449,66 2454,72 2459,69 2469,69 2482,66 2492,66 2492,75"/>
+            <polygon class="timeline-segment-upwind" id="s22" points="2436,75 2436,63 2448,60 2449,66 2454,72 2459,69 2469,69 2482,66 2492,66 2492,75"/>
             <rect class="timeline-segment-rect" id="s22" x="2436" y="0" width="56" height="75">
-            <title>136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning
-    tack port to starboard S</title>
+            <title>19:10:38  tack port to starboard S
+136m/56s @ 2.0/3.5/5.2 kts ↑ 113°/251° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s23" points="2492,75 2492,63 2508,60 2521,60 2534,63 2545,60 2545,75"/>
+            <polygon class="timeline-segment-upwind" id="s23" points="2492,75 2492,63 2508,60 2521,60 2534,63 2545,60 2545,75"/>
             <rect class="timeline-segment-rect" id="s23" x="2492" y="0" width="53" height="75">
-            <title>172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving
-    close reach starboard S</title>
+            <title>19:11:45  close reach starboard S
+172m/53s @ 4.8/5.2/5.6 kts ↑ 112°/126° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s24" points="2545,75 2545,60 2550,63 2555,69 2560,69 2562,63 2568,63 2576,66 2581,66 2588,66 2588,75"/>
+            <polygon class="timeline-segment-upwind" id="s24" points="2545,75 2545,60 2550,63 2555,69 2560,69 2562,63 2568,63 2576,66 2581,66 2588,66 2588,75"/>
             <rect class="timeline-segment-rect" id="s24" x="2545" y="0" width="43" height="75">
-            <title>120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning
-    tack starboard to port S</title>
+            <title>19:12:52  tack starboard to port S
+120m/43s @ 2.3/3.8/5.7 kts ↑ 101°/250° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s25" points="2588,75 2588,66 2590,66 2596,66 2600,66 2610,66 2616,66 2623,66 2627,66 2633,66 2634,66 2638,66 2645,66 2650,72 2656,75 2656,75"/>
             <rect class="timeline-segment-rect" id="s25" x="2588" y="0" width="68" height="75">
-            <title>134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving
-    beam reach port S</title>
+            <title>19:13:52  beam reach port S
+134m/68s @ 1.3/3.0/4.0 kts ↑ 236°/272° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s26" points="2656,75 2656,63 2659,63 2669,66 2671,66 2682,66 2682,75"/>
+            <polygon class="timeline-segment-upwind" id="s26" points="2656,75 2656,63 2659,63 2669,66 2671,66 2682,66 2682,75"/>
             <rect class="timeline-segment-rect" id="s26" x="2656" y="0" width="26" height="75">
-            <title>46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving
-    close reach starboard S</title>
+            <title>19:15:36  close reach starboard S
+46m/26s @ 3.2/3.6/4.1 kts ↑ 120°/132° moving</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s27" points="2682,75 2682,66 2694,66 2704,66 2708,72 2713,72 2720,69 2733,69 2745,69 2762,69 2773,69 2786,69 2799,69 2802,69 2807,72 2813,72 2821,69 2830,66 2841,66 2850,66 2850,75"/>
+            <polygon class="timeline-segment-upwind" id="s27" points="2682,75 2682,66 2694,66 2704,66 2708,72 2713,72 2720,69 2733,69 2745,69 2762,69 2773,69 2786,69 2799,69 2802,69 2807,72 2813,72 2821,69 2830,66 2841,66 2850,66 2850,75"/>
             <rect class="timeline-segment-rect" id="s27" x="2682" y="0" width="168" height="75">
-            <title>243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning
-    unknown S</title>
+            <title>19:16:10  unknown S
+243m/168s @ 1.2/2.6/3.8 kts ↑ 109°/244° turning</title>
             </rect>
         
-            <polygon class="timeline-segment" id="s28" points="2850,75 2850,66 2866,66 2878,66 2888,66 2901,72 2907,75 2908,75 2908,75"/>
+            <polygon class="timeline-segment-upwind" id="s28" points="2850,75 2850,66 2866,66 2878,66 2888,66 2901,72 2907,75 2908,75 2908,75"/>
             <rect class="timeline-segment-rect" id="s28" x="2850" y="0" width="58" height="75">
-            <title>99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving
-    close reach starboard S</title>
+            <title>19:19:11  close reach starboard S
+99m/58s @ 1.8/2.1/3.5 kts ↑ 128°/145° moving</title>
             </rect>
         
     </svg>
@@ -2654,7 +2656,6 @@ function updatePositions() {
     const legendHeight = legend.getBoundingClientRect().height; 
     let mapHeight = map.getBoundingClientRect().height; 
     let timelineHeight = timeline.getBoundingClientRect().height;
-    console.log(rootHeight, legendHeight, mapHeight, timelineHeight)
     mapHeight = rootHeight - legendHeight - timelineHeight
     map.setAttribute(&#39;height&#39;, mapHeight)
     timeline.setAttribute(&#39;y&#39;, rootHeight - timelineHeight-20)
@@ -2744,12 +2745,14 @@ map.addEventListener(&#39;mouseup&#39;, dragStop);
 map.addEventListener(&#39;mouseleave&#39;, dragStop);
 map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
+// map hover handling
+// * highlight the corresponding timeline segment
+
 function getMapSegmentId(event) {
     const target = event.target
     if(!target) return undefined
     if(target.tagName != &#39;line&#39;) return undefined
     const id = event.target.parentNode.getAttribute(&#34;id&#34;)
-    console.log(&#34;segment=&#34;, id)
     return id
 }
 
@@ -2775,6 +2778,7 @@ map.addEventListener(&#39;mouseover&#39;, mapSegmentHoverStart)
 map.addEventListener(&#39;mouseout&#39;, mapSegmentHoverStop)
 
 // timeline hover handling
+// * highlight corresponding map segment
 function getTimelineSegmentId(event) {
     const target = event.target
     if(!target) return undefined
@@ -2783,7 +2787,7 @@ function getTimelineSegmentId(event) {
     return id
 }
 
-function segmentHoverStart(event) {
+function timelineSegmentHoverStart(event) {
     const id = getTimelineSegmentId(event)
     if (!id) return
     const selector = `g#${id}.segment`
@@ -2792,7 +2796,7 @@ function segmentHoverStart(event) {
     mapSegment.classList.add(&#34;segment-hovered&#34;)
 }
 
-function segmentHoverStop(event) {
+function timelineSegmentHoverStop(event) {
     const id = getTimelineSegmentId(event)
     if (!id) return
     const mapSegment = map.querySelector(`g#${id}.segment`)
@@ -2800,7 +2804,7 @@ function segmentHoverStop(event) {
     mapSegment.classList.remove(&#34;segment-hovered&#34;)
 }
 
-timeline.addEventListener(&#39;mouseover&#39;, segmentHoverStart)
-timeline.addEventListener(&#39;mouseout&#39;, segmentHoverStop)
+timeline.addEventListener(&#39;mouseover&#39;, timelineSegmentHoverStart)
+timeline.addEventListener(&#39;mouseout&#39;, timelineSegmentHoverStop)
     </script>
 </svg>

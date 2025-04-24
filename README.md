@@ -30,6 +30,16 @@ segment analysis given the determined wind direction
 
 The map can be zoomed with mouse wheel scroll or touchpad pinch. The map can be panned with mouse or touchpad drag.
 
+The timeline rendered at the bottom of the map shows speed at any given time. The timeline is split into same segments as the track map.
+Hovering over timeline segments highlights the corresponding map segment and vice versa.
+
+The timeline segments are colored based on the wind-attitude of the segment:
+
+* upwind => red
+* beam => green
+* downwind => blue
+
+
 ## usage
 
 The repository is set up to automatically compile and release binaries for common desktop platforms (linux/mac/windows).

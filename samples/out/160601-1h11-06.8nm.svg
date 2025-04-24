@@ -6,7 +6,9 @@
 .segment { fill: none; stroke-width: 4 }
 .segment:hover { stroke-width: 8 }
 .segment-hovered { stroke-width: 8 }
-.timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+.timeline-segment { fill: green; fill-opacity: 50%; stroke: green }
+.timeline-segment-upwind { fill: red; fill-opacity: 50%; stroke: red }
+.timeline-segment-downwind { fill: blue; fill-opacity: 50%; stroke: blue }
 .timeline-segment-rect { fill: transparent }
 .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
 .timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
@@ -84,86 +86,86 @@
             
             <line class="step" x1="59" y1="152" x2="59" y2="150" stroke="#0af">
             <title>18:57:24: 2.8m @ 5.5 kts ↑ 350° N = 0.00 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="59" y1="150" x2="56" y2="136" stroke="#0af">
             <title>18:57:31: 18.3m @ 5.1 kts ↑ 345° NNW = 0.01 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="56" y1="136" x2="55" y2="123" stroke="#08f">
             <title>18:57:38: 17.0m @ 4.7 kts ↑ 0° N = 0.02 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="55" y1="123" x2="62" y2="115" stroke="#08f">
             <title>18:57:44: 13.4m @ 4.3 kts ↑ 40° NE = 0.03 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="62" y1="115" x2="68" y2="112" stroke="#04f">
             <title>18:57:51: 8.9m @ 2.5 kts ↑ 63° ENE = 0.03 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="68" y1="112" x2="74" y2="108" stroke="#02f">
             <title>18:58:02: 10.2m @ 1.8 kts ↑ 55° NE = 0.04 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="74" y1="108" x2="80" y2="104" stroke="#02f">
             <title>18:58:12: 10.0m @ 1.9 kts ↑ 60° ENE = 0.04 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="80" y1="104" x2="86" y2="101" stroke="#04f">
             <title>18:58:18: 8.7m @ 2.8 kts ↑ 58° ENE = 0.05 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="86" y1="101" x2="98" y2="95" stroke="#06f">
             <title>18:58:27: 18.3m @ 3.9 kts ↑ 66° ENE = 0.06 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="98" y1="95" x2="109" y2="92" stroke="#06f">
             <title>18:58:35: 15.6m @ 3.8 kts ↑ 74° ENE = 0.07 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="109" y1="92" x2="111" y2="94" stroke="#02f">
             <title>18:58:40: 3.3m @ 1.3 kts ↑ 150° SSE = 0.07 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="111" y1="94" x2="109" y2="104" stroke="#08f">
             <title>18:58:46: 12.9m @ 4.2 kts ↑ 189° S = 0.08 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="109" y1="104" x2="105" y2="117" stroke="#0ff">
             <title>18:58:50: 18.2m @ 8.8 kts ↑ 199° SSW = 0.09 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
             <line class="step" x1="105" y1="117" x2="100" y2="134" stroke="#0fb">
             <title>18:58:55: 24.0m @ 9.3 kts ↑ 195° SSW = 0.10 nm
-    182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+</title>
             </line>
             
         </g>
@@ -179,92 +181,92 @@
             
             <line class="step" x1="100" y1="155" x2="97" y2="174" stroke="#0ff">
             <title>18:59:08: 25.1m @ 8.1 kts ↑ 189° S = 0.13 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="97" y1="174" x2="89" y2="203" stroke="#0fb">
             <title>18:59:16: 40.0m @ 9.7 kts ↑ 195° SSW = 0.15 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="89" y1="203" x2="87" y2="210" stroke="#0fb">
             <title>18:59:18: 9.8m @ 9.6 kts ↑ 194° SSW = 0.15 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="87" y1="210" x2="85" y2="225" stroke="#0cf">
             <title>18:59:24: 20.3m @ 6.6 kts ↑ 189° S = 0.16 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="85" y1="225" x2="78" y2="239" stroke="#0cf">
             <title>18:59:30: 20.6m @ 6.7 kts ↑ 209° SSW = 0.18 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="78" y1="239" x2="59" y2="249" stroke="#0fb">
             <title>18:59:36: 28.8m @ 9.3 kts ↑ 243° WSW = 0.19 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="59" y1="249" x2="52" y2="250" stroke="#0ff">
             <title>18:59:38: 8.7m @ 8.4 kts ↑ 259° W = 0.20 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="52" y1="250" x2="39" y2="248" stroke="#0cf">
             <title>18:59:44: 18.7m @ 6.1 kts ↑ 278° W = 0.21 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="39" y1="248" x2="36" y2="247" stroke="#08f">
             <title>18:59:46: 4.3m @ 4.2 kts ↑ 298° WNW = 0.21 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="36" y1="247" x2="33" y2="242" stroke="#06f">
             <title>18:59:50: 7.5m @ 3.6 kts ↑ 328° NNW = 0.21 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="33" y1="242" x2="36" y2="233" stroke="#08f">
             <title>18:59:55: 12.7m @ 4.9 kts ↑ 17° NNE = 0.22 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="36" y1="233" x2="37" y2="231" stroke="#0af">
             <title>18:59:56: 3.1m @ 6.0 kts ↑ 48° NE = 0.22 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="37" y1="231" x2="47" y2="225" stroke="#08f">
             <title>19:00:03: 15.9m @ 4.4 kts ↑ 57° ENE = 0.23 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="47" y1="225" x2="53" y2="222" stroke="#06f">
             <title>19:00:08: 8.6m @ 3.3 kts ↑ 64° ENE = 0.23 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
             <line class="step" x1="53" y1="222" x2="58" y2="219" stroke="#06f">
             <title>19:00:13: 8.1m @ 3.1 kts ↑ 65° ENE = 0.24 nm
-    259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+</title>
             </line>
             
         </g>
@@ -280,38 +282,38 @@
             
             <line class="step" x1="64" y1="216" x2="72" y2="213" stroke="#04f">
             <title>19:00:30: 12.0m @ 2.1 kts ↑ 68° ENE = 0.25 nm
-    105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+</title>
             </line>
             
             <line class="step" x1="72" y1="213" x2="80" y2="209" stroke="#04f">
             <title>19:00:40: 10.9m @ 2.1 kts ↑ 62° ENE = 0.25 nm
-    105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+</title>
             </line>
             
             <line class="step" x1="80" y1="209" x2="84" y2="202" stroke="#0af">
             <title>19:00:44: 10.7m @ 5.2 kts ↑ 34° NE = 0.26 nm
-    105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+</title>
             </line>
             
             <line class="step" x1="84" y1="202" x2="86" y2="182" stroke="#0ff">
             <title>19:00:50: 26.4m @ 8.5 kts ↑ 6° N = 0.27 nm
-    105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+</title>
             </line>
             
             <line class="step" x1="86" y1="182" x2="86" y2="167" stroke="#0fb">
             <title>19:00:54: 19.6m @ 9.5 kts ↑ 358° N = 0.29 nm
-    105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+</title>
             </line>
             
             <line class="step" x1="86" y1="167" x2="92" y2="156" stroke="#0ff">
             <title>19:00:58: 17.1m @ 8.3 kts ↑ 29° NNE = 0.29 nm
-    105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+</title>
             </line>
             
         </g>
@@ -327,92 +329,92 @@
             
             <line class="step" x1="94" y1="155" x2="114" y2="149" stroke="#0ef">
             <title>19:01:06: 27.8m @ 7.7 kts ↑ 76° ENE = 0.31 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="114" y1="149" x2="132" y2="147" stroke="#0cf">
             <title>19:01:13: 24.4m @ 6.8 kts ↑ 83° E = 0.33 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="132" y1="147" x2="149" y2="143" stroke="#0cf">
             <title>19:01:20: 23.3m @ 6.5 kts ↑ 76° ENE = 0.34 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="149" y1="143" x2="166" y2="140" stroke="#0cf">
             <title>19:01:27: 23.0m @ 6.4 kts ↑ 80° E = 0.35 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="166" y1="140" x2="179" y2="137" stroke="#0cf">
             <title>19:01:33: 18.9m @ 6.1 kts ↑ 81° E = 0.36 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="179" y1="137" x2="191" y2="136" stroke="#0cf">
             <title>19:01:38: 16.1m @ 6.3 kts ↑ 83° E = 0.37 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="191" y1="136" x2="215" y2="131" stroke="#0cf">
             <title>19:01:48: 32.7m @ 6.3 kts ↑ 79° E = 0.39 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="215" y1="131" x2="232" y2="130" stroke="#0ef">
             <title>19:01:54: 23.2m @ 7.5 kts ↑ 87° E = 0.40 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="232" y1="130" x2="249" y2="130" stroke="#0ef">
             <title>19:02:00: 22.7m @ 7.3 kts ↑ 88° E = 0.41 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="249" y1="130" x2="263" y2="129" stroke="#0ef">
             <title>19:02:05: 19.3m @ 7.5 kts ↑ 88° E = 0.42 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="263" y1="129" x2="284" y2="127" stroke="#0ef">
             <title>19:02:12: 27.8m @ 7.7 kts ↑ 85° E = 0.44 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="284" y1="127" x2="305" y2="124" stroke="#0ff">
             <title>19:02:19: 29.1m @ 8.1 kts ↑ 82° E = 0.45 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="305" y1="124" x2="322" y2="122" stroke="#0fb">
             <title>19:02:24: 23.4m @ 9.1 kts ↑ 81° E = 0.47 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="322" y1="122" x2="345" y2="115" stroke="#0ff">
             <title>19:02:31: 31.7m @ 8.8 kts ↑ 76° ENE = 0.48 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
             <line class="step" x1="345" y1="115" x2="364" y2="110" stroke="#0ef">
             <title>19:02:38: 26.2m @ 7.3 kts ↑ 75° ENE = 0.50 nm
-    373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+</title>
             </line>
             
         </g>
@@ -428,38 +430,38 @@
             
             <line class="step" x1="386" y1="105" x2="403" y2="102" stroke="#0cf">
             <title>19:02:54: 23.6m @ 6.5 kts ↑ 78° ENE = 0.53 nm
-    125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+</title>
             </line>
             
             <line class="step" x1="403" y1="102" x2="407" y2="102" stroke="#0af">
             <title>19:02:56: 5.4m @ 5.2 kts ↑ 97° E = 0.53 nm
-    125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+</title>
             </line>
             
             <line class="step" x1="407" y1="102" x2="410" y2="110" stroke="#06f">
             <title>19:03:03: 11.4m @ 3.2 kts ↑ 155° SSE = 0.53 nm
-    125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+</title>
             </line>
             
             <line class="step" x1="410" y1="110" x2="415" y2="121" stroke="#08f">
             <title>19:03:10: 15.3m @ 4.3 kts ↑ 154° SSE = 0.54 nm
-    125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+</title>
             </line>
             
             <line class="step" x1="415" y1="121" x2="422" y2="132" stroke="#08f">
             <title>19:03:18: 18.3m @ 4.5 kts ↑ 149° SSE = 0.55 nm
-    125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+</title>
             </line>
             
             <line class="step" x1="422" y1="132" x2="429" y2="147" stroke="#08f">
             <title>19:03:27: 20.8m @ 4.5 kts ↑ 154° SSE = 0.56 nm
-    125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+</title>
             </line>
             
         </g>
@@ -475,146 +477,146 @@
             
             <line class="step" x1="435" y1="161" x2="439" y2="175" stroke="#08f">
             <title>19:03:43: 20.2m @ 4.9 kts ↑ 164° SSE = 0.59 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="439" y1="175" x2="443" y2="192" stroke="#0af">
             <title>19:03:51: 22.0m @ 5.3 kts ↑ 164° SSE = 0.60 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="443" y1="192" x2="451" y2="212" stroke="#0af">
             <title>19:04:01: 28.4m @ 5.5 kts ↑ 160° SSE = 0.61 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="451" y1="212" x2="457" y2="228" stroke="#0af">
             <title>19:04:09: 22.4m @ 5.4 kts ↑ 157° SSE = 0.63 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="457" y1="228" x2="463" y2="240" stroke="#08f">
             <title>19:04:16: 17.7m @ 4.9 kts ↑ 153° SSE = 0.63 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="463" y1="240" x2="469" y2="254" stroke="#08f">
             <title>19:04:24: 20.5m @ 5.0 kts ↑ 155° SSE = 0.65 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="469" y1="254" x2="479" y2="273" stroke="#0af">
             <title>19:04:35: 28.6m @ 5.1 kts ↑ 153° SSE = 0.66 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="479" y1="273" x2="486" y2="291" stroke="#08f">
             <title>19:04:45: 25.3m @ 4.9 kts ↑ 158° SSE = 0.67 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="486" y1="291" x2="494" y2="311" stroke="#0af">
             <title>19:04:55: 28.2m @ 5.5 kts ↑ 158° SSE = 0.69 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="494" y1="311" x2="502" y2="335" stroke="#0af">
             <title>19:05:06: 33.4m @ 5.9 kts ↑ 161° SSE = 0.71 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="502" y1="335" x2="511" y2="357" stroke="#0af">
             <title>19:05:17: 31.6m @ 5.6 kts ↑ 158° SSE = 0.73 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="511" y1="357" x2="519" y2="380" stroke="#0cf">
             <title>19:05:27: 31.5m @ 6.1 kts ↑ 159° SSE = 0.74 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="519" y1="380" x2="527" y2="399" stroke="#0af">
             <title>19:05:36: 27.8m @ 6.0 kts ↑ 157° SSE = 0.76 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="527" y1="399" x2="535" y2="416" stroke="#0cf">
             <title>19:05:44: 25.2m @ 6.1 kts ↑ 154° SSE = 0.77 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="535" y1="416" x2="539" y2="432" stroke="#0cf">
             <title>19:05:51: 22.0m @ 6.1 kts ↑ 165° SSE = 0.78 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="539" y1="432" x2="537" y2="447" stroke="#0ef">
             <title>19:05:56: 19.9m @ 7.7 kts ↑ 189° S = 0.79 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="537" y1="447" x2="527" y2="474" stroke="#0ff">
             <title>19:06:05: 37.8m @ 8.1 kts ↑ 200° SSW = 0.81 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="527" y1="474" x2="526" y2="488" stroke="#0ef">
             <title>19:06:10: 18.5m @ 7.2 kts ↑ 185° S = 0.82 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="526" y1="488" x2="527" y2="505" stroke="#0cf">
             <title>19:06:17: 21.9m @ 6.1 kts ↑ 178° S = 0.84 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="527" y1="505" x2="529" y2="520" stroke="#0af">
             <title>19:06:24: 20.6m @ 5.7 kts ↑ 172° S = 0.85 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="529" y1="520" x2="533" y2="534" stroke="#0af">
             <title>19:06:30: 18.3m @ 5.9 kts ↑ 162° SSE = 0.86 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="533" y1="534" x2="539" y2="545" stroke="#0af">
             <title>19:06:36: 16.7m @ 5.4 kts ↑ 154° SSE = 0.87 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="539" y1="545" x2="546" y2="563" stroke="#0af">
             <title>19:06:45: 25.2m @ 5.4 kts ↑ 158° SSE = 0.88 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
             <line class="step" x1="546" y1="563" x2="550" y2="575" stroke="#0af">
             <title>19:06:51: 17.6m @ 5.7 kts ↑ 158° SSE = 0.89 nm
-    601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+</title>
             </line>
             
         </g>
@@ -630,38 +632,38 @@
             
             <line class="step" x1="559" y1="595" x2="572" y2="619" stroke="#08f">
             <title>19:07:15: 36.1m @ 5.0 kts ↑ 152° SSE = 0.92 nm
-    123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+</title>
             </line>
             
             <line class="step" x1="572" y1="619" x2="573" y2="621" stroke="#0af">
             <title>19:07:16: 2.7m @ 5.2 kts ↑ 155° SSE = 0.93 nm
-    123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+</title>
             </line>
             
             <line class="step" x1="573" y1="621" x2="578" y2="624" stroke="#04f">
             <title>19:07:22: 8.3m @ 2.7 kts ↑ 113° ESE = 0.93 nm
-    123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+</title>
             </line>
             
             <line class="step" x1="578" y1="624" x2="582" y2="623" stroke="#06f">
             <title>19:07:25: 5.0m @ 3.2 kts ↑ 73° ENE = 0.93 nm
-    123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+</title>
             </line>
             
             <line class="step" x1="582" y1="623" x2="596" y2="616" stroke="#08f">
             <title>19:07:34: 21.4m @ 4.6 kts ↑ 65° ENE = 0.94 nm
-    123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+</title>
             </line>
             
             <line class="step" x1="596" y1="616" x2="610" y2="608" stroke="#0af">
             <title>19:07:41: 21.0m @ 5.8 kts ↑ 62° ENE = 0.96 nm
-    123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+</title>
             </line>
             
         </g>
@@ -677,38 +679,38 @@
             
             <line class="step" x1="627" y1="601" x2="643" y2="592" stroke="#0af">
             <title>19:07:57: 24.6m @ 6.0 kts ↑ 63° ENE = 0.98 nm
-    247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+</title>
             </line>
             
             <line class="step" x1="643" y1="592" x2="667" y2="581" stroke="#0cf">
             <title>19:08:07: 35.3m @ 6.8 kts ↑ 65° ENE = 1.00 nm
-    247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+</title>
             </line>
             
             <line class="step" x1="667" y1="581" x2="690" y2="569" stroke="#0ef">
             <title>19:08:16: 35.1m @ 7.6 kts ↑ 63° ENE = 1.02 nm
-    247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+</title>
             </line>
             
             <line class="step" x1="690" y1="569" x2="720" y2="552" stroke="#0ef">
             <title>19:08:28: 46.2m @ 7.5 kts ↑ 61° ENE = 1.04 nm
-    247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+</title>
             </line>
             
             <line class="step" x1="720" y1="552" x2="746" y2="535" stroke="#0ef">
             <title>19:08:39: 41.0m @ 7.2 kts ↑ 58° ENE = 1.07 nm
-    247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+</title>
             </line>
             
             <line class="step" x1="746" y1="535" x2="770" y2="518" stroke="#0ef">
             <title>19:08:49: 39.5m @ 7.7 kts ↑ 55° NE = 1.09 nm
-    247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+</title>
             </line>
             
         </g>
@@ -724,26 +726,26 @@
             
             <line class="step" x1="782" y1="507" x2="794" y2="487" stroke="#0ff">
             <title>19:09:02: 30.8m @ 8.5 kts ↑ 32° NNE = 1.12 nm
-    110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
-    </title>
+110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
+</title>
             </line>
             
             <line class="step" x1="794" y1="487" x2="794" y2="472" stroke="#0fb">
             <title>19:09:06: 19.8m @ 9.6 kts ↑ 358° N = 1.13 nm
-    110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
-    </title>
+110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
+</title>
             </line>
             
             <line class="step" x1="794" y1="472" x2="788" y2="460" stroke="#0cf">
             <title>19:09:11: 17.4m @ 6.8 kts ↑ 337° NNW = 1.14 nm
-    110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
-    </title>
+110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
+</title>
             </line>
             
             <line class="step" x1="788" y1="460" x2="787" y2="444" stroke="#0cf">
             <title>19:09:17: 20.3m @ 6.6 kts ↑ 354° N = 1.15 nm
-    110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
-    </title>
+110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
+</title>
             </line>
             
         </g>
@@ -759,38 +761,38 @@
             
             <line class="step" x1="785" y1="424" x2="782" y2="404" stroke="#0ff">
             <title>19:09:29: 25.4m @ 8.2 kts ↑ 353° N = 1.18 nm
-    122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+</title>
             </line>
             
             <line class="step" x1="782" y1="404" x2="777" y2="395" stroke="#0af">
             <title>19:09:34: 14.8m @ 5.8 kts ↑ 329° NNW = 1.18 nm
-    122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+</title>
             </line>
             
             <line class="step" x1="777" y1="395" x2="774" y2="393" stroke="#08f">
             <title>19:09:36: 4.5m @ 4.4 kts ↑ 290° WNW = 1.19 nm
-    122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+</title>
             </line>
             
             <line class="step" x1="774" y1="393" x2="764" y2="394" stroke="#0af">
             <title>19:09:41: 13.3m @ 5.1 kts ↑ 269° W = 1.19 nm
-    122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+</title>
             </line>
             
             <line class="step" x1="764" y1="394" x2="751" y2="395" stroke="#0af">
             <title>19:09:47: 18.0m @ 5.8 kts ↑ 266° W = 1.20 nm
-    122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+</title>
             </line>
             
             <line class="step" x1="751" y1="395" x2="737" y2="397" stroke="#0cf">
             <title>19:09:53: 19.0m @ 6.1 kts ↑ 261° W = 1.21 nm
-    122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+</title>
             </line>
             
         </g>
@@ -806,98 +808,98 @@
             
             <line class="step" x1="720" y1="399" x2="704" y2="403" stroke="#0af">
             <title>19:10:08: 22.5m @ 5.5 kts ↑ 257° WSW = 1.24 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="704" y1="403" x2="688" y2="407" stroke="#0cf">
             <title>19:10:15: 21.7m @ 6.0 kts ↑ 254° WSW = 1.25 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="688" y1="407" x2="669" y2="413" stroke="#0cf">
             <title>19:10:23: 26.8m @ 6.5 kts ↑ 254° WSW = 1.26 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="669" y1="413" x2="649" y2="422" stroke="#0ef">
             <title>19:10:31: 29.4m @ 7.1 kts ↑ 246° WSW = 1.28 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="649" y1="422" x2="636" y2="431" stroke="#0cf">
             <title>19:10:37: 21.3m @ 6.9 kts ↑ 239° WSW = 1.29 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="636" y1="431" x2="616" y2="440" stroke="#0ff">
             <title>19:10:44: 29.2m @ 8.1 kts ↑ 246° WSW = 1.31 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="616" y1="440" x2="596" y2="444" stroke="#0ef">
             <title>19:10:51: 27.3m @ 7.6 kts ↑ 257° WSW = 1.32 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="596" y1="444" x2="583" y2="447" stroke="#0cf">
             <title>19:10:56: 18.0m @ 7.0 kts ↑ 258° WSW = 1.33 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="583" y1="447" x2="566" y2="456" stroke="#0ef">
             <title>19:11:03: 26.4m @ 7.3 kts ↑ 244° WSW = 1.35 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="566" y1="456" x2="544" y2="463" stroke="#0ff">
             <title>19:11:10: 31.1m @ 8.6 kts ↑ 252° WSW = 1.36 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="544" y1="463" x2="526" y2="473" stroke="#0ff">
             <title>19:11:16: 27.4m @ 8.9 kts ↑ 243° WSW = 1.38 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="526" y1="473" x2="523" y2="475" stroke="#0fb">
             <title>19:11:17: 4.8m @ 9.4 kts ↑ 239° WSW = 1.38 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="523" y1="475" x2="496" y2="483" stroke="#0f7">
             <title>19:11:24: 37.3m @ 10.3 kts ↑ 253° WSW = 1.40 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="496" y1="483" x2="474" y2="491" stroke="#0f7">
             <title>19:11:30: 31.0m @ 10.0 kts ↑ 251° WSW = 1.42 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="474" y1="491" x2="456" y2="498" stroke="#0f7">
             <title>19:11:35: 26.8m @ 10.4 kts ↑ 247° WSW = 1.43 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
             <line class="step" x1="456" y1="498" x2="424" y2="513" stroke="#0f7">
             <title>19:11:44: 47.2m @ 10.2 kts ↑ 246° WSW = 1.46 nm
-    451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+</title>
             </line>
             
         </g>
@@ -913,38 +915,38 @@
             
             <line class="step" x1="409" y1="520" x2="398" y2="527" stroke="#0ff">
             <title>19:11:53: 17.4m @ 8.4 kts ↑ 242° WSW = 1.48 nm
-    136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+</title>
             </line>
             
             <line class="step" x1="398" y1="527" x2="383" y2="531" stroke="#0ff">
             <title>19:11:58: 21.1m @ 8.2 kts ↑ 254° WSW = 1.49 nm
-    136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+</title>
             </line>
             
             <line class="step" x1="383" y1="531" x2="377" y2="527" stroke="#08f">
             <title>19:12:02: 10.0m @ 4.9 kts ↑ 304° NW = 1.50 nm
-    136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+</title>
             </line>
             
             <line class="step" x1="377" y1="527" x2="373" y2="520" stroke="#08f">
             <title>19:12:06: 9.9m @ 4.8 kts ↑ 330° NNW = 1.50 nm
-    136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+</title>
             </line>
             
             <line class="step" x1="373" y1="520" x2="370" y2="503" stroke="#0cf">
             <title>19:12:13: 23.5m @ 6.5 kts ↑ 351° N = 1.51 nm
-    136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+</title>
             </line>
             
             <line class="step" x1="370" y1="503" x2="368" y2="478" stroke="#0ef">
             <title>19:12:21: 32.1m @ 7.8 kts ↑ 355° N = 1.53 nm
-    136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+</title>
             </line>
             
         </g>
@@ -960,80 +962,80 @@
             
             <line class="step" x1="363" y1="457" x2="362" y2="453" stroke="#0fb">
             <title>19:12:28: 5.0m @ 9.7 kts ↑ 344° NNW = 1.55 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="362" y1="453" x2="355" y2="434" stroke="#0ff">
             <title>19:12:34: 27.1m @ 8.8 kts ↑ 338° NNW = 1.56 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="355" y1="434" x2="348" y2="400" stroke="#0ff">
             <title>19:12:44: 45.5m @ 8.8 kts ↑ 348° NNW = 1.59 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="348" y1="400" x2="340" y2="372" stroke="#0fb">
             <title>19:12:52: 39.0m @ 9.5 kts ↑ 345° NNW = 1.61 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="340" y1="372" x2="339" y2="368" stroke="#0fb">
             <title>19:12:53: 5.0m @ 9.6 kts ↑ 347° NNW = 1.61 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="339" y1="368" x2="337" y2="346" stroke="#0fb">
             <title>19:12:59: 29.0m @ 9.4 kts ↑ 353° N = 1.63 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="337" y1="346" x2="331" y2="321" stroke="#0fb">
             <title>19:13:06: 33.7m @ 9.3 kts ↑ 347° NNW = 1.65 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="331" y1="321" x2="325" y2="299" stroke="#0f7">
             <title>19:13:12: 31.1m @ 10.0 kts ↑ 344° NNW = 1.66 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="325" y1="299" x2="320" y2="275" stroke="#0f7">
             <title>19:13:18: 31.0m @ 10.0 kts ↑ 349° N = 1.68 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="320" y1="275" x2="319" y2="261" stroke="#0fb">
             <title>19:13:22: 18.7m @ 9.1 kts ↑ 354° N = 1.69 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="319" y1="261" x2="317" y2="232" stroke="#0ff">
             <title>19:13:31: 38.7m @ 8.3 kts ↑ 357° N = 1.71 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="317" y1="232" x2="313" y2="202" stroke="#0ef">
             <title>19:13:41: 39.7m @ 7.7 kts ↑ 353° N = 1.73 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
             <line class="step" x1="313" y1="202" x2="309" y2="172" stroke="#0ef">
             <title>19:13:51: 40.2m @ 7.8 kts ↑ 350° N = 1.75 nm
-    413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+</title>
             </line>
             
         </g>
@@ -1049,32 +1051,32 @@
             
             <line class="step" x1="306" y1="145" x2="301" y2="122" stroke="#0ef">
             <title>19:14:08: 30.7m @ 7.4 kts ↑ 347° NNW = 1.79 nm
-    136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
-    </title>
+136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
+</title>
             </line>
             
             <line class="step" x1="301" y1="122" x2="296" y2="115" stroke="#08f">
             <title>19:14:13: 11.3m @ 4.4 kts ↑ 323° NW = 1.80 nm
-    136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
-    </title>
+136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
+</title>
             </line>
             
             <line class="step" x1="296" y1="115" x2="286" y2="113" stroke="#06f">
             <title>19:14:20: 13.3m @ 3.7 kts ↑ 282° WNW = 1.80 nm
-    136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
-    </title>
+136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
+</title>
             </line>
             
             <line class="step" x1="286" y1="113" x2="271" y2="118" stroke="#0af">
             <title>19:14:28: 21.8m @ 5.3 kts ↑ 251° WSW = 1.82 nm
-    136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
-    </title>
+136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
+</title>
             </line>
             
             <line class="step" x1="271" y1="118" x2="256" y2="125" stroke="#0ef">
             <title>19:14:34: 22.6m @ 7.3 kts ↑ 245° WSW = 1.83 nm
-    136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
-    </title>
+136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
+</title>
             </line>
             
         </g>
@@ -1090,56 +1092,56 @@
             
             <line class="step" x1="234" y1="137" x2="221" y2="145" stroke="#0f7">
             <title>19:14:45: 20.9m @ 10.1 kts ↑ 241° WSW = 1.86 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="221" y1="145" x2="213" y2="148" stroke="#0f3">
             <title>19:14:47: 11.7m @ 11.4 kts ↑ 253° WSW = 1.86 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="213" y1="148" x2="199" y2="153" stroke="#0fb">
             <title>19:14:51: 19.3m @ 9.4 kts ↑ 247° WSW = 1.87 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="199" y1="153" x2="188" y2="157" stroke="#0ef">
             <title>19:14:55: 16.4m @ 8.0 kts ↑ 254° WSW = 1.88 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="188" y1="157" x2="174" y2="165" stroke="#0cf">
             <title>19:15:01: 21.3m @ 6.9 kts ↑ 239° WSW = 1.89 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="174" y1="165" x2="170" y2="169" stroke="#0ef">
             <title>19:15:03: 7.8m @ 7.6 kts ↑ 221° SW = 1.90 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="170" y1="169" x2="172" y2="181" stroke="#0af">
             <title>19:15:08: 14.9m @ 5.8 kts ↑ 172° S = 1.91 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="172" y1="181" x2="178" y2="198" stroke="#0af">
             <title>19:15:16: 24.5m @ 5.9 kts ↑ 162° SSE = 1.92 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
             <line class="step" x1="178" y1="198" x2="184" y2="222" stroke="#0cf">
             <title>19:15:25: 32.0m @ 6.9 kts ↑ 163° SSE = 1.94 nm
-    201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+</title>
             </line>
             
         </g>
@@ -1155,92 +1157,92 @@
             
             <line class="step" x1="191" y1="243" x2="196" y2="254" stroke="#0cf">
             <title>19:15:39: 15.5m @ 6.0 kts ↑ 154° SSE = 1.96 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="196" y1="254" x2="197" y2="256" stroke="#0cf">
             <title>19:15:40: 3.2m @ 6.2 kts ↑ 162° SSE = 1.96 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="197" y1="256" x2="202" y2="268" stroke="#0af">
             <title>19:15:46: 17.5m @ 5.7 kts ↑ 157° SSE = 1.97 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="202" y1="268" x2="207" y2="290" stroke="#0cf">
             <title>19:15:54: 28.6m @ 6.9 kts ↑ 167° SSE = 1.99 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="207" y1="290" x2="209" y2="306" stroke="#0cf">
             <title>19:16:00: 21.1m @ 6.8 kts ↑ 172° S = 2.00 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="209" y1="306" x2="206" y2="329" stroke="#0cf">
             <title>19:16:10: 30.9m @ 6.0 kts ↑ 186° S = 2.02 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="206" y1="329" x2="201" y2="348" stroke="#0cf">
             <title>19:16:18: 26.5m @ 6.4 kts ↑ 197° SSW = 2.03 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="201" y1="348" x2="196" y2="366" stroke="#0cf">
             <title>19:16:25: 23.6m @ 6.5 kts ↑ 195° SSW = 2.04 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="196" y1="366" x2="191" y2="381" stroke="#0cf">
             <title>19:16:31: 21.1m @ 6.8 kts ↑ 199° SSW = 2.05 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="191" y1="381" x2="187" y2="398" stroke="#0ef">
             <title>19:16:37: 23.6m @ 7.6 kts ↑ 196° SSW = 2.07 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="187" y1="398" x2="183" y2="413" stroke="#0ef">
             <title>19:16:42: 19.8m @ 7.7 kts ↑ 196° SSW = 2.08 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="183" y1="413" x2="180" y2="421" stroke="#0ef">
             <title>19:16:45: 12.0m @ 7.8 kts ↑ 196° SSW = 2.08 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="180" y1="421" x2="181" y2="437" stroke="#0cf">
             <title>19:16:51: 21.0m @ 6.8 kts ↑ 176° S = 2.09 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="181" y1="437" x2="182" y2="456" stroke="#0ef">
             <title>19:16:57: 24.2m @ 7.8 kts ↑ 179° S = 2.11 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
             <line class="step" x1="182" y1="456" x2="182" y2="475" stroke="#0ff">
             <title>19:17:03: 25.3m @ 8.2 kts ↑ 178° S = 2.12 nm
-    344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+</title>
             </line>
             
         </g>
@@ -1256,38 +1258,38 @@
             
             <line class="step" x1="184" y1="500" x2="185" y2="515" stroke="#0fb">
             <title>19:17:14: 19.7m @ 9.6 kts ↑ 177° S = 2.15 nm
-    131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+</title>
             </line>
             
             <line class="step" x1="185" y1="515" x2="189" y2="526" stroke="#0ef">
             <title>19:17:18: 14.9m @ 7.2 kts ↑ 162° SSE = 2.16 nm
-    131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+</title>
             </line>
             
             <line class="step" x1="189" y1="526" x2="193" y2="527" stroke="#06f">
             <title>19:17:22: 6.5m @ 3.1 kts ↑ 100° E = 2.16 nm
-    131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+</title>
             </line>
             
             <line class="step" x1="193" y1="527" x2="199" y2="525" stroke="#06f">
             <title>19:17:26: 8.1m @ 3.9 kts ↑ 75° ENE = 2.17 nm
-    131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+</title>
             </line>
             
             <line class="step" x1="199" y1="525" x2="215" y2="521" stroke="#0cf">
             <title>19:17:33: 22.5m @ 6.2 kts ↑ 75° ENE = 2.18 nm
-    131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+</title>
             </line>
             
             <line class="step" x1="215" y1="521" x2="234" y2="515" stroke="#0cf">
             <title>19:17:41: 25.6m @ 6.2 kts ↑ 74° ENE = 2.19 nm
-    131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+</title>
             </line>
             
         </g>
@@ -1303,158 +1305,158 @@
             
             <line class="step" x1="247" y1="510" x2="267" y2="500" stroke="#0ef">
             <title>19:17:55: 30.0m @ 7.3 kts ↑ 64° ENE = 2.22 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="267" y1="500" x2="285" y2="495" stroke="#0cf">
             <title>19:18:02: 25.2m @ 7.0 kts ↑ 75° ENE = 2.23 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="285" y1="495" x2="308" y2="491" stroke="#0cf">
             <title>19:18:11: 32.3m @ 7.0 kts ↑ 81° E = 2.25 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="308" y1="491" x2="331" y2="484" stroke="#0cf">
             <title>19:18:20: 31.4m @ 6.8 kts ↑ 74° ENE = 2.27 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="331" y1="484" x2="348" y2="480" stroke="#0cf">
             <title>19:18:27: 23.5m @ 6.5 kts ↑ 76° ENE = 2.28 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="348" y1="480" x2="367" y2="477" stroke="#0cf">
             <title>19:18:35: 26.3m @ 6.4 kts ↑ 81° E = 2.29 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="367" y1="477" x2="387" y2="472" stroke="#0cf">
             <title>19:18:43: 27.1m @ 6.6 kts ↑ 78° ENE = 2.31 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="387" y1="472" x2="410" y2="469" stroke="#0cf">
             <title>19:18:53: 31.6m @ 6.1 kts ↑ 82° E = 2.33 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="410" y1="469" x2="427" y2="468" stroke="#0cf">
             <title>19:19:00: 22.8m @ 6.3 kts ↑ 85° E = 2.34 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="427" y1="468" x2="449" y2="467" stroke="#0af">
             <title>19:19:10: 30.1m @ 5.8 kts ↑ 89° E = 2.35 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="449" y1="467" x2="468" y2="463" stroke="#0af">
             <title>19:19:19: 26.7m @ 5.8 kts ↑ 78° ENE = 2.37 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="468" y1="463" x2="487" y2="457" stroke="#0cf">
             <title>19:19:27: 26.4m @ 6.4 kts ↑ 73° ENE = 2.38 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="487" y1="457" x2="508" y2="455" stroke="#0cf">
             <title>19:19:36: 28.6m @ 6.2 kts ↑ 83° E = 2.40 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="508" y1="455" x2="528" y2="454" stroke="#0af">
             <title>19:19:45: 26.5m @ 5.7 kts ↑ 88° E = 2.41 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="528" y1="454" x2="543" y2="453" stroke="#0af">
             <title>19:19:52: 20.4m @ 5.6 kts ↑ 86° E = 2.42 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="543" y1="453" x2="554" y2="450" stroke="#0af">
             <title>19:19:58: 15.5m @ 5.0 kts ↑ 73° ENE = 2.43 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="554" y1="450" x2="571" y2="445" stroke="#0af">
             <title>19:20:07: 23.7m @ 5.1 kts ↑ 75° ENE = 2.44 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="571" y1="445" x2="587" y2="444" stroke="#0af">
             <title>19:20:15: 22.8m @ 5.5 kts ↑ 89° E = 2.46 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="587" y1="444" x2="601" y2="444" stroke="#0af">
             <title>19:20:21: 17.7m @ 5.7 kts ↑ 88° E = 2.47 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="601" y1="444" x2="609" y2="447" stroke="#0af">
             <title>19:20:25: 12.3m @ 5.9 kts ↑ 107° ESE = 2.47 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="609" y1="447" x2="626" y2="449" stroke="#0af">
             <title>19:20:33: 22.9m @ 5.5 kts ↑ 96° E = 2.49 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="626" y1="449" x2="641" y2="448" stroke="#0af">
             <title>19:20:40: 20.7m @ 5.7 kts ↑ 89° E = 2.50 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="641" y1="448" x2="656" y2="450" stroke="#0af">
             <title>19:20:47: 19.9m @ 5.5 kts ↑ 96° E = 2.51 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="656" y1="450" x2="676" y2="452" stroke="#08f">
             <title>19:20:58: 27.3m @ 4.8 kts ↑ 96° E = 2.52 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="676" y1="452" x2="697" y2="451" stroke="#08f">
             <title>19:21:09: 28.2m @ 5.0 kts ↑ 89° E = 2.54 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
             <line class="step" x1="697" y1="451" x2="717" y2="449" stroke="#0af">
             <title>19:21:19: 26.9m @ 5.2 kts ↑ 83° E = 2.55 nm
-    666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+</title>
             </line>
             
         </g>
@@ -1470,26 +1472,26 @@
             
             <line class="step" x1="738" y1="446" x2="758" y2="445" stroke="#0af">
             <title>19:21:40: 27.1m @ 5.2 kts ↑ 86° E = 2.58 nm
-    80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
-    </title>
+80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
+</title>
             </line>
             
             <line class="step" x1="758" y1="445" x2="759" y2="445" stroke="#06f">
             <title>19:21:41: 1.9m @ 3.6 kts ↑ 124° SE = 2.58 nm
-    80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
-    </title>
+80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
+</title>
             </line>
             
             <line class="step" x1="759" y1="445" x2="759" y2="451" stroke="#04f">
             <title>19:21:47: 7.8m @ 2.5 kts ↑ 177° S = 2.59 nm
-    80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
-    </title>
+80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
+</title>
             </line>
             
             <line class="step" x1="759" y1="451" x2="760" y2="462" stroke="#08f">
             <title>19:21:54: 14.7m @ 4.1 kts ↑ 178° S = 2.59 nm
-    80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
-    </title>
+80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
+</title>
             </line>
             
         </g>
@@ -1505,62 +1507,62 @@
             
             <line class="step" x1="762" y1="476" x2="764" y2="496" stroke="#0af">
             <title>19:22:11: 26.8m @ 5.2 kts ↑ 175° S = 2.62 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="764" y1="496" x2="764" y2="503" stroke="#08f">
             <title>19:22:15: 9.4m @ 4.5 kts ↑ 174° S = 2.62 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="764" y1="503" x2="769" y2="505" stroke="#04f">
             <title>19:22:21: 7.5m @ 2.4 kts ↑ 115° ESE = 2.63 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="769" y1="505" x2="775" y2="503" stroke="#08f">
             <title>19:22:25: 8.4m @ 4.1 kts ↑ 71° ENE = 2.63 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="775" y1="503" x2="791" y2="494" stroke="#0cf">
             <title>19:22:32: 23.7m @ 6.6 kts ↑ 60° ENE = 2.65 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="791" y1="494" x2="796" y2="489" stroke="#0cf">
             <title>19:22:35: 10.8m @ 7.0 kts ↑ 48° NE = 2.65 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="796" y1="489" x2="793" y2="481" stroke="#0af">
             <title>19:22:39: 11.4m @ 5.5 kts ↑ 338° NNW = 2.66 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="793" y1="481" x2="787" y2="477" stroke="#08f">
             <title>19:22:43: 9.9m @ 4.8 kts ↑ 298° WNW = 2.66 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="787" y1="477" x2="770" y2="477" stroke="#0af">
             <title>19:22:51: 22.2m @ 5.4 kts ↑ 271° W = 2.67 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
             <line class="step" x1="770" y1="477" x2="756" y2="479" stroke="#0af">
             <title>19:22:58: 19.2m @ 5.3 kts ↑ 263° W = 2.68 nm
-    167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+</title>
             </line>
             
         </g>
@@ -1576,80 +1578,80 @@
             
             <line class="step" x1="740" y1="481" x2="722" y2="485" stroke="#0cf">
             <title>19:23:12: 24.5m @ 6.8 kts ↑ 259° W = 2.71 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="722" y1="485" x2="702" y2="489" stroke="#0ef">
             <title>19:23:19: 27.2m @ 7.5 kts ↑ 259° W = 2.72 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="702" y1="489" x2="684" y2="493" stroke="#0ff">
             <title>19:23:25: 25.2m @ 8.2 kts ↑ 258° WSW = 2.74 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="684" y1="493" x2="659" y2="498" stroke="#0ff">
             <title>19:23:33: 34.6m @ 8.4 kts ↑ 258° WSW = 2.76 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="659" y1="498" x2="643" y2="499" stroke="#0ff">
             <title>19:23:38: 21.6m @ 8.4 kts ↑ 268° W = 2.77 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="643" y1="499" x2="623" y2="498" stroke="#0ff">
             <title>19:23:44: 27.1m @ 8.8 kts ↑ 273° W = 2.78 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="623" y1="498" x2="605" y2="497" stroke="#0ef">
             <title>19:23:50: 24.4m @ 7.9 kts ↑ 273° W = 2.80 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="605" y1="497" x2="589" y2="499" stroke="#0cf">
             <title>19:23:56: 21.4m @ 6.9 kts ↑ 261° W = 2.81 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="589" y1="499" x2="566" y2="507" stroke="#0ef">
             <title>19:24:05: 33.2m @ 7.2 kts ↑ 252° WSW = 2.83 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="566" y1="507" x2="548" y2="514" stroke="#0ef">
             <title>19:24:12: 25.8m @ 7.2 kts ↑ 248° WSW = 2.84 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="548" y1="514" x2="534" y2="516" stroke="#0cf">
             <title>19:24:18: 18.8m @ 6.1 kts ↑ 265° W = 2.85 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="534" y1="516" x2="522" y2="517" stroke="#0af">
             <title>19:24:24: 15.9m @ 5.1 kts ↑ 264° W = 2.86 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
             <line class="step" x1="522" y1="517" x2="509" y2="521" stroke="#0af">
             <title>19:24:31: 18.7m @ 5.2 kts ↑ 255° WSW = 2.87 nm
-    341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+</title>
             </line>
             
         </g>
@@ -1665,44 +1667,44 @@
             
             <line class="step" x1="492" y1="527" x2="472" y2="535" stroke="#0ef">
             <title>19:24:47: 28.9m @ 7.0 kts ↑ 251° WSW = 2.90 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
             <line class="step" x1="472" y1="535" x2="470" y2="535" stroke="#0cf">
             <title>19:24:48: 3.4m @ 6.5 kts ↑ 270° W = 2.90 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
             <line class="step" x1="470" y1="535" x2="462" y2="531" stroke="#08f">
             <title>19:24:53: 11.9m @ 4.6 kts ↑ 295° WNW = 2.91 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
             <line class="step" x1="462" y1="531" x2="461" y2="530" stroke="#08f">
             <title>19:24:54: 2.2m @ 4.2 kts ↑ 320° NW = 2.91 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
             <line class="step" x1="461" y1="530" x2="457" y2="515" stroke="#0af">
             <title>19:25:01: 19.4m @ 5.4 kts ↑ 344° NNW = 2.92 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
             <line class="step" x1="457" y1="515" x2="455" y2="496" stroke="#0ff">
             <title>19:25:07: 25.9m @ 8.4 kts ↑ 356° N = 2.93 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
             <line class="step" x1="455" y1="496" x2="452" y2="477" stroke="#0fb">
             <title>19:25:12: 24.7m @ 9.6 kts ↑ 350° N = 2.94 nm
-    141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+</title>
             </line>
             
         </g>
@@ -1718,92 +1720,92 @@
             
             <line class="step" x1="449" y1="452" x2="447" y2="423" stroke="#0fb">
             <title>19:25:27: 37.5m @ 9.1 kts ↑ 357° N = 2.98 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="447" y1="423" x2="446" y2="393" stroke="#0fb">
             <title>19:25:35: 39.4m @ 9.6 kts ↑ 358° N = 3.00 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="446" y1="393" x2="442" y2="363" stroke="#0ff">
             <title>19:25:44: 40.4m @ 8.7 kts ↑ 352° N = 3.03 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="442" y1="363" x2="438" y2="341" stroke="#0ff">
             <title>19:25:51: 29.4m @ 8.1 kts ↑ 349° N = 3.04 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="438" y1="341" x2="435" y2="313" stroke="#0ef">
             <title>19:26:00: 36.6m @ 7.9 kts ↑ 353° N = 3.06 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="435" y1="313" x2="436" y2="283" stroke="#0fb">
             <title>19:26:08: 39.4m @ 9.6 kts ↑ 3° N = 3.08 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="436" y1="283" x2="436" y2="276" stroke="#0fb">
             <title>19:26:10: 10.2m @ 9.9 kts ↑ 359° N = 3.09 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="436" y1="276" x2="429" y2="252" stroke="#0ff">
             <title>19:26:17: 32.1m @ 8.9 kts ↑ 342° NNW = 3.11 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="429" y1="252" x2="420" y2="237" stroke="#0cf">
             <title>19:26:24: 23.6m @ 6.6 kts ↑ 330° NNW = 3.12 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="420" y1="237" x2="414" y2="216" stroke="#0cf">
             <title>19:26:33: 28.6m @ 6.2 kts ↑ 343° NNW = 3.13 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="414" y1="216" x2="412" y2="200" stroke="#0cf">
             <title>19:26:39: 20.9m @ 6.8 kts ↑ 353° N = 3.15 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="412" y1="200" x2="412" y2="182" stroke="#0ef">
             <title>19:26:45: 23.9m @ 7.7 kts ↑ 0° N = 3.16 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="412" y1="182" x2="411" y2="154" stroke="#0ef">
             <title>19:26:55: 36.7m @ 7.1 kts ↑ 357° N = 3.18 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="411" y1="154" x2="408" y2="132" stroke="#0cf">
             <title>19:27:04: 29.6m @ 6.4 kts ↑ 353° N = 3.19 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
             <line class="step" x1="408" y1="132" x2="402" y2="117" stroke="#08f">
             <title>19:27:12: 20.3m @ 4.9 kts ↑ 338° NNW = 3.21 nm
-    483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+</title>
             </line>
             
         </g>
@@ -1819,38 +1821,38 @@
             
             <line class="step" x1="398" y1="102" x2="397" y2="85" stroke="#0af">
             <title>19:27:30: 21.6m @ 5.2 kts ↑ 358° N = 3.23 nm
-    125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+</title>
             </line>
             
             <line class="step" x1="397" y1="85" x2="392" y2="68" stroke="#0af">
             <title>19:27:39: 23.6m @ 5.1 kts ↑ 344° NNW = 3.24 nm
-    125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+</title>
             </line>
             
             <line class="step" x1="392" y1="68" x2="386" y2="66" stroke="#04f">
             <title>19:27:45: 9.3m @ 3.0 kts ↑ 285° WNW = 3.25 nm
-    125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+</title>
             </line>
             
             <line class="step" x1="386" y1="66" x2="381" y2="67" stroke="#08f">
             <title>19:27:48: 6.2m @ 4.0 kts ↑ 266° W = 3.25 nm
-    125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+</title>
             </line>
             
             <line class="step" x1="381" y1="67" x2="366" y2="71" stroke="#0af">
             <title>19:27:56: 21.8m @ 5.3 kts ↑ 254° WSW = 3.26 nm
-    125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+</title>
             </line>
             
             <line class="step" x1="366" y1="71" x2="351" y2="77" stroke="#0af">
             <title>19:28:03: 21.0m @ 5.8 kts ↑ 249° WSW = 3.27 nm
-    125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+</title>
             </line>
             
         </g>
@@ -1866,122 +1868,122 @@
             
             <line class="step" x1="333" y1="86" x2="314" y2="95" stroke="#0ef">
             <title>19:28:18: 27.5m @ 7.6 kts ↑ 244° WSW = 3.30 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="314" y1="95" x2="298" y2="102" stroke="#0ff">
             <title>19:28:23: 23.2m @ 9.0 kts ↑ 247° WSW = 3.32 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="298" y1="102" x2="291" y2="104" stroke="#0fb">
             <title>19:28:25: 9.8m @ 9.5 kts ↑ 255° WSW = 3.32 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="291" y1="104" x2="285" y2="106" stroke="#0fb">
             <title>19:28:27: 9.6m @ 9.4 kts ↑ 251° WSW = 3.33 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="285" y1="106" x2="272" y2="112" stroke="#0ff">
             <title>19:28:31: 18.4m @ 8.9 kts ↑ 245° WSW = 3.34 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="272" y1="112" x2="266" y2="115" stroke="#0fb">
             <title>19:28:33: 9.4m @ 9.1 kts ↑ 243° WSW = 3.34 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="266" y1="115" x2="240" y2="124" stroke="#0f7">
             <title>19:28:40: 37.2m @ 10.3 kts ↑ 252° WSW = 3.36 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="240" y1="124" x2="232" y2="126" stroke="#0f7">
             <title>19:28:42: 10.9m @ 10.5 kts ↑ 255° WSW = 3.37 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="232" y1="126" x2="203" y2="137" stroke="#0f7">
             <title>19:28:50: 41.3m @ 10.0 kts ↑ 250° WSW = 3.39 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="203" y1="137" x2="188" y2="144" stroke="#0f3">
             <title>19:28:54: 22.8m @ 11.0 kts ↑ 246° WSW = 3.40 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="188" y1="144" x2="168" y2="153" stroke="#0f3">
             <title>19:28:59: 29.7m @ 11.5 kts ↑ 247° WSW = 3.42 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="168" y1="153" x2="135" y2="167" stroke="#0f7">
             <title>19:29:08: 47.8m @ 10.3 kts ↑ 246° WSW = 3.44 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="135" y1="167" x2="132" y2="169" stroke="#0fb">
             <title>19:29:09: 4.9m @ 9.5 kts ↑ 250° WSW = 3.45 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="132" y1="169" x2="115" y2="169" stroke="#0ff">
             <title>19:29:14: 22.4m @ 8.7 kts ↑ 269° W = 3.46 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="115" y1="169" x2="100" y2="168" stroke="#0af">
             <title>19:29:21: 19.8m @ 5.5 kts ↑ 273° W = 3.47 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="100" y1="168" x2="98" y2="169" stroke="#0af">
             <title>19:29:22: 2.7m @ 5.3 kts ↑ 256° WSW = 3.47 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="98" y1="169" x2="90" y2="169" stroke="#06f">
             <title>19:29:28: 11.2m @ 3.6 kts ↑ 269° W = 3.48 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="90" y1="169" x2="81" y2="170" stroke="#06f">
             <title>19:29:35: 12.7m @ 3.5 kts ↑ 262° W = 3.48 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="81" y1="170" x2="72" y2="171" stroke="#06f">
             <title>19:29:41: 11.9m @ 3.9 kts ↑ 262° W = 3.49 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
             <line class="step" x1="72" y1="171" x2="62" y2="173" stroke="#06f">
             <title>19:29:48: 14.0m @ 3.9 kts ↑ 261° W = 3.50 nm
-    415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+</title>
             </line>
             
         </g>
@@ -1997,38 +1999,38 @@
             
             <line class="step" x1="47" y1="174" x2="31" y2="178" stroke="#08f">
             <title>19:30:07: 22.8m @ 4.4 kts ↑ 257° WSW = 3.52 nm
-    96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+</title>
             </line>
             
             <line class="step" x1="31" y1="178" x2="21" y2="185" stroke="#06f">
             <title>19:30:15: 15.8m @ 3.8 kts ↑ 235° SW = 3.53 nm
-    96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+</title>
             </line>
             
             <line class="step" x1="21" y1="185" x2="20" y2="194" stroke="#06f">
             <title>19:30:22: 11.5m @ 3.2 kts ↑ 192° SSW = 3.53 nm
-    96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+</title>
             </line>
             
             <line class="step" x1="20" y1="194" x2="20" y2="201" stroke="#04f">
             <title>19:30:29: 9.8m @ 2.7 kts ↑ 175° S = 3.54 nm
-    96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+</title>
             </line>
             
             <line class="step" x1="20" y1="201" x2="21" y2="208" stroke="#04f">
             <title>19:30:37: 9.2m @ 2.2 kts ↑ 169° S = 3.54 nm
-    96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+</title>
             </line>
             
             <line class="step" x1="21" y1="208" x2="22" y2="213" stroke="#02f">
             <title>19:30:45: 6.7m @ 1.6 kts ↑ 173° S = 3.55 nm
-    96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+</title>
             </line>
             
         </g>
@@ -2044,50 +2046,50 @@
             
             <line class="step" x1="23" y1="221" x2="24" y2="231" stroke="#04f">
             <title>19:31:04: 12.7m @ 2.5 kts ↑ 174° S = 3.56 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="24" y1="231" x2="24" y2="232" stroke="#04f">
             <title>19:31:05: 1.4m @ 2.7 kts ↑ 169° S = 3.56 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="24" y1="232" x2="25" y2="235" stroke="#04f">
             <title>19:31:09: 4.2m @ 2.0 kts ↑ 160° SSE = 3.56 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="25" y1="235" x2="26" y2="240" stroke="#04f">
             <title>19:31:15: 6.4m @ 2.1 kts ↑ 168° SSE = 3.57 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="26" y1="240" x2="27" y2="245" stroke="#04f">
             <title>19:31:21: 6.3m @ 2.0 kts ↑ 173° S = 3.57 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="27" y1="245" x2="27" y2="248" stroke="#02f">
             <title>19:31:27: 4.8m @ 1.5 kts ↑ 174° S = 3.57 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="27" y1="248" x2="26" y2="251" stroke="#02f">
             <title>19:31:33: 3.7m @ 1.2 kts ↑ 189° S = 3.58 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
             <line class="step" x1="26" y1="251" x2="27" y2="251" stroke="#00f">
             <title>19:31:34: 0.4m @ 0.7 kts ↑ 156° SSE = 3.58 nm
-    51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+</title>
             </line>
             
         </g>
@@ -2103,68 +2105,68 @@
             
             <line class="step" x1="145" y1="98" x2="156" y2="94" stroke="#04f">
             <title>19:38:06: 15.1m @ 2.7 kts ↑ 70° ENE = 3.58 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="156" y1="94" x2="170" y2="87" stroke="#04f">
             <title>19:38:22: 20.9m @ 2.5 kts ↑ 63° ENE = 3.60 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="170" y1="87" x2="183" y2="80" stroke="#04f">
             <title>19:38:35: 20.1m @ 3.0 kts ↑ 61° ENE = 3.61 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="183" y1="80" x2="195" y2="72" stroke="#06f">
             <title>19:38:47: 19.8m @ 3.2 kts ↑ 60° ENE = 3.62 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="195" y1="72" x2="205" y2="68" stroke="#06f">
             <title>19:38:55: 14.2m @ 3.4 kts ↑ 67° ENE = 3.62 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="205" y1="68" x2="216" y2="65" stroke="#06f">
             <title>19:39:04: 14.6m @ 3.1 kts ↑ 75° ENE = 3.63 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="216" y1="65" x2="229" y2="63" stroke="#06f">
             <title>19:39:14: 18.3m @ 3.6 kts ↑ 79° E = 3.64 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="229" y1="63" x2="243" y2="60" stroke="#04f">
             <title>19:39:27: 19.7m @ 2.9 kts ↑ 78° ENE = 3.65 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="243" y1="60" x2="261" y2="56" stroke="#06f">
             <title>19:39:42: 24.2m @ 3.1 kts ↑ 80° E = 3.67 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="261" y1="56" x2="272" y2="55" stroke="#04f">
             <title>19:39:52: 15.0m @ 2.9 kts ↑ 81° E = 3.67 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
             <line class="step" x1="272" y1="55" x2="287" y2="52" stroke="#04f">
             <title>19:40:06: 20.7m @ 2.9 kts ↑ 82° E = 3.69 nm
-    203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+</title>
             </line>
             
         </g>
@@ -2180,50 +2182,50 @@
             
             <line class="step" x1="299" y1="51" x2="312" y2="49" stroke="#04f">
             <title>19:40:34: 17.7m @ 2.1 kts ↑ 79° E = 3.70 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="312" y1="49" x2="324" y2="45" stroke="#04f">
             <title>19:40:49: 17.1m @ 2.2 kts ↑ 75° ENE = 3.71 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="324" y1="45" x2="327" y2="39" stroke="#06f">
             <title>19:40:55: 9.3m @ 3.0 kts ↑ 32° NNE = 3.72 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="327" y1="39" x2="326" y2="32" stroke="#06f">
             <title>19:41:00: 10.2m @ 4.0 kts ↑ 352° N = 3.72 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="326" y1="32" x2="321" y2="30" stroke="#04f">
             <title>19:41:06: 7.8m @ 2.5 kts ↑ 288° WNW = 3.73 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="321" y1="30" x2="306" y2="34" stroke="#06f">
             <title>19:41:18: 20.4m @ 3.3 kts ↑ 255° WSW = 3.74 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="306" y1="34" x2="292" y2="36" stroke="#06f">
             <title>19:41:28: 20.0m @ 3.9 kts ↑ 261° W = 3.75 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
             <line class="step" x1="292" y1="36" x2="273" y2="40" stroke="#08f">
             <title>19:41:39: 25.8m @ 4.6 kts ↑ 260° W = 3.76 nm
-    144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+</title>
             </line>
             
         </g>
@@ -2239,26 +2241,26 @@
             
             <line class="step" x1="263" y1="40" x2="245" y2="43" stroke="#08f">
             <title>19:41:54: 25.3m @ 4.9 kts ↑ 261° W = 3.78 nm
-    119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
-    </title>
+119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
+</title>
             </line>
             
             <line class="step" x1="245" y1="43" x2="224" y2="47" stroke="#0af">
             <title>19:42:05: 29.2m @ 5.1 kts ↑ 260° W = 3.80 nm
-    119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
-    </title>
+119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
+</title>
             </line>
             
             <line class="step" x1="224" y1="47" x2="207" y2="51" stroke="#0cf">
             <title>19:42:12: 22.4m @ 6.2 kts ↑ 257° WSW = 3.81 nm
-    119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
-    </title>
+119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
+</title>
             </line>
             
             <line class="step" x1="207" y1="51" x2="188" y2="60" stroke="#0ef">
             <title>19:42:20: 29.3m @ 7.1 kts ↑ 246° WSW = 3.83 nm
-    119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
-    </title>
+119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
+</title>
             </line>
             
         </g>
@@ -2274,26 +2276,26 @@
             
             <line class="step" x1="177" y1="71" x2="177" y2="80" stroke="#08f">
             <title>19:42:31: 12.5m @ 4.9 kts ↑ 179° S = 3.85 nm
-    80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
-    </title>
+80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
+</title>
             </line>
             
             <line class="step" x1="177" y1="80" x2="180" y2="91" stroke="#08f">
             <title>19:42:38: 14.8m @ 4.1 kts ↑ 166° SSE = 3.85 nm
-    80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
-    </title>
+80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
+</title>
             </line>
             
             <line class="step" x1="180" y1="91" x2="183" y2="107" stroke="#0af">
             <title>19:42:45: 20.6m @ 5.7 kts ↑ 170° S = 3.86 nm
-    80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
-    </title>
+80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
+</title>
             </line>
             
             <line class="step" x1="183" y1="107" x2="178" y2="115" stroke="#0af">
             <title>19:42:49: 12.0m @ 5.8 kts ↑ 209° SSW = 3.87 nm
-    80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
-    </title>
+80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
+</title>
             </line>
             
         </g>
@@ -2309,56 +2311,56 @@
             
             <line class="step" x1="166" y1="123" x2="146" y2="128" stroke="#0ff">
             <title>19:43:00: 27.0m @ 8.7 kts ↑ 255° WSW = 3.90 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="146" y1="128" x2="128" y2="126" stroke="#0ff">
             <title>19:43:06: 24.9m @ 8.1 kts ↑ 276° W = 3.91 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="128" y1="126" x2="117" y2="122" stroke="#08f">
             <title>19:43:12: 15.4m @ 5.0 kts ↑ 288° WNW = 3.92 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="117" y1="122" x2="102" y2="116" stroke="#08f">
             <title>19:43:22: 22.1m @ 4.3 kts ↑ 292° WNW = 3.93 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="102" y1="116" x2="87" y2="113" stroke="#08f">
             <title>19:43:32: 21.3m @ 4.1 kts ↑ 283° WNW = 3.94 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="87" y1="113" x2="84" y2="112" stroke="#08f">
             <title>19:43:34: 4.3m @ 4.2 kts ↑ 287° WNW = 3.94 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="84" y1="112" x2="82" y2="102" stroke="#06f">
             <title>19:43:41: 12.9m @ 3.6 kts ↑ 349° N = 3.95 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="82" y1="102" x2="88" y2="88" stroke="#0af">
             <title>19:43:48: 20.2m @ 5.6 kts ↑ 25° NNE = 3.96 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
             <line class="step" x1="88" y1="88" x2="101" y2="80" stroke="#0cf">
             <title>19:43:54: 20.7m @ 6.7 kts ↑ 60° ENE = 3.97 nm
-    189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+</title>
             </line>
             
         </g>
@@ -2374,50 +2376,50 @@
             
             <line class="step" x1="126" y1="70" x2="142" y2="63" stroke="#0ef">
             <title>19:44:09: 23.6m @ 7.6 kts ↑ 66° ENE = 4.00 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="142" y1="63" x2="152" y2="50" stroke="#0ff">
             <title>19:44:14: 22.7m @ 8.8 kts ↑ 39° NE = 4.02 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="152" y1="50" x2="163" y2="29" stroke="#0f7">
             <title>19:44:20: 31.1m @ 10.0 kts ↑ 27° NNE = 4.03 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="163" y1="29" x2="174" y2="20" stroke="#0fb">
             <title>19:44:24: 19.0m @ 9.2 kts ↑ 50° NE = 4.04 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="174" y1="20" x2="181" y2="21" stroke="#08f">
             <title>19:44:28: 10.1m @ 4.9 kts ↑ 98° E = 4.05 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="181" y1="21" x2="181" y2="27" stroke="#04f">
             <title>19:44:34: 8.9m @ 2.9 kts ↑ 177° S = 4.05 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="181" y1="27" x2="175" y2="42" stroke="#0cf">
             <title>19:44:41: 21.9m @ 6.1 kts ↑ 204° SSW = 4.07 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
             <line class="step" x1="175" y1="42" x2="164" y2="61" stroke="#0cf">
             <title>19:44:50: 28.1m @ 6.1 kts ↑ 210° SSW = 4.08 nm
-    201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+</title>
             </line>
             
         </g>
@@ -2433,110 +2435,110 @@
             
             <line class="step" x1="158" y1="78" x2="148" y2="91" stroke="#0cf">
             <title>19:45:03: 21.5m @ 6.9 kts ↑ 219° SW = 4.11 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="148" y1="91" x2="144" y2="97" stroke="#0cf">
             <title>19:45:06: 9.9m @ 6.4 kts ↑ 216° SW = 4.11 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="144" y1="97" x2="142" y2="101" stroke="#0af">
             <title>19:45:08: 5.7m @ 5.5 kts ↑ 200° SSW = 4.11 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="142" y1="101" x2="142" y2="112" stroke="#08f">
             <title>19:45:14: 14.5m @ 4.7 kts ↑ 182° S = 4.12 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="142" y1="112" x2="142" y2="128" stroke="#08f">
             <title>19:45:22: 20.4m @ 5.0 kts ↑ 180° S = 4.13 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="142" y1="128" x2="140" y2="147" stroke="#0af">
             <title>19:45:31: 25.8m @ 5.6 kts ↑ 185° S = 4.15 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="140" y1="147" x2="137" y2="166" stroke="#0cf">
             <title>19:45:39: 24.8m @ 6.0 kts ↑ 189° S = 4.16 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="137" y1="166" x2="133" y2="182" stroke="#0ef">
             <title>19:45:45: 22.5m @ 7.3 kts ↑ 194° SSW = 4.17 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="133" y1="182" x2="130" y2="199" stroke="#0ff">
             <title>19:45:50: 22.2m @ 8.6 kts ↑ 191° S = 4.18 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="130" y1="199" x2="132" y2="222" stroke="#0ff">
             <title>19:45:57: 30.4m @ 8.4 kts ↑ 174° S = 4.20 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="132" y1="222" x2="134" y2="244" stroke="#0ff">
             <title>19:46:04: 29.7m @ 8.2 kts ↑ 176° S = 4.22 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="134" y1="244" x2="137" y2="274" stroke="#0ff">
             <title>19:46:13: 38.5m @ 8.3 kts ↑ 174° S = 4.24 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="137" y1="274" x2="139" y2="293" stroke="#0ff">
             <title>19:46:19: 26.2m @ 8.5 kts ↑ 173° S = 4.25 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="139" y1="293" x2="143" y2="320" stroke="#0ef">
             <title>19:46:28: 35.1m @ 7.6 kts ↑ 171° S = 4.27 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="143" y1="320" x2="143" y2="336" stroke="#0cf">
             <title>19:46:34: 21.0m @ 6.8 kts ↑ 180° S = 4.28 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="143" y1="336" x2="143" y2="349" stroke="#0cf">
             <title>19:46:39: 17.3m @ 6.7 kts ↑ 181° S = 4.29 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="143" y1="349" x2="143" y2="368" stroke="#0cf">
             <title>19:46:47: 25.8m @ 6.2 kts ↑ 180° S = 4.31 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
             <line class="step" x1="143" y1="368" x2="143" y2="384" stroke="#0af">
             <title>19:46:54: 20.4m @ 5.7 kts ↑ 181° S = 4.32 nm
-    436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+</title>
             </line>
             
         </g>
@@ -2552,32 +2554,32 @@
             
             <line class="step" x1="142" y1="392" x2="139" y2="412" stroke="#0af">
             <title>19:47:07: 26.5m @ 5.7 kts ↑ 187° S = 4.34 nm
-    97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
-    </title>
+97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
+</title>
             </line>
             
             <line class="step" x1="139" y1="412" x2="139" y2="417" stroke="#0cf">
             <title>19:47:09: 6.8m @ 6.6 kts ↑ 181° S = 4.34 nm
-    97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
-    </title>
+97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
+</title>
             </line>
             
             <line class="step" x1="139" y1="417" x2="144" y2="423" stroke="#06f">
             <title>19:47:14: 9.0m @ 3.5 kts ↑ 139° SE = 4.35 nm
-    97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
-    </title>
+97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
+</title>
             </line>
             
             <line class="step" x1="144" y1="423" x2="156" y2="423" stroke="#08f">
             <title>19:47:21: 16.2m @ 4.5 kts ↑ 92° E = 4.35 nm
-    97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
-    </title>
+97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
+</title>
             </line>
             
             <line class="step" x1="156" y1="423" x2="176" y2="427" stroke="#0cf">
             <title>19:47:30: 27.9m @ 6.0 kts ↑ 100° E = 4.37 nm
-    97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
-    </title>
+97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
+</title>
             </line>
             
         </g>
@@ -2593,152 +2595,152 @@
             
             <line class="step" x1="189" y1="427" x2="198" y2="428" stroke="#08f">
             <title>19:47:41: 12.7m @ 4.9 kts ↑ 94° E = 4.39 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="198" y1="428" x2="208" y2="427" stroke="#0af">
             <title>19:47:46: 13.6m @ 5.3 kts ↑ 86° E = 4.39 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="208" y1="427" x2="227" y2="428" stroke="#0af">
             <title>19:47:55: 25.1m @ 5.4 kts ↑ 93° E = 4.41 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="227" y1="428" x2="246" y2="431" stroke="#0af">
             <title>19:48:04: 25.9m @ 5.6 kts ↑ 97° E = 4.42 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="246" y1="431" x2="263" y2="432" stroke="#0af">
             <title>19:48:13: 23.6m @ 5.1 kts ↑ 95° E = 4.43 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="263" y1="432" x2="279" y2="434" stroke="#0cf">
             <title>19:48:20: 21.7m @ 6.0 kts ↑ 95° E = 4.44 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="279" y1="434" x2="297" y2="434" stroke="#0cf">
             <title>19:48:27: 24.6m @ 6.8 kts ↑ 92° E = 4.46 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="297" y1="434" x2="319" y2="433" stroke="#0cf">
             <title>19:48:36: 29.2m @ 6.3 kts ↑ 88° E = 4.47 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="319" y1="433" x2="340" y2="432" stroke="#0af">
             <title>19:48:46: 29.2m @ 5.7 kts ↑ 87° E = 4.49 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="340" y1="432" x2="353" y2="432" stroke="#0af">
             <title>19:48:52: 17.3m @ 5.6 kts ↑ 86° E = 4.50 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="353" y1="432" x2="363" y2="432" stroke="#0cf">
             <title>19:48:56: 12.8m @ 6.2 kts ↑ 92° E = 4.51 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="363" y1="432" x2="381" y2="430" stroke="#0cf">
             <title>19:49:03: 24.9m @ 6.9 kts ↑ 85° E = 4.52 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="381" y1="430" x2="395" y2="429" stroke="#0ef">
             <title>19:49:08: 18.7m @ 7.2 kts ↑ 83° E = 4.53 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="395" y1="429" x2="408" y2="428" stroke="#0cf">
             <title>19:49:13: 17.6m @ 6.8 kts ↑ 85° E = 4.54 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="408" y1="428" x2="431" y2="426" stroke="#0cf">
             <title>19:49:22: 31.1m @ 6.7 kts ↑ 86° E = 4.56 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="431" y1="426" x2="454" y2="426" stroke="#0cf">
             <title>19:49:31: 31.7m @ 6.8 kts ↑ 89° E = 4.57 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="454" y1="426" x2="476" y2="423" stroke="#0ef">
             <title>19:49:39: 29.4m @ 7.1 kts ↑ 85° E = 4.59 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="476" y1="423" x2="497" y2="419" stroke="#0ef">
             <title>19:49:47: 29.0m @ 7.0 kts ↑ 77° ENE = 4.60 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="497" y1="419" x2="520" y2="412" stroke="#0ff">
             <title>19:49:55: 33.0m @ 8.0 kts ↑ 74° ENE = 4.62 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="520" y1="412" x2="549" y2="405" stroke="#0ef">
             <title>19:50:05: 39.4m @ 7.6 kts ↑ 77° ENE = 4.64 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="549" y1="405" x2="570" y2="401" stroke="#0ef">
             <title>19:50:12: 28.7m @ 8.0 kts ↑ 81° E = 4.66 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="570" y1="401" x2="592" y2="397" stroke="#0ef">
             <title>19:50:20: 30.4m @ 7.4 kts ↑ 79° E = 4.67 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="592" y1="397" x2="618" y2="392" stroke="#0ef">
             <title>19:50:29: 35.3m @ 7.6 kts ↑ 79° E = 4.69 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="618" y1="392" x2="633" y2="389" stroke="#0af">
             <title>19:50:36: 21.1m @ 5.9 kts ↑ 78° ENE = 4.71 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
             <line class="step" x1="633" y1="389" x2="645" y2="385" stroke="#0cf">
             <title>19:50:41: 16.6m @ 6.4 kts ↑ 75° ENE = 4.71 nm
-    640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+</title>
             </line>
             
         </g>
@@ -2754,32 +2756,32 @@
             
             <line class="step" x1="671" y1="378" x2="692" y2="372" stroke="#0ef">
             <title>19:50:58: 28.7m @ 8.0 kts ↑ 75° ENE = 4.75 nm
-    135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
-    </title>
+135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
+</title>
             </line>
             
             <line class="step" x1="692" y1="372" x2="696" y2="373" stroke="#0cf">
             <title>19:51:00: 6.4m @ 6.2 kts ↑ 98° E = 4.75 nm
-    135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
-    </title>
+135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
+</title>
             </line>
             
             <line class="step" x1="696" y1="373" x2="701" y2="383" stroke="#06f">
             <title>19:51:08: 15.1m @ 3.7 kts ↑ 157° SSE = 4.76 nm
-    135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
-    </title>
+135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
+</title>
             </line>
             
             <line class="step" x1="701" y1="383" x2="705" y2="401" stroke="#0af">
             <title>19:51:16: 24.0m @ 5.8 kts ↑ 167° SSE = 4.77 nm
-    135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
-    </title>
+135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
+</title>
             </line>
             
             <line class="step" x1="705" y1="401" x2="711" y2="418" stroke="#0af">
             <title>19:51:25: 24.2m @ 5.2 kts ↑ 159° SSE = 4.79 nm
-    135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
-    </title>
+135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
+</title>
             </line>
             
         </g>
@@ -2795,68 +2797,68 @@
             
             <line class="step" x1="713" y1="433" x2="717" y2="444" stroke="#0af">
             <title>19:51:37: 15.0m @ 5.8 kts ↑ 159° SSE = 4.81 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="717" y1="444" x2="723" y2="466" stroke="#0cf">
             <title>19:51:46: 30.4m @ 6.6 kts ↑ 165° SSE = 4.82 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="723" y1="466" x2="728" y2="491" stroke="#0ef">
             <title>19:51:55: 33.5m @ 7.2 kts ↑ 170° S = 4.84 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="728" y1="491" x2="731" y2="510" stroke="#0ef">
             <title>19:52:02: 25.4m @ 7.0 kts ↑ 171° S = 4.85 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="731" y1="510" x2="736" y2="525" stroke="#0ef">
             <title>19:52:07: 20.0m @ 7.8 kts ↑ 160° SSE = 4.87 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="736" y1="525" x2="738" y2="527" stroke="#08f">
             <title>19:52:09: 5.1m @ 5.0 kts ↑ 138° SE = 4.87 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="738" y1="527" x2="746" y2="527" stroke="#06f">
             <title>19:52:15: 11.0m @ 3.6 kts ↑ 90° E = 4.87 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="746" y1="527" x2="758" y2="522" stroke="#0cf">
             <title>19:52:20: 17.1m @ 6.6 kts ↑ 63° ENE = 4.88 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="758" y1="522" x2="775" y2="509" stroke="#0fb">
             <title>19:52:26: 28.9m @ 9.3 kts ↑ 55° NE = 4.90 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="775" y1="509" x2="781" y2="503" stroke="#0f7">
             <title>19:52:28: 10.8m @ 10.4 kts ↑ 42° NE = 4.90 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
             <line class="step" x1="781" y1="503" x2="788" y2="495" stroke="#0fb">
             <title>19:52:31: 14.5m @ 9.4 kts ↑ 42° NE = 4.91 nm
-    231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+</title>
             </line>
             
         </g>
@@ -2872,110 +2874,110 @@
             
             <line class="step" x1="792" y1="480" x2="790" y2="470" stroke="#0fb">
             <title>19:52:38: 14.1m @ 9.1 kts ↑ 351° N = 4.93 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="790" y1="470" x2="789" y2="456" stroke="#0ff">
             <title>19:52:42: 17.7m @ 8.6 kts ↑ 356° N = 4.94 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="789" y1="456" x2="787" y2="426" stroke="#0fb">
             <title>19:52:50: 39.5m @ 9.6 kts ↑ 357° N = 4.96 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="787" y1="426" x2="787" y2="422" stroke="#0f3">
             <title>19:52:51: 5.8m @ 11.3 kts ↑ 355° N = 4.96 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="787" y1="422" x2="783" y2="403" stroke="#0f7">
             <title>19:52:56: 25.9m @ 10.0 kts ↑ 348° NNW = 4.98 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="783" y1="403" x2="779" y2="392" stroke="#0ef">
             <title>19:53:00: 15.3m @ 7.4 kts ↑ 341° NNW = 4.99 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="779" y1="392" x2="777" y2="374" stroke="#0cf">
             <title>19:53:07: 23.5m @ 6.5 kts ↑ 354° N = 5.00 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="777" y1="374" x2="778" y2="352" stroke="#0ef">
             <title>19:53:14: 28.5m @ 7.9 kts ↑ 2° N = 5.01 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="778" y1="352" x2="781" y2="328" stroke="#0fb">
             <title>19:53:21: 32.6m @ 9.0 kts ↑ 8° N = 5.03 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="781" y1="328" x2="782" y2="324" stroke="#0f7">
             <title>19:53:22: 5.2m @ 10.0 kts ↑ 11° N = 5.04 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="782" y1="324" x2="779" y2="300" stroke="#0f7">
             <title>19:53:28: 31.9m @ 10.3 kts ↑ 354° N = 5.05 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="779" y1="300" x2="772" y2="269" stroke="#0ff">
             <title>19:53:37: 41.2m @ 8.9 kts ↑ 347° NNW = 5.07 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="772" y1="269" x2="770" y2="244" stroke="#0ff">
             <title>19:53:45: 33.5m @ 8.1 kts ↑ 355° N = 5.09 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="770" y1="244" x2="769" y2="231" stroke="#0ff">
             <title>19:53:49: 17.4m @ 8.4 kts ↑ 356° N = 5.10 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="769" y1="231" x2="770" y2="206" stroke="#0ef">
             <title>19:53:57: 32.0m @ 7.8 kts ↑ 1° N = 5.12 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="770" y1="206" x2="772" y2="182" stroke="#0ef">
             <title>19:54:05: 32.4m @ 7.9 kts ↑ 7° N = 5.14 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="772" y1="182" x2="771" y2="157" stroke="#0ff">
             <title>19:54:12: 32.1m @ 8.9 kts ↑ 358° N = 5.15 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
             <line class="step" x1="771" y1="157" x2="771" y2="128" stroke="#0fb">
             <title>19:54:20: 38.1m @ 9.2 kts ↑ 359° N = 5.17 nm
-    486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+</title>
             </line>
             
         </g>
@@ -2991,38 +2993,38 @@
             
             <line class="step" x1="770" y1="102" x2="767" y2="87" stroke="#0fb">
             <title>19:54:31: 19.4m @ 9.4 kts ↑ 348° NNW = 5.20 nm
-    133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+</title>
             </line>
             
             <line class="step" x1="767" y1="87" x2="762" y2="72" stroke="#0ff">
             <title>19:54:36: 21.2m @ 8.2 kts ↑ 341° NNW = 5.22 nm
-    133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+</title>
             </line>
             
             <line class="step" x1="762" y1="72" x2="760" y2="71" stroke="#0af">
             <title>19:54:37: 3.0m @ 5.9 kts ↑ 300° WNW = 5.22 nm
-    133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+</title>
             </line>
             
             <line class="step" x1="760" y1="71" x2="749" y2="70" stroke="#08f">
             <title>19:54:43: 14.2m @ 4.6 kts ↑ 276° W = 5.22 nm
-    133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+</title>
             </line>
             
             <line class="step" x1="749" y1="70" x2="736" y2="71" stroke="#08f">
             <title>19:54:50: 18.0m @ 5.0 kts ↑ 265° W = 5.23 nm
-    133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+</title>
             </line>
             
             <line class="step" x1="736" y1="71" x2="720" y2="75" stroke="#0af">
             <title>19:54:58: 22.2m @ 5.4 kts ↑ 256° WSW = 5.25 nm
-    133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+</title>
             </line>
             
         </g>
@@ -3038,170 +3040,170 @@
             
             <line class="step" x1="709" y1="76" x2="690" y2="78" stroke="#0cf">
             <title>19:55:11: 26.4m @ 6.4 kts ↑ 264° W = 5.27 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="690" y1="78" x2="664" y2="83" stroke="#0ef">
             <title>19:55:20: 35.3m @ 7.6 kts ↑ 260° W = 5.29 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="664" y1="83" x2="646" y2="86" stroke="#0ef">
             <title>19:55:26: 24.3m @ 7.9 kts ↑ 261° W = 5.30 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="646" y1="86" x2="624" y2="91" stroke="#0ff">
             <title>19:55:33: 31.0m @ 8.6 kts ↑ 259° W = 5.32 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="624" y1="91" x2="599" y2="95" stroke="#0fb">
             <title>19:55:40: 33.3m @ 9.2 kts ↑ 260° W = 5.34 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="599" y1="95" x2="566" y2="100" stroke="#0fb">
             <title>19:55:49: 44.8m @ 9.7 kts ↑ 262° W = 5.36 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="566" y1="100" x2="549" y2="103" stroke="#0f3">
             <title>19:55:53: 23.5m @ 11.4 kts ↑ 260° W = 5.37 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="549" y1="103" x2="535" y2="105" stroke="#0f0">
             <title>19:55:56: 19.9m @ 12.9 kts ↑ 260° W = 5.38 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="535" y1="105" x2="525" y2="106" stroke="#0f0">
             <title>19:55:58: 13.2m @ 12.8 kts ↑ 264° W = 5.39 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="525" y1="106" x2="492" y2="113" stroke="#0f0">
             <title>19:56:05: 45.1m @ 12.5 kts ↑ 260° W = 5.42 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="492" y1="113" x2="474" y2="117" stroke="#0f3">
             <title>19:56:09: 24.7m @ 12.0 kts ↑ 257° WSW = 5.43 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="474" y1="117" x2="462" y2="119" stroke="#0f7">
             <title>19:56:12: 16.4m @ 10.6 kts ↑ 261° W = 5.44 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="462" y1="119" x2="455" y2="121" stroke="#0fb">
             <title>19:56:14: 10.1m @ 9.8 kts ↑ 256° WSW = 5.44 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="455" y1="121" x2="445" y2="122" stroke="#0fb">
             <title>19:56:17: 14.3m @ 9.3 kts ↑ 260° W = 5.45 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="445" y1="122" x2="428" y2="126" stroke="#0fb">
             <title>19:56:22: 23.5m @ 9.1 kts ↑ 257° WSW = 5.46 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="428" y1="126" x2="424" y2="127" stroke="#0ff">
             <title>19:56:23: 4.5m @ 8.7 kts ↑ 264° W = 5.47 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="424" y1="127" x2="397" y2="129" stroke="#0ff">
             <title>19:56:32: 37.3m @ 8.1 kts ↑ 265° W = 5.49 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="397" y1="129" x2="380" y2="131" stroke="#0ff">
             <title>19:56:37: 23.1m @ 8.9 kts ↑ 265° W = 5.50 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="380" y1="131" x2="369" y2="133" stroke="#0fb">
             <title>19:56:40: 14.7m @ 9.5 kts ↑ 258° WSW = 5.51 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="369" y1="133" x2="342" y2="138" stroke="#0f7">
             <title>19:56:47: 37.0m @ 10.3 kts ↑ 261° W = 5.53 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="342" y1="138" x2="308" y2="141" stroke="#0f3">
             <title>19:56:55: 45.8m @ 11.1 kts ↑ 265° W = 5.55 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="308" y1="141" x2="288" y2="142" stroke="#0f7">
             <title>19:57:00: 27.6m @ 10.7 kts ↑ 266° W = 5.57 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="288" y1="142" x2="259" y2="147" stroke="#0fb">
             <title>19:57:08: 39.3m @ 9.5 kts ↑ 261° W = 5.59 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="259" y1="147" x2="231" y2="152" stroke="#0fb">
             <title>19:57:16: 38.6m @ 9.4 kts ↑ 260° W = 5.61 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="231" y1="152" x2="208" y2="156" stroke="#0ef">
             <title>19:57:24: 31.9m @ 7.7 kts ↑ 259° W = 5.63 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="208" y1="156" x2="188" y2="160" stroke="#0cf">
             <title>19:57:32: 27.5m @ 6.7 kts ↑ 259° W = 5.64 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="188" y1="160" x2="172" y2="165" stroke="#0ef">
             <title>19:57:38: 22.0m @ 7.1 kts ↑ 253° WSW = 5.65 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
             <line class="step" x1="172" y1="165" x2="150" y2="173" stroke="#0ff">
             <title>19:57:45: 31.9m @ 8.8 kts ↑ 251° WSW = 5.67 nm
-    782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+</title>
             </line>
             
         </g>
@@ -3217,50 +3219,50 @@
             
             <line class="step" x1="129" y1="177" x2="120" y2="178" stroke="#0cf">
             <title>19:57:56: 12.5m @ 6.1 kts ↑ 265° W = 5.69 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="120" y1="178" x2="114" y2="177" stroke="#0af">
             <title>19:57:59: 7.7m @ 5.0 kts ↑ 280° W = 5.70 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="114" y1="177" x2="109" y2="178" stroke="#08f">
             <title>19:58:02: 7.0m @ 4.5 kts ↑ 262° W = 5.70 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="109" y1="178" x2="99" y2="181" stroke="#08f">
             <title>19:58:08: 14.5m @ 4.7 kts ↑ 252° WSW = 5.71 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="99" y1="181" x2="98" y2="192" stroke="#0af">
             <title>19:58:13: 14.4m @ 5.6 kts ↑ 188° S = 5.71 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="98" y1="192" x2="101" y2="202" stroke="#0af">
             <title>19:58:18: 13.8m @ 5.3 kts ↑ 158° SSE = 5.72 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="101" y1="202" x2="105" y2="211" stroke="#0cf">
             <title>19:58:22: 12.8m @ 6.2 kts ↑ 157° SSE = 5.73 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
             <line class="step" x1="105" y1="211" x2="113" y2="229" stroke="#0cf">
             <title>19:58:30: 26.1m @ 6.3 kts ↑ 155° SSE = 5.74 nm
-    137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+</title>
             </line>
             
         </g>
@@ -3276,392 +3278,392 @@
             
             <line class="step" x1="121" y1="248" x2="125" y2="257" stroke="#0cf">
             <title>19:58:41: 14.0m @ 6.8 kts ↑ 157° SSE = 5.76 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="125" y1="257" x2="131" y2="273" stroke="#0ef">
             <title>19:58:47: 22.4m @ 7.2 kts ↑ 157° SSE = 5.78 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="131" y1="273" x2="138" y2="287" stroke="#0cf">
             <title>19:58:53: 20.2m @ 6.5 kts ↑ 152° SSE = 5.79 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="138" y1="287" x2="145" y2="296" stroke="#0af">
             <title>19:58:58: 14.7m @ 5.7 kts ↑ 144° SE = 5.80 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="145" y1="296" x2="154" y2="312" stroke="#0cf">
             <title>19:59:06: 24.9m @ 6.0 kts ↑ 149° SSE = 5.81 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="154" y1="312" x2="162" y2="323" stroke="#0af">
             <title>19:59:12: 17.7m @ 5.7 kts ↑ 145° SE = 5.82 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="162" y1="323" x2="172" y2="339" stroke="#0cf">
             <title>19:59:20: 24.9m @ 6.0 kts ↑ 147° SSE = 5.83 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="172" y1="339" x2="184" y2="364" stroke="#0cf">
             <title>19:59:31: 37.3m @ 6.6 kts ↑ 154° SSE = 5.85 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="184" y1="364" x2="192" y2="386" stroke="#0cf">
             <title>19:59:40: 30.4m @ 6.6 kts ↑ 159° SSE = 5.87 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="192" y1="386" x2="200" y2="404" stroke="#0cf">
             <title>19:59:48: 26.1m @ 6.3 kts ↑ 157° SSE = 5.88 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="200" y1="404" x2="211" y2="430" stroke="#0af">
             <title>20:00:00: 36.9m @ 6.0 kts ↑ 157° SSE = 5.90 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="211" y1="430" x2="219" y2="449" stroke="#0cf">
             <title>20:00:08: 27.3m @ 6.6 kts ↑ 156° SSE = 5.92 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="219" y1="449" x2="229" y2="470" stroke="#0ef">
             <title>20:00:16: 30.3m @ 7.3 kts ↑ 154° SSE = 5.93 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="229" y1="470" x2="238" y2="486" stroke="#0ff">
             <title>20:00:22: 25.2m @ 8.2 kts ↑ 151° SSE = 5.95 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="238" y1="486" x2="245" y2="504" stroke="#0ff">
             <title>20:00:28: 24.9m @ 8.1 kts ↑ 156° SSE = 5.96 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="245" y1="504" x2="257" y2="534" stroke="#0ff">
             <title>20:00:38: 42.9m @ 8.3 kts ↑ 159° SSE = 5.98 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="257" y1="534" x2="261" y2="544" stroke="#0ef">
             <title>20:00:42: 14.6m @ 7.1 kts ↑ 157° SSE = 5.99 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="261" y1="544" x2="265" y2="557" stroke="#0af">
             <title>20:00:48: 18.3m @ 5.9 kts ↑ 161° SSE = 6.00 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="265" y1="557" x2="273" y2="579" stroke="#0cf">
             <title>20:00:57: 31.0m @ 6.7 kts ↑ 160° SSE = 6.02 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="273" y1="579" x2="282" y2="604" stroke="#0cf">
             <title>20:01:07: 34.1m @ 6.6 kts ↑ 159° SSE = 6.04 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="282" y1="604" x2="286" y2="616" stroke="#0cf">
             <title>20:01:12: 16.4m @ 6.4 kts ↑ 164° SSE = 6.05 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="286" y1="616" x2="290" y2="635" stroke="#0ef">
             <title>20:01:19: 25.3m @ 7.0 kts ↑ 167° SSE = 6.06 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="290" y1="635" x2="297" y2="662" stroke="#0ef">
             <title>20:01:29: 37.1m @ 7.2 kts ↑ 165° SSE = 6.08 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="297" y1="662" x2="302" y2="678" stroke="#0cf">
             <title>20:01:36: 22.9m @ 6.3 kts ↑ 163° SSE = 6.09 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="302" y1="678" x2="309" y2="698" stroke="#0af">
             <title>20:01:45: 27.3m @ 5.9 kts ↑ 160° SSE = 6.11 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="309" y1="698" x2="317" y2="717" stroke="#0af">
             <title>20:01:54: 27.1m @ 5.8 kts ↑ 156° SSE = 6.12 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="317" y1="717" x2="324" y2="728" stroke="#0cf">
             <title>20:01:59: 17.6m @ 6.8 kts ↑ 149° SSE = 6.13 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="324" y1="728" x2="333" y2="749" stroke="#0cf">
             <title>20:02:08: 30.4m @ 6.6 kts ↑ 155° SSE = 6.15 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="333" y1="749" x2="341" y2="775" stroke="#0cf">
             <title>20:02:19: 35.3m @ 6.2 kts ↑ 163° SSE = 6.17 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="341" y1="775" x2="348" y2="795" stroke="#0cf">
             <title>20:02:28: 28.4m @ 6.1 kts ↑ 162° SSE = 6.18 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="348" y1="795" x2="358" y2="822" stroke="#0cf">
             <title>20:02:40: 37.6m @ 6.1 kts ↑ 159° SSE = 6.20 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="358" y1="822" x2="366" y2="844" stroke="#0cf">
             <title>20:02:50: 31.2m @ 6.1 kts ↑ 159° SSE = 6.22 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="366" y1="844" x2="375" y2="868" stroke="#0af">
             <title>20:03:02: 33.3m @ 5.4 kts ↑ 158° SSE = 6.24 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="375" y1="868" x2="381" y2="887" stroke="#0af">
             <title>20:03:11: 26.9m @ 5.8 kts ↑ 163° SSE = 6.25 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="381" y1="887" x2="388" y2="906" stroke="#0af">
             <title>20:03:20: 26.9m @ 5.8 kts ↑ 158° SSE = 6.27 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="388" y1="906" x2="392" y2="923" stroke="#08f">
             <title>20:03:29: 22.7m @ 4.9 kts ↑ 166° SSE = 6.28 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="392" y1="923" x2="395" y2="944" stroke="#0af">
             <title>20:03:38: 27.2m @ 5.9 kts ↑ 171° S = 6.29 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="395" y1="944" x2="400" y2="968" stroke="#0cf">
             <title>20:03:48: 32.7m @ 6.3 kts ↑ 169° S = 6.31 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="400" y1="968" x2="403" y2="987" stroke="#0cf">
             <title>20:03:56: 25.8m @ 6.2 kts ↑ 173° S = 6.32 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="403" y1="987" x2="406" y2="1005" stroke="#0cf">
             <title>20:04:03: 23.7m @ 6.6 kts ↑ 167° SSE = 6.34 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="406" y1="1005" x2="414" y2="1035" stroke="#0cf">
             <title>20:04:15: 41.3m @ 6.7 kts ↑ 165° SSE = 6.36 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="414" y1="1035" x2="420" y2="1052" stroke="#0cf">
             <title>20:04:22: 22.7m @ 6.3 kts ↑ 161° SSE = 6.37 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="420" y1="1052" x2="425" y2="1071" stroke="#0af">
             <title>20:04:31: 25.9m @ 5.6 kts ↑ 164° SSE = 6.39 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="425" y1="1071" x2="429" y2="1089" stroke="#0cf">
             <title>20:04:38: 24.9m @ 6.9 kts ↑ 168° SSE = 6.40 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="429" y1="1089" x2="436" y2="1113" stroke="#0ef">
             <title>20:04:46: 32.3m @ 7.8 kts ↑ 163° SSE = 6.42 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="436" y1="1113" x2="441" y2="1129" stroke="#0ff">
             <title>20:04:51: 23.1m @ 9.0 kts ↑ 161° SSE = 6.43 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="441" y1="1129" x2="448" y2="1153" stroke="#0ef">
             <title>20:04:59: 32.5m @ 7.9 kts ↑ 165° SSE = 6.45 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="448" y1="1153" x2="453" y2="1175" stroke="#0cf">
             <title>20:05:08: 29.7m @ 6.4 kts ↑ 165° SSE = 6.46 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="453" y1="1175" x2="458" y2="1196" stroke="#0cf">
             <title>20:05:17: 28.6m @ 6.2 kts ↑ 167° SSE = 6.48 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="458" y1="1196" x2="462" y2="1221" stroke="#0af">
             <title>20:05:28: 33.2m @ 5.9 kts ↑ 170° S = 6.50 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="462" y1="1221" x2="468" y2="1252" stroke="#0ef">
             <title>20:05:39: 41.2m @ 7.3 kts ↑ 168° SSE = 6.52 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="468" y1="1252" x2="475" y2="1274" stroke="#0cf">
             <title>20:05:48: 30.3m @ 6.5 kts ↑ 163° SSE = 6.53 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="475" y1="1274" x2="482" y2="1292" stroke="#0cf">
             <title>20:05:56: 26.1m @ 6.3 kts ↑ 159° SSE = 6.55 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="482" y1="1292" x2="489" y2="1314" stroke="#0ef">
             <title>20:06:04: 29.9m @ 7.2 kts ↑ 161° SSE = 6.56 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="489" y1="1314" x2="498" y2="1344" stroke="#0ff">
             <title>20:06:14: 41.9m @ 8.1 kts ↑ 164° SSE = 6.59 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="498" y1="1344" x2="504" y2="1368" stroke="#0cf">
             <title>20:06:23: 31.8m @ 6.9 kts ↑ 165° SSE = 6.60 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="504" y1="1368" x2="508" y2="1385" stroke="#0af">
             <title>20:06:31: 22.6m @ 5.5 kts ↑ 168° SSE = 6.62 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="508" y1="1385" x2="512" y2="1408" stroke="#0cf">
             <title>20:06:40: 31.7m @ 6.8 kts ↑ 169° S = 6.63 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="512" y1="1408" x2="511" y2="1428" stroke="#0cf">
             <title>20:06:48: 26.2m @ 6.3 kts ↑ 184° S = 6.65 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="511" y1="1428" x2="505" y2="1447" stroke="#0ef">
             <title>20:06:55: 26.2m @ 7.3 kts ↑ 198° SSW = 6.66 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="505" y1="1447" x2="498" y2="1459" stroke="#0cf">
             <title>20:07:00: 17.9m @ 7.0 kts ↑ 208° SSW = 6.67 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="498" y1="1459" x2="500" y2="1475" stroke="#0af">
             <title>20:07:07: 21.0m @ 5.8 kts ↑ 175° S = 6.68 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="500" y1="1475" x2="505" y2="1478" stroke="#06f">
             <title>20:07:11: 7.8m @ 3.8 kts ↑ 119° ESE = 6.69 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="505" y1="1478" x2="508" y2="1485" stroke="#04f">
             <title>20:07:18: 9.8m @ 2.7 kts ↑ 159° SSE = 6.69 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
             <line class="step" x1="508" y1="1485" x2="505" y2="1498" stroke="#08f">
             <title>20:07:26: 17.9m @ 4.3 kts ↑ 192° SSW = 6.70 nm
-    1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+</title>
             </line>
             
         </g>
@@ -3677,26 +3679,26 @@
             
             <line class="step" x1="495" y1="1517" x2="484" y2="1529" stroke="#0af">
             <title>20:07:43: 22.6m @ 5.5 kts ↑ 224° SW = 6.73 nm
-    84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
-    </title>
+84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
+</title>
             </line>
             
             <line class="step" x1="484" y1="1529" x2="475" y2="1531" stroke="#08f">
             <title>20:07:48: 11.5m @ 4.5 kts ↑ 259° W = 6.74 nm
-    84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
-    </title>
+84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
+</title>
             </line>
             
             <line class="step" x1="475" y1="1531" x2="469" y2="1531" stroke="#06f">
             <title>20:07:52: 8.1m @ 3.9 kts ↑ 262° W = 6.74 nm
-    84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
-    </title>
+84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
+</title>
             </line>
             
             <line class="step" x1="469" y1="1531" x2="459" y2="1533" stroke="#08f">
             <title>20:07:59: 14.5m @ 4.0 kts ↑ 262° W = 6.75 nm
-    84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
-    </title>
+84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
+</title>
             </line>
             
         </g>
@@ -3712,26 +3714,26 @@
             
             <line class="step" x1="446" y1="1533" x2="439" y2="1538" stroke="#06f">
             <title>20:08:13: 11.9m @ 3.8 kts ↑ 231° SW = 6.76 nm
-    42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
-    </title>
+42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
+</title>
             </line>
             
             <line class="step" x1="439" y1="1538" x2="440" y2="1545" stroke="#04f">
             <title>20:08:19: 8.9m @ 2.9 kts ↑ 173° S = 6.77 nm
-    42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
-    </title>
+42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
+</title>
             </line>
             
             <line class="step" x1="440" y1="1545" x2="440" y2="1546" stroke="#02f">
             <title>20:08:20: 1.0m @ 2.0 kts ↑ 157° SSE = 6.77 nm
-    42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
-    </title>
+42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
+</title>
             </line>
             
             <line class="step" x1="440" y1="1546" x2="441" y2="1547" stroke="#02f">
             <title>20:08:25: 2.6m @ 1.0 kts ↑ 149° SSE = 6.77 nm
-    42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
-    </title>
+42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
+</title>
             </line>
             
         </g>
@@ -3744,272 +3746,272 @@
         
             <polygon class="timeline-segment" id="s0" points="0,75 0,60 1,60 8,60 15,63 21,63 28,69 39,72 49,72 55,69 64,66 72,66 77,72 83,63 87,51 92,48 92,75"/>
             <rect class="timeline-segment-rect" id="s0" x="0" y="0" width="92" height="75">
-            <title>182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
-    </title>
+            <title>18:57:23  
+182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s1" points="92,75 92,54 98,51 106,48 108,48 114,57 120,57 126,48 128,51 134,57 136,63 140,66 145,63 146,60 153,63 158,66 163,66 163,75"/>
             <rect class="timeline-segment-rect" id="s1" x="92" y="0" width="71" height="75">
-            <title>259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
-    </title>
+            <title>18:59:02  
+259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s2" points="163,75 163,69 174,69 184,69 188,60 194,51 198,48 202,51 202,75"/>
             <rect class="timeline-segment-rect" id="s2" x="163" y="0" width="39" height="75">
-            <title>105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
-    </title>
+            <title>19:00:19  
+105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s3" points="202,75 202,54 209,54 216,57 223,57 230,57 236,57 241,57 251,57 257,54 263,54 268,54 275,54 282,51 287,48 294,51 301,54 301,75"/>
             <rect class="timeline-segment-rect" id="s3" x="202" y="0" width="99" height="75">
-            <title>373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
-    </title>
+            <title>19:00:59  
+373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s4" points="301,75 301,57 308,57 310,60 317,66 324,63 332,63 341,63 341,75"/>
             <rect class="timeline-segment-rect" id="s4" x="301" y="0" width="40" height="75">
-            <title>125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
-    </title>
+            <title>19:02:47  
+125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s5" points="341,75 341,63 349,63 357,60 367,60 375,60 382,63 390,63 401,60 411,63 421,60 432,60 443,60 453,57 462,60 470,57 477,57 482,54 491,51 496,54 503,57 510,60 516,60 522,60 531,60 537,60 537,75"/>
             <rect class="timeline-segment-rect" id="s5" x="341" y="0" width="196" height="75">
-            <title>601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
-    </title>
+            <title>19:03:35  
+601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s6" points="537,75 537,60 551,63 552,60 558,69 561,66 570,63 577,60 577,75"/>
             <rect class="timeline-segment-rect" id="s6" x="537" y="0" width="40" height="75">
-            <title>123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
-    </title>
+            <title>19:07:01  
+123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s7" points="577,75 577,57 585,60 595,57 604,54 616,54 627,54 637,54 637,75"/>
             <rect class="timeline-segment-rect" id="s7" x="577" y="0" width="60" height="75">
-            <title>247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
-    </title>
+            <title>19:07:49  
+247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s8" points="637,75 637,54 644,51 648,48 653,57 659,57 659,75"/>
             <rect class="timeline-segment-rect" id="s8" x="637" y="0" width="22" height="75">
-            <title>110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
-    </title>
+            <title>19:08:55  
+110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s9" points="659,75 659,51 665,51 670,60 672,63 677,60 683,60 689,57 689,75"/>
             <rect class="timeline-segment-rect" id="s9" x="659" y="0" width="30" height="75">
-            <title>122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
-    </title>
+            <title>19:09:23  
+122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s10" points="689,75 689,57 697,60 704,57 712,57 720,54 726,57 733,51 740,54 745,57 752,54 759,51 765,51 766,48 773,45 779,45 784,45 793,45 793,75"/>
             <rect class="timeline-segment-rect" id="s10" x="689" y="0" width="104" height="75">
-            <title>451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
-    </title>
+            <title>19:10:00  
+451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s11" points="793,75 793,51 797,51 802,51 806,63 810,63 817,57 825,54 825,75"/>
             <rect class="timeline-segment-rect" id="s11" x="793" y="0" width="32" height="75">
-            <title>136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
-    </title>
+            <title>19:11:49  
+136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s12" points="825,75 825,48 826,48 832,51 842,51 850,48 851,48 857,48 864,48 870,45 876,45 880,48 889,51 899,54 909,54 909,75"/>
             <rect class="timeline-segment-rect" id="s12" x="825" y="0" width="84" height="75">
-            <title>413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
-    </title>
+            <title>19:12:27  
+413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s13" points="909,75 909,54 917,54 922,63 929,66 937,60 943,54 943,75"/>
             <rect class="timeline-segment-rect" id="s13" x="909" y="0" width="34" height="75">
-            <title>136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
-    </title>
+            <title>19:14:00  
+136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s14" points="943,75 943,48 947,45 949,42 953,48 957,54 963,57 965,54 970,60 978,60 987,57 987,75"/>
             <rect class="timeline-segment-rect" id="s14" x="943" y="0" width="44" height="75">
-            <title>201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
-    </title>
+            <title>19:14:41  
+201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s15" points="987,75 987,57 992,57 993,57 999,60 1007,57 1013,57 1023,57 1031,57 1038,57 1044,57 1050,54 1055,54 1058,54 1064,57 1070,54 1076,51 1076,75"/>
             <rect class="timeline-segment-rect" id="s15" x="987" y="0" width="89" height="75">
-            <title>344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
-    </title>
+            <title>19:15:34  
+344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s16" points="1076,75 1076,48 1080,48 1084,54 1088,66 1092,66 1099,57 1107,57 1107,75"/>
             <rect class="timeline-segment-rect" id="s16" x="1076" y="0" width="31" height="75">
-            <title>131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
-    </title>
+            <title>19:17:10  
+131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s17" points="1107,75 1107,57 1115,54 1122,57 1131,57 1140,57 1147,57 1155,57 1163,57 1173,57 1180,57 1190,60 1199,60 1207,57 1216,57 1225,60 1232,60 1238,60 1247,60 1255,60 1261,60 1265,60 1273,60 1280,60 1287,60 1298,63 1309,63 1319,60 1319,75"/>
             <rect class="timeline-segment-rect" id="s17" x="1107" y="0" width="212" height="75">
-            <title>666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
-    </title>
+            <title>19:17:47  
+666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s18" points="1319,75 1319,60 1329,60 1330,66 1336,69 1343,63 1343,75"/>
             <rect class="timeline-segment-rect" id="s18" x="1319" y="0" width="24" height="75">
-            <title>80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
-    </title>
+            <title>19:21:30  
+80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s19" points="1343,75 1343,63 1353,60 1357,63 1363,69 1367,63 1374,57 1377,57 1381,60 1385,63 1393,60 1400,60 1400,75"/>
             <rect class="timeline-segment-rect" id="s19" x="1343" y="0" width="57" height="75">
-            <title>167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
-    </title>
+            <title>19:22:01  
+167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s20" points="1400,75 1400,57 1407,57 1414,54 1420,51 1428,51 1433,51 1439,51 1445,54 1451,57 1460,54 1467,54 1473,57 1479,60 1486,60 1486,75"/>
             <rect class="timeline-segment-rect" id="s20" x="1400" y="0" width="86" height="75">
-            <title>341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
-    </title>
+            <title>19:23:05  
+341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s21" points="1486,75 1486,60 1494,54 1495,57 1500,63 1501,63 1508,60 1514,51 1519,48 1519,75"/>
             <rect class="timeline-segment-rect" id="s21" x="1486" y="0" width="33" height="75">
-            <title>141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
-    </title>
+            <title>19:24:39  
+141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s22" points="1519,75 1519,48 1527,48 1535,48 1544,51 1551,51 1560,54 1568,48 1570,48 1577,51 1584,57 1593,57 1599,57 1605,54 1615,54 1624,57 1632,63 1632,75"/>
             <rect class="timeline-segment-rect" id="s22" x="1519" y="0" width="113" height="75">
-            <title>483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
-    </title>
+            <title>19:25:19  
+483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s23" points="1632,75 1632,63 1640,60 1649,60 1655,69 1658,63 1666,60 1673,60 1673,75"/>
             <rect class="timeline-segment-rect" id="s23" x="1632" y="0" width="41" height="75">
-            <title>125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
-    </title>
+            <title>19:27:22  
+125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s24" points="1673,75 1673,57 1680,54 1685,51 1687,48 1689,48 1693,51 1695,48 1702,45 1704,45 1712,45 1716,42 1721,42 1730,45 1731,48 1736,51 1743,60 1744,60 1750,66 1757,66 1763,66 1770,66 1770,75"/>
             <rect class="timeline-segment-rect" id="s24" x="1673" y="0" width="97" height="75">
-            <title>415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
-    </title>
+            <title>19:28:11  
+415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s25" points="1770,75 1770,63 1780,63 1788,66 1795,66 1802,69 1810,69 1818,72 1818,75"/>
             <rect class="timeline-segment-rect" id="s25" x="1770" y="0" width="48" height="75">
-            <title>96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
-    </title>
+            <title>19:29:57  
+96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s26" points="1818,75 1818,69 1828,69 1829,69 1833,69 1839,69 1845,69 1851,72 1857,72 1858,75 1858,75"/>
             <rect class="timeline-segment-rect" id="s26" x="1818" y="0" width="40" height="75">
-            <title>51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
-    </title>
+            <title>19:30:54  
+51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s27" points="1858,75 1858,69 1869,69 1885,69 1898,69 1910,66 1918,66 1927,66 1937,66 1950,69 1965,66 1975,69 1989,69 1989,75"/>
             <rect class="timeline-segment-rect" id="s27" x="1858" y="0" width="131" height="75">
-            <title>203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
-    </title>
+            <title>19:37:55  
+203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s28" points="1989,75 1989,69 2005,69 2020,69 2026,66 2031,66 2037,69 2049,66 2059,66 2070,63 2070,75"/>
             <rect class="timeline-segment-rect" id="s28" x="1989" y="0" width="81" height="75">
-            <title>144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
-    </title>
+            <title>19:40:18  
+144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s29" points="2070,75 2070,63 2080,63 2091,60 2098,57 2106,54 2106,75"/>
             <rect class="timeline-segment-rect" id="s29" x="2070" y="0" width="36" height="75">
-            <title>119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
-    </title>
+            <title>19:41:44  
+119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s30" points="2106,75 2106,57 2111,63 2118,63 2125,60 2129,60 2129,75"/>
             <rect class="timeline-segment-rect" id="s30" x="2106" y="0" width="23" height="75">
-            <title>80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
-    </title>
+            <title>19:42:26  
+80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s31" points="2129,75 2129,54 2135,51 2141,51 2147,63 2157,63 2167,63 2169,63 2176,66 2183,60 2189,57 2189,75"/>
             <rect class="timeline-segment-rect" id="s31" x="2129" y="0" width="60" height="75">
-            <title>189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
-    </title>
+            <title>19:42:54  
+189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s32" points="2189,75 2189,54 2195,54 2200,51 2206,45 2210,48 2214,63 2220,69 2227,57 2236,57 2236,75"/>
             <rect class="timeline-segment-rect" id="s32" x="2189" y="0" width="47" height="75">
-            <title>201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
-    </title>
+            <title>19:44:03  
+201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s33" points="2236,75 2236,57 2242,57 2245,57 2247,60 2253,63 2261,63 2270,60 2278,57 2284,54 2289,51 2296,51 2303,51 2312,51 2318,51 2327,54 2333,57 2338,57 2346,57 2353,60 2353,75"/>
             <rect class="timeline-segment-rect" id="s33" x="2236" y="0" width="117" height="75">
-            <title>436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
-    </title>
+            <title>19:44:57  
+436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s34" points="2353,75 2353,60 2362,60 2364,57 2369,66 2376,63 2385,57 2385,75"/>
             <rect class="timeline-segment-rect" id="s34" x="2353" y="0" width="32" height="75">
-            <title>97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
-    </title>
+            <title>19:46:58  
+97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s35" points="2385,75 2385,60 2390,63 2395,60 2404,60 2413,60 2422,60 2429,57 2436,57 2445,57 2455,60 2461,60 2465,57 2472,57 2477,54 2482,57 2491,57 2500,57 2508,54 2516,54 2524,51 2534,54 2541,54 2549,54 2558,54 2565,60 2570,57 2570,75"/>
             <rect class="timeline-segment-rect" id="s35" x="2385" y="0" width="185" height="75">
-            <title>640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
-    </title>
+            <title>19:47:36  
+640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s36" points="2570,75 2570,54 2577,54 2579,57 2587,66 2595,60 2604,60 2604,75"/>
             <rect class="timeline-segment-rect" id="s36" x="2570" y="0" width="34" height="75">
-            <title>135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
-    </title>
+            <title>19:50:51  
+135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s37" points="2604,75 2604,60 2609,60 2618,57 2627,54 2634,54 2639,54 2641,63 2647,66 2652,57 2658,48 2660,45 2663,48 2663,75"/>
             <rect class="timeline-segment-rect" id="s37" x="2604" y="0" width="59" height="75">
-            <title>231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
-    </title>
+            <title>19:51:32  
+231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s38" points="2663,75 2663,48 2666,48 2670,51 2678,48 2679,42 2684,45 2688,54 2695,57 2702,54 2709,48 2710,45 2716,45 2725,51 2733,51 2737,51 2745,54 2753,54 2760,51 2768,48 2768,75"/>
             <rect class="timeline-segment-rect" id="s38" x="2663" y="0" width="105" height="75">
-            <title>486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
-    </title>
+            <title>19:52:35  
+486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s39" points="2768,75 2768,48 2772,48 2777,51 2778,60 2784,63 2791,63 2799,60 2799,75"/>
             <rect class="timeline-segment-rect" id="s39" x="2768" y="0" width="31" height="75">
-            <title>133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
-    </title>
+            <title>19:54:27  
+133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s40" points="2799,75 2799,60 2807,57 2816,54 2822,54 2829,51 2836,48 2845,48 2849,42 2852,39 2854,39 2861,39 2865,42 2868,45 2870,48 2873,48 2878,48 2879,51 2888,51 2893,51 2896,48 2903,45 2911,42 2916,45 2924,48 2932,48 2940,54 2948,57 2954,54 2961,51 2961,75"/>
             <rect class="timeline-segment-rect" id="s40" x="2799" y="0" width="162" height="75">
-            <title>782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
-    </title>
+            <title>19:55:03  
+782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s41" points="2961,75 2961,54 2965,57 2968,60 2971,63 2977,63 2982,60 2987,60 2991,57 2999,57 2999,75"/>
             <rect class="timeline-segment-rect" id="s41" x="2961" y="0" width="38" height="75">
-            <title>137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
-    </title>
+            <title>19:57:52  
+137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s42" points="2999,75 2999,54 3003,57 3009,54 3015,57 3020,60 3028,57 3034,60 3042,57 3053,57 3062,57 3070,57 3082,60 3090,57 3098,54 3104,51 3110,51 3120,51 3124,54 3130,60 3139,57 3149,57 3154,57 3161,54 3171,54 3178,57 3187,60 3196,60 3201,57 3210,57 3221,57 3230,57 3242,57 3252,57 3264,60 3273,60 3282,60 3291,63 3300,60 3310,57 3318,57 3325,57 3337,57 3344,57 3353,60 3360,57 3368,54 3373,51 3381,54 3390,57 3399,57 3410,60 3421,54 3430,57 3438,57 3446,54 3456,51 3465,57 3473,60 3482,57 3490,57 3497,54 3502,57 3509,60 3513,66 3520,69 3528,63 3528,75"/>
             <rect class="timeline-segment-rect" id="s42" x="2999" y="0" width="529" height="75">
-            <title>1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
-    </title>
+            <title>19:58:37  
+1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s43" points="3528,75 3528,60 3536,60 3541,63 3545,66 3552,63 3552,75"/>
             <rect class="timeline-segment-rect" id="s43" x="3528" y="0" width="24" height="75">
-            <title>84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
-    </title>
+            <title>20:07:35  
+84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving</title>
             </rect>
         
             <polygon class="timeline-segment" id="s44" points="3552,75 3552,63 3558,66 3564,69 3565,72 3570,72 3570,75"/>
             <rect class="timeline-segment-rect" id="s44" x="3552" y="0" width="18" height="75">
-            <title>42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
-    </title>
+            <title>20:08:07  
+42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning</title>
             </rect>
         
     </svg>
@@ -4030,7 +4032,6 @@ function updatePositions() {
     const legendHeight = legend.getBoundingClientRect().height; 
     let mapHeight = map.getBoundingClientRect().height; 
     let timelineHeight = timeline.getBoundingClientRect().height;
-    console.log(rootHeight, legendHeight, mapHeight, timelineHeight)
     mapHeight = rootHeight - legendHeight - timelineHeight
     map.setAttribute(&#39;height&#39;, mapHeight)
     timeline.setAttribute(&#39;y&#39;, rootHeight - timelineHeight-20)
@@ -4120,12 +4121,14 @@ map.addEventListener(&#39;mouseup&#39;, dragStop);
 map.addEventListener(&#39;mouseleave&#39;, dragStop);
 map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
+// map hover handling
+// * highlight the corresponding timeline segment
+
 function getMapSegmentId(event) {
     const target = event.target
     if(!target) return undefined
     if(target.tagName != &#39;line&#39;) return undefined
     const id = event.target.parentNode.getAttribute(&#34;id&#34;)
-    console.log(&#34;segment=&#34;, id)
     return id
 }
 
@@ -4151,6 +4154,7 @@ map.addEventListener(&#39;mouseover&#39;, mapSegmentHoverStart)
 map.addEventListener(&#39;mouseout&#39;, mapSegmentHoverStop)
 
 // timeline hover handling
+// * highlight corresponding map segment
 function getTimelineSegmentId(event) {
     const target = event.target
     if(!target) return undefined
@@ -4159,7 +4163,7 @@ function getTimelineSegmentId(event) {
     return id
 }
 
-function segmentHoverStart(event) {
+function timelineSegmentHoverStart(event) {
     const id = getTimelineSegmentId(event)
     if (!id) return
     const selector = `g#${id}.segment`
@@ -4168,7 +4172,7 @@ function segmentHoverStart(event) {
     mapSegment.classList.add(&#34;segment-hovered&#34;)
 }
 
-function segmentHoverStop(event) {
+function timelineSegmentHoverStop(event) {
     const id = getTimelineSegmentId(event)
     if (!id) return
     const mapSegment = map.querySelector(`g#${id}.segment`)
@@ -4176,7 +4180,7 @@ function segmentHoverStop(event) {
     mapSegment.classList.remove(&#34;segment-hovered&#34;)
 }
 
-timeline.addEventListener(&#39;mouseover&#39;, segmentHoverStart)
-timeline.addEventListener(&#39;mouseout&#39;, segmentHoverStop)
+timeline.addEventListener(&#39;mouseover&#39;, timelineSegmentHoverStart)
+timeline.addEventListener(&#39;mouseout&#39;, timelineSegmentHoverStop)
     </script>
 </svg>

@@ -14,7 +14,6 @@ function updatePositions() {
     const legendHeight = legend.getBoundingClientRect().height; 
     let mapHeight = map.getBoundingClientRect().height; 
     let timelineHeight = timeline.getBoundingClientRect().height;
-    console.log(rootHeight, legendHeight, mapHeight, timelineHeight)
     mapHeight = rootHeight - legendHeight - timelineHeight
     map.setAttribute('height', mapHeight)
     timeline.setAttribute('y', rootHeight - timelineHeight-20)

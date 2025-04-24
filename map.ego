@@ -57,8 +57,8 @@ func (m *Map) render(w io.Writer, t *Track) {
             %>
             <line class="step" x1="<%= x1 %>" y1="<%= y1 %>" x2="<%= x2 %>" y2="<%= y2 %>" stroke="<%= c %>">
             <title><%= timestamp %>: <%= next.ShortString() %> = <%= fmt.Sprintf("%0.2f nm", totalDistance/1852) %>
-    <%= segment.ShortString() %>
-    <%= segment.TypeString() %></title>
+<%= segment.ShortString() %>
+<%= segment.TypeString() %></title>
             </line>
             <% }) %>
         </g>
@@ -72,11 +72,16 @@ func (m *Map) render(w io.Writer, t *Track) {
         offset := 0
         for i, segment := range t.Segments {
             width := int(segment.Duration.Seconds())
+            timestamp := segment.Start.In(t.Timezone()).Format(time.TimeOnly)
+            wa := segment.windAttitude()
+            class := "timeline-segment"
+            if wa == upwind { class = "timeline-segment-upwind"
+            } else if wa == downwind { class = "timeline-segment-downwind" }
         %>
-            <polygon class="timeline-segment" id="s<%= strconv.Itoa(i) %>" points="<%= segment.Timeline(offset)%>"/>
+            <polygon class="<%= class %>" id="s<%= strconv.Itoa(i) %>" points="<%= segment.Timeline(offset)%>"/>
             <rect class="timeline-segment-rect" id="s<%= strconv.Itoa(i) %>" x="<%= offset %>" y="0" width="<%= width %>" height="<%= tlHeight %>">
-            <title><%= segment.ShortString() %>
-    <%= segment.TypeString() %></title>
+            <title><%= timestamp %>  <%= segment.TypeString() %>
+<%= segment.ShortString() %></title>
             </rect>
         <%
             offset += int(segment.Duration.Seconds())

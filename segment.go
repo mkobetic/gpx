@@ -135,6 +135,13 @@ func (s *Segment) TypeString() string {
 	return s.Type.String()
 }
 
+func (s *Segment) windAttitude() windAttitude {
+	if st, ok := s.Type.(*SegmentType); ok {
+		return st.windAttitude()
+	}
+	return beam
+}
+
 func (s *Segment) Timeline(offset int) string {
 	points := []string{fmt.Sprintf("%d,%d", offset, tlHeight)}
 	for _, p := range s.Points {
