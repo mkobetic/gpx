@@ -15,7 +15,7 @@ Simple GPS track processor for sailing race tracks.
 * (optional) generates subtitles file with gps metrics that can be embedded in a video file (-vo)
 * (optional) generates chapter metadata file with a chapter for each segment that can be embedded in a video file (-vo)
 
-![sample track](https://github.com/user-attachments/assets/fbaca31c-839c-43a1-a1fe-6c5ff18f4e89)
+![sample track](https://github.com/user-attachments/assets/26ee4156-5448-4c21-9e1a-93bc84a7086d)
 
 Hovering over the track highlights the segment under the cursor and shows metrics at that point.
 1. First line shows stats for the point under cursor
