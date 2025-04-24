@@ -16,6 +16,9 @@ const tlHeight = 25 * tlUnitHeight
 //go:embed map.js
 var script string
 
+//go:embed map.css
+var css string
+
 // Map is used to translate track coordinates into SVG coordinate system for rendering.
 type Map struct {
 	w, h   float64 // width, height in svg coordinates derived from lw/lh

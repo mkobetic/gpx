@@ -3,12 +3,13 @@
     width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
-            .segment { fill: none; stroke-width: 4 }
-            .segment:hover { stroke-width: 8 }
-            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
-            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }
-            .timeline-segment-rect { fill: transparent }
-            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+.segment { fill: none; stroke-width: 4 }
+.segment:hover { stroke-width: 8 }
+.segment-hovered { stroke-width: 8 }
+.timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+.timeline-segment-rect { fill: transparent }
+.timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+.timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
         ]]>
     </style>
     <g id="legend">
@@ -78,7 +79,7 @@
             by the #map element whenever the mouse pointer is anywhere in the viewport -->
         <rect id="background" width="264.1904202277424" height="1155.481751928165" fill="transparent"/>
     
-        <g class="segment">
+        <g class="segment" id="s0">
             
             
             <line class="step" x1="49" y1="1127" x2="57" y2="1102" stroke="#0ff">
@@ -359,7 +360,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s1">
             
             <line class="step" x1="61" y1="313" x2="61" y2="293" stroke="#0ef">
             <title>18:35:15 22.7m @ 7.3 kts ↑ 0° N = 986.12 nm
@@ -400,7 +401,7 @@ irons W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s2">
             
             <line class="step" x1="114" y1="245" x2="126" y2="241" stroke="#0fb">
             <title>18:35:40 14.1m @ 9.1 kts ↑ 72° ENE = 1104.31 nm
@@ -441,7 +442,7 @@ downwind run W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s3">
             
             <line class="step" x1="237" y1="223" x2="255" y2="222" stroke="#0af">
             <title>18:36:20 21.4m @ 5.9 kts ↑ 88° E = 1262.85 nm
@@ -482,7 +483,7 @@ irons W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s4">
             
             <line class="step" x1="279" y1="158" x2="277" y2="137" stroke="#0af">
             <title>18:36:57 25.2m @ 5.4 kts ↑ 356° N = 1384.11 nm
@@ -523,7 +524,7 @@ beam reach port W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s5">
             
             <line class="step" x1="266" y1="73" x2="264" y2="55" stroke="#0cf">
             <title>18:37:35 20.5m @ 6.6 kts ↑ 354° N = 1480.65 nm
@@ -576,7 +577,7 @@ tack port to starboard W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s6">
             
             <line class="step" x1="212" y1="57" x2="214" y2="70" stroke="#0fb">
             <title>18:38:20 15.1m @ 9.8 kts ↑ 174° S = 1609.50 nm
@@ -695,7 +696,7 @@ beam reach starboard W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s7">
             
             <line class="step" x1="214" y1="612" x2="212" y2="630" stroke="#0fb">
             <title>18:40:17 20.5m @ 9.9 kts ↑ 184° S = 2274.76 nm
@@ -802,7 +803,7 @@ close reach starboard W</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s8">
             
             <line class="step" x1="72" y1="1105" x2="65" y2="1137" stroke="#0fb">
             <title>18:42:13 38.3m @ 9.3 kts ↑ 193° SSW = 2904.03 nm
@@ -857,33 +858,63 @@ tack starboard to port W</title>
 	
     </svg>
     <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 825 75">
+        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured
+            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->
+        <rect id="background" width="100%" height="100%" fill="transparent"/>
         
-            <polygon class="timeline-segment" points="0,75 0,51 7,51 15,51 23,54 30,60 39,60 48,60 58,60 68,60 77,60 86,60 96,60 105,63 114,66 123,66 132,69 138,69 150,66 159,69 169,69 176,69 182,63 192,60 200,60 206,57 212,57 219,57 227,57 232,57 237,57 245,57 256,57 266,57 275,60 281,66 290,63 300,63 309,60 318,66 326,66 333,63 342,60 343,60 350,63 356,63 362,66 369,63 369,75"/>
-            <rect class="timeline-segment-rect" x="0" y="0" width="369" height="75"/>
+            <polygon class="timeline-segment" id="s0" points="0,75 0,51 7,51 15,51 23,54 30,60 39,60 48,60 58,60 68,60 77,60 86,60 96,60 105,63 114,66 123,66 132,69 138,69 150,66 159,69 169,69 176,69 182,63 192,60 200,60 206,57 212,57 219,57 227,57 232,57 237,57 245,57 256,57 266,57 275,60 281,66 290,63 300,63 309,60 318,66 326,66 333,63 342,60 343,60 350,63 356,63 362,66 369,63 369,75"/>
+            <rect class="timeline-segment-rect" id="s0" x="0" y="0" width="369" height="75">
+            <title>963m/369s @ 2.6/5.2/8.6 kts ↑ 334°/19° moving
+    beam reach port W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="369,75 369,54 372,54 377,54 380,48 382,42 391,45 391,75"/>
-            <rect class="timeline-segment-rect" x="369" y="0" width="22" height="75"/>
+            <polygon class="timeline-segment" id="s1" points="369,75 369,54 372,54 377,54 380,48 382,42 391,45 391,75"/>
+            <rect class="timeline-segment-rect" id="s1" x="369" y="0" width="22" height="75">
+            <title>127m/22s @ 7.3/8.9/11.3 kts ↑ 358°/77° turning
+    irons W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="391,75 391,48 397,51 404,57 408,54 414,48 424,51 424,75"/>
-            <rect class="timeline-segment-rect" x="391" y="0" width="33" height="75"/>
+            <polygon class="timeline-segment" id="s2" points="391,75 391,48 397,51 404,57 408,54 414,48 424,51 424,75"/>
+            <rect class="timeline-segment-rect" id="s2" x="391" y="0" width="33" height="75">
+            <title>151m/33s @ 6.5/8.2/9.2 kts ↑ 68°/87° moving
+    downwind run W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="424,75 424,60 431,54 433,48 439,54 444,60 452,60 452,75"/>
-            <rect class="timeline-segment-rect" x="424" y="0" width="28" height="75"/>
+            <polygon class="timeline-segment" id="s3" points="424,75 424,60 431,54 433,48 439,54 444,60 452,60 452,75"/>
+            <rect class="timeline-segment-rect" id="s3" x="424" y="0" width="28" height="75">
+            <title>117m/28s @ 5.1/6.9/9.8 kts ↑ 348°/88° turning
+    irons W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="452,75 452,60 459,63 466,63 472,60 477,63 484,66 484,75"/>
-            <rect class="timeline-segment-rect" x="452" y="0" width="32" height="75"/>
+            <polygon class="timeline-segment" id="s4" points="452,75 452,60 459,63 466,63 472,60 477,63 484,66 484,75"/>
+            <rect class="timeline-segment-rect" id="s4" x="452" y="0" width="32" height="75">
+            <title>101m/32s @ 3.7/4.8/5.6 kts ↑ 345°/356° moving
+    beam reach port W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="484,75 484,57 493,54 496,66 503,72 508,66 515,63 521,60 526,51 526,75"/>
-            <rect class="timeline-segment-rect" x="484" y="0" width="42" height="75"/>
+            <polygon class="timeline-segment" id="s5" points="484,75 484,57 493,54 496,66 503,72 508,66 515,63 521,60 526,51 526,75"/>
+            <rect class="timeline-segment-rect" id="s5" x="484" y="0" width="42" height="75">
+            <title>134m/42s @ 1.6/5.3/8.3 kts ↑ 215°/354° turning
+    tack port to starboard W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="526,75 526,48 533,45 535,45 542,45 550,45 557,48 566,45 573,45 577,42 585,42 592,42 600,48 604,48 609,42 618,39 626,36 627,36 632,39 639,42 639,75"/>
-            <rect class="timeline-segment-rect" x="526" y="0" width="113" height="75"/>
+            <polygon class="timeline-segment" id="s6" points="526,75 526,48 533,45 535,45 542,45 550,45 557,48 566,45 573,45 577,42 585,42 592,42 600,48 604,48 609,42 618,39 626,36 627,36 632,39 639,42 639,75"/>
+            <rect class="timeline-segment-rect" id="s6" x="526" y="0" width="113" height="75">
+            <title>660m/113s @ 9.6/11.1/13.3 kts ↑ 157°/194° moving
+    beam reach starboard W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="639,75 639,48 641,51 651,51 658,54 663,51 670,45 677,45 684,45 692,42 698,42 705,42 712,39 718,45 725,42 732,39 739,39 747,45 747,75"/>
-            <rect class="timeline-segment-rect" x="639" y="0" width="108" height="75"/>
+            <polygon class="timeline-segment" id="s7" points="639,75 639,48 641,51 651,51 658,54 663,51 670,45 677,45 684,45 692,42 698,42 705,42 712,39 718,45 725,42 732,39 739,39 747,45 747,75"/>
+            <rect class="timeline-segment-rect" id="s7" x="639" y="0" width="108" height="75">
+            <title>612m/108s @ 7.6/9.4/12.8 kts ↑ 183°/226° moving
+    close reach starboard W</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="747,75 747,48 750,51 754,57 763,60 768,60 773,66 775,72 779,75 779,75"/>
-            <rect class="timeline-segment-rect" x="747" y="0" width="32" height="75"/>
+            <polygon class="timeline-segment" id="s8" points="747,75 747,48 750,51 754,57 763,60 768,60 773,66 775,72 779,75 779,75"/>
+            <rect class="timeline-segment-rect" id="s8" x="747" y="0" width="32" height="75">
+            <title>115m/32s @ 5.2/4.3/9.3 kts ↑ 193°/250° turning
+    tack starboard to port W</title>
+            </rect>
         
     </svg>
     <script>
@@ -993,5 +1024,63 @@ map.addEventListener(&#39;mouseup&#39;, dragStop);
 map.addEventListener(&#39;mouseleave&#39;, dragStop);
 map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
+function getMapSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != &#39;line&#39;) return undefined
+    const id = event.target.parentNode.getAttribute(&#34;id&#34;)
+    console.log(&#34;segment=&#34;, id)
+    return id
+}
+
+function mapSegmentHoverStart(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.add(&#34;timeline-segment-rect-hovered&#34;)
+}
+
+function mapSegmentHoverStop(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.remove(&#34;timeline-segment-rect-hovered&#34;)
+}
+
+map.addEventListener(&#39;mouseover&#39;, mapSegmentHoverStart)
+map.addEventListener(&#39;mouseout&#39;, mapSegmentHoverStop)
+
+// timeline hover handling
+function getTimelineSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != &#39;rect&#39; &amp;&amp; target.tagName != &#39;polygon&#39;) return undefined
+    const id = event.target.getAttribute(&#34;id&#34;)
+    return id
+}
+
+function segmentHoverStart(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const selector = `g#${id}.segment`
+    const mapSegment = map.querySelector(selector)
+    if (!mapSegment) return
+    mapSegment.classList.add(&#34;segment-hovered&#34;)
+}
+
+function segmentHoverStop(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const mapSegment = map.querySelector(`g#${id}.segment`)
+    if (!mapSegment) return
+    mapSegment.classList.remove(&#34;segment-hovered&#34;)
+}
+
+timeline.addEventListener(&#39;mouseover&#39;, segmentHoverStart)
+timeline.addEventListener(&#39;mouseout&#39;, segmentHoverStop)
     </script>
 </svg>

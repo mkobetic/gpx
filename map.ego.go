@@ -11,76 +11,85 @@ import "io"
 import "context"
 
 import "time"
+import "strconv"
 
 func (m *Map) render(w io.Writer, t *Track) {
 
-//line map.ego:8
-	_, _ = io.WriteString(w, "\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"100%\" height=\"100%\" id=\"root\">\n    <style type=\"text/css\" >\n        <![CDATA[\n            .segment { fill: none; stroke-width: 4 }\n            .segment:hover { stroke-width: 8 }\n            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }\n            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }\n            .timeline-segment-rect { fill: transparent }\n            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }\n        ]]>\n    </style>\n    <g id=\"legend\">\n        ")
-//line map.ego:21
+//line map.ego:9
+	_, _ = io.WriteString(w, "\n<svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\"\n    width=\"100%\" height=\"100%\" id=\"root\">\n    <style type=\"text/css\" >\n        <![CDATA[\n")
+//line map.ego:13
+	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(css)))
+//line map.ego:14
+	_, _ = io.WriteString(w, "\n        ]]>\n    </style>\n    <g id=\"legend\">\n        ")
+//line map.ego:17
 	for i := range palette {
-//line map.ego:22
+//line map.ego:18
 		_, _ = io.WriteString(w, "\n        <rect x=\"")
-//line map.ego:22
+//line map.ego:18
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i)))
-//line map.ego:22
+//line map.ego:18
 		_, _ = io.WriteString(w, "\" y=\"0\" width=\"30\" height=\"20\" fill=\"")
-//line map.ego:22
+//line map.ego:18
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("#%03x", palette[i]))))
-//line map.ego:22
+//line map.ego:18
 		_, _ = io.WriteString(w, "\"/>\n        ")
-//line map.ego:23
+//line map.ego:19
 	}
-//line map.ego:24
+//line map.ego:20
 	_, _ = io.WriteString(w, "\n        ")
-//line map.ego:24
+//line map.ego:20
 	for i := 0; i < len(palette); i += 5 {
 		color := "black"
 		if i == 0 {
 			color = "white"
 		}
 
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, "\n        <text x=\"")
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(30*i+5)))
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, "\" y=\"16\" fill=\"")
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(color)))
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, "\">")
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprint(i))))
-//line map.ego:28
+//line map.ego:24
 		_, _ = io.WriteString(w, "kts</text>\n        ")
-//line map.ego:29
+//line map.ego:25
 	}
-//line map.ego:30
+//line map.ego:26
 	_, _ = io.WriteString(w, "\n    </g>\n    <svg id=\"map\" x=\"0\" y=\"21\" width=\"100%\" viewBox=\"0 0 ")
-//line map.ego:31
+//line map.ego:27
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.w)))
-//line map.ego:31
+//line map.ego:27
 	_, _ = io.WriteString(w, " ")
-//line map.ego:31
+//line map.ego:27
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h)))
-//line map.ego:31
+//line map.ego:27
 	_, _ = io.WriteString(w, "\">\n        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured\n            by the #map element whenever the mouse pointer is anywhere in the viewport -->\n        <rect id=\"background\" width=\"")
-//line map.ego:34
+//line map.ego:30
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.w)))
-//line map.ego:34
+//line map.ego:30
 	_, _ = io.WriteString(w, "\" height=\"")
-//line map.ego:34
+//line map.ego:30
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(m.h)))
-//line map.ego:34
+//line map.ego:30
 	_, _ = io.WriteString(w, "\" fill=\"transparent\"/>\n    ")
-//line map.ego:35
+//line map.ego:31
 	totalDistance := float64(0)
 	var lastPoint *Point
-	for _, segment := range t.Segments {
+	for i, segment := range t.Segments {
 
-//line map.ego:39
-		_, _ = io.WriteString(w, "\n        <g class=\"segment\">\n            ")
-//line map.ego:40
+//line map.ego:35
+		_, _ = io.WriteString(w, "\n        <g class=\"segment\" id=\"s")
+//line map.ego:35
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:35
+		_, _ = io.WriteString(w, "\">\n            ")
+//line map.ego:36
 		if lastPoint != nil {
 			prev, next := lastPoint, segment.Points[0]
 			x1, y1 := m.Point(prev.gpx)
@@ -89,53 +98,53 @@ func (m *Map) render(w io.Writer, t *Track) {
 			totalDistance += next.Distance
 			timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
 
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, "\n            <line class=\"step\" x1=\"")
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x1)))
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, "\" y1=\"")
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y1)))
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, "\" x2=\"")
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x2)))
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, "\" y2=\"")
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y2)))
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, "\" stroke=\"")
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(c)))
-//line map.ego:48
+//line map.ego:44
 			_, _ = io.WriteString(w, "\">\n            <title>")
-//line map.ego:49
+//line map.ego:45
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(timestamp)))
-//line map.ego:49
+//line map.ego:45
 			_, _ = io.WriteString(w, " ")
-//line map.ego:49
+//line map.ego:45
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(next.ShortString())))
-//line map.ego:49
+//line map.ego:45
 			_, _ = io.WriteString(w, " = ")
-//line map.ego:49
+//line map.ego:45
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance))))
-//line map.ego:50
+//line map.ego:46
 			_, _ = io.WriteString(w, "\n")
-//line map.ego:50
+//line map.ego:46
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.String())))
-//line map.ego:51
+//line map.ego:47
 			_, _ = io.WriteString(w, "\n")
-//line map.ego:51
+//line map.ego:47
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
-//line map.ego:51
+//line map.ego:47
 			_, _ = io.WriteString(w, "</title>\n            </line>\n            ")
-//line map.ego:53
+//line map.ego:49
 		}
-//line map.ego:54
+//line map.ego:50
 		_, _ = io.WriteString(w, "\n            ")
-//line map.ego:54
+//line map.ego:50
 		segment.EachPair(func(prev, next *Point) {
 			lastPoint = next
 			x1, y1 := m.Point(prev.gpx)
@@ -144,100 +153,116 @@ func (m *Map) render(w io.Writer, t *Track) {
 			totalDistance += next.Distance
 			timestamp := next.gpx.Timestamp.In(t.Timezone()).Format(time.TimeOnly)
 
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, "\n            <line class=\"step\" x1=\"")
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x1)))
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, "\" y1=\"")
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y1)))
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, "\" x2=\"")
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(x2)))
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, "\" y2=\"")
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(y2)))
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, "\" stroke=\"")
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(c)))
-//line map.ego:62
+//line map.ego:58
 			_, _ = io.WriteString(w, "\">\n            <title>")
-//line map.ego:63
+//line map.ego:59
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(timestamp)))
-//line map.ego:63
+//line map.ego:59
 			_, _ = io.WriteString(w, ": ")
-//line map.ego:63
+//line map.ego:59
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(next.ShortString())))
-//line map.ego:63
+//line map.ego:59
 			_, _ = io.WriteString(w, " = ")
-//line map.ego:63
+//line map.ego:59
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(fmt.Sprintf("%0.2f nm", totalDistance/1852))))
-//line map.ego:64
+//line map.ego:60
 			_, _ = io.WriteString(w, "\n    ")
-//line map.ego:64
+//line map.ego:60
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
-//line map.ego:65
+//line map.ego:61
 			_, _ = io.WriteString(w, "\n    ")
-//line map.ego:65
+//line map.ego:61
 			_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
-//line map.ego:65
+//line map.ego:61
 			_, _ = io.WriteString(w, "</title>\n            </line>\n            ")
-//line map.ego:67
+//line map.ego:63
 		})
-//line map.ego:68
+//line map.ego:64
 		_, _ = io.WriteString(w, "\n        </g>\n\t")
-//line map.ego:69
+//line map.ego:65
 	}
-//line map.ego:70
+//line map.ego:66
 	_, _ = io.WriteString(w, "\n    </svg>\n    <svg id=\"timeline\" x=\"20\" y=\"100\" width=\"95%\" height=\"50\" preserveAspectRatio=\"none\" viewBox=\"0 0 ")
-//line map.ego:71
+//line map.ego:67
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(t.Duration.Seconds())))
-//line map.ego:71
+//line map.ego:67
 	_, _ = io.WriteString(w, " ")
-//line map.ego:71
+//line map.ego:67
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(tlHeight)))
+//line map.ego:67
+	_, _ = io.WriteString(w, "\">\n        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured\n            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->\n        <rect id=\"background\" width=\"100%\" height=\"100%\" fill=\"transparent\"/>\n        ")
 //line map.ego:71
-	_, _ = io.WriteString(w, "\">\n        ")
-//line map.ego:72
 
 	offset := 0
-	for _, segment := range t.Segments {
+	for i, segment := range t.Segments {
 		width := int(segment.Duration.Seconds())
 
-//line map.ego:77
-		_, _ = io.WriteString(w, "\n            <polygon class=\"timeline-segment\" points=\"")
-//line map.ego:77
+//line map.ego:76
+		_, _ = io.WriteString(w, "\n            <polygon class=\"timeline-segment\" id=\"s")
+//line map.ego:76
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:76
+		_, _ = io.WriteString(w, "\" points=\"")
+//line map.ego:76
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.Timeline(offset))))
+//line map.ego:76
+		_, _ = io.WriteString(w, "\"/>\n            <rect class=\"timeline-segment-rect\" id=\"s")
 //line map.ego:77
-		_, _ = io.WriteString(w, "\"/>\n            <rect class=\"timeline-segment-rect\" x=\"")
-//line map.ego:78
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(strconv.Itoa(i))))
+//line map.ego:77
+		_, _ = io.WriteString(w, "\" x=\"")
+//line map.ego:77
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(offset)))
-//line map.ego:78
+//line map.ego:77
 		_, _ = io.WriteString(w, "\" y=\"0\" width=\"")
-//line map.ego:78
+//line map.ego:77
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(width)))
-//line map.ego:78
+//line map.ego:77
 		_, _ = io.WriteString(w, "\" height=\"")
-//line map.ego:78
+//line map.ego:77
 		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(tlHeight)))
+//line map.ego:77
+		_, _ = io.WriteString(w, "\">\n            <title>")
 //line map.ego:78
-		_, _ = io.WriteString(w, "\"/>\n        ")
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.ShortString())))
 //line map.ego:79
+		_, _ = io.WriteString(w, "\n    ")
+//line map.ego:79
+		_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(segment.TypeString())))
+//line map.ego:79
+		_, _ = io.WriteString(w, "</title>\n            </rect>\n        ")
+//line map.ego:81
 
 		offset += int(segment.Duration.Seconds())
 	}
 
-//line map.ego:83
-	_, _ = io.WriteString(w, "\n    </svg>\n    <script>\n")
 //line map.ego:85
+	_, _ = io.WriteString(w, "\n    </svg>\n    <script>\n")
+//line map.ego:87
 	_, _ = io.WriteString(w, html.EscapeString(fmt.Sprint(script)))
-//line map.ego:86
-	_, _ = io.WriteString(w, "\n    </script>\n</svg>\n")
 //line map.ego:88
+	_, _ = io.WriteString(w, "\n    </script>\n</svg>\n")
+//line map.ego:90
 }
 
 var _ fmt.Stringer

@@ -3,12 +3,13 @@
     width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
-            .segment { fill: none; stroke-width: 4 }
-            .segment:hover { stroke-width: 8 }
-            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
-            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }
-            .timeline-segment-rect { fill: transparent }
-            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+.segment { fill: none; stroke-width: 4 }
+.segment:hover { stroke-width: 8 }
+.segment-hovered { stroke-width: 8 }
+.timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+.timeline-segment-rect { fill: transparent }
+.timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+.timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
         ]]>
     </style>
     <g id="legend">
@@ -78,7 +79,7 @@
             by the #map element whenever the mouse pointer is anywhere in the viewport -->
         <rect id="background" width="776.9916283717934" height="1527.9504753795907" fill="transparent"/>
     
-        <g class="segment">
+        <g class="segment" id="s0">
             
             
             <line class="step" x1="59" y1="152" x2="59" y2="150" stroke="#0af">
@@ -167,7 +168,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s1">
             
             <line class="step" x1="100" y1="134" x2="100" y2="155" stroke="#0ef">
             <title>18:59:02 26.7m @ 7.4 kts ↑ 181° S = 208.28 nm
@@ -268,7 +269,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s2">
             
             <line class="step" x1="58" y1="219" x2="64" y2="216" stroke="#04f">
             <title>19:00:19 8.6m @ 2.8 kts ↑ 64° ENE = 449.19 nm
@@ -315,7 +316,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s3">
             
             <line class="step" x1="92" y1="156" x2="94" y2="155" stroke="#0ef">
             <title>19:00:59 3.9m @ 7.5 kts ↑ 60° ENE = 549.83 nm
@@ -416,7 +417,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s4">
             
             <line class="step" x1="364" y1="110" x2="386" y2="105" stroke="#0cf">
             <title>19:02:47 30.4m @ 6.6 kts ↑ 78° ENE = 949.70 nm
@@ -463,7 +464,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s5">
             
             <line class="step" x1="429" y1="147" x2="435" y2="161" stroke="#08f">
             <title>19:03:35 19.9m @ 4.8 kts ↑ 157° SSE = 1064.48 nm
@@ -618,7 +619,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s6">
             
             <line class="step" x1="550" y1="575" x2="559" y2="595" stroke="#0af">
             <title>19:07:01 28.8m @ 5.6 kts ↑ 156° SSE = 1674.53 nm
@@ -665,7 +666,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s7">
             
             <line class="step" x1="610" y1="608" x2="627" y2="601" stroke="#0cf">
             <title>19:07:49 25.1m @ 6.1 kts ↑ 67° ENE = 1794.02 nm
@@ -712,7 +713,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s8">
             
             <line class="step" x1="770" y1="518" x2="782" y2="507" stroke="#0ef">
             <title>19:08:55 22.1m @ 7.1 kts ↑ 48° NE = 2037.79 nm
@@ -747,7 +748,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s9">
             
             <line class="step" x1="787" y1="444" x2="785" y2="424" stroke="#0ff">
             <title>19:09:23 27.3m @ 8.8 kts ↑ 354° N = 2153.48 nm
@@ -794,7 +795,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s10">
             
             <line class="step" x1="737" y1="397" x2="720" y2="399" stroke="#0cf">
             <title>19:10:00 22.7m @ 6.3 kts ↑ 263° W = 2271.24 nm
@@ -901,7 +902,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s11">
             
             <line class="step" x1="424" y1="513" x2="409" y2="520" stroke="#0ff">
             <title>19:11:49 22.4m @ 8.7 kts ↑ 244° WSW = 2721.83 nm
@@ -948,7 +949,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s12">
             
             <line class="step" x1="368" y1="478" x2="363" y2="457" stroke="#0fb">
             <title>19:12:27 29.0m @ 9.4 kts ↑ 346° NNW = 2864.89 nm
@@ -1037,7 +1038,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s13">
             
             <line class="step" x1="309" y1="172" x2="306" y2="145" stroke="#0ef">
             <title>19:14:00 35.9m @ 7.7 kts ↑ 354° N = 3284.47 nm
@@ -1078,7 +1079,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s14">
             
             <line class="step" x1="256" y1="125" x2="234" y2="137" stroke="#0fb">
             <title>19:14:41 32.5m @ 9.0 kts ↑ 241° WSW = 3416.62 nm
@@ -1143,7 +1144,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s15">
             
             <line class="step" x1="184" y1="222" x2="191" y2="243" stroke="#0cf">
             <title>19:15:34 29.8m @ 6.4 kts ↑ 162° SSE = 3615.24 nm
@@ -1244,7 +1245,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s16">
             
             <line class="step" x1="182" y1="475" x2="184" y2="500" stroke="#0fb">
             <title>19:17:10 33.4m @ 9.3 kts ↑ 175° S = 3962.64 nm
@@ -1291,7 +1292,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s17">
             
             <line class="step" x1="234" y1="515" x2="247" y2="510" stroke="#0cf">
             <title>19:17:47 19.4m @ 6.3 kts ↑ 68° ENE = 4079.27 nm
@@ -1458,7 +1459,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s18">
             
             <line class="step" x1="717" y1="449" x2="738" y2="446" stroke="#0af">
             <title>19:21:30 28.4m @ 5.0 kts ↑ 83° E = 4754.47 nm
@@ -1493,7 +1494,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s19">
             
             <line class="step" x1="760" y1="462" x2="762" y2="476" stroke="#08f">
             <title>19:22:01 17.5m @ 4.9 kts ↑ 169° S = 4823.34 nm
@@ -1564,7 +1565,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s20">
             
             <line class="step" x1="756" y1="479" x2="740" y2="481" stroke="#0cf">
             <title>19:23:05 22.3m @ 6.2 kts ↑ 263° W = 4994.92 nm
@@ -1653,7 +1654,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s21">
             
             <line class="step" x1="509" y1="521" x2="492" y2="527" stroke="#0af">
             <title>19:24:39 24.3m @ 5.9 kts ↑ 248° WSW = 5337.55 nm
@@ -1706,7 +1707,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s22">
             
             <line class="step" x1="452" y1="477" x2="449" y2="452" stroke="#0fb">
             <title>19:25:19 33.7m @ 9.3 kts ↑ 352° N = 5487.61 nm
@@ -1807,7 +1808,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s23">
             
             <line class="step" x1="402" y1="117" x2="398" y2="102" stroke="#08f">
             <title>19:27:22 21.2m @ 4.1 kts ↑ 344° NNW = 5957.71 nm
@@ -1854,7 +1855,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s24">
             
             <line class="step" x1="351" y1="77" x2="333" y2="86" stroke="#0cf">
             <title>19:28:11 27.8m @ 6.7 kts ↑ 245° WSW = 6088.91 nm
@@ -1985,7 +1986,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s25">
             
             <line class="step" x1="62" y1="173" x2="47" y2="174" stroke="#08f">
             <title>19:29:57 19.7m @ 4.3 kts ↑ 265° W = 6495.91 nm
@@ -2032,7 +2033,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s26">
             
             <line class="step" x1="22" y1="213" x2="23" y2="221" stroke="#04f">
             <title>19:30:54 11.0m @ 2.4 kts ↑ 175° S = 6582.74 nm
@@ -2091,7 +2092,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s27">
             
             <line class="step" x1="27" y1="251" x2="145" y2="98" stroke="#04f">
             <title>19:37:55 0.0m @ 2.7 kts ↑ 70° ENE = 6622.60 nm
@@ -2168,7 +2169,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s28">
             
             <line class="step" x1="287" y1="52" x2="299" y2="51" stroke="#04f">
             <title>19:40:18 16.0m @ 2.6 kts ↑ 84° E = 6841.19 nm
@@ -2227,7 +2228,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s29">
             
             <line class="step" x1="273" y1="40" x2="263" y2="40" stroke="#08f">
             <title>19:41:44 12.7m @ 4.9 kts ↑ 267° W = 6982.21 nm
@@ -2262,7 +2263,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s30">
             
             <line class="step" x1="188" y1="60" x2="177" y2="71" stroke="#0cf">
             <title>19:42:26 20.1m @ 6.5 kts ↑ 224° SW = 7108.55 nm
@@ -2297,7 +2298,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s31">
             
             <line class="step" x1="178" y1="115" x2="166" y2="123" stroke="#0ef">
             <title>19:42:54 20.2m @ 7.9 kts ↑ 239° WSW = 7188.71 nm
@@ -2362,7 +2363,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s32">
             
             <line class="step" x1="101" y1="80" x2="126" y2="70" stroke="#0ef">
             <title>19:44:03 35.5m @ 7.7 kts ↑ 69° ENE = 7393.12 nm
@@ -2421,7 +2422,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s33">
             
             <line class="step" x1="164" y1="61" x2="158" y2="78" stroke="#0cf">
             <title>19:44:57 24.1m @ 6.7 kts ↑ 201° SSW = 7582.53 nm
@@ -2540,7 +2541,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s34">
             
             <line class="step" x1="143" y1="384" x2="142" y2="392" stroke="#0af">
             <title>19:46:58 11.1m @ 5.4 kts ↑ 184° S = 8005.18 nm
@@ -2581,7 +2582,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s35">
             
             <line class="step" x1="176" y1="427" x2="189" y2="427" stroke="#0af">
             <title>19:47:36 16.9m @ 5.5 kts ↑ 92° E = 8108.44 nm
@@ -2742,7 +2743,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s36">
             
             <line class="step" x1="645" y1="385" x2="671" y2="378" stroke="#0ef">
             <title>19:50:51 36.8m @ 7.1 kts ↑ 75° ENE = 8767.85 nm
@@ -2783,7 +2784,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s37">
             
             <line class="step" x1="711" y1="418" x2="713" y2="433" stroke="#0af">
             <title>19:51:32 19.5m @ 5.4 kts ↑ 171° S = 8885.68 nm
@@ -2860,7 +2861,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s38">
             
             <line class="step" x1="788" y1="495" x2="792" y2="480" stroke="#0fb">
             <title>19:52:35 19.6m @ 9.5 kts ↑ 15° NNE = 9116.91 nm
@@ -2979,7 +2980,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s39">
             
             <line class="step" x1="771" y1="128" x2="770" y2="102" stroke="#0fb">
             <title>19:54:27 35.0m @ 9.7 kts ↑ 358° N = 9618.72 nm
@@ -3026,7 +3027,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s40">
             
             <line class="step" x1="720" y1="75" x2="709" y2="76" stroke="#0af">
             <title>19:55:03 15.2m @ 5.9 kts ↑ 263° W = 9731.96 nm
@@ -3205,7 +3206,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s41">
             
             <line class="step" x1="150" y1="173" x2="129" y2="177" stroke="#0ef">
             <title>19:57:52 28.2m @ 7.8 kts ↑ 260° W = 10527.07 nm
@@ -3264,7 +3265,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s42">
             
             <line class="step" x1="113" y1="229" x2="121" y2="248" stroke="#0ef">
             <title>19:58:37 26.7m @ 7.4 kts ↑ 157° SSE = 10662.67 nm
@@ -3665,7 +3666,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s43">
             
             <line class="step" x1="505" y1="1498" x2="495" y2="1517" stroke="#0af">
             <title>20:07:35 27.6m @ 5.9 kts ↑ 208° SSW = 12440.75 nm
@@ -3700,7 +3701,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s44">
             
             <line class="step" x1="459" y1="1533" x2="446" y2="1533" stroke="#08f">
             <title>20:08:07 17.3m @ 4.2 kts ↑ 272° W = 12514.66 nm
@@ -3737,141 +3738,279 @@
 	
     </svg>
     <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 4262 75">
+        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured
+            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->
+        <rect id="background" width="100%" height="100%" fill="transparent"/>
         
-            <polygon class="timeline-segment" points="0,75 0,60 1,60 8,60 15,63 21,63 28,69 39,72 49,72 55,69 64,66 72,66 77,72 83,63 87,51 92,48 92,75"/>
-            <rect class="timeline-segment-rect" x="0" y="0" width="92" height="75"/>
+            <polygon class="timeline-segment" id="s0" points="0,75 0,60 1,60 8,60 15,63 21,63 28,69 39,72 49,72 55,69 64,66 72,66 77,72 83,63 87,51 92,48 92,75"/>
+            <rect class="timeline-segment-rect" id="s0" x="0" y="0" width="92" height="75">
+            <title>182m/92s @ 5.5/0.4/5.5 kts ↑ 350°/350° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="92,75 92,54 98,51 106,48 108,48 114,57 120,57 126,48 128,51 134,57 136,63 140,66 145,63 146,60 153,63 158,66 163,66 163,75"/>
-            <rect class="timeline-segment-rect" x="92" y="0" width="71" height="75"/>
+            <polygon class="timeline-segment" id="s1" points="92,75 92,54 98,51 106,48 108,48 114,57 120,57 126,48 128,51 134,57 136,63 140,66 145,63 146,60 153,63 158,66 163,66 163,75"/>
+            <rect class="timeline-segment-rect" id="s1" x="92" y="0" width="71" height="75">
+            <title>259m/71s @ 3.1/4.2/9.3 kts ↑ 189°/65° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="163,75 163,69 174,69 184,69 188,60 194,51 198,48 202,51 202,75"/>
-            <rect class="timeline-segment-rect" x="163" y="0" width="39" height="75"/>
+            <polygon class="timeline-segment" id="s2" points="163,75 163,69 174,69 184,69 188,60 194,51 198,48 202,51 202,75"/>
+            <rect class="timeline-segment-rect" id="s2" x="163" y="0" width="39" height="75">
+            <title>105m/39s @ 2.1/5.5/9.5 kts ↑ 358°/68° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="202,75 202,54 209,54 216,57 223,57 230,57 236,57 241,57 251,57 257,54 263,54 268,54 275,54 282,51 287,48 294,51 301,54 301,75"/>
-            <rect class="timeline-segment-rect" x="202" y="0" width="99" height="75"/>
+            <polygon class="timeline-segment" id="s3" points="202,75 202,54 209,54 216,57 223,57 230,57 236,57 241,57 251,57 257,54 263,54 268,54 275,54 282,51 287,48 294,51 301,54 301,75"/>
+            <rect class="timeline-segment-rect" id="s3" x="202" y="0" width="99" height="75">
+            <title>373m/99s @ 6.1/5.9/9.1 kts ↑ 75°/88° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="301,75 301,57 308,57 310,60 317,66 324,63 332,63 341,63 341,75"/>
-            <rect class="timeline-segment-rect" x="301" y="0" width="40" height="75"/>
+            <polygon class="timeline-segment" id="s4" points="301,75 301,57 308,57 310,60 317,66 324,63 332,63 341,63 341,75"/>
+            <rect class="timeline-segment-rect" id="s4" x="301" y="0" width="40" height="75">
+            <title>125m/40s @ 3.2/4.9/6.6 kts ↑ 78°/155° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="341,75 341,63 349,63 357,60 367,60 375,60 382,63 390,63 401,60 411,63 421,60 432,60 443,60 453,57 462,60 470,57 477,57 482,54 491,51 496,54 503,57 510,60 516,60 522,60 531,60 537,60 537,75"/>
-            <rect class="timeline-segment-rect" x="341" y="0" width="196" height="75"/>
+            <polygon class="timeline-segment" id="s5" points="341,75 341,63 349,63 357,60 367,60 375,60 382,63 390,63 401,60 411,63 421,60 432,60 443,60 453,57 462,60 470,57 477,57 482,54 491,51 496,54 503,57 510,60 516,60 522,60 531,60 537,60 537,75"/>
+            <rect class="timeline-segment-rect" id="s5" x="341" y="0" width="196" height="75">
+            <title>601m/196s @ 4.8/5.8/8.1 kts ↑ 153°/200° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="537,75 537,60 551,63 552,60 558,69 561,66 570,63 577,60 577,75"/>
-            <rect class="timeline-segment-rect" x="537" y="0" width="40" height="75"/>
+            <polygon class="timeline-segment" id="s6" points="537,75 537,60 551,63 552,60 558,69 561,66 570,63 577,60 577,75"/>
+            <rect class="timeline-segment-rect" id="s6" x="537" y="0" width="40" height="75">
+            <title>123m/40s @ 2.7/4.6/5.8 kts ↑ 62°/156° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="577,75 577,57 585,60 595,57 604,54 616,54 627,54 637,54 637,75"/>
-            <rect class="timeline-segment-rect" x="577" y="0" width="60" height="75"/>
+            <polygon class="timeline-segment" id="s7" points="577,75 577,57 585,60 595,57 604,54 616,54 627,54 637,54 637,75"/>
+            <rect class="timeline-segment-rect" id="s7" x="577" y="0" width="60" height="75">
+            <title>247m/60s @ 6.0/7.0/7.7 kts ↑ 55°/67° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="637,75 637,54 644,51 648,48 653,57 659,57 659,75"/>
-            <rect class="timeline-segment-rect" x="637" y="0" width="22" height="75"/>
+            <polygon class="timeline-segment" id="s8" points="637,75 637,54 644,51 648,48 653,57 659,57 659,75"/>
+            <rect class="timeline-segment-rect" id="s8" x="637" y="0" width="22" height="75">
+            <title>110m/22s @ 6.6/4.6/9.6 kts ↑ 337°/358° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="659,75 659,51 665,51 670,60 672,63 677,60 683,60 689,57 689,75"/>
-            <rect class="timeline-segment-rect" x="659" y="0" width="30" height="75"/>
+            <polygon class="timeline-segment" id="s9" points="659,75 659,51 665,51 670,60 672,63 677,60 683,60 689,57 689,75"/>
+            <rect class="timeline-segment-rect" id="s9" x="659" y="0" width="30" height="75">
+            <title>122m/30s @ 4.4/6.3/8.8 kts ↑ 261°/354° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="689,75 689,57 697,60 704,57 712,57 720,54 726,57 733,51 740,54 745,57 752,54 759,51 765,51 766,48 773,45 779,45 784,45 793,45 793,75"/>
-            <rect class="timeline-segment-rect" x="689" y="0" width="104" height="75"/>
+            <polygon class="timeline-segment" id="s10" points="689,75 689,57 697,60 704,57 712,57 720,54 726,57 733,51 740,54 745,57 752,54 759,51 765,51 766,48 773,45 779,45 784,45 793,45 793,75"/>
+            <rect class="timeline-segment-rect" id="s10" x="689" y="0" width="104" height="75">
+            <title>451m/104s @ 5.5/8.0/10.4 kts ↑ 239°/263° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="793,75 793,51 797,51 802,51 806,63 810,63 817,57 825,54 825,75"/>
-            <rect class="timeline-segment-rect" x="793" y="0" width="32" height="75"/>
+            <polygon class="timeline-segment" id="s11" points="793,75 793,51 797,51 802,51 806,63 810,63 817,57 825,54 825,75"/>
+            <rect class="timeline-segment-rect" id="s11" x="793" y="0" width="32" height="75">
+            <title>136m/32s @ 4.8/7.0/8.7 kts ↑ 242°/355° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="825,75 825,48 826,48 832,51 842,51 850,48 851,48 857,48 864,48 870,45 876,45 880,48 889,51 899,54 909,54 909,75"/>
-            <rect class="timeline-segment-rect" x="825" y="0" width="84" height="75"/>
+            <polygon class="timeline-segment" id="s12" points="825,75 825,48 826,48 832,51 842,51 850,48 851,48 857,48 864,48 870,45 876,45 880,48 889,51 899,54 909,54 909,75"/>
+            <rect class="timeline-segment-rect" id="s12" x="825" y="0" width="84" height="75">
+            <title>413m/84s @ 7.7/9.1/10.0 kts ↑ 338°/357° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="909,75 909,54 917,54 922,63 929,66 937,60 943,54 943,75"/>
-            <rect class="timeline-segment-rect" x="909" y="0" width="34" height="75"/>
+            <polygon class="timeline-segment" id="s13" points="909,75 909,54 917,54 922,63 929,66 937,60 943,54 943,75"/>
+            <rect class="timeline-segment-rect" id="s13" x="909" y="0" width="34" height="75">
+            <title>136m/34s @ 3.7/6.0/7.7 kts ↑ 245°/354° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="943,75 943,48 947,45 949,42 953,48 957,54 963,57 965,54 970,60 978,60 987,57 987,75"/>
-            <rect class="timeline-segment-rect" x="943" y="0" width="44" height="75"/>
+            <polygon class="timeline-segment" id="s14" points="943,75 943,48 947,45 949,42 953,48 957,54 963,57 965,54 970,60 978,60 987,57 987,75"/>
+            <rect class="timeline-segment-rect" id="s14" x="943" y="0" width="44" height="75">
+            <title>201m/44s @ 5.8/5.0/9.4 kts ↑ 162°/254° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="987,75 987,57 992,57 993,57 999,60 1007,57 1013,57 1023,57 1031,57 1038,57 1044,57 1050,54 1055,54 1058,54 1064,57 1070,54 1076,51 1076,75"/>
-            <rect class="timeline-segment-rect" x="987" y="0" width="89" height="75"/>
+            <polygon class="timeline-segment" id="s15" points="987,75 987,57 992,57 993,57 999,60 1007,57 1013,57 1023,57 1031,57 1038,57 1044,57 1050,54 1055,54 1058,54 1064,57 1070,54 1076,51 1076,75"/>
+            <rect class="timeline-segment-rect" id="s15" x="987" y="0" width="89" height="75">
+            <title>344m/89s @ 5.7/6.9/8.2 kts ↑ 154°/199° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1076,75 1076,48 1080,48 1084,54 1088,66 1092,66 1099,57 1107,57 1107,75"/>
-            <rect class="timeline-segment-rect" x="1076" y="0" width="31" height="75"/>
+            <polygon class="timeline-segment" id="s16" points="1076,75 1076,48 1080,48 1084,54 1088,66 1092,66 1099,57 1107,57 1107,75"/>
+            <rect class="timeline-segment-rect" id="s16" x="1076" y="0" width="31" height="75">
+            <title>131m/31s @ 3.1/6.5/9.6 kts ↑ 74°/177° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1107,75 1107,57 1115,54 1122,57 1131,57 1140,57 1147,57 1155,57 1163,57 1173,57 1180,57 1190,60 1199,60 1207,57 1216,57 1225,60 1232,60 1238,60 1247,60 1255,60 1261,60 1265,60 1273,60 1280,60 1287,60 1298,63 1309,63 1319,60 1319,75"/>
-            <rect class="timeline-segment-rect" x="1107" y="0" width="212" height="75"/>
+            <polygon class="timeline-segment" id="s17" points="1107,75 1107,57 1115,54 1122,57 1131,57 1140,57 1147,57 1155,57 1163,57 1173,57 1180,57 1190,60 1199,60 1207,57 1216,57 1225,60 1232,60 1238,60 1247,60 1255,60 1261,60 1265,60 1273,60 1280,60 1287,60 1298,63 1309,63 1319,60 1319,75"/>
+            <rect class="timeline-segment-rect" id="s17" x="1107" y="0" width="212" height="75">
+            <title>666m/212s @ 4.8/6.0/7.3 kts ↑ 64°/107° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1319,75 1319,60 1329,60 1330,66 1336,69 1343,63 1343,75"/>
-            <rect class="timeline-segment-rect" x="1319" y="0" width="24" height="75"/>
+            <polygon class="timeline-segment" id="s18" points="1319,75 1319,60 1329,60 1330,66 1336,69 1343,63 1343,75"/>
+            <rect class="timeline-segment-rect" id="s18" x="1319" y="0" width="24" height="75">
+            <title>80m/24s @ 2.5/4.1/5.2 kts ↑ 83°/178° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1343,75 1343,63 1353,60 1357,63 1363,69 1367,63 1374,57 1377,57 1381,60 1385,63 1393,60 1400,60 1400,75"/>
-            <rect class="timeline-segment-rect" x="1343" y="0" width="57" height="75"/>
+            <polygon class="timeline-segment" id="s19" points="1343,75 1343,63 1353,60 1357,63 1363,69 1367,63 1374,57 1377,57 1381,60 1385,63 1393,60 1400,60 1400,75"/>
+            <rect class="timeline-segment-rect" id="s19" x="1343" y="0" width="57" height="75">
+            <title>167m/57s @ 2.4/4.1/7.0 kts ↑ 263°/174° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1400,75 1400,57 1407,57 1414,54 1420,51 1428,51 1433,51 1439,51 1445,54 1451,57 1460,54 1467,54 1473,57 1479,60 1486,60 1486,75"/>
-            <rect class="timeline-segment-rect" x="1400" y="0" width="86" height="75"/>
+            <polygon class="timeline-segment" id="s20" points="1400,75 1400,57 1407,57 1414,54 1420,51 1428,51 1433,51 1439,51 1445,54 1451,57 1460,54 1467,54 1473,57 1479,60 1486,60 1486,75"/>
+            <rect class="timeline-segment-rect" id="s20" x="1400" y="0" width="86" height="75">
+            <title>341m/86s @ 5.1/7.1/8.8 kts ↑ 248°/273° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1486,75 1486,60 1494,54 1495,57 1500,63 1501,63 1508,60 1514,51 1519,48 1519,75"/>
-            <rect class="timeline-segment-rect" x="1486" y="0" width="33" height="75"/>
+            <polygon class="timeline-segment" id="s21" points="1486,75 1486,60 1494,54 1495,57 1500,63 1501,63 1508,60 1514,51 1519,48 1519,75"/>
+            <rect class="timeline-segment-rect" id="s21" x="1486" y="0" width="33" height="75">
+            <title>141m/33s @ 4.2/6.5/9.6 kts ↑ 248°/356° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1519,75 1519,48 1527,48 1535,48 1544,51 1551,51 1560,54 1568,48 1570,48 1577,51 1584,57 1593,57 1599,57 1605,54 1615,54 1624,57 1632,63 1632,75"/>
-            <rect class="timeline-segment-rect" x="1519" y="0" width="113" height="75"/>
+            <polygon class="timeline-segment" id="s22" points="1519,75 1519,48 1527,48 1535,48 1544,51 1551,51 1560,54 1568,48 1570,48 1577,51 1584,57 1593,57 1599,57 1605,54 1615,54 1624,57 1632,63 1632,75"/>
+            <rect class="timeline-segment-rect" id="s22" x="1519" y="0" width="113" height="75">
+            <title>483m/113s @ 4.9/7.9/9.9 kts ↑ 330°/3° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1632,75 1632,63 1640,60 1649,60 1655,69 1658,63 1666,60 1673,60 1673,75"/>
-            <rect class="timeline-segment-rect" x="1632" y="0" width="41" height="75"/>
+            <polygon class="timeline-segment" id="s23" points="1632,75 1632,63 1640,60 1649,60 1655,69 1658,63 1666,60 1673,60 1673,75"/>
+            <rect class="timeline-segment-rect" id="s23" x="1632" y="0" width="41" height="75">
+            <title>125m/41s @ 3.0/4.6/5.8 kts ↑ 249°/358° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1673,75 1673,57 1680,54 1685,51 1687,48 1689,48 1693,51 1695,48 1702,45 1704,45 1712,45 1716,42 1721,42 1730,45 1731,48 1736,51 1743,60 1744,60 1750,66 1757,66 1763,66 1770,66 1770,75"/>
-            <rect class="timeline-segment-rect" x="1673" y="0" width="97" height="75"/>
+            <polygon class="timeline-segment" id="s24" points="1673,75 1673,57 1680,54 1685,51 1687,48 1689,48 1693,51 1695,48 1702,45 1704,45 1712,45 1716,42 1721,42 1730,45 1731,48 1736,51 1743,60 1744,60 1750,66 1757,66 1763,66 1770,66 1770,75"/>
+            <rect class="timeline-segment-rect" id="s24" x="1673" y="0" width="97" height="75">
+            <title>415m/97s @ 3.5/8.0/11.5 kts ↑ 243°/273° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1770,75 1770,63 1780,63 1788,66 1795,66 1802,69 1810,69 1818,72 1818,75"/>
-            <rect class="timeline-segment-rect" x="1770" y="0" width="48" height="75"/>
+            <polygon class="timeline-segment" id="s25" points="1770,75 1770,63 1780,63 1788,66 1795,66 1802,69 1810,69 1818,72 1818,75"/>
+            <rect class="timeline-segment-rect" id="s25" x="1770" y="0" width="48" height="75">
+            <title>96m/48s @ 1.6/3.2/4.4 kts ↑ 169°/265° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1818,75 1818,69 1828,69 1829,69 1833,69 1839,69 1845,69 1851,72 1857,72 1858,75 1858,75"/>
-            <rect class="timeline-segment-rect" x="1818" y="0" width="40" height="75"/>
+            <polygon class="timeline-segment" id="s26" points="1818,75 1818,69 1828,69 1829,69 1833,69 1839,69 1845,69 1851,72 1857,72 1858,75 1858,75"/>
+            <rect class="timeline-segment-rect" id="s26" x="1818" y="0" width="40" height="75">
+            <title>51m/40s @ 1.2/1.8/2.7 kts ↑ 160°/189° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1858,75 1858,69 1869,69 1885,69 1898,69 1910,66 1918,66 1927,66 1937,66 1950,69 1965,66 1975,69 1989,69 1989,75"/>
-            <rect class="timeline-segment-rect" x="1858" y="0" width="131" height="75"/>
+            <polygon class="timeline-segment" id="s27" points="1858,75 1858,69 1869,69 1885,69 1898,69 1910,66 1918,66 1927,66 1937,66 1950,69 1965,66 1975,69 1989,69 1989,75"/>
+            <rect class="timeline-segment-rect" id="s27" x="1858" y="0" width="131" height="75">
+            <title>203m/131s @ 2.5/3.0/3.6 kts ↑ 60°/82° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1989,75 1989,69 2005,69 2020,69 2026,66 2031,66 2037,69 2049,66 2059,66 2070,63 2070,75"/>
-            <rect class="timeline-segment-rect" x="1989" y="0" width="81" height="75"/>
+            <polygon class="timeline-segment" id="s28" points="1989,75 1989,69 2005,69 2020,69 2026,66 2031,66 2037,69 2049,66 2059,66 2070,63 2070,75"/>
+            <rect class="timeline-segment-rect" id="s28" x="1989" y="0" width="81" height="75">
+            <title>144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2070,75 2070,63 2080,63 2091,60 2098,57 2106,54 2106,75"/>
-            <rect class="timeline-segment-rect" x="2070" y="0" width="36" height="75"/>
+            <polygon class="timeline-segment" id="s29" points="2070,75 2070,63 2080,63 2091,60 2098,57 2106,54 2106,75"/>
+            <rect class="timeline-segment-rect" id="s29" x="2070" y="0" width="36" height="75">
+            <title>119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2106,75 2106,57 2111,63 2118,63 2125,60 2129,60 2129,75"/>
-            <rect class="timeline-segment-rect" x="2106" y="0" width="23" height="75"/>
+            <polygon class="timeline-segment" id="s30" points="2106,75 2106,57 2111,63 2118,63 2125,60 2129,60 2129,75"/>
+            <rect class="timeline-segment-rect" id="s30" x="2106" y="0" width="23" height="75">
+            <title>80m/23s @ 4.1/5.4/6.5 kts ↑ 166°/224° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2129,75 2129,54 2135,51 2141,51 2147,63 2157,63 2167,63 2169,63 2176,66 2183,60 2189,57 2189,75"/>
-            <rect class="timeline-segment-rect" x="2129" y="0" width="60" height="75"/>
+            <polygon class="timeline-segment" id="s31" points="2129,75 2129,54 2135,51 2141,51 2147,63 2157,63 2167,63 2169,63 2176,66 2183,60 2189,57 2189,75"/>
+            <rect class="timeline-segment-rect" id="s31" x="2129" y="0" width="60" height="75">
+            <title>189m/60s @ 3.6/5.8/8.7 kts ↑ 239°/60° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2189,75 2189,54 2195,54 2200,51 2206,45 2210,48 2214,63 2220,69 2227,57 2236,57 2236,75"/>
-            <rect class="timeline-segment-rect" x="2189" y="0" width="47" height="75"/>
+            <polygon class="timeline-segment" id="s32" points="2189,75 2189,54 2195,54 2200,51 2206,45 2210,48 2214,63 2220,69 2227,57 2236,57 2236,75"/>
+            <rect class="timeline-segment-rect" id="s32" x="2189" y="0" width="47" height="75">
+            <title>201m/47s @ 2.9/4.3/10.0 kts ↑ 27°/210° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2236,75 2236,57 2242,57 2245,57 2247,60 2253,63 2261,63 2270,60 2278,57 2284,54 2289,51 2296,51 2303,51 2312,51 2318,51 2327,54 2333,57 2338,57 2346,57 2353,60 2353,75"/>
-            <rect class="timeline-segment-rect" x="2236" y="0" width="117" height="75"/>
+            <polygon class="timeline-segment" id="s33" points="2236,75 2236,57 2242,57 2245,57 2247,60 2253,63 2261,63 2270,60 2278,57 2284,54 2289,51 2296,51 2303,51 2312,51 2318,51 2327,54 2333,57 2338,57 2346,57 2353,60 2353,75"/>
+            <rect class="timeline-segment-rect" id="s33" x="2236" y="0" width="117" height="75">
+            <title>436m/117s @ 4.7/6.8/8.6 kts ↑ 171°/219° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2353,75 2353,60 2362,60 2364,57 2369,66 2376,63 2385,57 2385,75"/>
-            <rect class="timeline-segment-rect" x="2353" y="0" width="32" height="75"/>
+            <polygon class="timeline-segment" id="s34" points="2353,75 2353,60 2362,60 2364,57 2369,66 2376,63 2385,57 2385,75"/>
+            <rect class="timeline-segment-rect" id="s34" x="2353" y="0" width="32" height="75">
+            <title>97m/32s @ 3.5/5.3/6.6 kts ↑ 92°/187° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2385,75 2385,60 2390,63 2395,60 2404,60 2413,60 2422,60 2429,57 2436,57 2445,57 2455,60 2461,60 2465,57 2472,57 2477,54 2482,57 2491,57 2500,57 2508,54 2516,54 2524,51 2534,54 2541,54 2549,54 2558,54 2565,60 2570,57 2570,75"/>
-            <rect class="timeline-segment-rect" x="2385" y="0" width="185" height="75"/>
+            <polygon class="timeline-segment" id="s35" points="2385,75 2385,60 2390,63 2395,60 2404,60 2413,60 2422,60 2429,57 2436,57 2445,57 2455,60 2461,60 2465,57 2472,57 2477,54 2482,57 2491,57 2500,57 2508,54 2516,54 2524,51 2534,54 2541,54 2549,54 2558,54 2565,60 2570,57 2570,75"/>
+            <rect class="timeline-segment-rect" id="s35" x="2385" y="0" width="185" height="75">
+            <title>640m/185s @ 4.9/6.5/8.0 kts ↑ 74°/97° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2570,75 2570,54 2577,54 2579,57 2587,66 2595,60 2604,60 2604,75"/>
-            <rect class="timeline-segment-rect" x="2570" y="0" width="34" height="75"/>
+            <polygon class="timeline-segment" id="s36" points="2570,75 2570,54 2577,54 2579,57 2587,66 2595,60 2604,60 2604,75"/>
+            <rect class="timeline-segment-rect" id="s36" x="2570" y="0" width="34" height="75">
+            <title>135m/34s @ 3.7/6.0/8.0 kts ↑ 75°/167° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2604,75 2604,60 2609,60 2618,57 2627,54 2634,54 2639,54 2641,63 2647,66 2652,57 2658,48 2660,45 2663,48 2663,75"/>
-            <rect class="timeline-segment-rect" x="2604" y="0" width="59" height="75"/>
+            <polygon class="timeline-segment" id="s37" points="2604,75 2604,60 2609,60 2618,57 2627,54 2634,54 2639,54 2641,63 2647,66 2652,57 2658,48 2660,45 2663,48 2663,75"/>
+            <rect class="timeline-segment-rect" id="s37" x="2604" y="0" width="59" height="75">
+            <title>231m/59s @ 3.6/4.9/10.4 kts ↑ 42°/171° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2663,75 2663,48 2666,48 2670,51 2678,48 2679,42 2684,45 2688,54 2695,57 2702,54 2709,48 2710,45 2716,45 2725,51 2733,51 2737,51 2745,54 2753,54 2760,51 2768,48 2768,75"/>
-            <rect class="timeline-segment-rect" x="2663" y="0" width="105" height="75"/>
+            <polygon class="timeline-segment" id="s38" points="2663,75 2663,48 2666,48 2670,51 2678,48 2679,42 2684,45 2688,54 2695,57 2702,54 2709,48 2710,45 2716,45 2725,51 2733,51 2737,51 2745,54 2753,54 2760,51 2768,48 2768,75"/>
+            <rect class="timeline-segment-rect" id="s38" x="2663" y="0" width="105" height="75">
+            <title>486m/105s @ 6.5/8.9/11.3 kts ↑ 341°/15° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2768,75 2768,48 2772,48 2777,51 2778,60 2784,63 2791,63 2799,60 2799,75"/>
-            <rect class="timeline-segment-rect" x="2768" y="0" width="31" height="75"/>
+            <polygon class="timeline-segment" id="s39" points="2768,75 2768,48 2772,48 2777,51 2778,60 2784,63 2791,63 2799,60 2799,75"/>
+            <rect class="timeline-segment-rect" id="s39" x="2768" y="0" width="31" height="75">
+            <title>133m/31s @ 4.6/6.9/9.7 kts ↑ 256°/358° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2799,75 2799,60 2807,57 2816,54 2822,54 2829,51 2836,48 2845,48 2849,42 2852,39 2854,39 2861,39 2865,42 2868,45 2870,48 2873,48 2878,48 2879,51 2888,51 2893,51 2896,48 2903,45 2911,42 2916,45 2924,48 2932,48 2940,54 2948,57 2954,54 2961,51 2961,75"/>
-            <rect class="timeline-segment-rect" x="2799" y="0" width="162" height="75"/>
+            <polygon class="timeline-segment" id="s40" points="2799,75 2799,60 2807,57 2816,54 2822,54 2829,51 2836,48 2845,48 2849,42 2852,39 2854,39 2861,39 2865,42 2868,45 2870,48 2873,48 2878,48 2879,51 2888,51 2893,51 2896,48 2903,45 2911,42 2916,45 2924,48 2932,48 2940,54 2948,57 2954,54 2961,51 2961,75"/>
+            <rect class="timeline-segment-rect" id="s40" x="2799" y="0" width="162" height="75">
+            <title>782m/162s @ 5.9/9.4/12.9 kts ↑ 251°/266° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2961,75 2961,54 2965,57 2968,60 2971,63 2977,63 2982,60 2987,60 2991,57 2999,57 2999,75"/>
-            <rect class="timeline-segment-rect" x="2961" y="0" width="38" height="75"/>
+            <polygon class="timeline-segment" id="s41" points="2961,75 2961,54 2965,57 2968,60 2971,63 2977,63 2982,60 2987,60 2991,57 2999,57 2999,75"/>
+            <rect class="timeline-segment-rect" id="s41" x="2961" y="0" width="38" height="75">
+            <title>137m/38s @ 4.5/5.7/7.8 kts ↑ 155°/280° turning
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2999,75 2999,54 3003,57 3009,54 3015,57 3020,60 3028,57 3034,60 3042,57 3053,57 3062,57 3070,57 3082,60 3090,57 3098,54 3104,51 3110,51 3120,51 3124,54 3130,60 3139,57 3149,57 3154,57 3161,54 3171,54 3178,57 3187,60 3196,60 3201,57 3210,57 3221,57 3230,57 3242,57 3252,57 3264,60 3273,60 3282,60 3291,63 3300,60 3310,57 3318,57 3325,57 3337,57 3344,57 3353,60 3360,57 3368,54 3373,51 3381,54 3390,57 3399,57 3410,60 3421,54 3430,57 3438,57 3446,54 3456,51 3465,57 3473,60 3482,57 3490,57 3497,54 3502,57 3509,60 3513,66 3520,69 3528,63 3528,75"/>
-            <rect class="timeline-segment-rect" x="2999" y="0" width="529" height="75"/>
+            <polygon class="timeline-segment" id="s42" points="2999,75 2999,54 3003,57 3009,54 3015,57 3020,60 3028,57 3034,60 3042,57 3053,57 3062,57 3070,57 3082,60 3090,57 3098,54 3104,51 3110,51 3120,51 3124,54 3130,60 3139,57 3149,57 3154,57 3161,54 3171,54 3178,57 3187,60 3196,60 3201,57 3210,57 3221,57 3230,57 3242,57 3252,57 3264,60 3273,60 3282,60 3291,63 3300,60 3310,57 3318,57 3325,57 3337,57 3344,57 3353,60 3360,57 3368,54 3373,51 3381,54 3390,57 3399,57 3410,60 3421,54 3430,57 3438,57 3446,54 3456,51 3465,57 3473,60 3482,57 3490,57 3497,54 3502,57 3509,60 3513,66 3520,69 3528,63 3528,75"/>
+            <rect class="timeline-segment-rect" id="s42" x="2999" y="0" width="529" height="75">
+            <title>1777m/529s @ 2.7/6.4/9.0 kts ↑ 119°/208° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3528,75 3528,60 3536,60 3541,63 3545,66 3552,63 3552,75"/>
-            <rect class="timeline-segment-rect" x="3528" y="0" width="24" height="75"/>
+            <polygon class="timeline-segment" id="s43" points="3528,75 3528,60 3536,60 3541,63 3545,66 3552,63 3552,75"/>
+            <rect class="timeline-segment-rect" id="s43" x="3528" y="0" width="24" height="75">
+            <title>84m/24s @ 3.9/2.5/4.5 kts ↑ 259°/262° moving
+    </title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3552,75 3552,63 3558,66 3564,69 3565,72 3570,72 3570,75"/>
-            <rect class="timeline-segment-rect" x="3552" y="0" width="18" height="75"/>
+            <polygon class="timeline-segment" id="s44" points="3552,75 3552,63 3558,66 3564,69 3565,72 3570,72 3570,75"/>
+            <rect class="timeline-segment-rect" id="s44" x="3552" y="0" width="18" height="75">
+            <title>42m/18s @ 1.0/2.8/4.2 kts ↑ 149°/272° turning
+    </title>
+            </rect>
         
     </svg>
     <script>
@@ -3981,5 +4120,63 @@ map.addEventListener(&#39;mouseup&#39;, dragStop);
 map.addEventListener(&#39;mouseleave&#39;, dragStop);
 map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
+function getMapSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != &#39;line&#39;) return undefined
+    const id = event.target.parentNode.getAttribute(&#34;id&#34;)
+    console.log(&#34;segment=&#34;, id)
+    return id
+}
+
+function mapSegmentHoverStart(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.add(&#34;timeline-segment-rect-hovered&#34;)
+}
+
+function mapSegmentHoverStop(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.remove(&#34;timeline-segment-rect-hovered&#34;)
+}
+
+map.addEventListener(&#39;mouseover&#39;, mapSegmentHoverStart)
+map.addEventListener(&#39;mouseout&#39;, mapSegmentHoverStop)
+
+// timeline hover handling
+function getTimelineSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != &#39;rect&#39; &amp;&amp; target.tagName != &#39;polygon&#39;) return undefined
+    const id = event.target.getAttribute(&#34;id&#34;)
+    return id
+}
+
+function segmentHoverStart(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const selector = `g#${id}.segment`
+    const mapSegment = map.querySelector(selector)
+    if (!mapSegment) return
+    mapSegment.classList.add(&#34;segment-hovered&#34;)
+}
+
+function segmentHoverStop(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const mapSegment = map.querySelector(`g#${id}.segment`)
+    if (!mapSegment) return
+    mapSegment.classList.remove(&#34;segment-hovered&#34;)
+}
+
+timeline.addEventListener(&#39;mouseover&#39;, segmentHoverStart)
+timeline.addEventListener(&#39;mouseout&#39;, segmentHoverStop)
     </script>
 </svg>

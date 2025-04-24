@@ -2,6 +2,7 @@
 package main
 import "fmt"
 import "time"
+import "strconv"
 
 func (m *Map) render(w io.Writer, t *Track) {
 %>
@@ -9,12 +10,7 @@ func (m *Map) render(w io.Writer, t *Track) {
     width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
-            .segment { fill: none; stroke-width: 4 }
-            .segment:hover { stroke-width: 8 }
-            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
-            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }
-            .timeline-segment-rect { fill: transparent }
-            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+<%= css %>
         ]]>
     </style>
     <g id="legend">
@@ -34,9 +30,9 @@ func (m *Map) render(w io.Writer, t *Track) {
         <rect id="background" width="<%= m.w %>" height="<%= m.h %>" fill="transparent"/>
     <%  totalDistance := float64(0)
         var lastPoint *Point
-        for _, segment := range t.Segments {
+        for i, segment := range t.Segments {
     %>
-        <g class="segment">
+        <g class="segment" id="s<%= strconv.Itoa(i) %>">
             <% if lastPoint != nil {
                 prev, next := lastPoint, segment.Points[0]
                 x1, y1 := m.Point(prev.gpx)
@@ -69,13 +65,19 @@ func (m *Map) render(w io.Writer, t *Track) {
 	<% } %>
     </svg>
     <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 <%= t.Duration.Seconds() %> <%= tlHeight %>">
+        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured
+            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->
+        <rect id="background" width="100%" height="100%" fill="transparent"/>
         <% 
         offset := 0
-        for _, segment := range t.Segments {
+        for i, segment := range t.Segments {
             width := int(segment.Duration.Seconds())
         %>
-            <polygon class="timeline-segment" points="<%= segment.Timeline(offset)%>"/>
-            <rect class="timeline-segment-rect" x="<%= offset %>" y="0" width="<%= width %>" height="<%= tlHeight %>"/>
+            <polygon class="timeline-segment" id="s<%= strconv.Itoa(i) %>" points="<%= segment.Timeline(offset)%>"/>
+            <rect class="timeline-segment-rect" id="s<%= strconv.Itoa(i) %>" x="<%= offset %>" y="0" width="<%= width %>" height="<%= tlHeight %>">
+            <title><%= segment.ShortString() %>
+    <%= segment.TypeString() %></title>
+            </rect>
         <%
             offset += int(segment.Duration.Seconds())
         }

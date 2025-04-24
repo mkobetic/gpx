@@ -103,3 +103,65 @@ map.addEventListener('mousedown', dragStart);
 map.addEventListener('mouseup', dragStop);
 map.addEventListener('mouseleave', dragStop);
 map.addEventListener('wheel', wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+
+// map hover handling
+// * highlight the corresponding timeline segment
+
+function getMapSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != 'line') return undefined
+    const id = event.target.parentNode.getAttribute("id")
+    return id
+}
+
+function mapSegmentHoverStart(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.add("timeline-segment-rect-hovered")
+}
+
+function mapSegmentHoverStop(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.remove("timeline-segment-rect-hovered")
+}
+
+map.addEventListener('mouseover', mapSegmentHoverStart)
+map.addEventListener('mouseout', mapSegmentHoverStop)
+
+// timeline hover handling
+// * highlight corresponding map segment
+function getTimelineSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != 'rect' && target.tagName != 'polygon') return undefined
+    const id = event.target.getAttribute("id")
+    return id
+}
+
+function timelineSegmentHoverStart(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const selector = `g#${id}.segment`
+    const mapSegment = map.querySelector(selector)
+    if (!mapSegment) return
+    mapSegment.classList.add("segment-hovered")
+}
+
+function timelineSegmentHoverStop(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const mapSegment = map.querySelector(`g#${id}.segment`)
+    if (!mapSegment) return
+    mapSegment.classList.remove("segment-hovered")
+}
+
+timeline.addEventListener('mouseover', timelineSegmentHoverStart)
+timeline.addEventListener('mouseout', timelineSegmentHoverStop)

@@ -3,12 +3,13 @@
     width="100%" height="100%" id="root">
     <style type="text/css" >
         <![CDATA[
-            .segment { fill: none; stroke-width: 4 }
-            .segment:hover { stroke-width: 8 }
-            .timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
-            .timeline-segment:hover { fill: yellow; fill-opacity: 30%; stroke-width: 4 }
-            .timeline-segment-rect { fill: transparent }
-            .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+.segment { fill: none; stroke-width: 4 }
+.segment:hover { stroke-width: 8 }
+.segment-hovered { stroke-width: 8 }
+.timeline-segment { fill: blue; fill-opacity: 30%; stroke: blue }
+.timeline-segment-rect { fill: transparent }
+.timeline-segment-rect:hover { stroke-width: 2; stroke: black }
+.timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
         ]]>
     </style>
     <g id="legend">
@@ -78,7 +79,7 @@
             by the #map element whenever the mouse pointer is anywhere in the viewport -->
         <rect id="background" width="2617.179956986903" height="2295.5285448213012" fill="transparent"/>
     
-        <g class="segment">
+        <g class="segment" id="s0">
             
             
             <line class="step" x1="2055" y1="2114" x2="2054" y2="2111" stroke="#0ff">
@@ -245,7 +246,7 @@
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s1">
             
             <line class="step" x1="1891" y1="1634" x2="1881" y2="1617" stroke="#0ef">
             <title>17:37:43 27.0m @ 7.5 kts ↑ 328° NNW = 745.31 nm
@@ -286,7 +287,7 @@ gybe port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s2">
             
             <line class="step" x1="1902" y1="1576" x2="1919" y2="1571" stroke="#0fb">
             <title>17:38:17 24.7m @ 9.6 kts ↑ 72° ENE = 858.27 nm
@@ -393,7 +394,7 @@ broad reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s3">
             
             <line class="step" x1="2253" y1="1466" x2="2275" y2="1460" stroke="#0ef">
             <title>17:40:18 32.7m @ 7.9 kts ↑ 73° ENE = 1391.02 nm
@@ -428,7 +429,7 @@ gybe starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s4">
             
             <line class="step" x1="2292" y1="1416" x2="2286" y2="1396" stroke="#0fb">
             <title>17:40:47 29.6m @ 9.6 kts ↑ 342° NNW = 1504.29 nm
@@ -625,7 +626,7 @@ broad reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s5">
             
             <line class="step" x1="2003" y1="840" x2="1987" y2="808" stroke="#0f7">
             <title>17:43:51 49.2m @ 10.6 kts ↑ 333° NNW = 2429.12 nm
@@ -672,7 +673,7 @@ round up port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s6">
             
             <line class="step" x1="1950" y1="806" x2="1948" y2="807" stroke="#08f">
             <title>17:44:14 2.1m @ 4.2 kts ↑ 254° WSW = 2488.21 nm
@@ -887,7 +888,7 @@ close reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s7">
             
             <line class="step" x1="1344" y1="1002" x2="1326" y2="1009" stroke="#0ef">
             <title>17:48:01 28.1m @ 7.8 kts ↑ 248° WSW = 3412.19 nm
@@ -934,7 +935,7 @@ tack port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s8">
             
             <line class="step" x1="1331" y1="1059" x2="1347" y2="1082" stroke="#0fb">
             <title>17:48:43 39.4m @ 9.6 kts ↑ 145° SE = 3551.03 nm
@@ -981,7 +982,7 @@ close reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s9">
             
             <line class="step" x1="1420" y1="1120" x2="1449" y2="1119" stroke="#0ff">
             <title>17:49:29 40.6m @ 8.8 kts ↑ 88° E = 3732.93 nm
@@ -1196,7 +1197,7 @@ broad reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s10">
             
             <line class="step" x1="2107" y1="773" x2="2132" y2="759" stroke="#0f7">
             <title>17:53:03 39.1m @ 10.8 kts ↑ 61° ENE = 4824.01 nm
@@ -1237,7 +1238,7 @@ round up starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s11">
             
             <line class="step" x1="2177" y1="781" x2="2183" y2="790" stroke="#08f">
             <title>17:53:42 14.7m @ 4.1 kts ↑ 142° SE = 4926.74 nm
@@ -1410,7 +1411,7 @@ beam reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s12">
             
             <line class="step" x1="2604" y1="1132" x2="2617" y2="1147" stroke="#0ef">
             <title>17:56:43 27.0m @ 7.5 kts ↑ 140° SE = 5716.93 nm
@@ -1463,7 +1464,7 @@ tack starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s13">
             
             <line class="step" x1="2593" y1="1196" x2="2576" y2="1205" stroke="#0cf">
             <title>17:57:34 26.8m @ 6.5 kts ↑ 244° WSW = 5859.27 nm
@@ -1618,7 +1619,7 @@ close reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s14">
             
             <line class="step" x1="2004" y1="1321" x2="1987" y2="1327" stroke="#0fb">
             <title>18:00:28 24.9m @ 9.6 kts ↑ 252° WSW = 6705.84 nm
@@ -1665,7 +1666,7 @@ tack port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s15">
             
             <line class="step" x1="1998" y1="1372" x2="2012" y2="1382" stroke="#0cf">
             <title>18:01:08 24.3m @ 6.7 kts ↑ 125° SE = 6836.72 nm
@@ -1718,7 +1719,7 @@ beam reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s16">
             
             <line class="step" x1="2113" y1="1471" x2="2128" y2="1484" stroke="#08f">
             <title>18:02:20 26.9m @ 4.7 kts ↑ 131° SE = 7050.77 nm
@@ -1759,7 +1760,7 @@ bear away starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s17">
             
             <line class="step" x1="2196" y1="1473" x2="2219" y2="1463" stroke="#0cf">
             <title>18:03:05 34.5m @ 6.7 kts ↑ 67° ENE = 7201.19 nm
@@ -1806,7 +1807,7 @@ broad reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s18">
             
             <line class="step" x1="2326" y1="1403" x2="2348" y2="1399" stroke="#0cf">
             <title>18:04:04 32.0m @ 6.9 kts ↑ 80° E = 7406.08 nm
@@ -1847,7 +1848,7 @@ gybe starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s19">
             
             <line class="step" x1="2351" y1="1366" x2="2348" y2="1363" stroke="#0f0">
             <title>18:04:34 6.5m @ 12.6 kts ↑ 314° NW = 7512.65 nm
@@ -2074,7 +2075,7 @@ beam reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s20">
             
             <line class="step" x1="1699" y1="729" x2="1683" y2="711" stroke="#0f7">
             <title>18:08:23 33.6m @ 10.9 kts ↑ 318° NW = 8822.24 nm
@@ -2109,7 +2110,7 @@ round up port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s21">
             
             <line class="step" x1="1632" y1="721" x2="1620" y2="731" stroke="#0af">
             <title>18:08:51 22.7m @ 5.5 kts ↑ 232° SW = 8923.20 nm
@@ -2366,7 +2367,7 @@ close reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s22">
             
             <line class="step" x1="800" y1="954" x2="787" y2="960" stroke="#0cf">
             <title>18:13:28 20.6m @ 6.6 kts ↑ 247° WSW = 10150.41 nm
@@ -2413,7 +2414,7 @@ bear away port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s23">
             
             <line class="step" x1="738" y1="927" x2="734" y2="916" stroke="#0af">
             <title>18:14:07 16.5m @ 5.3 kts ↑ 340° NNW = 10275.37 nm
@@ -2718,7 +2719,7 @@ broad reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s24">
             
             <line class="step" x1="42" y1="149" x2="33" y2="123" stroke="#0f0">
             <title>18:19:31 37.5m @ 12.1 kts ↑ 340° NNW = 11773.64 nm
@@ -2765,7 +2766,7 @@ gybe port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s25">
             
             <line class="step" x1="53" y1="81" x2="84" y2="69" stroke="#0f0">
             <title>18:20:05 46.9m @ 13.0 kts ↑ 70° ENE = 11921.01 nm
@@ -2800,7 +2801,7 @@ broad reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s26">
             
             <line class="step" x1="191" y1="28" x2="200" y2="24" stroke="#0fb">
             <title>18:20:34 14.3m @ 9.3 kts ↑ 63° ENE = 12095.57 nm
@@ -2835,7 +2836,7 @@ round up starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s27">
             
             <line class="step" x1="244" y1="40" x2="247" y2="50" stroke="#06f">
             <title>18:21:06 14.7m @ 3.2 kts ↑ 163° SSE = 12187.01 nm
@@ -3458,7 +3459,7 @@ beam reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s28">
             
             <line class="step" x1="2329" y1="1061" x2="2346" y2="1053" stroke="#0f7">
             <title>18:32:12 26.6m @ 10.3 kts ↑ 64° ENE = 15770.85 nm
@@ -3499,7 +3500,7 @@ round up starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s29">
             
             <line class="step" x1="2376" y1="1099" x2="2379" y2="1113" stroke="#08f">
             <title>18:32:51 19.6m @ 4.8 kts ↑ 166° SSE = 15880.06 nm
@@ -3546,7 +3547,7 @@ close reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s30">
             
             <line class="step" x1="2429" y1="1216" x2="2437" y2="1224" stroke="#0f7">
             <title>18:33:41 16.7m @ 10.8 kts ↑ 135° SE = 16057.87 nm
@@ -3593,7 +3594,7 @@ tack starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s31">
             
             <line class="step" x1="2412" y1="1273" x2="2398" y2="1277" stroke="#0cf">
             <title>18:34:22 20.5m @ 6.6 kts ↑ 253° WSW = 16184.98 nm
@@ -3670,7 +3671,7 @@ close reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s32">
             
             <line class="step" x1="2116" y1="1368" x2="2107" y2="1372" stroke="#0fb">
             <title>18:35:50 14.0m @ 9.1 kts ↑ 243° WSW = 16614.40 nm
@@ -3705,7 +3706,7 @@ tack port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s33">
             
             <line class="step" x1="2109" y1="1415" x2="2120" y2="1430" stroke="#0af">
             <title>18:36:27 25.0m @ 5.4 kts ↑ 141° SE = 16725.03 nm
@@ -3770,7 +3771,7 @@ close reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s34">
             
             <line class="step" x1="2243" y1="1603" x2="2257" y2="1620" stroke="#0ff">
             <title>18:37:39 30.7m @ 8.5 kts ↑ 143° SE = 17051.08 nm
@@ -3817,7 +3818,7 @@ tack starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s35">
             
             <line class="step" x1="2231" y1="1657" x2="2213" y2="1663" stroke="#0ff">
             <title>18:38:12 26.0m @ 8.4 kts ↑ 252° WSW = 17154.71 nm
@@ -3882,7 +3883,7 @@ close reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s36">
             
             <line class="step" x1="2047" y1="1715" x2="2032" y2="1714" stroke="#0f7">
             <title>18:39:02 21.2m @ 10.3 kts ↑ 275° W = 17420.88 nm
@@ -3929,7 +3930,7 @@ tack port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s37">
             
             <line class="step" x1="2032" y1="1756" x2="2039" y2="1765" stroke="#0af">
             <title>18:39:45 16.7m @ 5.4 kts ↑ 141° SE = 17533.24 nm
@@ -3994,7 +3995,7 @@ close reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s38">
             
             <line class="step" x1="2146" y1="1905" x2="2154" y2="1919" stroke="#0cf">
             <title>18:41:12 23.2m @ 6.4 kts ↑ 151° SSE = 17800.89 nm
@@ -4035,7 +4036,7 @@ tack starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s39">
             
             <line class="step" x1="2131" y1="1973" x2="2116" y2="1980" stroke="#0af">
             <title>18:41:56 23.8m @ 5.8 kts ↑ 246° WSW = 17936.04 nm
@@ -4088,7 +4089,7 @@ tack port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s40">
             
             <line class="step" x1="2076" y1="2056" x2="2084" y2="2068" stroke="#0af">
             <title>18:42:58 20.4m @ 5.7 kts ↑ 145° SE = 18128.32 nm
@@ -4153,7 +4154,7 @@ tack starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s41">
             
             <line class="step" x1="2117" y1="2154" x2="2104" y2="2165" stroke="#0af">
             <title>18:44:10 24.2m @ 5.2 kts ↑ 229° SW = 18320.90 nm
@@ -4194,7 +4195,7 @@ close reach port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s42">
             
             <line class="step" x1="2072" y1="2201" x2="2081" y2="2209" stroke="#06f">
             <title>18:44:52 16.1m @ 3.1 kts ↑ 133° SE = 18411.91 nm
@@ -4229,7 +4230,7 @@ tack starboard to port SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s43">
             
             <line class="step" x1="2091" y1="2238" x2="2079" y2="2246" stroke="#08f">
             <title>18:45:28 19.9m @ 4.3 kts ↑ 237° WSW = 18484.51 nm
@@ -4264,7 +4265,7 @@ tack port to starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s44">
             
             <line class="step" x1="2057" y1="2261" x2="2058" y2="2262" stroke="#02f">
             <title>18:45:50 1.0m @ 2.0 kts ↑ 150° SSE = 18525.21 nm
@@ -4299,7 +4300,7 @@ close reach starboard SSW</title>
             
         </g>
 	
-        <g class="segment">
+        <g class="segment" id="s45">
             
             <line class="step" x1="2080" y1="2289" x2="2078" y2="2292" stroke="#04f">
             <title>18:46:25 5.5m @ 2.1 kts ↑ 226° SW = 18580.63 nm
@@ -4360,144 +4361,285 @@ close reach port SSW</title>
 	
     </svg>
     <svg id="timeline" x="20" y="100" width="95%" height="50" preserveAspectRatio="none" viewBox="0 0 4362 75">
+        <!-- Invisible rectangle covering the whole viewport is needed so that mouse events are captured
+            by the #timeline element whenever the mouse pointer is anywhere in the viewport -->
+        <rect id="background" width="100%" height="100%" fill="transparent"/>
         
-            <polygon class="timeline-segment" points="0,75 0,51 1,51 7,54 12,54 19,54 24,48 32,48 36,48 38,51 46,51 53,51 61,54 67,54 75,48 82,51 90,54 100,54 108,57 117,57 126,57 133,54 137,48 141,54 148,51 154,51 161,57 175,57 184,60 184,75"/>
-            <rect class="timeline-segment-rect" x="0" y="0" width="184" height="75"/>
+            <polygon class="timeline-segment" id="s0" points="0,75 0,51 1,51 7,54 12,54 19,54 24,48 32,48 36,48 38,51 46,51 53,51 61,54 67,54 75,48 82,51 90,54 100,54 108,57 117,57 126,57 133,54 137,48 141,54 148,51 154,51 161,57 175,57 184,60 184,75"/>
+            <rect class="timeline-segment-rect" id="s0" x="0" y="0" width="184" height="75">
+            <title>718m/184s @ 5.5/7.8/9.9 kts ↑ 323°/6° moving
+    broad reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="184,75 184,54 192,57 193,60 199,63 205,60 213,57 213,75"/>
-            <rect class="timeline-segment-rect" x="184" y="0" width="29" height="75"/>
+            <polygon class="timeline-segment" id="s1" points="184,75 184,54 192,57 193,60 199,63 205,60 213,57 213,75"/>
+            <rect class="timeline-segment-rect" id="s1" x="184" y="0" width="29" height="75">
+            <title>115m/29s @ 4.1/6.0/7.5 kts ↑ 328°/70° turning
+    gybe port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="213,75 213,48 219,42 226,45 235,48 238,51 246,51 251,45 259,45 265,51 272,54 279,51 287,54 295,54 303,54 313,54 321,54 326,54 326,75"/>
-            <rect class="timeline-segment-rect" x="213" y="0" width="113" height="75"/>
+            <polygon class="timeline-segment" id="s2" points="213,75 213,48 219,42 226,45 235,48 238,51 246,51 251,45 259,45 265,51 272,54 279,51 287,54 295,54 303,54 313,54 321,54 326,54 326,75"/>
+            <rect class="timeline-segment-rect" id="s2" x="213" y="0" width="113" height="75">
+            <title>525m/113s @ 7.0/8.7/11.8 kts ↑ 52°/86° moving
+    broad reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="326,75 326,54 334,54 338,60 343,57 349,51 349,75"/>
-            <rect class="timeline-segment-rect" x="326" y="0" width="23" height="75"/>
+            <polygon class="timeline-segment" id="s3" points="326,75 326,54 334,54 338,60 343,57 349,51 349,75"/>
+            <rect class="timeline-segment-rect" id="s3" x="326" y="0" width="23" height="75">
+            <title>116m/23s @ 5.4/7.0/8.1 kts ↑ 340°/73° turning
+    gybe starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="349,75 349,48 355,42 362,45 370,51 375,54 381,54 388,51 392,48 401,51 404,51 408,48 412,42 420,45 422,51 428,51 430,48 439,48 447,45 457,45 460,45 461,48 464,54 471,54 479,51 481,45 488,48 490,54 496,54 502,45 510,42 517,39 524,42 524,75"/>
-            <rect class="timeline-segment-rect" x="349" y="0" width="175" height="75"/>
+            <polygon class="timeline-segment" id="s4" points="349,75 349,48 355,42 362,45 370,51 375,54 381,54 388,51 392,48 401,51 404,51 408,48 412,42 420,45 422,51 428,51 430,48 439,48 447,45 457,45 460,45 461,48 464,54 471,54 479,51 481,45 488,48 490,54 496,54 502,45 510,42 517,39 524,42 524,75"/>
+            <rect class="timeline-segment-rect" id="s4" x="349" y="0" width="175" height="75">
+            <title>905m/175s @ 7.1/9.6/12.6 kts ↑ 310°/349° moving
+    broad reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="524,75 524,45 528,51 531,60 534,66 538,63 541,63 546,66 546,75"/>
-            <rect class="timeline-segment-rect" x="524" y="0" width="22" height="75"/>
+            <polygon class="timeline-segment" id="s5" points="524,75 524,45 528,51 531,60 534,66 538,63 541,63 546,66 546,75"/>
+            <rect class="timeline-segment-rect" id="s5" x="524" y="0" width="22" height="75">
+            <title>106m/22s @ 3.6/5.8/10.6 kts ↑ 243°/333° turning
+    round up port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="546,75 546,63 554,60 557,60 564,60 569,60 575,60 580,60 586,54 595,54 604,57 612,60 619,54 626,57 631,60 637,60 641,57 646,57 655,54 661,51 669,51 678,54 685,51 694,45 698,45 704,42 711,42 720,42 730,45 733,48 741,48 750,48 757,48 759,48 763,48 766,54 766,75"/>
-            <rect class="timeline-segment-rect" x="546" y="0" width="220" height="75"/>
+            <polygon class="timeline-segment" id="s6" points="546,75 546,63 554,60 557,60 564,60 569,60 575,60 580,60 586,54 595,54 604,57 612,60 619,54 626,57 631,60 637,60 641,57 646,57 655,54 661,51 669,51 678,54 685,51 694,45 698,45 704,42 711,42 720,42 730,45 733,48 741,48 750,48 757,48 759,48 763,48 766,54 766,75"/>
+            <rect class="timeline-segment-rect" id="s6" x="546" y="0" width="220" height="75">
+            <title>898m/220s @ 4.2/7.7/11.4 kts ↑ 238°/267° moving
+    close reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="766,75 766,54 772,57 777,63 779,69 786,66 794,60 800,51 800,75"/>
-            <rect class="timeline-segment-rect" x="766" y="0" width="34" height="75"/>
+            <polygon class="timeline-segment" id="s7" points="766,75 766,54 772,57 777,63 779,69 786,66 794,60 800,51 800,75"/>
+            <rect class="timeline-segment-rect" id="s7" x="766" y="0" width="34" height="75">
+            <title>128m/34s @ 2.6/5.7/8.1 kts ↑ 136°/248° turning
+    tack port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="800,75 800,48 807,51 816,57 821,57 824,48 830,51 837,54 837,75"/>
-            <rect class="timeline-segment-rect" x="800" y="0" width="37" height="75"/>
+            <polygon class="timeline-segment" id="s8" points="800,75 800,48 807,51 816,57 821,57 824,48 830,51 837,54 837,75"/>
+            <rect class="timeline-segment-rect" id="s8" x="800" y="0" width="37" height="75">
+            <title>181m/37s @ 9.6/1.4/9.6 kts ↑ 145°/145° moving
+    close reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="837,75 837,51 844,51 845,48 850,45 855,51 861,57 868,51 872,48 878,57 889,57 897,60 902,57 907,48 909,45 917,45 925,51 929,45 938,42 946,42 955,39 962,39 969,39 977,45 984,45 990,42 991,45 999,42 1005,48 1008,51 1015,51 1022,48 1023,45 1032,39 1038,42 1044,42 1044,75"/>
-            <rect class="timeline-segment-rect" x="837" y="0" width="207" height="75"/>
+            <polygon class="timeline-segment" id="s9" points="837,75 837,51 844,51 845,48 850,45 855,51 861,57 868,51 872,48 878,57 889,57 897,60 902,57 907,48 909,45 917,45 925,51 929,45 938,42 946,42 955,39 962,39 969,39 977,45 984,45 990,42 991,45 999,42 1005,48 1008,51 1015,51 1022,48 1023,45 1032,39 1038,42 1044,42 1044,75"/>
+            <rect class="timeline-segment-rect" id="s9" x="837" y="0" width="207" height="75">
+            <title>1093m/207s @ 5.8/9.8/12.9 kts ↑ 50°/88° moving
+    broad reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1044,75 1044,45 1048,48 1052,51 1056,63 1066,63 1076,66 1076,75"/>
-            <rect class="timeline-segment-rect" x="1044" y="0" width="32" height="75"/>
+            <polygon class="timeline-segment" id="s10" points="1044,75 1044,45 1048,48 1052,51 1056,63 1066,63 1076,66 1076,75"/>
+            <rect class="timeline-segment-rect" id="s10" x="1044" y="0" width="32" height="75">
+            <title>127m/32s @ 3.6/6.9/10.8 kts ↑ 61°/148° turning
+    round up starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1076,75 1076,63 1085,63 1092,63 1100,60 1109,57 1116,54 1123,45 1131,48 1138,48 1145,48 1152,45 1158,45 1163,45 1168,51 1177,54 1185,51 1190,48 1196,45 1204,42 1210,42 1213,45 1217,48 1220,48 1227,48 1233,48 1234,54 1243,57 1250,57 1250,75"/>
-            <rect class="timeline-segment-rect" x="1076" y="0" width="174" height="75"/>
+            <polygon class="timeline-segment" id="s11" points="1076,75 1076,63 1085,63 1092,63 1100,60 1109,57 1116,54 1123,45 1131,48 1138,48 1145,48 1152,45 1158,45 1163,45 1168,51 1177,54 1185,51 1190,48 1196,45 1204,42 1210,42 1213,45 1217,48 1220,48 1227,48 1233,48 1234,54 1243,57 1250,57 1250,75"/>
+            <rect class="timeline-segment-rect" id="s11" x="1076" y="0" width="174" height="75">
+            <title>778m/174s @ 4.1/8.6/11.5 kts ↑ 105°/144° moving
+    beam reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1250,75 1250,54 1259,57 1265,60 1272,69 1276,66 1283,60 1288,60 1293,57 1293,75"/>
-            <rect class="timeline-segment-rect" x="1250" y="0" width="43" height="75"/>
+            <polygon class="timeline-segment" id="s12" points="1250,75 1250,54 1259,57 1265,60 1272,69 1276,66 1283,60 1288,60 1293,57 1293,75"/>
+            <rect class="timeline-segment-rect" id="s12" x="1250" y="0" width="43" height="75">
+            <title>142m/43s @ 2.0/5.4/7.5 kts ↑ 140°/248° turning
+    tack starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1293,75 1293,57 1302,60 1310,57 1319,54 1326,54 1334,54 1342,51 1350,54 1358,54 1363,48 1368,45 1372,45 1381,42 1388,45 1397,45 1405,48 1416,45 1424,45 1430,45 1438,42 1445,39 1452,39 1459,45 1460,48 1462,45 1462,75"/>
-            <rect class="timeline-segment-rect" x="1293" y="0" width="169" height="75"/>
+            <polygon class="timeline-segment" id="s13" points="1293,75 1293,57 1302,60 1310,57 1319,54 1326,54 1334,54 1342,51 1350,54 1358,54 1363,48 1368,45 1372,45 1381,42 1388,45 1397,45 1405,48 1416,45 1424,45 1430,45 1438,42 1445,39 1452,39 1459,45 1460,48 1462,45 1462,75"/>
+            <rect class="timeline-segment-rect" id="s13" x="1293" y="0" width="169" height="75">
+            <title>849m/169s @ 5.9/9.4/12.2 kts ↑ 243°/270° moving
+    close reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1462,75 1462,48 1468,54 1473,54 1478,69 1479,60 1488,57 1495,57 1495,75"/>
-            <rect class="timeline-segment-rect" x="1462" y="0" width="33" height="75"/>
+            <polygon class="timeline-segment" id="s14" points="1462,75 1462,48 1468,54 1473,54 1478,69 1479,60 1488,57 1495,57 1495,75"/>
+            <rect class="timeline-segment-rect" id="s14" x="1462" y="0" width="33" height="75">
+            <title>131m/33s @ 2.9/6.6/9.6 kts ↑ 122°/252° turning
+    tack port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1495,75 1495,57 1502,57 1510,57 1519,57 1529,60 1538,60 1547,57 1556,63 1556,75"/>
-            <rect class="timeline-segment-rect" x="1495" y="0" width="61" height="75"/>
+            <polygon class="timeline-segment" id="s15" points="1495,75 1495,57 1502,57 1510,57 1519,57 1529,60 1538,60 1547,57 1556,63 1556,75"/>
+            <rect class="timeline-segment-rect" id="s15" x="1495" y="0" width="61" height="75">
+            <title>211m/61s @ 4.8/6.1/6.9 kts ↑ 125°/134° moving
+    beam reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1556,75 1556,63 1565,60 1571,57 1575,51 1584,57 1591,57 1591,75"/>
-            <rect class="timeline-segment-rect" x="1556" y="0" width="35" height="75"/>
+            <polygon class="timeline-segment" id="s16" points="1556,75 1556,63 1565,60 1571,57 1575,51 1584,57 1591,57 1591,75"/>
+            <rect class="timeline-segment-rect" id="s16" x="1556" y="0" width="35" height="75">
+            <title>143m/35s @ 4.7/6.3/8.2 kts ↑ 49°/133° turning
+    bear away starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1591,75 1591,57 1598,60 1609,57 1616,60 1625,57 1633,51 1641,54 1641,75"/>
-            <rect class="timeline-segment-rect" x="1591" y="0" width="50" height="75"/>
+            <polygon class="timeline-segment" id="s17" points="1591,75 1591,57 1598,60 1609,57 1616,60 1625,57 1633,51 1641,54 1641,75"/>
+            <rect class="timeline-segment-rect" id="s17" x="1591" y="0" width="50" height="75">
+            <title>207m/50s @ 5.8/6.7/8.5 kts ↑ 50°/72° moving
+    broad reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1641,75 1641,57 1650,54 1656,63 1660,63 1665,57 1670,45 1670,75"/>
-            <rect class="timeline-segment-rect" x="1641" y="0" width="29" height="75"/>
+            <polygon class="timeline-segment" id="s18" points="1641,75 1641,57 1650,54 1656,63 1660,63 1665,57 1670,45 1670,75"/>
+            <rect class="timeline-segment-rect" id="s18" x="1641" y="0" width="29" height="75">
+            <title>132m/29s @ 4.3/6.6/10.1 kts ↑ 292°/80° turning
+    gybe starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1670,75 1670,39 1676,39 1680,42 1687,48 1693,48 1695,42 1700,36 1706,39 1707,42 1715,39 1716,36 1720,39 1727,48 1733,45 1740,51 1744,51 1749,39 1755,45 1764,51 1770,54 1777,51 1785,42 1792,39 1798,48 1805,45 1812,39 1818,42 1827,45 1835,39 1841,36 1848,36 1855,39 1862,45 1870,48 1876,42 1884,42 1893,42 1893,75"/>
-            <rect class="timeline-segment-rect" x="1670" y="0" width="223" height="75"/>
+            <polygon class="timeline-segment" id="s19" points="1670,75 1670,39 1676,39 1680,42 1687,48 1693,48 1695,42 1700,36 1706,39 1707,42 1715,39 1716,36 1720,39 1727,48 1733,45 1740,51 1744,51 1749,39 1755,45 1764,51 1770,54 1777,51 1785,42 1792,39 1798,48 1805,45 1812,39 1818,42 1827,45 1835,39 1841,36 1848,36 1855,39 1862,45 1870,48 1876,42 1884,42 1893,42 1893,75"/>
+            <rect class="timeline-segment-rect" id="s19" x="1670" y="0" width="223" height="75">
+            <title>1282m/223s @ 7.1/11.3/13.9 kts ↑ 295°/336° moving
+    beam reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1893,75 1893,45 1898,51 1900,54 1906,54 1913,57 1913,75"/>
-            <rect class="timeline-segment-rect" x="1893" y="0" width="20" height="75"/>
+            <polygon class="timeline-segment" id="s20" points="1893,75 1893,45 1898,51 1900,54 1906,54 1913,57 1913,75"/>
+            <rect class="timeline-segment-rect" id="s20" x="1893" y="0" width="20" height="75">
+            <title>112m/20s @ 6.8/8.4/10.9 kts ↑ 241°/318° turning
+    round up port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="1913,75 1913,60 1917,60 1922,57 1928,60 1932,57 1938,54 1945,51 1951,51 1957,54 1964,51 1972,48 1973,45 1980,42 1987,45 1996,45 1999,45 2005,51 2015,51 2023,54 2032,57 2040,60 2050,57 2055,54 2061,48 2069,45 2075,48 2082,48 2088,45 2095,42 2102,42 2105,39 2110,45 2118,54 2128,54 2136,51 2144,48 2151,54 2159,54 2167,48 2173,45 2181,48 2184,51 2184,75"/>
-            <rect class="timeline-segment-rect" x="1913" y="0" width="271" height="75"/>
+            <polygon class="timeline-segment" id="s21" points="1913,75 1913,60 1917,60 1922,57 1928,60 1932,57 1938,54 1945,51 1951,51 1957,54 1964,51 1972,48 1973,45 1980,42 1987,45 1996,45 1999,45 2005,51 2015,51 2023,54 2032,57 2040,60 2050,57 2055,54 2061,48 2069,45 2075,48 2082,48 2088,45 2095,42 2102,42 2105,39 2110,45 2118,54 2128,54 2136,51 2144,48 2151,54 2159,54 2167,48 2173,45 2181,48 2184,51 2184,75"/>
+            <rect class="timeline-segment-rect" id="s21" x="1913" y="0" width="271" height="75">
+            <title>1229m/271s @ 5.3/8.6/12.0 kts ↑ 230°/278° moving
+    close reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2184,75 2184,57 2189,57 2195,60 2199,54 2204,54 2211,57 2217,60 2217,75"/>
-            <rect class="timeline-segment-rect" x="2184" y="0" width="33" height="75"/>
+            <polygon class="timeline-segment" id="s22" points="2184,75 2184,57 2189,57 2195,60 2199,54 2204,54 2211,57 2217,60 2217,75"/>
+            <rect class="timeline-segment-rect" id="s22" x="2184" y="0" width="33" height="75">
+            <title>129m/33s @ 5.5/6.5/7.6 kts ↑ 241°/337° turning
+    bear away port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2217,75 2217,60 2223,63 2228,60 2232,63 2240,63 2247,63 2253,63 2259,54 2267,51 2274,45 2282,45 2289,48 2296,48 2305,45 2312,45 2319,42 2324,45 2330,45 2336,42 2343,45 2345,45 2349,39 2356,42 2362,48 2366,48 2375,45 2382,48 2390,48 2394,51 2400,48 2405,42 2412,42 2419,48 2424,45 2431,51 2440,57 2447,60 2456,60 2465,60 2473,60 2482,54 2489,45 2497,42 2505,42 2511,45 2516,45 2524,51 2528,51 2534,45 2535,36 2535,75"/>
-            <rect class="timeline-segment-rect" x="2217" y="0" width="318" height="75"/>
+            <polygon class="timeline-segment" id="s23" points="2217,75 2217,60 2223,63 2228,60 2232,63 2240,63 2247,63 2253,63 2259,54 2267,51 2274,45 2282,45 2289,48 2296,48 2305,45 2312,45 2319,42 2324,45 2330,45 2336,42 2343,45 2345,45 2349,39 2356,42 2362,48 2366,48 2375,45 2382,48 2390,48 2394,51 2400,48 2405,42 2412,42 2419,48 2424,45 2431,51 2440,57 2447,60 2456,60 2465,60 2473,60 2482,54 2489,45 2497,42 2505,42 2511,45 2516,45 2524,51 2528,51 2534,45 2535,36 2535,75"/>
+            <rect class="timeline-segment-rect" id="s23" x="2217" y="0" width="318" height="75">
+            <title>1477m/318s @ 4.2/9.0/13.2 kts ↑ 294°/356° moving
+    broad reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2535,75 2535,39 2541,51 2547,57 2551,66 2557,57 2561,45 2562,39 2562,75"/>
-            <rect class="timeline-segment-rect" x="2535" y="0" width="27" height="75"/>
+            <polygon class="timeline-segment" id="s24" points="2535,75 2535,39 2541,51 2547,57 2551,66 2557,57 2561,45 2562,39 2562,75"/>
+            <rect class="timeline-segment-rect" id="s24" x="2535" y="0" width="27" height="75">
+            <title>138m/27s @ 3.9/8.6/12.8 kts ↑ 336°/92° turning
+    gybe port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2562,75 2562,39 2569,42 2576,39 2582,36 2588,45 2588,75"/>
-            <rect class="timeline-segment-rect" x="2562" y="0" width="26" height="75"/>
+            <polygon class="timeline-segment" id="s25" points="2562,75 2562,39 2569,42 2576,39 2582,36 2588,45 2588,75"/>
+            <rect class="timeline-segment-rect" id="s25" x="2562" y="0" width="26" height="75">
+            <title>207m/26s @ 11.0/12.2/13.3 kts ↑ 62°/74° moving
+    broad reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2588,75 2588,48 2592,48 2598,48 2602,63 2611,66 2611,75"/>
-            <rect class="timeline-segment-rect" x="2588" y="0" width="23" height="75"/>
+            <polygon class="timeline-segment" id="s26" points="2588,75 2588,48 2592,48 2598,48 2602,63 2611,66 2611,75"/>
+            <rect class="timeline-segment-rect" id="s26" x="2588" y="0" width="23" height="75">
+            <title>91m/23s @ 3.9/7.4/9.4 kts ↑ 63°/154° turning
+    round up starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="2611,75 2611,66 2617,63 2625,63 2635,63 2643,60 2654,57 2664,57 2673,57 2681,57 2687,51 2693,48 2701,45 2708,45 2715,45 2721,45 2724,48 2731,42 2738,48 2741,45 2748,45 2756,45 2764,42 2770,39 2777,39 2782,36 2788,39 2795,42 2801,45 2804,48 2814,48 2820,48 2828,45 2834,42 2841,42 2849,45 2850,42 2852,42 2859,48 2865,42 2872,39 2880,39 2887,42 2895,45 2899,45 2907,42 2913,45 2921,45 2923,45 2930,42 2937,39 2945,42 2954,42 2962,42 2970,42 2978,42 2986,42 2994,42 3002,45 3009,48 3016,42 3022,39 3031,42 3040,42 3047,45 3055,51 3061,54 3065,57 3072,60 3080,63 3089,57 3096,54 3105,48 3114,48 3117,42 3121,36 3122,33 3129,39 3135,45 3143,45 3148,39 3155,42 3157,48 3162,48 3169,42 3175,36 3182,39 3187,33 3192,30 3198,39 3205,39 3213,36 3218,33 3225,42 3227,39 3234,36 3238,39 3247,39 3253,42 3256,36 3260,36 3267,39 3268,36 3272,36 3272,75"/>
-            <rect class="timeline-segment-rect" x="2611" y="0" width="661" height="75"/>
+            <polygon class="timeline-segment" id="s27" points="2611,75 2611,66 2617,63 2625,63 2635,63 2643,60 2654,57 2664,57 2673,57 2681,57 2687,51 2693,48 2701,45 2708,45 2715,45 2721,45 2724,48 2731,42 2738,48 2741,45 2748,45 2756,45 2764,42 2770,39 2777,39 2782,36 2788,39 2795,42 2801,45 2804,48 2814,48 2820,48 2828,45 2834,42 2841,42 2849,45 2850,42 2852,42 2859,48 2865,42 2872,39 2880,39 2887,42 2895,45 2899,45 2907,42 2913,45 2921,45 2923,45 2930,42 2937,39 2945,42 2954,42 2962,42 2970,42 2978,42 2986,42 2994,42 3002,45 3009,48 3016,42 3022,39 3031,42 3040,42 3047,45 3055,51 3061,54 3065,57 3072,60 3080,63 3089,57 3096,54 3105,48 3114,48 3117,42 3121,36 3122,33 3129,39 3135,45 3143,45 3148,39 3155,42 3157,48 3162,48 3169,42 3175,36 3182,39 3187,33 3192,30 3198,39 3205,39 3213,36 3218,33 3225,42 3227,39 3234,36 3238,39 3247,39 3253,42 3256,36 3260,36 3267,39 3268,36 3272,36 3272,75"/>
+            <rect class="timeline-segment-rect" id="s27" x="2611" y="0" width="661" height="75">
+            <title>3572m/661s @ 3.2/10.6/15.6 kts ↑ 56°/163° moving
+    beam reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3272,75 3272,45 3277,54 3281,54 3287,63 3296,63 3303,60 3303,75"/>
-            <rect class="timeline-segment-rect" x="3272" y="0" width="31" height="75"/>
+            <polygon class="timeline-segment" id="s28" points="3272,75 3272,45 3277,54 3281,54 3287,63 3296,63 3303,60 3303,75"/>
+            <rect class="timeline-segment-rect" id="s28" x="3272" y="0" width="31" height="75">
+            <title>116m/31s @ 4.6/6.6/10.3 kts ↑ 64°/170° turning
+    round up starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3303,75 3303,63 3313,60 3323,63 3330,60 3337,54 3343,48 3350,45 3350,75"/>
-            <rect class="timeline-segment-rect" x="3303" y="0" width="47" height="75"/>
+            <polygon class="timeline-segment" id="s29" points="3303,75 3303,63 3313,60 3323,63 3330,60 3337,54 3343,48 3350,45 3350,75"/>
+            <rect class="timeline-segment-rect" id="s29" x="3303" y="0" width="47" height="75">
+            <title>181m/47s @ 4.1/6.7/10.5 kts ↑ 140°/168° moving
+    close reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3350,75 3350,45 3357,48 3359,54 3364,66 3368,63 3377,60 3385,57 3385,75"/>
-            <rect class="timeline-segment-rect" x="3350" y="0" width="35" height="75"/>
+            <polygon class="timeline-segment" id="s30" points="3350,75 3350,45 3357,48 3359,54 3364,66 3368,63 3377,60 3385,57 3385,75"/>
+            <rect class="timeline-segment-rect" id="s30" x="3350" y="0" width="35" height="75">
+            <title>123m/35s @ 3.1/6.6/10.8 kts ↑ 135°/247° turning
+    tack starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3385,75 3385,57 3395,57 3401,57 3408,51 3416,48 3418,48 3426,45 3433,45 3443,45 3453,45 3460,45 3470,45 3470,75"/>
-            <rect class="timeline-segment-rect" x="3385" y="0" width="85" height="75"/>
+            <polygon class="timeline-segment" id="s31" points="3385,75 3385,57 3395,57 3401,57 3408,51 3416,48 3418,48 3426,45 3433,45 3443,45 3453,45 3460,45 3470,45 3470,75"/>
+            <rect class="timeline-segment-rect" id="s31" x="3385" y="0" width="85" height="75">
+            <title>436m/85s @ 6.4/9.2/10.9 kts ↑ 247°/263° moving
+    close reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3470,75 3470,48 3478,54 3482,66 3490,60 3498,60 3498,75"/>
-            <rect class="timeline-segment-rect" x="3470" y="0" width="28" height="75"/>
+            <polygon class="timeline-segment" id="s32" points="3470,75 3470,48 3478,54 3482,66 3490,60 3498,60 3498,75"/>
+            <rect class="timeline-segment-rect" id="s32" x="3470" y="0" width="28" height="75">
+            <title>100m/28s @ 3.9/6.4/9.1 kts ↑ 134°/243° turning
+    tack port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3498,75 3498,60 3505,60 3511,57 3518,51 3525,48 3532,48 3541,45 3548,45 3555,48 3563,51 3563,75"/>
-            <rect class="timeline-segment-rect" x="3498" y="0" width="65" height="75"/>
+            <polygon class="timeline-segment" id="s33" points="3498,75 3498,60 3505,60 3511,57 3518,51 3525,48 3532,48 3541,45 3548,45 3555,48 3563,51 3563,75"/>
+            <rect class="timeline-segment-rect" id="s33" x="3498" y="0" width="65" height="75">
+            <title>320m/65s @ 5.4/8.4/10.4 kts ↑ 138°/149° moving
+    close reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3563,75 3563,51 3569,57 3571,66 3573,69 3577,66 3584,57 3590,57 3590,75"/>
-            <rect class="timeline-segment-rect" x="3563" y="0" width="27" height="75"/>
+            <polygon class="timeline-segment" id="s34" points="3563,75 3563,51 3569,57 3571,66 3573,69 3577,66 3584,57 3590,57 3590,75"/>
+            <rect class="timeline-segment-rect" id="s34" x="3563" y="0" width="27" height="75">
+            <title>108m/27s @ 2.6/5.4/8.5 kts ↑ 143°/242° turning
+    tack starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3590,75 3590,51 3595,45 3603,42 3607,42 3614,48 3617,51 3620,48 3625,45 3629,45 3636,42 3636,75"/>
-            <rect class="timeline-segment-rect" x="3590" y="0" width="46" height="75"/>
+            <polygon class="timeline-segment" id="s35" points="3590,75 3590,51 3595,45 3603,42 3607,42 3614,48 3617,51 3620,48 3625,45 3629,45 3636,42 3636,75"/>
+            <rect class="timeline-segment-rect" id="s35" x="3590" y="0" width="46" height="75">
+            <title>271m/46s @ 8.3/10.0/11.4 kts ↑ 243°/260° moving
+    close reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3636,75 3636,45 3641,51 3647,63 3649,66 3659,63 3665,63 3673,63 3673,75"/>
-            <rect class="timeline-segment-rect" x="3636" y="0" width="37" height="75"/>
+            <polygon class="timeline-segment" id="s36" points="3636,75 3636,45 3641,51 3647,63 3649,66 3659,63 3665,63 3673,63 3673,75"/>
+            <rect class="timeline-segment-rect" id="s36" x="3636" y="0" width="37" height="75">
+            <title>117m/37s @ 3.8/5.8/10.3 kts ↑ 142°/275° turning
+    tack port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3673,75 3673,60 3682,60 3691,60 3699,60 3709,60 3718,60 3727,60 3738,57 3746,57 3753,57 3753,75"/>
-            <rect class="timeline-segment-rect" x="3673" y="0" width="80" height="75"/>
+            <polygon class="timeline-segment" id="s37" points="3673,75 3673,60 3682,60 3691,60 3699,60 3709,60 3718,60 3727,60 3738,57 3746,57 3753,57 3753,75"/>
+            <rect class="timeline-segment-rect" id="s37" x="3673" y="0" width="80" height="75">
+            <title>261m/80s @ 5.2/5.9/6.7 kts ↑ 137°/154° moving
+    close reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3753,75 3753,57 3763,54 3767,60 3771,66 3779,60 3789,60 3789,75"/>
-            <rect class="timeline-segment-rect" x="3753" y="0" width="36" height="75"/>
+            <polygon class="timeline-segment" id="s38" points="3753,75 3753,57 3763,54 3767,60 3771,66 3779,60 3789,60 3789,75"/>
+            <rect class="timeline-segment-rect" id="s38" x="3753" y="0" width="36" height="75">
+            <title>134m/36s @ 3.7/5.8/7.3 kts ↑ 150°/244° turning
+    tack starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3789,75 3789,60 3801,57 3810,57 3818,57 3823,69 3829,63 3837,60 3844,54 3844,75"/>
-            <rect class="timeline-segment-rect" x="3789" y="0" width="55" height="75"/>
+            <polygon class="timeline-segment" id="s39" points="3789,75 3789,60 3801,57 3810,57 3818,57 3823,69 3829,63 3837,60 3844,54 3844,75"/>
+            <rect class="timeline-segment-rect" id="s39" x="3789" y="0" width="55" height="75">
+            <title>196m/55s @ 2.9/4.3/7.3 kts ↑ 147°/247° turning
+    tack port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3844,75 3844,60 3852,63 3862,63 3871,63 3880,60 3885,57 3887,66 3893,63 3900,57 3907,60 3907,75"/>
-            <rect class="timeline-segment-rect" x="3844" y="0" width="63" height="75"/>
+            <polygon class="timeline-segment" id="s40" points="3844,75 3844,60 3852,63 3862,63 3871,63 3880,60 3885,57 3887,66 3893,63 3900,57 3907,60 3907,75"/>
+            <rect class="timeline-segment-rect" id="s40" x="3844" y="0" width="63" height="75">
+            <title>189m/63s @ 3.3/3.7/6.9 kts ↑ 124°/218° turning
+    tack starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3907,75 3907,60 3916,60 3922,57 3929,60 3934,69 3939,69 3939,75"/>
-            <rect class="timeline-segment-rect" x="3907" y="0" width="32" height="75"/>
+            <polygon class="timeline-segment" id="s41" points="3907,75 3907,60 3916,60 3922,57 3929,60 3934,69 3939,69 3939,75"/>
+            <rect class="timeline-segment-rect" id="s41" x="3907" y="0" width="32" height="75">
+            <title>99m/32s @ 5.2/0.9/5.2 kts ↑ 229°/229° moving
+    close reach port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3939,75 3939,66 3948,63 3957,63 3963,69 3966,66 3966,75"/>
-            <rect class="timeline-segment-rect" x="3939" y="0" width="27" height="75"/>
+            <polygon class="timeline-segment" id="s42" points="3939,75 3939,66 3948,63 3957,63 3963,69 3966,66 3966,75"/>
+            <rect class="timeline-segment-rect" id="s42" x="3939" y="0" width="27" height="75">
+            <title>69m/27s @ 2.7/1.3/3.7 kts ↑ 224°/226° turning
+    tack starboard to port SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3966,75 3966,63 3974,63 3979,63 3984,72 3987,72 3987,75"/>
-            <rect class="timeline-segment-rect" x="3966" y="0" width="21" height="75"/>
+            <polygon class="timeline-segment" id="s43" points="3966,75 3966,63 3974,63 3979,63 3984,72 3987,72 3987,75"/>
+            <rect class="timeline-segment-rect" id="s43" x="3966" y="0" width="21" height="75">
+            <title>60m/21s @ 1.7/1.7/4.8 kts ↑ 157°/247° turning
+    tack port to starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="3987,75 3987,72 3996,69 4006,66 4014,63 4017,66 4017,75"/>
-            <rect class="timeline-segment-rect" x="3987" y="0" width="30" height="75"/>
+            <polygon class="timeline-segment" id="s44" points="3987,75 3987,72 3996,69 4006,66 4014,63 4017,66 4017,75"/>
+            <rect class="timeline-segment-rect" id="s44" x="3987" y="0" width="30" height="75">
+            <title>51m/30s @ 2.0/3.0/4.5 kts ↑ 127°/162° moving
+    close reach starboard SSW</title>
+            </rect>
         
-            <polygon class="timeline-segment" points="4017,75 4017,69 4025,66 4036,63 4040,60 4047,63 4055,66 4059,69 4062,72 4066,75 4066,75"/>
-            <rect class="timeline-segment-rect" x="4017" y="0" width="49" height="75"/>
+            <polygon class="timeline-segment" id="s45" points="4017,75 4017,69 4025,66 4036,63 4040,60 4047,63 4055,66 4059,69 4062,72 4066,75 4066,75"/>
+            <rect class="timeline-segment-rect" id="s45" x="4017" y="0" width="49" height="75">
+            <title>100m/49s @ 1.8/2.0/5.3 kts ↑ 218°/253° moving
+    close reach port SSW</title>
+            </rect>
         
     </svg>
     <script>
@@ -4607,5 +4749,63 @@ map.addEventListener(&#39;mouseup&#39;, dragStop);
 map.addEventListener(&#39;mouseleave&#39;, dragStop);
 map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
+function getMapSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != &#39;line&#39;) return undefined
+    const id = event.target.parentNode.getAttribute(&#34;id&#34;)
+    console.log(&#34;segment=&#34;, id)
+    return id
+}
+
+function mapSegmentHoverStart(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.add(&#34;timeline-segment-rect-hovered&#34;)
+}
+
+function mapSegmentHoverStop(event) {
+    const id = getMapSegmentId(event)
+    if (!id) return
+    const selector = `rect#${id}`
+    const timelineSegment = timeline.querySelector(selector)
+    if (!timelineSegment) return
+    timelineSegment.classList.remove(&#34;timeline-segment-rect-hovered&#34;)
+}
+
+map.addEventListener(&#39;mouseover&#39;, mapSegmentHoverStart)
+map.addEventListener(&#39;mouseout&#39;, mapSegmentHoverStop)
+
+// timeline hover handling
+function getTimelineSegmentId(event) {
+    const target = event.target
+    if(!target) return undefined
+    if(target.tagName != &#39;rect&#39; &amp;&amp; target.tagName != &#39;polygon&#39;) return undefined
+    const id = event.target.getAttribute(&#34;id&#34;)
+    return id
+}
+
+function segmentHoverStart(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const selector = `g#${id}.segment`
+    const mapSegment = map.querySelector(selector)
+    if (!mapSegment) return
+    mapSegment.classList.add(&#34;segment-hovered&#34;)
+}
+
+function segmentHoverStop(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    const mapSegment = map.querySelector(`g#${id}.segment`)
+    if (!mapSegment) return
+    mapSegment.classList.remove(&#34;segment-hovered&#34;)
+}
+
+timeline.addEventListener(&#39;mouseover&#39;, segmentHoverStart)
+timeline.addEventListener(&#39;mouseout&#39;, segmentHoverStop)
     </script>
 </svg>
