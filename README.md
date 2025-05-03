@@ -41,6 +41,10 @@ The timeline segments are colored based on the wind-attitude of the segment:
 
 Mouse or touchpad drag across the timeline selects a range of segments. When the drag stops the timeline is zoomed to the selected range and the map segments that are not in the selected range are hidden. That allows focusing on a particular section of the track. To get the full track back just reload the page.
 
+For example selecting the first race section of the race day track above looks like this (the hover info shows the first upwind leg after the port tack start).
+
+![race 1](https://github.com/user-attachments/assets/5898c783-c2d8-4d9f-afb9-69f189de790a)
+
 
 ## usage
 
