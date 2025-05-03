@@ -39,6 +39,8 @@ The timeline segments are colored based on the wind-attitude of the segment:
 * beam => green
 * downwind => blue
 
+Mouse or touchpad drag across the timeline selects a range of segments. When the drag stops the timeline is zoomed to the selected range and the map segments that are not in the selected range are hidden. That allows focusing on a particular section of the track. To get the full track back just reload the page.
+
 
 ## usage
 

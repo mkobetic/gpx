@@ -12,6 +12,7 @@
 .timeline-segment-rect { fill: transparent }
 .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
 .timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
+.timeline-selection-box { fill: transparent; stroke-width: 2; stroke: black}
         ]]>
     </style>
     <g id="legend">
@@ -7875,45 +7876,45 @@ unknown ENE</title>
             
             <line class="step" x1="82" y1="577" x2="77" y2="584" stroke="#0f3">
             <title>12:02:26 11.8m @ 11.4 kts ↑ 216° SW = 27391.75 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° &lt; 12° moving (M:4/T:3/S:0)
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° &lt; 38° turning (M:4/T:3/S:0)
+irons ENE</title>
             </line>
             
             
             <line class="step" x1="77" y1="584" x2="59" y2="606" stroke="#0f7">
             <title>12:02:33: 39.1m @ 10.9 kts ↑ 218° SW = 14.81 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning
+irons ENE</title>
             </line>
             
             <line class="step" x1="59" y1="606" x2="41" y2="627" stroke="#0f7">
             <title>12:02:40: 39.2m @ 10.9 kts ↑ 221° SW = 14.83 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning
+irons ENE</title>
             </line>
             
             <line class="step" x1="41" y1="627" x2="32" y2="635" stroke="#0f7">
             <title>12:02:43: 15.7m @ 10.2 kts ↑ 228° SW = 14.84 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning
+irons ENE</title>
             </line>
             
             <line class="step" x1="32" y1="635" x2="26" y2="649" stroke="#0ff">
             <title>12:02:48: 21.2m @ 8.2 kts ↑ 205° SSW = 14.85 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning
+irons ENE</title>
             </line>
             
             <line class="step" x1="26" y1="649" x2="27" y2="654" stroke="#0ef">
             <title>12:02:50: 7.9m @ 7.7 kts ↑ 171° S = 14.86 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning
+irons ENE</title>
             </line>
             
             <line class="step" x1="27" y1="654" x2="32" y2="676" stroke="#0ef">
             <title>12:02:58: 30.7m @ 7.4 kts ↑ 167° SSE = 14.87 nm
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving
-broad reach port ENE</title>
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning
+irons ENE</title>
             </line>
             
         </g>
@@ -11718,10 +11719,10 @@ round up port ENE</title>
 144m/26s @ 5.7/8.8/10.5 kts ↑ 218°/2° turning</title>
             </rect>
         
-            <polygon class="timeline-segment-downwind" id="s64" points="7094,75 7094,42 7101,45 7108,45 7111,45 7116,51 7118,54 7126,54 7126,75"/>
+            <polygon class="timeline-segment-upwind" id="s64" points="7094,75 7094,42 7101,45 7108,45 7111,45 7116,51 7118,54 7126,54 7126,75"/>
             <rect class="timeline-segment-rect" id="s64" x="7094" y="0" width="32" height="75">
-            <title>12:02:26  broad reach port ENE
-166m/32s @ 10.2/6.2/11.4 kts ↑ 216°/228° moving</title>
+            <title>12:02:26  irons ENE
+166m/32s @ 7.4/3.3/8.2 kts ↑ 167°/205° turning</title>
             </rect>
         
             <polygon class="timeline-segment" id="s65" points="7126,75 7126,57 7133,54 7139,60 7147,57 7154,57 7161,60 7168,63 7175,63 7182,60 7189,57 7195,63 7195,75"/>
@@ -11966,16 +11967,16 @@ function clamp(x, max) {
     return x
 }
 
-function dragStart(event) {
+function mapDragStart(event) {
     map.style.cursor = &#39;grabbing&#39;;
     startX = event.clientX;
     startY = event.clientY;
     initialDragViewBox = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
-    map.addEventListener(&#39;mousemove&#39;, dragMove);
+    map.addEventListener(&#39;mousemove&#39;, mapDragMove);
 
 };
 
-function dragMove(event) {
+function mapDragMove(event) {
     const deltaX = event.clientX - startX;
     const deltaY = event.clientY - startY;
 
@@ -11986,8 +11987,8 @@ function dragMove(event) {
     map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
 };
 
-function dragStop() {
-    map.removeEventListener(&#39;mousemove&#39;, dragMove);
+function mapDragStop() {
+    map.removeEventListener(&#39;mousemove&#39;, mapDragMove);
     map.style.cursor = &#39;auto&#39;;
 };
 
@@ -12000,7 +12001,7 @@ function zoomSensitivity(event) {
     }
 }
 
-function wheelZoom(event) {
+function mapWheelZoom(event) {
     event.preventDefault(); // Prevent default scrolling
 
     const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
@@ -12030,10 +12031,10 @@ function wheelZoom(event) {
     map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
 };
 
-map.addEventListener(&#39;mousedown&#39;, dragStart);
-map.addEventListener(&#39;mouseup&#39;, dragStop);
-map.addEventListener(&#39;mouseleave&#39;, dragStop);
-map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+map.addEventListener(&#39;mousedown&#39;, mapDragStart);
+map.addEventListener(&#39;mouseup&#39;, mapDragStop);
+map.addEventListener(&#39;mouseleave&#39;, mapDragStop);
+map.addEventListener(&#39;wheel&#39;, mapWheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
 // map hover handling
 // * highlight the corresponding timeline segment
@@ -12096,5 +12097,83 @@ function timelineSegmentHoverStop(event) {
 
 timeline.addEventListener(&#39;mouseover&#39;, timelineSegmentHoverStart)
 timeline.addEventListener(&#39;mouseout&#39;, timelineSegmentHoverStop)
+
+// timeline period selection
+// * show box around selected segments
+// * hide everything but selected segments in the map
+// * narrow timeline viewbox to selected segments
+
+class Range {
+    constructor(min, max) {
+        this.min = Range.toNum(min)
+        this.max = Range.toNum(max) ?? Range.toNum(min)
+    }
+
+    static toNum(id) {
+        if (!id) return undefined;
+        return parseInt(id.slice(1))
+    }
+
+    add(id) {
+        const val = Range.toNum(id)
+        if (!this.min || val &lt; this.min) this.min = val
+        if (!this.max || val &gt; this.max) this.max = val
+    }
+
+    has(id) {
+        const val = Range.toNum(id)
+        return this.min &amp;&amp; this.min &lt;= val &amp;&amp; this.max &amp;&amp; val &lt;= this.max
+    }
+}
+
+let selectionBox = null;
+let selectedSegments = null;
+
+function timelineSelectStart(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    selectedSegments = new Range(id);
+    const segmentBox = timeline.querySelector(`rect#${id}`)
+    selectionBox = document.createElementNS(&#39;http://www.w3.org/2000/svg&#39;, &#39;rect&#39;);
+    selectionBox.classList.add(&#39;timeline-selection-box&#39;)
+    selectionBox.setAttribute(&#39;id&#39;, &#39;selection-box&#39;);
+    selectionBox.setAttribute(&#39;x&#39;, segmentBox.getAttribute(&#34;x&#34;));
+    selectionBox.setAttribute(&#39;y&#39;, 0);
+    selectionBox.setAttribute(&#39;width&#39;, segmentBox.getAttribute(&#34;width&#34;));
+    selectionBox.setAttribute(&#39;height&#39;, &#34;100%&#34;);
+    timeline.appendChild(selectionBox);
+    timeline.addEventListener(&#34;mousemove&#34;, timelineSelectMove)
+}
+
+function timelineSelectMove(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id || id == selectionBox.getAttribute(&#39;id&#39;) || selectedSegments.has(id)) return
+    selectedSegments.add(id);
+    const segmentBox = timeline.querySelector(`rect#${id}`)
+    let width = parseInt(selectionBox.getAttribute(&#39;width&#39;))
+    width += parseInt(segmentBox.getAttribute(&#39;width&#39;)) 
+    selectionBox.setAttribute(&#39;width&#39;, width);
+}
+
+function timelineSelectStop(event) {
+    if (!selectionBox) return
+    timeline.removeEventListener(&#34;mousemove&#34;, timelineSelectMove)
+    let viewBox = timeline.getAttribute(&#39;viewBox&#39;)
+    console.log(viewBox)
+    const [_x, y, _width, height] = viewBox.split(&#39; &#39;).map(Number);
+    viewBox = `${selectionBox.getAttribute(&#39;x&#39;)} ${y} ${selectionBox.getAttribute(&#39;width&#39;)} ${height}`;
+    console.log(viewBox)
+    timeline.setAttribute(&#39;viewBox&#39;, viewBox)
+    selectionBox.remove()
+    selectionBox = null
+    for (const elem of map.children) {
+        if (elem.tagName != &#39;g&#39; || selectedSegments.has(elem.getAttribute(&#39;id&#39;))) continue;
+        elem.style.visibility = &#39;hidden&#39;;
+    }
+    selectedSegments = null
+}
+
+timeline.addEventListener(&#34;mousedown&#34;, timelineSelectStart)
+timeline.addEventListener(&#34;mouseup&#34;, timelineSelectStop)
     </script>
 </svg>

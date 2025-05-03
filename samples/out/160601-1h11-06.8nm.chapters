@@ -1,6 +1,6 @@
 ;FFMETADATA1
 title=160601-1h11-06.8nm
-created=2025-04-24T18:09:06-04:00
+created=2025-05-03T14:44:14-04:00
 source=160605.gpx
 video_offset=0s
 
@@ -182,7 +182,7 @@ title=19:40:18  (144m/81s @ 2.1/3.1/4.6 kts ↑ 255°/261° turning)
 TIMEBASE=1/1000
 START=2070000
 END=2106000
-title=19:41:44  (119m/36s @ 6.2/2.7/7.1 kts ↑ 246°/257° turning)
+title=19:41:44  (119m/36s @ 4.9/3.0/5.1 kts ↑ 260°/267° moving)
 
 [CHAPTER]
 TIMEBASE=1/1000
