@@ -12,6 +12,7 @@
 .timeline-segment-rect { fill: transparent }
 .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
 .timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
+.timeline-selection-box { fill: transparent; stroke-width: 2; stroke: black}
         ]]>
     </style>
     <g id="legend">
@@ -2058,16 +2059,16 @@ function clamp(x, max) {
     return x
 }
 
-function dragStart(event) {
+function mapDragStart(event) {
     map.style.cursor = &#39;grabbing&#39;;
     startX = event.clientX;
     startY = event.clientY;
     initialDragViewBox = map.getAttribute(&#39;viewBox&#39;).split(&#39; &#39;).map(Number);
-    map.addEventListener(&#39;mousemove&#39;, dragMove);
+    map.addEventListener(&#39;mousemove&#39;, mapDragMove);
 
 };
 
-function dragMove(event) {
+function mapDragMove(event) {
     const deltaX = event.clientX - startX;
     const deltaY = event.clientY - startY;
 
@@ -2078,8 +2079,8 @@ function dragMove(event) {
     map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${initialDragViewBox[2]} ${initialDragViewBox[3]}`);
 };
 
-function dragStop() {
-    map.removeEventListener(&#39;mousemove&#39;, dragMove);
+function mapDragStop() {
+    map.removeEventListener(&#39;mousemove&#39;, mapDragMove);
     map.style.cursor = &#39;auto&#39;;
 };
 
@@ -2092,7 +2093,7 @@ function zoomSensitivity(event) {
     }
 }
 
-function wheelZoom(event) {
+function mapWheelZoom(event) {
     event.preventDefault(); // Prevent default scrolling
 
     const delta = -event.deltaY * zoomSensitivity(event); // Normalize scroll direction and sensitivity
@@ -2122,10 +2123,10 @@ function wheelZoom(event) {
     map.setAttribute(&#39;viewBox&#39;, `${newMinX} ${newMinY} ${newWidth} ${newHeight}`);
 };
 
-map.addEventListener(&#39;mousedown&#39;, dragStart);
-map.addEventListener(&#39;mouseup&#39;, dragStop);
-map.addEventListener(&#39;mouseleave&#39;, dragStop);
-map.addEventListener(&#39;wheel&#39;, wheelZoom , { passive: false }); // passive: false is needed to preventDefault
+map.addEventListener(&#39;mousedown&#39;, mapDragStart);
+map.addEventListener(&#39;mouseup&#39;, mapDragStop);
+map.addEventListener(&#39;mouseleave&#39;, mapDragStop);
+map.addEventListener(&#39;wheel&#39;, mapWheelZoom , { passive: false }); // passive: false is needed to preventDefault
 
 // map hover handling
 // * highlight the corresponding timeline segment
@@ -2188,5 +2189,83 @@ function timelineSegmentHoverStop(event) {
 
 timeline.addEventListener(&#39;mouseover&#39;, timelineSegmentHoverStart)
 timeline.addEventListener(&#39;mouseout&#39;, timelineSegmentHoverStop)
+
+// timeline period selection
+// * show box around selected segments
+// * hide everything but selected segments in the map
+// * narrow timeline viewbox to selected segments
+
+class Range {
+    constructor(min, max) {
+        this.min = Range.toNum(min)
+        this.max = Range.toNum(max) ?? Range.toNum(min)
+    }
+
+    static toNum(id) {
+        if (!id) return undefined;
+        return parseInt(id.slice(1))
+    }
+
+    add(id) {
+        const val = Range.toNum(id)
+        if (!this.min || val &lt; this.min) this.min = val
+        if (!this.max || val &gt; this.max) this.max = val
+    }
+
+    has(id) {
+        const val = Range.toNum(id)
+        return this.min &amp;&amp; this.min &lt;= val &amp;&amp; this.max &amp;&amp; val &lt;= this.max
+    }
+}
+
+let selectionBox = null;
+let selectedSegments = null;
+
+function timelineSelectStart(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id) return
+    selectedSegments = new Range(id);
+    const segmentBox = timeline.querySelector(`rect#${id}`)
+    selectionBox = document.createElementNS(&#39;http://www.w3.org/2000/svg&#39;, &#39;rect&#39;);
+    selectionBox.classList.add(&#39;timeline-selection-box&#39;)
+    selectionBox.setAttribute(&#39;id&#39;, &#39;selection-box&#39;);
+    selectionBox.setAttribute(&#39;x&#39;, segmentBox.getAttribute(&#34;x&#34;));
+    selectionBox.setAttribute(&#39;y&#39;, 0);
+    selectionBox.setAttribute(&#39;width&#39;, segmentBox.getAttribute(&#34;width&#34;));
+    selectionBox.setAttribute(&#39;height&#39;, &#34;100%&#34;);
+    timeline.appendChild(selectionBox);
+    timeline.addEventListener(&#34;mousemove&#34;, timelineSelectMove)
+}
+
+function timelineSelectMove(event) {
+    const id = getTimelineSegmentId(event)
+    if (!id || id == selectionBox.getAttribute(&#39;id&#39;) || selectedSegments.has(id)) return
+    selectedSegments.add(id);
+    const segmentBox = timeline.querySelector(`rect#${id}`)
+    let width = parseInt(selectionBox.getAttribute(&#39;width&#39;))
+    width += parseInt(segmentBox.getAttribute(&#39;width&#39;)) 
+    selectionBox.setAttribute(&#39;width&#39;, width);
+}
+
+function timelineSelectStop(event) {
+    if (!selectionBox) return
+    timeline.removeEventListener(&#34;mousemove&#34;, timelineSelectMove)
+    let viewBox = timeline.getAttribute(&#39;viewBox&#39;)
+    console.log(viewBox)
+    const [_x, y, _width, height] = viewBox.split(&#39; &#39;).map(Number);
+    viewBox = `${selectionBox.getAttribute(&#39;x&#39;)} ${y} ${selectionBox.getAttribute(&#39;width&#39;)} ${height}`;
+    console.log(viewBox)
+    timeline.setAttribute(&#39;viewBox&#39;, viewBox)
+    selectionBox.remove()
+    selectionBox = null
+    for (const elem of map.children) {
+        if (elem.tagName != &#39;g&#39; || selectedSegments.has(elem.getAttribute(&#39;id&#39;))) continue;
+        elem.style.visibility = &#39;hidden&#39;;
+    }
+    selectedSegments = null
+}
+
+timeline.addEventListener(&#34;mousedown&#34;, timelineSelectStart)
+timeline.addEventListener(&#34;mouseup&#34;, timelineSelectStop)
     </script>
 </svg>

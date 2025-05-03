@@ -7,3 +7,4 @@
 .timeline-segment-rect { fill: transparent }
 .timeline-segment-rect:hover { stroke-width: 2; stroke: black }
 .timeline-segment-rect-hovered { stroke-width: 2; stroke: black }
+.timeline-selection-box { fill: transparent; stroke-width: 2; stroke: black}
